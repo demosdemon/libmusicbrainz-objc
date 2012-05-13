@@ -15,6 +15,8 @@
 		5D61B7E3155F3F9B0003006A /* liblibmusicbrainz-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */; };
 		5D61B7E9155F3F9B0003006A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B7E7155F3F9B0003006A /* InfoPlist.strings */; };
 		5D61B7EC155F3F9B0003006A /* libmusicbrainz_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */; };
+		5D61B8A0155F5D640003006A /* doxygen.config in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B89F155F5D640003006A /* doxygen.config */; };
+		5D61B8A2155F5D840003006A /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B8A1155F5D840003006A /* docs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +32,18 @@
 /* Begin PBXFileReference section */
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
-		5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */ = {isa = PBXFileReference; path = libmusicbrainz_objc.h; sourceTree = "<group>"; };
+		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
+		5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objc.h; sourceTree = "<group>"; };
 		5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objc.m; sourceTree = "<group>"; };
 		5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libmusicbrainz-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D61B7DE155F3F9B0003006A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5D61B7E6155F3F9B0003006A /* libmusicbrainz-objcTests-Info.plist */ = {isa = PBXFileReference; path = "libmusicbrainz-objcTests-Info.plist"; sourceTree = "<group>"; };
+		5D61B7E6155F3F9B0003006A /* libmusicbrainz-objcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objcTests-Info.plist"; sourceTree = "<group>"; };
 		5D61B7E8155F3F9B0003006A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */ = {isa = PBXFileReference; path = libmusicbrainz_objcTests.h; sourceTree = "<group>"; };
+		5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objcTests.h; sourceTree = "<group>"; };
 		5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objcTests.m; sourceTree = "<group>"; };
+		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
+		5D61B8A1155F5D840003006A /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
+				5D61B8A1155F5D840003006A /* docs */,
+				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
 				5D61B7CD155F3F9A0003006A /* Frameworks */,
@@ -151,6 +157,8 @@
 				5D61B7C7155F3F9A0003006A /* Sources */,
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
+				5D61B89D155F54C30003006A /* ShellScript */,
+				5D61B89E155F561B0003006A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +223,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D61B89E155F561B0003006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D61B8A0155F5D640003006A /* doxygen.config in Resources */,
+				5D61B8A2155F5D840003006A /* docs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -230,6 +247,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		5D61B89D155F54C30003006A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$DOXYGEN_PATH doxygen.config\n\nmake -C docs/html\n\ngit add docs\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -317,9 +347,12 @@
 		5D61B7F0155F3F9B0003006A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOT_PATH = /opt/local/bin;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				DSTROOT = /tmp/libmusicbrainz_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
+				HAVE_DOT = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -329,9 +362,12 @@
 		5D61B7F1155F3F9B0003006A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOT_PATH = /opt/local/bin;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				DSTROOT = /tmp/libmusicbrainz_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
+				HAVE_DOT = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+  <Token>
+    <TokenIdentifier>
+      <Name>libmusicbrainz_objc</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>libmusicbrainz_objc</Scope>
+    </TokenIdentifier>
+    <Path>interfacelibmusicbrainz__objc.html</Path>
+    <DeclaredIn>libmusicbrainz_objc.h</DeclaredIn>
+  </Token>
+</Tokens>
