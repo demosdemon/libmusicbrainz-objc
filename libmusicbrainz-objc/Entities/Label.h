@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "RateAndTaggableEntity.h"
 
-@interface Label : NSObject <RateAndTaggableEntity> {
+@interface Label : NSObject <MBRateAndTaggableEntity> {
 	NSString *mbid;
 	NSString *type;
 	NSString *name;
