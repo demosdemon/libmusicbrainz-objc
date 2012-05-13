@@ -7,5 +7,8 @@ var searchData=
   ['length',['length',['../interface_track.html#aed1956f60b12f73b4d48bf387843857d',1,'Track']]],
   ['libmusicbrainz_5fobjc',['libmusicbrainz_objc',['../interfacelibmusicbrainz__objc.html',1,'']]],
   ['libmusicbrainz_5fobjc_2eh',['libmusicbrainz_objc.h',['../libmusicbrainz__objc_8h.html',1,'']]],
-  ['libmusicbrainz_5fobjc_2em',['libmusicbrainz_objc.m',['../libmusicbrainz__objc_8m.html',1,'']]]
+  ['libmusicbrainz_5fobjc_2em',['libmusicbrainz_objc.m',['../libmusicbrainz__objc_8m.html',1,'']]],
+  ['libmusicbrainz_5fobjctests',['libmusicbrainz_objcTests',['../interfacelibmusicbrainz__objc_tests.html',1,'']]],
+  ['libmusicbrainz_5fobjctests_2eh',['libmusicbrainz_objcTests.h',['../libmusicbrainz__objc_tests_8h.html',1,'']]],
+  ['libmusicbrainz_5fobjctests_2em',['libmusicbrainz_objcTests.m',['../libmusicbrainz__objc_tests_8m.html',1,'']]]
 ];

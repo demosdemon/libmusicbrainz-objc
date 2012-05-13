@@ -74,6 +74,13 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>md_README</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>md__r_e_a_d_m_e.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>AccountInformation</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -321,6 +328,16 @@
     </TokenIdentifier>
     <Path>interfacelibmusicbrainz__objc.html</Path>
     <DeclaredIn>libmusicbrainz_objc.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>libmusicbrainz_objcTests</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>libmusicbrainz_objcTests</Scope>
+    </TokenIdentifier>
+    <Path>interfacelibmusicbrainz__objc_tests.html</Path>
+    <DeclaredIn>libmusicbrainz_objcTests.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

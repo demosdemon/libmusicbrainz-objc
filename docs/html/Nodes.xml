@@ -5,6 +5,9 @@
       <Name>Root</Name>
       <Path>index.html</Path>
       <Subnodes>
+       <Node>
+        <Name>libmusicbrainz-objc</Name>
+        <Path>md__r_e_a_d_m_e.html</Path>
         <Subnodes>
          <Node>
           <Name>Class List</Name>
@@ -136,6 +139,10 @@
            <Node>
             <Name>libmusicbrainz_objc</Name>
             <Path>interfacelibmusicbrainz__objc.html</Path>
+           </Node>
+           <Node>
+            <Name>libmusicbrainz_objcTests</Name>
+            <Path>interfacelibmusicbrainz__objc_tests.html</Path>
            </Node>
            <Node>
             <Name>&lt;RateAndTaggableEntity&gt;</Name>
@@ -311,6 +318,10 @@
             <Path>interfacelibmusicbrainz__objc.html</Path>
            </Node>
            <Node>
+            <Name>libmusicbrainz_objcTests</Name>
+            <Path>interfacelibmusicbrainz__objc_tests.html</Path>
+           </Node>
+           <Node>
             <Name>&lt;RateAndTaggableEntity&gt;</Name>
             <Path>protocol_rate_and_taggable_entity-p.html</Path>
             <Subnodes>
@@ -370,6 +381,10 @@
           <Name>File List</Name>
           <Path>files.html</Path>
           <Subnodes>
+           <Node>
+            <Name>README.md</Name>
+            <Path>_r_e_a_d_m_e_8md.html</Path>
+           </Node>
            <Node>
             <Name>libmusicbrainz-objc/libmusicbrainz_objc.h</Name>
             <Path>libmusicbrainz__objc_8h.html</Path>
@@ -478,6 +493,14 @@
            <Node>
             <Name>libmusicbrainz-objc/Entities/Track.m</Name>
             <Path>_track_8m.html</Path>
+           </Node>
+           <Node>
+            <Name>libmusicbrainz-objcTests/libmusicbrainz_objcTests.h</Name>
+            <Path>libmusicbrainz__objc_tests_8h.html</Path>
+           </Node>
+           <Node>
+            <Name>libmusicbrainz-objcTests/libmusicbrainz_objcTests.m</Name>
+            <Path>libmusicbrainz__objc_tests_8m.html</Path>
            </Node>
           </Subnodes>
          </Node>
