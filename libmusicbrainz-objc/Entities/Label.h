@@ -1,13 +1,12 @@
-//
-//  Label.h
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 6/22/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: Label Entity
+/// 
+/// @file Label.h
+/// @author Jens Lukas
+/// @date Jun 22 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief Label entity
 
 #import <Foundation/Foundation.h>
 #import "RateAndTaggableEntity.h"

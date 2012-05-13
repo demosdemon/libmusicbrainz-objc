@@ -1,17 +1,14 @@
-//
-//  AccountInformation.h
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 8/10/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: Helper class to store and retrieve account information in/from keychain 
-
+/// 
+/// @file AccountInformation.h
+/// @author Jens Lukas
+/// @date Aug 10 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief Helper class to store and retrieve account information in/from keychain 
 
 #import <Foundation/Foundation.h>
-
 
 @interface AccountInformation : NSObject {
 

@@ -1,13 +1,12 @@
-//
-//  ReleaseGroup.h
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 7/25/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: ReleaseGroup entity
+/// 
+/// @file ReleaseGroup.h
+/// @author Jens Lukas
+/// @date Jul 25 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief ReleaseGroup entity
 
 #import <Foundation/Foundation.h>
 #import	"RateAndTaggableEntity.h"

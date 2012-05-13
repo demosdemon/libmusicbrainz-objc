@@ -1,13 +1,12 @@
-//
-//  Artist.m
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 6/22/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: Artist Entity
+/// 
+/// @file Artist.m
+/// @author Jens Lukas
+/// @date Jun 22 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief Artist entity
 
 #import "Artist.h"
 

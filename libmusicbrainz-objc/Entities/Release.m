@@ -1,13 +1,12 @@
-//
-//  Release.m
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 6/7/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: Release entity
+/// 
+/// @file Release.m
+/// @author Jens Lukas
+/// @date Jun 7 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief Release entity
 
 #import "Release.h"
 

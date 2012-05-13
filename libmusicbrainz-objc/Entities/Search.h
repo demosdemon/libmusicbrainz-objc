@@ -1,13 +1,12 @@
-//
-//  Search.h
-//  Musicbrainz
-//
-//  Created by Jens Lukas on 6/4/10.
-//  Copyright 2010 Jens Lukas <contact@jenslukas.com>
-//
-//  This program is made available under the terms of the MIT License.
-//
-//	Abstract: Simple search object, indicating search text and type to search for (e.g. Artist, Release etc.)
+/// 
+/// @file Search.h
+/// @author Jens Lukas
+/// @date Jul 4 2010
+/// @copyright 
+///   2010 Jens Lukas <contact@jenslukas.com> \n
+///   This program is made available under the terms of the MIT License.
+///
+/// @brief Simple search object, indicating search text and type to search for (e.g. Artist, Release etc.)
 
 #import <Foundation/Foundation.h>
 
