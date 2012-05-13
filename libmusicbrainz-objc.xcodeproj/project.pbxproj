@@ -17,6 +17,20 @@
 		5D61B7EC155F3F9B0003006A /* libmusicbrainz_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */; };
 		5D61B8A0155F5D640003006A /* doxygen.config in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B89F155F5D640003006A /* doxygen.config */; };
 		5D61B8A2155F5D840003006A /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B8A1155F5D840003006A /* docs */; };
+		5D64F53C155F6B3900F47DBF /* AccountInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F52E155F6B3900F47DBF /* AccountInformation.h */; };
+		5D64F53D155F6B3900F47DBF /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F52F155F6B3900F47DBF /* AccountInformation.m */; };
+		5D64F53E155F6B3900F47DBF /* Artist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F530155F6B3900F47DBF /* Artist.h */; };
+		5D64F53F155F6B3900F47DBF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F531155F6B3900F47DBF /* Artist.m */; };
+		5D64F540155F6B3900F47DBF /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F532155F6B3900F47DBF /* Label.h */; };
+		5D64F541155F6B3900F47DBF /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F533155F6B3900F47DBF /* Label.m */; };
+		5D64F542155F6B3900F47DBF /* Release.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F534155F6B3900F47DBF /* Release.h */; };
+		5D64F543155F6B3900F47DBF /* Release.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F535155F6B3900F47DBF /* Release.m */; };
+		5D64F544155F6B3900F47DBF /* ReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F536155F6B3900F47DBF /* ReleaseGroup.h */; };
+		5D64F545155F6B3900F47DBF /* ReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F537155F6B3900F47DBF /* ReleaseGroup.m */; };
+		5D64F546155F6B3900F47DBF /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F538155F6B3900F47DBF /* Search.h */; };
+		5D64F547155F6B3900F47DBF /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F539155F6B3900F47DBF /* Search.m */; };
+		5D64F548155F6B3900F47DBF /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F53A155F6B3900F47DBF /* Track.h */; };
+		5D64F549155F6B3900F47DBF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F53B155F6B3900F47DBF /* Track.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,20 @@
 		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
 		5D61B8A1155F5D840003006A /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5D64F52E155F6B3900F47DBF /* AccountInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInformation.h; sourceTree = "<group>"; };
+		5D64F52F155F6B3900F47DBF /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInformation.m; sourceTree = "<group>"; };
+		5D64F530155F6B3900F47DBF /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		5D64F531155F6B3900F47DBF /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		5D64F532155F6B3900F47DBF /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		5D64F533155F6B3900F47DBF /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		5D64F534155F6B3900F47DBF /* Release.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Release.h; sourceTree = "<group>"; };
+		5D64F535155F6B3900F47DBF /* Release.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Release.m; sourceTree = "<group>"; };
+		5D64F536155F6B3900F47DBF /* ReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseGroup.h; sourceTree = "<group>"; };
+		5D64F537155F6B3900F47DBF /* ReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseGroup.m; sourceTree = "<group>"; };
+		5D64F538155F6B3900F47DBF /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		5D64F539155F6B3900F47DBF /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
+		5D64F53A155F6B3900F47DBF /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		5D64F53B155F6B3900F47DBF /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +133,7 @@
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5D64F52C155F6A5A00F47DBF /* Entities */,
+				5D64F52D155F6B3900F47DBF /* Entities */,
 				5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */,
 				5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */,
 				5D61B7D1155F3F9B0003006A /* Supporting Files */,
@@ -140,11 +168,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D64F52C155F6A5A00F47DBF /* Entities */ = {
+		5D64F52D155F6B3900F47DBF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				5D64F52E155F6B3900F47DBF /* AccountInformation.h */,
+				5D64F52F155F6B3900F47DBF /* AccountInformation.m */,
+				5D64F530155F6B3900F47DBF /* Artist.h */,
+				5D64F531155F6B3900F47DBF /* Artist.m */,
+				5D64F532155F6B3900F47DBF /* Label.h */,
+				5D64F533155F6B3900F47DBF /* Label.m */,
+				5D64F534155F6B3900F47DBF /* Release.h */,
+				5D64F535155F6B3900F47DBF /* Release.m */,
+				5D64F536155F6B3900F47DBF /* ReleaseGroup.h */,
+				5D64F537155F6B3900F47DBF /* ReleaseGroup.m */,
+				5D64F538155F6B3900F47DBF /* Search.h */,
+				5D64F539155F6B3900F47DBF /* Search.m */,
+				5D64F53A155F6B3900F47DBF /* Track.h */,
+				5D64F53B155F6B3900F47DBF /* Track.m */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +196,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D64F53C155F6B3900F47DBF /* AccountInformation.h in Headers */,
+				5D64F53E155F6B3900F47DBF /* Artist.h in Headers */,
+				5D64F540155F6B3900F47DBF /* Label.h in Headers */,
+				5D64F542155F6B3900F47DBF /* Release.h in Headers */,
+				5D64F544155F6B3900F47DBF /* ReleaseGroup.h in Headers */,
+				5D64F546155F6B3900F47DBF /* Search.h in Headers */,
+				5D64F548155F6B3900F47DBF /* Track.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +328,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */,
+				5D64F53D155F6B3900F47DBF /* AccountInformation.m in Sources */,
+				5D64F53F155F6B3900F47DBF /* Artist.m in Sources */,
+				5D64F541155F6B3900F47DBF /* Label.m in Sources */,
+				5D64F543155F6B3900F47DBF /* Release.m in Sources */,
+				5D64F545155F6B3900F47DBF /* ReleaseGroup.m in Sources */,
+				5D64F547155F6B3900F47DBF /* Search.m in Sources */,
+				5D64F549155F6B3900F47DBF /* Track.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
