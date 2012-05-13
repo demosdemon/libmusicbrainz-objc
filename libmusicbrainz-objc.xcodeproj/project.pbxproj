@@ -44,6 +44,7 @@
 		5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objcTests.m; sourceTree = "<group>"; };
 		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
 		5D61B8A1155F5D840003006A /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
+				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D61B8A1155F5D840003006A /* docs */,
 				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
@@ -103,6 +105,7 @@
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXGroup;
 			children = (
+				5D64F52C155F6A5A00F47DBF /* Entities */,
 				5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */,
 				5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */,
 				5D61B7D1155F3F9B0003006A /* Supporting Files */,
@@ -135,6 +138,13 @@
 				5D61B7E7155F3F9B0003006A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D64F52C155F6A5A00F47DBF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$DOXYGEN_PATH doxygen.config\n\nmake -C docs/html\n\nexit 0";
+			shellScript = "$DOXYGEN_PATH doxygen.config\ngit add docs\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -423,6 +433,7 @@
 				5D61B7F1155F3F9B0003006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D61B7F2155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-objcTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +442,7 @@
 				5D61B7F4155F3F9B0003006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
