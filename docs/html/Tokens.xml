@@ -74,13 +74,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>md_README</Name>
-      <APILanguage>markdown</APILanguage>
-    </TokenIdentifier>
-    <Path>md__r_e_a_d_m_e.html</Path>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>AccountInformation</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
