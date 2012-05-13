@@ -222,7 +222,6 @@
 				5D61B7C7155F3F9A0003006A /* Sources */,
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
-				5D61B89D155F54C30003006A /* ShellScript */,
 				5D61B89E155F561B0003006A /* Resources */,
 			);
 			buildRules = (
@@ -312,19 +311,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		5D61B89D155F54C30003006A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "$DOXYGEN_PATH doxygen.config\ngit add docs\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -419,12 +405,9 @@
 		5D61B7F0155F3F9B0003006A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DOT_PATH = /opt/local/bin;
-				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				DSTROOT = /tmp/libmusicbrainz_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
-				HAVE_DOT = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -434,12 +417,9 @@
 		5D61B7F1155F3F9B0003006A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DOT_PATH = /opt/local/bin;
-				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				DSTROOT = /tmp/libmusicbrainz_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
-				HAVE_DOT = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
