@@ -259,7 +259,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$DOXYGEN_PATH doxygen.config\n\nmake -C docs/html\n\ngit add docs\n\nexit 0";
+			shellScript = "$DOXYGEN_PATH doxygen.config\n\nmake -C docs/html\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
