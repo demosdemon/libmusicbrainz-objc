@@ -73,6 +73,7 @@
 		5D64F539155F6B3900F47DBF /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
 		5D64F53A155F6B3900F47DBF /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		5D64F53B155F6B3900F47DBF /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5D64F527155F671E00F47DBF /* LICENSE */,
+				5D64F54A155F6DC500F47DBF /* README.md */,
 				5D61B8A1155F5D840003006A /* docs */,
 				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
