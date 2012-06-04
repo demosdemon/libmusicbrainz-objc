@@ -20,14 +20,6 @@
 @class MBUserRating;
 
 @interface MBArtist : MBEntity <MBRateAndTaggableEntity> {
- @private
-  NSString *_type;
-  NSString *_name;
-  NSString *_sort_name;
-  NSString *_gender;
-  NSString *_country;
-  NSString *_disambiguation;
-
 }
 
 // All NSStrings* must be copy, nonatomic

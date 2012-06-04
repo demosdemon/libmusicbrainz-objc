@@ -1,7 +1,7 @@
 /// 
-/// @file MBEntity.m
+/// @file MBAlias.m
 /// @author Joachim LeBlanc
-/// @date May 13 2012
+/// @date May 24 2012
 /// @copyright 
 ///   2012 Joachim LeBlanc <demosdemon@gmail.com> \n
 ///   This program is made available under the terms of the MIT License.
@@ -10,6 +10,6 @@
 
 #import "MBEntity.h"
 
-@implementation MBEntity
+@interface MBAlias : MBEntity
 
 @end

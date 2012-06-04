@@ -7,8 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D37CE88156EEADD0073FA11 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D37CE86156EEADC0073FA11 /* MBAlias.h */; };
-		5D37CE89156EEADD0073FA11 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37CE87156EEADC0073FA11 /* MBAlias.m */; };
+		5D0D24B8157D7A3E00C1C311 /* AccountInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24AC157D7A3E00C1C311 /* AccountInformation.h */; };
+		5D0D24B9157D7A3E00C1C311 /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24AD157D7A3E00C1C311 /* Label.h */; };
+		5D0D24BA157D7A3E00C1C311 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24AE157D7A3E00C1C311 /* MBAlias.h */; };
+		5D0D24BB157D7A3E00C1C311 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24AF157D7A3E00C1C311 /* MBArtist.h */; };
+		5D0D24BC157D7A3E00C1C311 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B0157D7A3E00C1C311 /* MBEntity.h */; };
+		5D0D24BD157D7A3E00C1C311 /* MBLifespan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */; };
+		5D0D24BE157D7A3E00C1C311 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */; };
+		5D0D24BF157D7A3E00C1C311 /* Release.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B3157D7A3E00C1C311 /* Release.h */; };
+		5D0D24C0157D7A3E00C1C311 /* ReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */; };
+		5D0D24C1157D7A3E00C1C311 /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B5157D7A3E00C1C311 /* Search.h */; };
+		5D0D24C2157D7A3E00C1C311 /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B6157D7A3E00C1C311 /* Track.h */; };
+		5D0D24C3157D7A3E00C1C311 /* XMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B7157D7A3E00C1C311 /* XMLParser.h */; };
+		5D0D24CE157D7A5700C1C311 /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C4157D7A5700C1C311 /* AccountInformation.m */; };
+		5D0D24CF157D7A5700C1C311 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C5157D7A5700C1C311 /* Label.m */; };
+		5D0D24D0157D7A5700C1C311 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C6157D7A5700C1C311 /* MBAlias.m */; };
+		5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C7157D7A5700C1C311 /* MBArtist.m */; };
+		5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C8157D7A5700C1C311 /* MBEntity.m */; };
+		5D0D24D3157D7A5700C1C311 /* MBLifespan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C9157D7A5700C1C311 /* MBLifespan.m */; };
+		5D0D24D4157D7A5700C1C311 /* Release.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CA157D7A5700C1C311 /* Release.m */; };
+		5D0D24D5157D7A5700C1C311 /* ReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */; };
+		5D0D24D6157D7A5700C1C311 /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CC157D7A5700C1C311 /* Search.m */; };
+		5D0D24D7157D7A5700C1C311 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CD157D7A5700C1C311 /* Track.m */; };
 		5D37CE8B156EED760073FA11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37CE8A156EED760073FA11 /* libxml2.dylib */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */; };
@@ -18,25 +38,6 @@
 		5D61B7E3155F3F9B0003006A /* liblibmusicbrainz-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */; };
 		5D61B7E9155F3F9B0003006A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B7E7155F3F9B0003006A /* InfoPlist.strings */; };
 		5D61B7EC155F3F9B0003006A /* libmusicbrainz_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */; };
-		5D64F53C155F6B3900F47DBF /* AccountInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F52E155F6B3900F47DBF /* AccountInformation.h */; };
-		5D64F53D155F6B3900F47DBF /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F52F155F6B3900F47DBF /* AccountInformation.m */; };
-		5D64F53E155F6B3900F47DBF /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F530155F6B3900F47DBF /* MBArtist.h */; };
-		5D64F53F155F6B3900F47DBF /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F531155F6B3900F47DBF /* MBArtist.m */; };
-		5D64F540155F6B3900F47DBF /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F532155F6B3900F47DBF /* Label.h */; };
-		5D64F541155F6B3900F47DBF /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F533155F6B3900F47DBF /* Label.m */; };
-		5D64F542155F6B3900F47DBF /* Release.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F534155F6B3900F47DBF /* Release.h */; };
-		5D64F543155F6B3900F47DBF /* Release.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F535155F6B3900F47DBF /* Release.m */; };
-		5D64F544155F6B3900F47DBF /* ReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F536155F6B3900F47DBF /* ReleaseGroup.h */; };
-		5D64F545155F6B3900F47DBF /* ReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F537155F6B3900F47DBF /* ReleaseGroup.m */; };
-		5D64F546155F6B3900F47DBF /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F538155F6B3900F47DBF /* Search.h */; };
-		5D64F547155F6B3900F47DBF /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F539155F6B3900F47DBF /* Search.m */; };
-		5D64F548155F6B3900F47DBF /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F53A155F6B3900F47DBF /* Track.h */; };
-		5D64F549155F6B3900F47DBF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F53B155F6B3900F47DBF /* Track.m */; };
-		5D64F54C15603CCA00F47DBF /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F54B15603CCA00F47DBF /* RateAndTaggableEntity.h */; };
-		5D64F55215606E3500F47DBF /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F55015606E3100F47DBF /* MBEntity.h */; };
-		5D64F55315606E3500F47DBF /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F55115606E3300F47DBF /* MBEntity.m */; };
-		5D64F5561560706D00F47DBF /* MBLifespan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D64F5541560706C00F47DBF /* MBLifespan.h */; };
-		5D64F5571560706D00F47DBF /* MBLifespan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64F5551560706C00F47DBF /* MBLifespan.m */; };
 		5DB8166A156EF6F100F79069 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB8165C156EF6F100F79069 /* DDXMLElementAdditions.h */; };
 		5DB8166B156EF6F100F79069 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8165D156EF6F100F79069 /* DDXMLElementAdditions.m */; };
 		5DB8166C156EF6F100F79069 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB8165F156EF6F100F79069 /* NSString+DDXML.h */; };
@@ -49,7 +50,6 @@
 		5DB81673156EF6F100F79069 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB81666156EF6F100F79069 /* DDXMLNode.h */; };
 		5DB81674156EF6F100F79069 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB81667156EF6F100F79069 /* DDXMLNode.m */; };
 		5DB81675156EF6F100F79069 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB81669156EF6F100F79069 /* DDXMLPrivate.h */; };
-		5DB81677156EF79000F79069 /* XMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB81676156EF79000F79069 /* XMLParser.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D37CE86156EEADC0073FA11 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
-		5D37CE87156EEADC0073FA11 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlias.m; sourceTree = "<group>"; };
+		5D0D24AC157D7A3E00C1C311 /* AccountInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInformation.h; path = includes/AccountInformation.h; sourceTree = "<group>"; };
+		5D0D24AD157D7A3E00C1C311 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Label.h; path = includes/Label.h; sourceTree = "<group>"; };
+		5D0D24AE157D7A3E00C1C311 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBAlias.h; path = includes/MBAlias.h; sourceTree = "<group>"; };
+		5D0D24AF157D7A3E00C1C311 /* MBArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBArtist.h; path = includes/MBArtist.h; sourceTree = "<group>"; };
+		5D0D24B0157D7A3E00C1C311 /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBEntity.h; path = includes/MBEntity.h; sourceTree = "<group>"; };
+		5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLifespan.h; path = includes/MBLifespan.h; sourceTree = "<group>"; };
+		5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RateAndTaggableEntity.h; path = includes/RateAndTaggableEntity.h; sourceTree = "<group>"; };
+		5D0D24B3157D7A3E00C1C311 /* Release.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Release.h; path = includes/Release.h; sourceTree = "<group>"; };
+		5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReleaseGroup.h; path = includes/ReleaseGroup.h; sourceTree = "<group>"; };
+		5D0D24B5157D7A3E00C1C311 /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Search.h; path = includes/Search.h; sourceTree = "<group>"; };
+		5D0D24B6157D7A3E00C1C311 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Track.h; path = includes/Track.h; sourceTree = "<group>"; };
+		5D0D24B7157D7A3E00C1C311 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = includes/XMLParser.h; sourceTree = "<group>"; };
+		5D0D24C4157D7A5700C1C311 /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInformation.m; path = src/AccountInformation.m; sourceTree = "<group>"; };
+		5D0D24C5157D7A5700C1C311 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Label.m; path = src/Label.m; sourceTree = "<group>"; };
+		5D0D24C6157D7A5700C1C311 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBAlias.m; path = src/MBAlias.m; sourceTree = "<group>"; };
+		5D0D24C7157D7A5700C1C311 /* MBArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBArtist.m; path = src/MBArtist.m; sourceTree = "<group>"; };
+		5D0D24C8157D7A5700C1C311 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntity.m; path = src/MBEntity.m; sourceTree = "<group>"; };
+		5D0D24C9157D7A5700C1C311 /* MBLifespan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLifespan.m; path = src/MBLifespan.m; sourceTree = "<group>"; };
+		5D0D24CA157D7A5700C1C311 /* Release.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Release.m; path = src/Release.m; sourceTree = "<group>"; };
+		5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReleaseGroup.m; path = src/ReleaseGroup.m; sourceTree = "<group>"; };
+		5D0D24CC157D7A5700C1C311 /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Search.m; path = src/Search.m; sourceTree = "<group>"; };
+		5D0D24CD157D7A5700C1C311 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Track.m; path = src/Track.m; sourceTree = "<group>"; };
 		5D37CE8A156EED760073FA11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,26 +101,7 @@
 		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
 		5D61B8A1155F5D840003006A /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		5D64F52E155F6B3900F47DBF /* AccountInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInformation.h; sourceTree = "<group>"; };
-		5D64F52F155F6B3900F47DBF /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInformation.m; sourceTree = "<group>"; };
-		5D64F530155F6B3900F47DBF /* MBArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBArtist.h; sourceTree = "<group>"; };
-		5D64F531155F6B3900F47DBF /* MBArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtist.m; sourceTree = "<group>"; };
-		5D64F532155F6B3900F47DBF /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
-		5D64F533155F6B3900F47DBF /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
-		5D64F534155F6B3900F47DBF /* Release.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Release.h; sourceTree = "<group>"; };
-		5D64F535155F6B3900F47DBF /* Release.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Release.m; sourceTree = "<group>"; };
-		5D64F536155F6B3900F47DBF /* ReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseGroup.h; sourceTree = "<group>"; };
-		5D64F537155F6B3900F47DBF /* ReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseGroup.m; sourceTree = "<group>"; };
-		5D64F538155F6B3900F47DBF /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
-		5D64F539155F6B3900F47DBF /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
-		5D64F53A155F6B3900F47DBF /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
-		5D64F53B155F6B3900F47DBF /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5D64F54B15603CCA00F47DBF /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateAndTaggableEntity.h; sourceTree = "<group>"; };
-		5D64F55015606E3100F47DBF /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEntity.h; sourceTree = "<group>"; };
-		5D64F55115606E3300F47DBF /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntity.m; sourceTree = "<group>"; };
-		5D64F5541560706C00F47DBF /* MBLifespan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLifespan.h; sourceTree = "<group>"; };
-		5D64F5551560706C00F47DBF /* MBLifespan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLifespan.m; sourceTree = "<group>"; };
 		5DB8165C156EF6F100F79069 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		5DB8165D156EF6F100F79069 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		5DB8165F156EF6F100F79069 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		5DB81666156EF6F100F79069 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		5DB81667156EF6F100F79069 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DB81669156EF6F100F79069 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		5DB81676156EF79000F79069 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D0D24AA157D7A1E00C1C311 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				5D0D24AC157D7A3E00C1C311 /* AccountInformation.h */,
+				5D0D24AD157D7A3E00C1C311 /* Label.h */,
+				5D0D24AE157D7A3E00C1C311 /* MBAlias.h */,
+				5D0D24AF157D7A3E00C1C311 /* MBArtist.h */,
+				5D0D24B0157D7A3E00C1C311 /* MBEntity.h */,
+				5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */,
+				5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */,
+				5D0D24B3157D7A3E00C1C311 /* Release.h */,
+				5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */,
+				5D0D24B5157D7A3E00C1C311 /* Search.h */,
+				5D0D24B6157D7A3E00C1C311 /* Track.h */,
+				5D0D24B7157D7A3E00C1C311 /* XMLParser.h */,
+			);
+			name = includes;
+			sourceTree = "<group>";
+		};
+		5D0D24AB157D7A2600C1C311 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5D0D24C4157D7A5700C1C311 /* AccountInformation.m */,
+				5D0D24C5157D7A5700C1C311 /* Label.m */,
+				5D0D24C6157D7A5700C1C311 /* MBAlias.m */,
+				5D0D24C7157D7A5700C1C311 /* MBArtist.m */,
+				5D0D24C8157D7A5700C1C311 /* MBEntity.m */,
+				5D0D24C9157D7A5700C1C311 /* MBLifespan.m */,
+				5D0D24CA157D7A5700C1C311 /* Release.m */,
+				5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */,
+				5D0D24CC157D7A5700C1C311 /* Search.m */,
+				5D0D24CD157D7A5700C1C311 /* Track.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +214,8 @@
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5D64F52D155F6B3900F47DBF /* Entities */,
+				5D0D24AB157D7A2600C1C311 /* src */,
+				5D0D24AA157D7A1E00C1C311 /* includes */,
 				5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */,
 				5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */,
 				5D61B7D1155F3F9B0003006A /* Supporting Files */,
@@ -211,35 +248,6 @@
 				5D61B7E7155F3F9B0003006A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5D64F52D155F6B3900F47DBF /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				5D64F54B15603CCA00F47DBF /* RateAndTaggableEntity.h */,
-				5D64F52E155F6B3900F47DBF /* AccountInformation.h */,
-				5D64F52F155F6B3900F47DBF /* AccountInformation.m */,
-				5D64F530155F6B3900F47DBF /* MBArtist.h */,
-				5D64F531155F6B3900F47DBF /* MBArtist.m */,
-				5D64F532155F6B3900F47DBF /* Label.h */,
-				5D64F533155F6B3900F47DBF /* Label.m */,
-				5D64F534155F6B3900F47DBF /* Release.h */,
-				5D64F535155F6B3900F47DBF /* Release.m */,
-				5D64F536155F6B3900F47DBF /* ReleaseGroup.h */,
-				5D64F537155F6B3900F47DBF /* ReleaseGroup.m */,
-				5D64F538155F6B3900F47DBF /* Search.h */,
-				5D64F539155F6B3900F47DBF /* Search.m */,
-				5D64F53A155F6B3900F47DBF /* Track.h */,
-				5D64F53B155F6B3900F47DBF /* Track.m */,
-				5D64F55015606E3100F47DBF /* MBEntity.h */,
-				5D64F55115606E3300F47DBF /* MBEntity.m */,
-				5D64F5541560706C00F47DBF /* MBLifespan.h */,
-				5D64F5551560706C00F47DBF /* MBLifespan.m */,
-				5D37CE86156EEADC0073FA11 /* MBAlias.h */,
-				5D37CE87156EEADC0073FA11 /* MBAlias.m */,
-				5DB81676156EF79000F79069 /* XMLParser.h */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		5DB8165A156EF6F100F79069 /* KissXML */ = {
@@ -293,17 +301,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D64F53C155F6B3900F47DBF /* AccountInformation.h in Headers */,
-				5D64F53E155F6B3900F47DBF /* MBArtist.h in Headers */,
-				5D64F540155F6B3900F47DBF /* Label.h in Headers */,
-				5D64F542155F6B3900F47DBF /* Release.h in Headers */,
-				5D64F544155F6B3900F47DBF /* ReleaseGroup.h in Headers */,
-				5D64F546155F6B3900F47DBF /* Search.h in Headers */,
-				5D64F548155F6B3900F47DBF /* Track.h in Headers */,
-				5D64F54C15603CCA00F47DBF /* RateAndTaggableEntity.h in Headers */,
-				5D64F55215606E3500F47DBF /* MBEntity.h in Headers */,
-				5D64F5561560706D00F47DBF /* MBLifespan.h in Headers */,
-				5D37CE88156EEADD0073FA11 /* MBAlias.h in Headers */,
 				5DB8166A156EF6F100F79069 /* DDXMLElementAdditions.h in Headers */,
 				5DB8166C156EF6F100F79069 /* NSString+DDXML.h in Headers */,
 				5DB8166E156EF6F100F79069 /* DDXML.h in Headers */,
@@ -311,7 +308,18 @@
 				5DB81671156EF6F100F79069 /* DDXMLElement.h in Headers */,
 				5DB81673156EF6F100F79069 /* DDXMLNode.h in Headers */,
 				5DB81675156EF6F100F79069 /* DDXMLPrivate.h in Headers */,
-				5DB81677156EF79000F79069 /* XMLParser.h in Headers */,
+				5D0D24B8157D7A3E00C1C311 /* AccountInformation.h in Headers */,
+				5D0D24B9157D7A3E00C1C311 /* Label.h in Headers */,
+				5D0D24BA157D7A3E00C1C311 /* MBAlias.h in Headers */,
+				5D0D24BB157D7A3E00C1C311 /* MBArtist.h in Headers */,
+				5D0D24BC157D7A3E00C1C311 /* MBEntity.h in Headers */,
+				5D0D24BD157D7A3E00C1C311 /* MBLifespan.h in Headers */,
+				5D0D24BE157D7A3E00C1C311 /* RateAndTaggableEntity.h in Headers */,
+				5D0D24BF157D7A3E00C1C311 /* Release.h in Headers */,
+				5D0D24C0157D7A3E00C1C311 /* ReleaseGroup.h in Headers */,
+				5D0D24C1157D7A3E00C1C311 /* Search.h in Headers */,
+				5D0D24C2157D7A3E00C1C311 /* Track.h in Headers */,
+				5D0D24C3157D7A3E00C1C311 /* XMLParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,21 +430,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */,
-				5D64F53D155F6B3900F47DBF /* AccountInformation.m in Sources */,
-				5D64F53F155F6B3900F47DBF /* MBArtist.m in Sources */,
-				5D64F541155F6B3900F47DBF /* Label.m in Sources */,
-				5D64F543155F6B3900F47DBF /* Release.m in Sources */,
-				5D64F545155F6B3900F47DBF /* ReleaseGroup.m in Sources */,
-				5D64F547155F6B3900F47DBF /* Search.m in Sources */,
-				5D64F549155F6B3900F47DBF /* Track.m in Sources */,
-				5D64F55315606E3500F47DBF /* MBEntity.m in Sources */,
-				5D64F5571560706D00F47DBF /* MBLifespan.m in Sources */,
-				5D37CE89156EEADD0073FA11 /* MBAlias.m in Sources */,
 				5DB8166B156EF6F100F79069 /* DDXMLElementAdditions.m in Sources */,
 				5DB8166D156EF6F100F79069 /* NSString+DDXML.m in Sources */,
 				5DB81670156EF6F100F79069 /* DDXMLDocument.m in Sources */,
 				5DB81672156EF6F100F79069 /* DDXMLElement.m in Sources */,
 				5DB81674156EF6F100F79069 /* DDXMLNode.m in Sources */,
+				5D0D24CE157D7A5700C1C311 /* AccountInformation.m in Sources */,
+				5D0D24CF157D7A5700C1C311 /* Label.m in Sources */,
+				5D0D24D0157D7A5700C1C311 /* MBAlias.m in Sources */,
+				5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */,
+				5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */,
+				5D0D24D3157D7A5700C1C311 /* MBLifespan.m in Sources */,
+				5D0D24D4157D7A5700C1C311 /* Release.m in Sources */,
+				5D0D24D5157D7A5700C1C311 /* ReleaseGroup.m in Sources */,
+				5D0D24D6157D7A5700C1C311 /* Search.m in Sources */,
+				5D0D24D7157D7A5700C1C311 /* Track.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
