@@ -8,7 +8,7 @@
 /// 
 /// @brief Base class for all entities
 
-#import "MBEntity.h"
+#import "MB.h"
 #import "MBEntity-protected.h"
 #import "XMLReader.h"
 

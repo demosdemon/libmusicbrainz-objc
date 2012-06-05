@@ -10,7 +10,7 @@
 ///
 /// @brief Artist entity
 
-#import "MBArtist.h"
+#import "MB.h"
 #import "MBEntity-protected.h"
 
 const NSString *             kTypeKey = @"@type";
@@ -66,7 +66,9 @@ const NSString *       kUserRatingKey = @"user-rating";
 }
 
 - (NSArray *) IPIList {
-  return [self list:[_dict objectForKey:kIpiListKey] type:[MBIPI class]];
+  id obj = [_dict objectForKey:kIpiListKey];
+  if ([obj isKindOfClass:[NSArray class]]) return obj;
+  return [NSArray arrayWithObject:obj];
 }
 
 - (MBLifeSpan *) Lifespan {

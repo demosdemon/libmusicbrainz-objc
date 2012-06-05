@@ -14,8 +14,8 @@
 		5D0D24BC157D7A3E00C1C311 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B0157D7A3E00C1C311 /* MBEntity.h */; };
 		5D0D24BD157D7A3E00C1C311 /* MBLifespan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */; };
 		5D0D24BE157D7A3E00C1C311 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */; };
-		5D0D24BF157D7A3E00C1C311 /* Release.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B3157D7A3E00C1C311 /* Release.h */; };
-		5D0D24C0157D7A3E00C1C311 /* ReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */; };
+		5D0D24BF157D7A3E00C1C311 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B3157D7A3E00C1C311 /* MBRelease.h */; };
+		5D0D24C0157D7A3E00C1C311 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B4157D7A3E00C1C311 /* MBReleaseGroup.h */; };
 		5D0D24C1157D7A3E00C1C311 /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B5157D7A3E00C1C311 /* Search.h */; };
 		5D0D24C2157D7A3E00C1C311 /* Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24B6157D7A3E00C1C311 /* Track.h */; };
 		5D0D24CE157D7A5700C1C311 /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C4157D7A5700C1C311 /* AccountInformation.m */; };
@@ -24,8 +24,8 @@
 		5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C7157D7A5700C1C311 /* MBArtist.m */; };
 		5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C8157D7A5700C1C311 /* MBEntity.m */; };
 		5D0D24D3157D7A5700C1C311 /* MBLifespan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C9157D7A5700C1C311 /* MBLifespan.m */; };
-		5D0D24D4157D7A5700C1C311 /* Release.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CA157D7A5700C1C311 /* Release.m */; };
-		5D0D24D5157D7A5700C1C311 /* ReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */; };
+		5D0D24D4157D7A5700C1C311 /* MBRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CA157D7A5700C1C311 /* MBRelease.m */; };
+		5D0D24D5157D7A5700C1C311 /* MBReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */; };
 		5D0D24D6157D7A5700C1C311 /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CC157D7A5700C1C311 /* Search.m */; };
 		5D0D24D7157D7A5700C1C311 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CD157D7A5700C1C311 /* Track.m */; };
 		5D0D2508157D985200C1C311 /* Demo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24E8157D985100C1C311 /* Demo-Info.plist */; };
@@ -49,6 +49,7 @@
 		5D0D251A157D985200C1C311 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D2502157D985100C1C311 /* XMLReader.h */; };
 		5D0D251B157D985200C1C311 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D2503157D985100C1C311 /* XMLReader.m */; };
 		5D0D252E157E652A00C1C311 /* MBEntity-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D252D157E652A00C1C311 /* MBEntity-protected.h */; };
+		5D0D2530157E74AE00C1C311 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D252F157E74AE00C1C311 /* MB.h */; };
 		5D37CE8B156EED760073FA11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37CE8A156EED760073FA11 /* libxml2.dylib */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */; };
@@ -92,8 +93,8 @@
 		5D0D24B0157D7A3E00C1C311 /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBEntity.h; path = includes/MBEntity.h; sourceTree = "<group>"; };
 		5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLifespan.h; path = includes/MBLifespan.h; sourceTree = "<group>"; };
 		5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RateAndTaggableEntity.h; path = includes/RateAndTaggableEntity.h; sourceTree = "<group>"; };
-		5D0D24B3157D7A3E00C1C311 /* Release.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Release.h; path = includes/Release.h; sourceTree = "<group>"; };
-		5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReleaseGroup.h; path = includes/ReleaseGroup.h; sourceTree = "<group>"; };
+		5D0D24B3157D7A3E00C1C311 /* MBRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRelease.h; path = includes/MBRelease.h; sourceTree = "<group>"; };
+		5D0D24B4157D7A3E00C1C311 /* MBReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBReleaseGroup.h; path = includes/MBReleaseGroup.h; sourceTree = "<group>"; };
 		5D0D24B5157D7A3E00C1C311 /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Search.h; path = includes/Search.h; sourceTree = "<group>"; };
 		5D0D24B6157D7A3E00C1C311 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Track.h; path = includes/Track.h; sourceTree = "<group>"; };
 		5D0D24C4157D7A5700C1C311 /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInformation.m; path = src/AccountInformation.m; sourceTree = "<group>"; };
@@ -102,8 +103,8 @@
 		5D0D24C7157D7A5700C1C311 /* MBArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBArtist.m; path = src/MBArtist.m; sourceTree = "<group>"; };
 		5D0D24C8157D7A5700C1C311 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntity.m; path = src/MBEntity.m; sourceTree = "<group>"; };
 		5D0D24C9157D7A5700C1C311 /* MBLifespan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLifespan.m; path = src/MBLifespan.m; sourceTree = "<group>"; };
-		5D0D24CA157D7A5700C1C311 /* Release.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Release.m; path = src/Release.m; sourceTree = "<group>"; };
-		5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReleaseGroup.m; path = src/ReleaseGroup.m; sourceTree = "<group>"; };
+		5D0D24CA157D7A5700C1C311 /* MBRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRelease.m; path = src/MBRelease.m; sourceTree = "<group>"; };
+		5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBReleaseGroup.m; path = src/MBReleaseGroup.m; sourceTree = "<group>"; };
 		5D0D24CC157D7A5700C1C311 /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Search.m; path = src/Search.m; sourceTree = "<group>"; };
 		5D0D24CD157D7A5700C1C311 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Track.m; path = src/Track.m; sourceTree = "<group>"; };
 		5D0D24E8157D985100C1C311 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		5D0D2502157D985100C1C311 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		5D0D2503157D985100C1C311 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D0D252D157E652A00C1C311 /* MBEntity-protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBEntity-protected.h"; path = "includes/MBEntity-protected.h"; sourceTree = "<group>"; };
+		5D0D252F157E74AE00C1C311 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MB.h; path = includes/MB.h; sourceTree = "<group>"; };
 		5D37CE8A156EED760073FA11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,16 +176,17 @@
 		5D0D24AA157D7A1E00C1C311 /* includes */ = {
 			isa = PBXGroup;
 			children = (
+				5D0D252F157E74AE00C1C311 /* MB.h */,
+				5D0D24B0157D7A3E00C1C311 /* MBEntity.h */,
+				5D0D252D157E652A00C1C311 /* MBEntity-protected.h */,
+				5D0D24AF157D7A3E00C1C311 /* MBArtist.h */,
+				5D0D24B3157D7A3E00C1C311 /* MBRelease.h */,
+				5D0D24B4157D7A3E00C1C311 /* MBReleaseGroup.h */,
 				5D0D24AC157D7A3E00C1C311 /* AccountInformation.h */,
 				5D0D24AD157D7A3E00C1C311 /* Label.h */,
 				5D0D24AE157D7A3E00C1C311 /* MBAlias.h */,
-				5D0D24AF157D7A3E00C1C311 /* MBArtist.h */,
-				5D0D24B0157D7A3E00C1C311 /* MBEntity.h */,
-				5D0D252D157E652A00C1C311 /* MBEntity-protected.h */,
 				5D0D24B1157D7A3E00C1C311 /* MBLifespan.h */,
 				5D0D24B2157D7A3E00C1C311 /* RateAndTaggableEntity.h */,
-				5D0D24B3157D7A3E00C1C311 /* Release.h */,
-				5D0D24B4157D7A3E00C1C311 /* ReleaseGroup.h */,
 				5D0D24B5157D7A3E00C1C311 /* Search.h */,
 				5D0D24B6157D7A3E00C1C311 /* Track.h */,
 			);
@@ -193,14 +196,14 @@
 		5D0D24AB157D7A2600C1C311 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				5D0D24C8157D7A5700C1C311 /* MBEntity.m */,
+				5D0D24C7157D7A5700C1C311 /* MBArtist.m */,
+				5D0D24CA157D7A5700C1C311 /* MBRelease.m */,
+				5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */,
 				5D0D24C4157D7A5700C1C311 /* AccountInformation.m */,
 				5D0D24C5157D7A5700C1C311 /* Label.m */,
 				5D0D24C6157D7A5700C1C311 /* MBAlias.m */,
-				5D0D24C7157D7A5700C1C311 /* MBArtist.m */,
-				5D0D24C8157D7A5700C1C311 /* MBEntity.m */,
 				5D0D24C9157D7A5700C1C311 /* MBLifespan.m */,
-				5D0D24CA157D7A5700C1C311 /* Release.m */,
-				5D0D24CB157D7A5700C1C311 /* ReleaseGroup.m */,
 				5D0D24CC157D7A5700C1C311 /* Search.m */,
 				5D0D24CD157D7A5700C1C311 /* Track.m */,
 			);
@@ -356,8 +359,8 @@
 				5D0D24BC157D7A3E00C1C311 /* MBEntity.h in Headers */,
 				5D0D24BD157D7A3E00C1C311 /* MBLifespan.h in Headers */,
 				5D0D24BE157D7A3E00C1C311 /* RateAndTaggableEntity.h in Headers */,
-				5D0D24BF157D7A3E00C1C311 /* Release.h in Headers */,
-				5D0D24C0157D7A3E00C1C311 /* ReleaseGroup.h in Headers */,
+				5D0D24BF157D7A3E00C1C311 /* MBRelease.h in Headers */,
+				5D0D24C0157D7A3E00C1C311 /* MBReleaseGroup.h in Headers */,
 				5D0D24C1157D7A3E00C1C311 /* Search.h in Headers */,
 				5D0D24C2157D7A3E00C1C311 /* Track.h in Headers */,
 				5D0D2509157D985200C1C311 /* Demo-Prefix.pch in Headers */,
@@ -367,6 +370,7 @@
 				5D0D2516157D985200C1C311 /* XMLReaderTests.h in Headers */,
 				5D0D251A157D985200C1C311 /* XMLReader.h in Headers */,
 				5D0D252E157E652A00C1C311 /* MBEntity-protected.h in Headers */,
+				5D0D2530157E74AE00C1C311 /* MB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,8 +519,8 @@
 				5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */,
 				5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */,
 				5D0D24D3157D7A5700C1C311 /* MBLifespan.m in Sources */,
-				5D0D24D4157D7A5700C1C311 /* Release.m in Sources */,
-				5D0D24D5157D7A5700C1C311 /* ReleaseGroup.m in Sources */,
+				5D0D24D4157D7A5700C1C311 /* MBRelease.m in Sources */,
+				5D0D24D5157D7A5700C1C311 /* MBReleaseGroup.m in Sources */,
 				5D0D24D6157D7A5700C1C311 /* Search.m in Sources */,
 				5D0D24D7157D7A5700C1C311 /* Track.m in Sources */,
 				5D0D250B157D985200C1C311 /* DemoAppDelegate.m in Sources */,
