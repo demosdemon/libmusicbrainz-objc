@@ -8,7 +8,7 @@
 ///
 /// @brief Release entity
 
-#import "MBRelease.h"
+#import "MB.h"
 
 const NSString *kIdKey = @"@id";
 const NSString *kTitleKey = @"title";
