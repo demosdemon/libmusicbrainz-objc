@@ -1,15 +1,15 @@
 ///
-/// @file MBAlias.m
+/// @file MBCDStub.m
 /// @date Jun 06 2012
 /// @copyright
 ///   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
 ///   This program is made avaliable under the terms of the MIT License.
 ///
-/// @brief Alias Entity
+/// @brief CDStub Entity
 
 #import "MB.h"
 
-@implementation MBAlias
+@implementation MBCDStub
 
 @end
 

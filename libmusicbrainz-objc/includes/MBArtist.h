@@ -10,11 +10,11 @@
 ///
 /// @brief Artist entity
 
-#import "MBEntity.h"
+#import "RateAndTaggableEntity.h"
 
 @class MBLifeSpan, MBRating, MBUserRating;
 
-@interface MBArtist : MBEntity
+@interface MBArtist : MBRateAndTaggableEntity
 
 // All NSStrings* must be copy, nonatomic
 @property (copy, nonatomic, readonly) NSString *Id;
@@ -33,9 +33,5 @@
 @property (nonatomic, readonly) NSArray *LabelList; ///< NSArray of MBLabel objects
 @property (nonatomic, readonly) NSArray *WorkList; ///< NSarray of MBWork objects
 @property (nonatomic, readonly) NSArray *RelationListList; //< NSArray of NSArray objects, which each contain MBRelation objects
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects
-@property (nonatomic, readonly) NSArray *UserTagList; ///<NSArray of MBUserTag objects
-@property (nonatomic, readonly) MBRating *Rating;
-@property (nonatomic, readonly) MBUserRating *UserRating;
 
 @end

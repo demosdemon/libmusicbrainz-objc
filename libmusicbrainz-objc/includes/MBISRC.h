@@ -1,15 +1,15 @@
 ///
-/// @file MBAlias.m
+/// @file MBISRC.h
 /// @date Jun 06 2012
 /// @copyright
 ///   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
 ///   This program is made avaliable under the terms of the MIT License.
 ///
-/// @brief Alias Entity
+/// @brief ISRC Entity
 
-#import "MB.h"
+#import "MBEntity.h"
 
-@implementation MBAlias
+@interface MBISRC : MBEntity
 
 @end
 

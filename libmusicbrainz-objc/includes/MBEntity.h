@@ -9,6 +9,7 @@
 /// @brief Base class for all entities
 
 #import <Foundation/Foundation.h>
+#import "MBQuery.h"
 
 @interface MBEntity : NSObject {
  @protected

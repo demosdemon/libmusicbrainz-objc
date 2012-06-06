@@ -9,7 +9,9 @@
 /// @brief Entry point to the api, import this file and nothing else.
 
 #import <Foundation/Foundation.h>
+#import "MBQuery.h"
 #import "MBEntity.h"
+#import "MBMetadata.h"
 #import "MBArtist.h"
 #import "MBRelease.h"
 #import "MBReleaseGroup.h"
@@ -22,16 +24,18 @@
 #import "MBArtistCredit.h"
 #import "MBRelation.h"
 #import "MBAlias.h"
-#import "MBISWC.h"
+#import "MBTag.h"
 #import "MBUserTag.h"
 #import "MBRating.h"
+#import "MBUserRating.h"
 #import "MBLabelInfo.h"
 #import "MBMedium.h"
 #import "MBTrack.h"
 #import "MBAnnotation.h"
-#import "MBCDstub.h"
+#import "MBCDStub.h"
 #import "MBFreeDbDisc.h"
 #import "MBNonMbTrack.h"
 #import "MBCollection.h"
-#import "MBIPI.h"
+#import "MBLifeSpan.h"
+#import "RateAndTaggableEntity.h"
 
