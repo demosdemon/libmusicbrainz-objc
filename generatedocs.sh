@@ -12,4 +12,8 @@ echo "load documentation set with path \"/Users/$USER/Library/Developer/Shared/D
 echo "end tell" >> $TEMP_DIR/loadDocSet.scpt
 osascript $TEMP_DIR/loadDocSet.scpt
 
+cd ../libmusicbrainz-objc-docs
+git add -A
+git commit -m 'Update docs to commit ${COMMIT_HASH}'
+cd ../libmusicbrainz-objc
 exit 0
