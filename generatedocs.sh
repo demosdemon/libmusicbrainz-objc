@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
 TEMP_DIR=/tmp
+COMMIT_HASH=`git rev-parse --short --verify HEAD`
 
-/Applications/Doxygen.app/Contents/Resources/doxygen doxygen.config
+sed 's/^\(PROJECT_NUMBER *= \)/\1${COMMIT_HASH}/' doxygen.config | /Applications/Doxygen.app/Contents/Resources/doxygen -
 make --silent -C docs/html install
-rsync -a docs/html/ ../libmusicbrainz-objc-docs/
+rsync -a --exclude ".git/" --delete docs/html/ ../libmusicbrainz-objc-docs/
 
 rm -f $TEMP_DIR/loadDocSet.scpt
 echo "tell application \"Xcode\"" >> $TEMP_DIR/loadDocSet.scpt

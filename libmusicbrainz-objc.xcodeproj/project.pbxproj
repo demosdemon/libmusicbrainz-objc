@@ -96,6 +96,7 @@
 		5D5D03B0158058BD00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; };
 		5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; };
 		5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
+		5D5D03B415805D4900E8A525 /* generatedocs.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D03B315805D4900E8A525 /* generatedocs.sh */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */; };
 		5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DE155F3F9B0003006A /* UIKit.framework */; };
@@ -224,6 +225,7 @@
 		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MB.h; sourceTree = "<group>"; };
 		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
 		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
+		5D5D03B315805D4900E8A525 /* generatedocs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generatedocs.sh; sourceTree = "<group>"; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 			children = (
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
+				5D5D03B315805D4900E8A525 /* generatedocs.sh */,
 				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
@@ -673,6 +676,7 @@
 				5D0D2514157D985200C1C311 /* XMLReaderTests-Info.plist in Resources */,
 				5D0D2518157D985200C1C311 /* LICENCE in Resources */,
 				5D0D2519157D985200C1C311 /* README in Resources */,
+				5D5D03B415805D4900E8A525 /* generatedocs.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
