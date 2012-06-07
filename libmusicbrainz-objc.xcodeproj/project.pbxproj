@@ -254,7 +254,6 @@
 		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MB.h; sourceTree = "<group>"; };
 		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
 		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
-		5D5D03B315805D4900E8A525 /* generatedocs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generatedocs.sh; sourceTree = "<group>"; };
 		5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-objc-cocoa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5D03BB158103DD00E8A525 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		5D5D03BE158103DE00E8A525 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -295,7 +294,6 @@
 		5D61B7E8155F3F9B0003006A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objcTests.h; sourceTree = "<group>"; };
 		5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objcTests.m; sourceTree = "<group>"; };
-		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -535,8 +533,6 @@
 				5D5D03D41581046A00E8A525 /* New Group */,
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
-				5D5D03B315805D4900E8A525 /* generatedocs.sh */,
-				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
 				5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */,
