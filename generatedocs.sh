@@ -3,7 +3,6 @@ TEMP_DIR=/tmp
 
 /Applications/Doxygen.app/Contents/Resources/doxygen doxygen.config
 make --silent -C docs/html install
-make --silent -C docs/latex
 rsync -a docs/html/ ../libmusicbrainz-objc-docs/
 
 rm -f $TEMP_DIR/loadDocSet.scpt

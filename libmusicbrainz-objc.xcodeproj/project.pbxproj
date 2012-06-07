@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D0D24CE157D7A5700C1C311 /* AccountInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C4157D7A5700C1C311 /* AccountInformation.m */; };
-		5D0D24CF157D7A5700C1C311 /* MBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C5157D7A5700C1C311 /* MBLabel.m */; };
-		5D0D24D0157D7A5700C1C311 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C6157D7A5700C1C311 /* MBAlias.m */; };
-		5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C7157D7A5700C1C311 /* MBArtist.m */; };
-		5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C8157D7A5700C1C311 /* MBEntity.m */; };
-		5D0D24D3157D7A5700C1C311 /* MBLifeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24C9157D7A5700C1C311 /* MBLifeSpan.m */; };
-		5D0D24D4157D7A5700C1C311 /* MBRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CA157D7A5700C1C311 /* MBRelease.m */; };
-		5D0D24D5157D7A5700C1C311 /* MBReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */; };
-		5D0D24D6157D7A5700C1C311 /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D24CC157D7A5700C1C311 /* Search.m */; };
 		5D0D2508157D985200C1C311 /* Demo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24E8157D985100C1C311 /* Demo-Info.plist */; };
 		5D0D2509157D985200C1C311 /* Demo-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24E9157D985100C1C311 /* Demo-Prefix.pch */; };
 		5D0D250A157D985200C1C311 /* DemoAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24EA157D985100C1C311 /* DemoAppDelegate.h */; };
@@ -33,63 +24,79 @@
 		5D0D251A157D985200C1C311 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D2502157D985100C1C311 /* XMLReader.h */; };
 		5D0D251B157D985200C1C311 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D2503157D985100C1C311 /* XMLReader.m */; };
 		5D37CE8B156EED760073FA11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37CE8A156EED760073FA11 /* libxml2.dylib */; };
-		5D5D029E157FB11C00E8A525 /* MBRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D029D157FB11C00E8A525 /* MBRecording.m */; };
-		5D5D02A2157FB70500E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02A1157FB70500E8A525 /* MBWork.m */; };
-		5D5D02A6157FB95000E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02A5157FB95000E8A525 /* MBDisc.m */; };
-		5D5D02CD1580091F00E8A525 /* AccountInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02AD1580091900E8A525 /* AccountInformation.h */; };
-		5D5D02CE1580091F00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02AE1580091900E8A525 /* MB.h */; };
-		5D5D02CF1580091F00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02AF1580091900E8A525 /* MBAlias.h */; };
-		5D5D02D01580091F00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B01580091900E8A525 /* MBAnnotation.h */; };
-		5D5D02D11580091F00E8A525 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B11580091A00E8A525 /* MBArtist.h */; };
-		5D5D02D21580091F00E8A525 /* MBArtistCredit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B21580091A00E8A525 /* MBArtistCredit.h */; };
-		5D5D02D31580091F00E8A525 /* MBCDStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B31580091A00E8A525 /* MBCDStub.h */; };
-		5D5D02D41580091F00E8A525 /* MBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B41580091B00E8A525 /* MBCollection.h */; };
-		5D5D02D51580091F00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B51580091B00E8A525 /* MBDisc.h */; };
-		5D5D02D61580091F00E8A525 /* MBEntity-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B61580091B00E8A525 /* MBEntity-protected.h */; };
-		5D5D02D71580091F00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B71580091B00E8A525 /* MBEntity.h */; };
-		5D5D02D81580091F00E8A525 /* MBFreeDbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B81580091B00E8A525 /* MBFreeDbDisc.h */; };
-		5D5D02D91580091F00E8A525 /* MBISRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02B91580091C00E8A525 /* MBISRC.h */; };
-		5D5D02DA1580091F00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BA1580091C00E8A525 /* MBLabel.h */; };
-		5D5D02DB1580091F00E8A525 /* MBLabelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BB1580091C00E8A525 /* MBLabelInfo.h */; };
-		5D5D02DC1580091F00E8A525 /* MBLifeSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BC1580091C00E8A525 /* MBLifeSpan.h */; };
-		5D5D02DD1580091F00E8A525 /* MBMedium.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BD1580091C00E8A525 /* MBMedium.h */; };
-		5D5D02DE1580091F00E8A525 /* MBNonMbTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BE1580091C00E8A525 /* MBNonMbTrack.h */; };
-		5D5D02DF1580091F00E8A525 /* MBPUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02BF1580091C00E8A525 /* MBPUID.h */; };
-		5D5D02E01580091F00E8A525 /* MBRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C01580091D00E8A525 /* MBRating.h */; };
-		5D5D02E11580091F00E8A525 /* MBRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C11580091D00E8A525 /* MBRecording.h */; };
-		5D5D02E21580091F00E8A525 /* MBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C21580091D00E8A525 /* MBRelation.h */; };
-		5D5D02E31580091F00E8A525 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C31580091D00E8A525 /* MBRelease.h */; };
-		5D5D02E41580091F00E8A525 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C41580091D00E8A525 /* MBReleaseGroup.h */; };
-		5D5D02E51580091F00E8A525 /* MBTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C51580091D00E8A525 /* MBTag.h */; };
-		5D5D02E61580091F00E8A525 /* MBTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C61580091E00E8A525 /* MBTrack.h */; };
-		5D5D02E71580091F00E8A525 /* MBUserRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C71580091E00E8A525 /* MBUserRating.h */; };
-		5D5D02E81580091F00E8A525 /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C81580091E00E8A525 /* MBUserTag.h */; };
-		5D5D02E91580091F00E8A525 /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02C91580091E00E8A525 /* MBWork.h */; };
-		5D5D02EA1580091F00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02CA1580091E00E8A525 /* RateAndTaggableEntity.h */; };
-		5D5D02EB1580091F00E8A525 /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D02CB1580091E00E8A525 /* Search.h */; };
-		5D5D02EE15800BC600E8A525 /* MBPUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02ED15800BC600E8A525 /* MBPUID.m */; };
-		5D5D02F015800BCF00E8A525 /* MBISRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02EF15800BCF00E8A525 /* MBISRC.m */; };
-		5D5D02F215800BDF00E8A525 /* MBArtistCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02F115800BDF00E8A525 /* MBArtistCredit.m */; };
-		5D5D02F415800BEE00E8A525 /* MBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02F315800BEE00E8A525 /* MBRelation.m */; };
-		5D5D02F615800BFC00E8A525 /* MBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02F515800BFC00E8A525 /* MBTag.m */; };
-		5D5D02F815800C0800E8A525 /* MBUserTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02F715800C0800E8A525 /* MBUserTag.m */; };
-		5D5D02FA15800C2400E8A525 /* MBRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02F915800C2400E8A525 /* MBRating.m */; };
-		5D5D02FC15800C3500E8A525 /* MBUserRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02FB15800C3500E8A525 /* MBUserRating.m */; };
-		5D5D02FE15800C4200E8A525 /* MBLabelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02FD15800C4200E8A525 /* MBLabelInfo.m */; };
-		5D5D030015800C5200E8A525 /* MBMedium.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D02FF15800C5200E8A525 /* MBMedium.m */; };
-		5D5D030215800C7700E8A525 /* MBMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030115800C7700E8A525 /* MBMetadata.m */; };
-		5D5D030415800C8C00E8A525 /* MBMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D030315800C8C00E8A525 /* MBMetadata.h */; };
-		5D5D030615800CAA00E8A525 /* MBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030515800CAA00E8A525 /* MBTrack.m */; };
-		5D5D030815800CB300E8A525 /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030715800CB300E8A525 /* MBAnnotation.m */; };
-		5D5D030A15800CBB00E8A525 /* MBCDStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030915800CBB00E8A525 /* MBCDStub.m */; };
-		5D5D030C1580138B00E8A525 /* MBFreeDbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030B1580138B00E8A525 /* MBFreeDbDisc.m */; };
-		5D5D030E1580139900E8A525 /* MBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030D1580139900E8A525 /* MBCollection.m */; };
-		5D5D0310158013AE00E8A525 /* MBNonMbTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D030F158013AE00E8A525 /* MBNonMbTrack.m */; };
-		5D5D0312158014B100E8A525 /* RateAndTaggableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0311158014B100E8A525 /* RateAndTaggableEntity.m */; };
-		5D5D03141580163100E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03131580163100E8A525 /* MBQuery.m */; };
-		5D5D03161580163E00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03151580163E00E8A525 /* MBQuery.h */; };
+		5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */; };
+		5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */; };
+		5D5D03291580548400E8A525 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031C1580548400E8A525 /* NSString+DDXML.h */; };
+		5D5D032A1580548400E8A525 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D031D1580548400E8A525 /* NSString+DDXML.m */; };
+		5D5D032B1580548400E8A525 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031E1580548400E8A525 /* DDXML.h */; };
+		5D5D032C1580548400E8A525 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031F1580548400E8A525 /* DDXMLDocument.h */; };
+		5D5D032D1580548400E8A525 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03201580548400E8A525 /* DDXMLDocument.m */; };
+		5D5D032E1580548400E8A525 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03211580548400E8A525 /* DDXMLElement.h */; };
+		5D5D032F1580548400E8A525 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03221580548400E8A525 /* DDXMLElement.m */; };
+		5D5D03301580548400E8A525 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03231580548400E8A525 /* DDXMLNode.h */; };
+		5D5D03311580548400E8A525 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03241580548400E8A525 /* DDXMLNode.m */; };
+		5D5D03321580548400E8A525 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03261580548400E8A525 /* DDXMLPrivate.h */; };
+		5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; };
+		5D5D0378158058BD00E8A525 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
+		5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; };
+		5D5D037A158058BD00E8A525 /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033E158058BD00E8A525 /* MBAnnotation.m */; };
+		5D5D037B158058BD00E8A525 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; };
+		5D5D037C158058BD00E8A525 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0340158058BD00E8A525 /* MBArtist.m */; };
+		5D5D037D158058BD00E8A525 /* MBArtistCredit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0341158058BD00E8A525 /* MBArtistCredit.h */; };
+		5D5D037E158058BD00E8A525 /* MBArtistCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0342158058BD00E8A525 /* MBArtistCredit.m */; };
+		5D5D037F158058BD00E8A525 /* MBCDStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0343158058BD00E8A525 /* MBCDStub.h */; };
+		5D5D0380158058BD00E8A525 /* MBCDStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0344158058BD00E8A525 /* MBCDStub.m */; };
+		5D5D0381158058BD00E8A525 /* MBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0345158058BD00E8A525 /* MBCollection.h */; };
+		5D5D0382158058BD00E8A525 /* MBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0346158058BD00E8A525 /* MBCollection.m */; };
+		5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; };
+		5D5D0384158058BD00E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0348158058BD00E8A525 /* MBDisc.m */; };
+		5D5D0385158058BD00E8A525 /* MBEntity-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0349158058BD00E8A525 /* MBEntity-protected.h */; };
+		5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; };
+		5D5D0387158058BD00E8A525 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034B158058BD00E8A525 /* MBEntity.m */; };
+		5D5D0388158058BD00E8A525 /* MBFreeDbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */; };
+		5D5D0389158058BD00E8A525 /* MBFreeDbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* MBFreeDbDisc.m */; };
+		5D5D038A158058BD00E8A525 /* MBISRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBISRC.h */; };
+		5D5D038B158058BD00E8A525 /* MBISRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034F158058BD00E8A525 /* MBISRC.m */; };
+		5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; };
+		5D5D038D158058BD00E8A525 /* MBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0351158058BD00E8A525 /* MBLabel.m */; };
+		5D5D038E158058BD00E8A525 /* MBLabelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0352158058BD00E8A525 /* MBLabelInfo.h */; };
+		5D5D038F158058BD00E8A525 /* MBLabelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0353158058BD00E8A525 /* MBLabelInfo.m */; };
+		5D5D0390158058BD00E8A525 /* MBLifeSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0354158058BD00E8A525 /* MBLifeSpan.h */; };
+		5D5D0391158058BD00E8A525 /* MBLifeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0355158058BD00E8A525 /* MBLifeSpan.m */; };
+		5D5D0392158058BD00E8A525 /* MBMedium.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0356158058BD00E8A525 /* MBMedium.h */; };
+		5D5D0393158058BD00E8A525 /* MBMedium.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0357158058BD00E8A525 /* MBMedium.m */; };
+		5D5D0394158058BD00E8A525 /* MBMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0358158058BD00E8A525 /* MBMetadata.h */; };
+		5D5D0395158058BD00E8A525 /* MBMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0359158058BD00E8A525 /* MBMetadata.m */; };
+		5D5D0396158058BD00E8A525 /* MBNonMbTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */; };
+		5D5D0397158058BD00E8A525 /* MBNonMbTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035B158058BD00E8A525 /* MBNonMbTrack.m */; };
+		5D5D0398158058BD00E8A525 /* MBPUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035C158058BD00E8A525 /* MBPUID.h */; };
+		5D5D0399158058BD00E8A525 /* MBPUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035D158058BD00E8A525 /* MBPUID.m */; };
+		5D5D039A158058BD00E8A525 /* MBRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035E158058BD00E8A525 /* MBRating.h */; };
+		5D5D039B158058BD00E8A525 /* MBRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035F158058BD00E8A525 /* MBRating.m */; };
+		5D5D039C158058BD00E8A525 /* MBRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0360158058BD00E8A525 /* MBRecording.h */; };
+		5D5D039D158058BD00E8A525 /* MBRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0361158058BD00E8A525 /* MBRecording.m */; };
+		5D5D039E158058BD00E8A525 /* MBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0362158058BD00E8A525 /* MBRelation.h */; };
+		5D5D039F158058BD00E8A525 /* MBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0363158058BD00E8A525 /* MBRelation.m */; };
+		5D5D03A0158058BD00E8A525 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0364158058BD00E8A525 /* MBRelease.h */; };
+		5D5D03A1158058BD00E8A525 /* MBRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0365158058BD00E8A525 /* MBRelease.m */; };
+		5D5D03A2158058BD00E8A525 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */; };
+		5D5D03A3158058BD00E8A525 /* MBReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */; };
+		5D5D03A4158058BD00E8A525 /* MBTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0368158058BD00E8A525 /* MBTag.h */; };
+		5D5D03A5158058BD00E8A525 /* MBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0369158058BD00E8A525 /* MBTag.m */; };
+		5D5D03A6158058BD00E8A525 /* MBTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036A158058BD00E8A525 /* MBTrack.h */; };
+		5D5D03A7158058BD00E8A525 /* MBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036B158058BD00E8A525 /* MBTrack.m */; };
+		5D5D03A8158058BD00E8A525 /* MBUserRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036C158058BD00E8A525 /* MBUserRating.h */; };
+		5D5D03A9158058BD00E8A525 /* MBUserRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036D158058BD00E8A525 /* MBUserRating.m */; };
+		5D5D03AA158058BD00E8A525 /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036E158058BD00E8A525 /* MBUserTag.h */; };
+		5D5D03AB158058BD00E8A525 /* MBUserTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036F158058BD00E8A525 /* MBUserTag.m */; };
+		5D5D03AC158058BD00E8A525 /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0370158058BD00E8A525 /* MBWork.h */; };
+		5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; };
+		5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; };
+		5D5D03AF158058BD00E8A525 /* RateAndTaggableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0373158058BD00E8A525 /* RateAndTaggableEntity.m */; };
+		5D5D03B0158058BD00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; };
+		5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; };
+		5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
-		5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */; };
 		5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */; };
 		5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DE155F3F9B0003006A /* UIKit.framework */; };
 		5D61B7E0155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
@@ -123,15 +130,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D0D24C4157D7A5700C1C311 /* AccountInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInformation.m; path = src/AccountInformation.m; sourceTree = "<group>"; };
-		5D0D24C5157D7A5700C1C311 /* MBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLabel.m; path = src/MBLabel.m; sourceTree = "<group>"; };
-		5D0D24C6157D7A5700C1C311 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBAlias.m; path = src/MBAlias.m; sourceTree = "<group>"; };
-		5D0D24C7157D7A5700C1C311 /* MBArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBArtist.m; path = src/MBArtist.m; sourceTree = "<group>"; };
-		5D0D24C8157D7A5700C1C311 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntity.m; path = src/MBEntity.m; sourceTree = "<group>"; };
-		5D0D24C9157D7A5700C1C311 /* MBLifeSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLifeSpan.m; path = src/MBLifeSpan.m; sourceTree = "<group>"; };
-		5D0D24CA157D7A5700C1C311 /* MBRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRelease.m; path = src/MBRelease.m; sourceTree = "<group>"; };
-		5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBReleaseGroup.m; path = src/MBReleaseGroup.m; sourceTree = "<group>"; };
-		5D0D24CC157D7A5700C1C311 /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Search.m; path = src/Search.m; sourceTree = "<group>"; };
 		5D0D24E8157D985100C1C311 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		5D0D24E9157D985100C1C311 /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		5D0D24EA157D985100C1C311 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
@@ -154,66 +152,81 @@
 		5D0D2502157D985100C1C311 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		5D0D2503157D985100C1C311 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D37CE8A156EED760073FA11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		5D5D029D157FB11C00E8A525 /* MBRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRecording.m; path = src/MBRecording.m; sourceTree = "<group>"; };
-		5D5D02A1157FB70500E8A525 /* MBWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBWork.m; path = src/MBWork.m; sourceTree = "<group>"; };
-		5D5D02A5157FB95000E8A525 /* MBDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDisc.m; path = src/MBDisc.m; sourceTree = "<group>"; };
-		5D5D02AD1580091900E8A525 /* AccountInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInformation.h; path = includes/AccountInformation.h; sourceTree = "<group>"; };
-		5D5D02AE1580091900E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MB.h; path = includes/MB.h; sourceTree = "<group>"; };
-		5D5D02AF1580091900E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBAlias.h; path = includes/MBAlias.h; sourceTree = "<group>"; };
-		5D5D02B01580091900E8A525 /* MBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBAnnotation.h; path = includes/MBAnnotation.h; sourceTree = "<group>"; };
-		5D5D02B11580091A00E8A525 /* MBArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBArtist.h; path = includes/MBArtist.h; sourceTree = "<group>"; };
-		5D5D02B21580091A00E8A525 /* MBArtistCredit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBArtistCredit.h; path = includes/MBArtistCredit.h; sourceTree = "<group>"; };
-		5D5D02B31580091A00E8A525 /* MBCDStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBCDStub.h; path = includes/MBCDStub.h; sourceTree = "<group>"; };
-		5D5D02B41580091B00E8A525 /* MBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBCollection.h; path = includes/MBCollection.h; sourceTree = "<group>"; };
-		5D5D02B51580091B00E8A525 /* MBDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDisc.h; path = includes/MBDisc.h; sourceTree = "<group>"; };
-		5D5D02B61580091B00E8A525 /* MBEntity-protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBEntity-protected.h"; path = "includes/MBEntity-protected.h"; sourceTree = "<group>"; };
-		5D5D02B71580091B00E8A525 /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBEntity.h; path = includes/MBEntity.h; sourceTree = "<group>"; };
-		5D5D02B81580091B00E8A525 /* MBFreeDbDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFreeDbDisc.h; path = includes/MBFreeDbDisc.h; sourceTree = "<group>"; };
-		5D5D02B91580091C00E8A525 /* MBISRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBISRC.h; path = includes/MBISRC.h; sourceTree = "<group>"; };
-		5D5D02BA1580091C00E8A525 /* MBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLabel.h; path = includes/MBLabel.h; sourceTree = "<group>"; };
-		5D5D02BB1580091C00E8A525 /* MBLabelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLabelInfo.h; path = includes/MBLabelInfo.h; sourceTree = "<group>"; };
-		5D5D02BC1580091C00E8A525 /* MBLifeSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLifeSpan.h; path = includes/MBLifeSpan.h; sourceTree = "<group>"; };
-		5D5D02BD1580091C00E8A525 /* MBMedium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBMedium.h; path = includes/MBMedium.h; sourceTree = "<group>"; };
-		5D5D02BE1580091C00E8A525 /* MBNonMbTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBNonMbTrack.h; path = includes/MBNonMbTrack.h; sourceTree = "<group>"; };
-		5D5D02BF1580091C00E8A525 /* MBPUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBPUID.h; path = includes/MBPUID.h; sourceTree = "<group>"; };
-		5D5D02C01580091D00E8A525 /* MBRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRating.h; path = includes/MBRating.h; sourceTree = "<group>"; };
-		5D5D02C11580091D00E8A525 /* MBRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRecording.h; path = includes/MBRecording.h; sourceTree = "<group>"; };
-		5D5D02C21580091D00E8A525 /* MBRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRelation.h; path = includes/MBRelation.h; sourceTree = "<group>"; };
-		5D5D02C31580091D00E8A525 /* MBRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRelease.h; path = includes/MBRelease.h; sourceTree = "<group>"; };
-		5D5D02C41580091D00E8A525 /* MBReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBReleaseGroup.h; path = includes/MBReleaseGroup.h; sourceTree = "<group>"; };
-		5D5D02C51580091D00E8A525 /* MBTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTag.h; path = includes/MBTag.h; sourceTree = "<group>"; };
-		5D5D02C61580091E00E8A525 /* MBTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTrack.h; path = includes/MBTrack.h; sourceTree = "<group>"; };
-		5D5D02C71580091E00E8A525 /* MBUserRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBUserRating.h; path = includes/MBUserRating.h; sourceTree = "<group>"; };
-		5D5D02C81580091E00E8A525 /* MBUserTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBUserTag.h; path = includes/MBUserTag.h; sourceTree = "<group>"; };
-		5D5D02C91580091E00E8A525 /* MBWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBWork.h; path = includes/MBWork.h; sourceTree = "<group>"; };
-		5D5D02CA1580091E00E8A525 /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RateAndTaggableEntity.h; path = includes/RateAndTaggableEntity.h; sourceTree = "<group>"; };
-		5D5D02CB1580091E00E8A525 /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Search.h; path = includes/Search.h; sourceTree = "<group>"; };
-		5D5D02ED15800BC600E8A525 /* MBPUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBPUID.m; path = src/MBPUID.m; sourceTree = "<group>"; };
-		5D5D02EF15800BCF00E8A525 /* MBISRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBISRC.m; path = src/MBISRC.m; sourceTree = "<group>"; };
-		5D5D02F115800BDF00E8A525 /* MBArtistCredit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBArtistCredit.m; path = src/MBArtistCredit.m; sourceTree = "<group>"; };
-		5D5D02F315800BEE00E8A525 /* MBRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRelation.m; path = src/MBRelation.m; sourceTree = "<group>"; };
-		5D5D02F515800BFC00E8A525 /* MBTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTag.m; path = src/MBTag.m; sourceTree = "<group>"; };
-		5D5D02F715800C0800E8A525 /* MBUserTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBUserTag.m; path = src/MBUserTag.m; sourceTree = "<group>"; };
-		5D5D02F915800C2400E8A525 /* MBRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRating.m; path = src/MBRating.m; sourceTree = "<group>"; };
-		5D5D02FB15800C3500E8A525 /* MBUserRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBUserRating.m; path = src/MBUserRating.m; sourceTree = "<group>"; };
-		5D5D02FD15800C4200E8A525 /* MBLabelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLabelInfo.m; path = src/MBLabelInfo.m; sourceTree = "<group>"; };
-		5D5D02FF15800C5200E8A525 /* MBMedium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBMedium.m; path = src/MBMedium.m; sourceTree = "<group>"; };
-		5D5D030115800C7700E8A525 /* MBMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBMetadata.m; path = src/MBMetadata.m; sourceTree = "<group>"; };
-		5D5D030315800C8C00E8A525 /* MBMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBMetadata.h; path = includes/MBMetadata.h; sourceTree = "<group>"; };
-		5D5D030515800CAA00E8A525 /* MBTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTrack.m; path = src/MBTrack.m; sourceTree = "<group>"; };
-		5D5D030715800CB300E8A525 /* MBAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBAnnotation.m; path = src/MBAnnotation.m; sourceTree = "<group>"; };
-		5D5D030915800CBB00E8A525 /* MBCDStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBCDStub.m; path = src/MBCDStub.m; sourceTree = "<group>"; };
-		5D5D030B1580138B00E8A525 /* MBFreeDbDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFreeDbDisc.m; path = src/MBFreeDbDisc.m; sourceTree = "<group>"; };
-		5D5D030D1580139900E8A525 /* MBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBCollection.m; path = src/MBCollection.m; sourceTree = "<group>"; };
-		5D5D030F158013AE00E8A525 /* MBNonMbTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBNonMbTrack.m; path = src/MBNonMbTrack.m; sourceTree = "<group>"; };
-		5D5D0311158014B100E8A525 /* RateAndTaggableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RateAndTaggableEntity.m; path = src/RateAndTaggableEntity.m; sourceTree = "<group>"; };
-		5D5D03131580163100E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBQuery.m; path = src/MBQuery.m; sourceTree = "<group>"; };
-		5D5D03151580163E00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBQuery.h; path = includes/MBQuery.h; sourceTree = "<group>"; };
+		5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		5D5D031C1580548400E8A525 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		5D5D031D1580548400E8A525 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		5D5D031E1580548400E8A525 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		5D5D031F1580548400E8A525 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		5D5D03201580548400E8A525 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		5D5D03211580548400E8A525 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		5D5D03221580548400E8A525 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		5D5D03231580548400E8A525 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		5D5D03241580548400E8A525 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		5D5D03261580548400E8A525 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		5D5D033B158058BD00E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
+		5D5D033C158058BD00E8A525 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlias.m; sourceTree = "<group>"; };
+		5D5D033D158058BD00E8A525 /* MBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAnnotation.h; sourceTree = "<group>"; };
+		5D5D033E158058BD00E8A525 /* MBAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAnnotation.m; sourceTree = "<group>"; };
+		5D5D033F158058BD00E8A525 /* MBArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBArtist.h; sourceTree = "<group>"; };
+		5D5D0340158058BD00E8A525 /* MBArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtist.m; sourceTree = "<group>"; };
+		5D5D0341158058BD00E8A525 /* MBArtistCredit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBArtistCredit.h; sourceTree = "<group>"; };
+		5D5D0342158058BD00E8A525 /* MBArtistCredit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtistCredit.m; sourceTree = "<group>"; };
+		5D5D0343158058BD00E8A525 /* MBCDStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCDStub.h; sourceTree = "<group>"; };
+		5D5D0344158058BD00E8A525 /* MBCDStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCDStub.m; sourceTree = "<group>"; };
+		5D5D0345158058BD00E8A525 /* MBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCollection.h; sourceTree = "<group>"; };
+		5D5D0346158058BD00E8A525 /* MBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCollection.m; sourceTree = "<group>"; };
+		5D5D0347158058BD00E8A525 /* MBDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDisc.h; sourceTree = "<group>"; };
+		5D5D0348158058BD00E8A525 /* MBDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDisc.m; sourceTree = "<group>"; };
+		5D5D0349158058BD00E8A525 /* MBEntity-protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBEntity-protected.h"; sourceTree = "<group>"; };
+		5D5D034A158058BD00E8A525 /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEntity.h; sourceTree = "<group>"; };
+		5D5D034B158058BD00E8A525 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntity.m; sourceTree = "<group>"; };
+		5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFreeDbDisc.h; sourceTree = "<group>"; };
+		5D5D034D158058BD00E8A525 /* MBFreeDbDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFreeDbDisc.m; sourceTree = "<group>"; };
+		5D5D034E158058BD00E8A525 /* MBISRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBISRC.h; sourceTree = "<group>"; };
+		5D5D034F158058BD00E8A525 /* MBISRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBISRC.m; sourceTree = "<group>"; };
+		5D5D0350158058BD00E8A525 /* MBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLabel.h; sourceTree = "<group>"; };
+		5D5D0351158058BD00E8A525 /* MBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabel.m; sourceTree = "<group>"; };
+		5D5D0352158058BD00E8A525 /* MBLabelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLabelInfo.h; sourceTree = "<group>"; };
+		5D5D0353158058BD00E8A525 /* MBLabelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabelInfo.m; sourceTree = "<group>"; };
+		5D5D0354158058BD00E8A525 /* MBLifeSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLifeSpan.h; sourceTree = "<group>"; };
+		5D5D0355158058BD00E8A525 /* MBLifeSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLifeSpan.m; sourceTree = "<group>"; };
+		5D5D0356158058BD00E8A525 /* MBMedium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMedium.h; sourceTree = "<group>"; };
+		5D5D0357158058BD00E8A525 /* MBMedium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMedium.m; sourceTree = "<group>"; };
+		5D5D0358158058BD00E8A525 /* MBMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMetadata.h; sourceTree = "<group>"; };
+		5D5D0359158058BD00E8A525 /* MBMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMetadata.m; sourceTree = "<group>"; };
+		5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNonMbTrack.h; sourceTree = "<group>"; };
+		5D5D035B158058BD00E8A525 /* MBNonMbTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNonMbTrack.m; sourceTree = "<group>"; };
+		5D5D035C158058BD00E8A525 /* MBPUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPUID.h; sourceTree = "<group>"; };
+		5D5D035D158058BD00E8A525 /* MBPUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPUID.m; sourceTree = "<group>"; };
+		5D5D035E158058BD00E8A525 /* MBRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRating.h; sourceTree = "<group>"; };
+		5D5D035F158058BD00E8A525 /* MBRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRating.m; sourceTree = "<group>"; };
+		5D5D0360158058BD00E8A525 /* MBRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRecording.h; sourceTree = "<group>"; };
+		5D5D0361158058BD00E8A525 /* MBRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecording.m; sourceTree = "<group>"; };
+		5D5D0362158058BD00E8A525 /* MBRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRelation.h; sourceTree = "<group>"; };
+		5D5D0363158058BD00E8A525 /* MBRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRelation.m; sourceTree = "<group>"; };
+		5D5D0364158058BD00E8A525 /* MBRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRelease.h; sourceTree = "<group>"; };
+		5D5D0365158058BD00E8A525 /* MBRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRelease.m; sourceTree = "<group>"; };
+		5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBReleaseGroup.h; sourceTree = "<group>"; };
+		5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBReleaseGroup.m; sourceTree = "<group>"; };
+		5D5D0368158058BD00E8A525 /* MBTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTag.h; sourceTree = "<group>"; };
+		5D5D0369158058BD00E8A525 /* MBTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTag.m; sourceTree = "<group>"; };
+		5D5D036A158058BD00E8A525 /* MBTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTrack.h; sourceTree = "<group>"; };
+		5D5D036B158058BD00E8A525 /* MBTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTrack.m; sourceTree = "<group>"; };
+		5D5D036C158058BD00E8A525 /* MBUserRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUserRating.h; sourceTree = "<group>"; };
+		5D5D036D158058BD00E8A525 /* MBUserRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserRating.m; sourceTree = "<group>"; };
+		5D5D036E158058BD00E8A525 /* MBUserTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUserTag.h; sourceTree = "<group>"; };
+		5D5D036F158058BD00E8A525 /* MBUserTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserTag.m; sourceTree = "<group>"; };
+		5D5D0370158058BD00E8A525 /* MBWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWork.h; sourceTree = "<group>"; };
+		5D5D0371158058BD00E8A525 /* MBWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWork.m; sourceTree = "<group>"; };
+		5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateAndTaggableEntity.h; sourceTree = "<group>"; };
+		5D5D0373158058BD00E8A525 /* RateAndTaggableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateAndTaggableEntity.m; sourceTree = "<group>"; };
+		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MB.h; sourceTree = "<group>"; };
+		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
+		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
-		5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objc.h; sourceTree = "<group>"; };
-		5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objc.m; sourceTree = "<group>"; };
 		5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libmusicbrainz-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D61B7DE155F3F9B0003006A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -222,7 +235,6 @@
 		5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objcTests.h; sourceTree = "<group>"; };
 		5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objcTests.m; sourceTree = "<group>"; };
 		5D61B89F155F5D640003006A /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
-		5D61B8A1155F5D840003006A /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,84 +263,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D0D24AA157D7A1E00C1C311 /* includes */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D02AD1580091900E8A525 /* AccountInformation.h */,
-				5D5D02AE1580091900E8A525 /* MB.h */,
-				5D5D03151580163E00E8A525 /* MBQuery.h */,
-				5D5D02B71580091B00E8A525 /* MBEntity.h */,
-				5D5D030315800C8C00E8A525 /* MBMetadata.h */,
-				5D5D02B61580091B00E8A525 /* MBEntity-protected.h */,
-				5D5D02B11580091A00E8A525 /* MBArtist.h */,
-				5D5D02C31580091D00E8A525 /* MBRelease.h */,
-				5D5D02C41580091D00E8A525 /* MBReleaseGroup.h */,
-				5D5D02C11580091D00E8A525 /* MBRecording.h */,
-				5D5D02BA1580091C00E8A525 /* MBLabel.h */,
-				5D5D02C91580091E00E8A525 /* MBWork.h */,
-				5D5D02B51580091B00E8A525 /* MBDisc.h */,
-				5D5D02BF1580091C00E8A525 /* MBPUID.h */,
-				5D5D02B91580091C00E8A525 /* MBISRC.h */,
-				5D5D02B21580091A00E8A525 /* MBArtistCredit.h */,
-				5D5D02C21580091D00E8A525 /* MBRelation.h */,
-				5D5D02AF1580091900E8A525 /* MBAlias.h */,
-				5D5D02C51580091D00E8A525 /* MBTag.h */,
-				5D5D02C81580091E00E8A525 /* MBUserTag.h */,
-				5D5D02C01580091D00E8A525 /* MBRating.h */,
-				5D5D02C71580091E00E8A525 /* MBUserRating.h */,
-				5D5D02BB1580091C00E8A525 /* MBLabelInfo.h */,
-				5D5D02BD1580091C00E8A525 /* MBMedium.h */,
-				5D5D02C61580091E00E8A525 /* MBTrack.h */,
-				5D5D02B01580091900E8A525 /* MBAnnotation.h */,
-				5D5D02B31580091A00E8A525 /* MBCDStub.h */,
-				5D5D02B81580091B00E8A525 /* MBFreeDbDisc.h */,
-				5D5D02B41580091B00E8A525 /* MBCollection.h */,
-				5D5D02BE1580091C00E8A525 /* MBNonMbTrack.h */,
-				5D5D02BC1580091C00E8A525 /* MBLifeSpan.h */,
-				5D5D02CA1580091E00E8A525 /* RateAndTaggableEntity.h */,
-				5D5D02CB1580091E00E8A525 /* Search.h */,
-			);
-			name = includes;
-			sourceTree = "<group>";
-		};
-		5D0D24AB157D7A2600C1C311 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D24C4157D7A5700C1C311 /* AccountInformation.m */,
-				5D5D03131580163100E8A525 /* MBQuery.m */,
-				5D0D24C8157D7A5700C1C311 /* MBEntity.m */,
-				5D5D030115800C7700E8A525 /* MBMetadata.m */,
-				5D0D24C7157D7A5700C1C311 /* MBArtist.m */,
-				5D0D24CA157D7A5700C1C311 /* MBRelease.m */,
-				5D0D24CB157D7A5700C1C311 /* MBReleaseGroup.m */,
-				5D5D029D157FB11C00E8A525 /* MBRecording.m */,
-				5D0D24C5157D7A5700C1C311 /* MBLabel.m */,
-				5D5D02A1157FB70500E8A525 /* MBWork.m */,
-				5D5D02A5157FB95000E8A525 /* MBDisc.m */,
-				5D5D02ED15800BC600E8A525 /* MBPUID.m */,
-				5D5D02EF15800BCF00E8A525 /* MBISRC.m */,
-				5D5D02F115800BDF00E8A525 /* MBArtistCredit.m */,
-				5D5D02F315800BEE00E8A525 /* MBRelation.m */,
-				5D0D24C6157D7A5700C1C311 /* MBAlias.m */,
-				5D5D02F515800BFC00E8A525 /* MBTag.m */,
-				5D5D02F715800C0800E8A525 /* MBUserTag.m */,
-				5D5D02F915800C2400E8A525 /* MBRating.m */,
-				5D5D02FB15800C3500E8A525 /* MBUserRating.m */,
-				5D5D02FD15800C4200E8A525 /* MBLabelInfo.m */,
-				5D5D02FF15800C5200E8A525 /* MBMedium.m */,
-				5D5D030515800CAA00E8A525 /* MBTrack.m */,
-				5D5D030715800CB300E8A525 /* MBAnnotation.m */,
-				5D5D030915800CBB00E8A525 /* MBCDStub.m */,
-				5D5D030B1580138B00E8A525 /* MBFreeDbDisc.m */,
-				5D5D030D1580139900E8A525 /* MBCollection.m */,
-				5D5D030F158013AE00E8A525 /* MBNonMbTrack.m */,
-				5D0D24C9157D7A5700C1C311 /* MBLifeSpan.m */,
-				5D0D24CC157D7A5700C1C311 /* Search.m */,
-				5D5D0311158014B100E8A525 /* RateAndTaggableEntity.m */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
 		5D0D24E5157D985100C1C311 /* XML-to-NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,7 +272,8 @@
 				5D0D2502157D985100C1C311 /* XMLReader.h */,
 				5D0D2503157D985100C1C311 /* XMLReader.m */,
 			);
-			path = "XML-to-NSDictionary";
+			name = "XML-to-NSDictionary";
+			path = "libmusicbrainz-objc/XML-to-NSDictionary";
 			sourceTree = "<group>";
 		};
 		5D0D24E6157D985100C1C311 /* Demo */ = {
@@ -390,12 +325,119 @@
 			path = XMLReaderTests;
 			sourceTree = "<group>";
 		};
+		5D5D03171580548400E8A525 /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D03181580548400E8A525 /* Additions */,
+				5D5D031B1580548400E8A525 /* Categories */,
+				5D5D031E1580548400E8A525 /* DDXML.h */,
+				5D5D031F1580548400E8A525 /* DDXMLDocument.h */,
+				5D5D03201580548400E8A525 /* DDXMLDocument.m */,
+				5D5D03211580548400E8A525 /* DDXMLElement.h */,
+				5D5D03221580548400E8A525 /* DDXMLElement.m */,
+				5D5D03231580548400E8A525 /* DDXMLNode.h */,
+				5D5D03241580548400E8A525 /* DDXMLNode.m */,
+				5D5D03251580548400E8A525 /* Private */,
+			);
+			name = KissXML;
+			path = KissXML/KissXML;
+			sourceTree = "<group>";
+		};
+		5D5D03181580548400E8A525 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */,
+				5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		5D5D031B1580548400E8A525 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D031C1580548400E8A525 /* NSString+DDXML.h */,
+				5D5D031D1580548400E8A525 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5D5D03251580548400E8A525 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D03261580548400E8A525 /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		5D5D033A158058BD00E8A525 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D033B158058BD00E8A525 /* MBAlias.h */,
+				5D5D033C158058BD00E8A525 /* MBAlias.m */,
+				5D5D033D158058BD00E8A525 /* MBAnnotation.h */,
+				5D5D033E158058BD00E8A525 /* MBAnnotation.m */,
+				5D5D033F158058BD00E8A525 /* MBArtist.h */,
+				5D5D0340158058BD00E8A525 /* MBArtist.m */,
+				5D5D0341158058BD00E8A525 /* MBArtistCredit.h */,
+				5D5D0342158058BD00E8A525 /* MBArtistCredit.m */,
+				5D5D0343158058BD00E8A525 /* MBCDStub.h */,
+				5D5D0344158058BD00E8A525 /* MBCDStub.m */,
+				5D5D0345158058BD00E8A525 /* MBCollection.h */,
+				5D5D0346158058BD00E8A525 /* MBCollection.m */,
+				5D5D0347158058BD00E8A525 /* MBDisc.h */,
+				5D5D0348158058BD00E8A525 /* MBDisc.m */,
+				5D5D0349158058BD00E8A525 /* MBEntity-protected.h */,
+				5D5D034A158058BD00E8A525 /* MBEntity.h */,
+				5D5D034B158058BD00E8A525 /* MBEntity.m */,
+				5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */,
+				5D5D034D158058BD00E8A525 /* MBFreeDbDisc.m */,
+				5D5D034E158058BD00E8A525 /* MBISRC.h */,
+				5D5D034F158058BD00E8A525 /* MBISRC.m */,
+				5D5D0350158058BD00E8A525 /* MBLabel.h */,
+				5D5D0351158058BD00E8A525 /* MBLabel.m */,
+				5D5D0352158058BD00E8A525 /* MBLabelInfo.h */,
+				5D5D0353158058BD00E8A525 /* MBLabelInfo.m */,
+				5D5D0354158058BD00E8A525 /* MBLifeSpan.h */,
+				5D5D0355158058BD00E8A525 /* MBLifeSpan.m */,
+				5D5D0356158058BD00E8A525 /* MBMedium.h */,
+				5D5D0357158058BD00E8A525 /* MBMedium.m */,
+				5D5D0358158058BD00E8A525 /* MBMetadata.h */,
+				5D5D0359158058BD00E8A525 /* MBMetadata.m */,
+				5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */,
+				5D5D035B158058BD00E8A525 /* MBNonMbTrack.m */,
+				5D5D035C158058BD00E8A525 /* MBPUID.h */,
+				5D5D035D158058BD00E8A525 /* MBPUID.m */,
+				5D5D035E158058BD00E8A525 /* MBRating.h */,
+				5D5D035F158058BD00E8A525 /* MBRating.m */,
+				5D5D0360158058BD00E8A525 /* MBRecording.h */,
+				5D5D0361158058BD00E8A525 /* MBRecording.m */,
+				5D5D0362158058BD00E8A525 /* MBRelation.h */,
+				5D5D0363158058BD00E8A525 /* MBRelation.m */,
+				5D5D0364158058BD00E8A525 /* MBRelease.h */,
+				5D5D0365158058BD00E8A525 /* MBRelease.m */,
+				5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */,
+				5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */,
+				5D5D0368158058BD00E8A525 /* MBTag.h */,
+				5D5D0369158058BD00E8A525 /* MBTag.m */,
+				5D5D036A158058BD00E8A525 /* MBTrack.h */,
+				5D5D036B158058BD00E8A525 /* MBTrack.m */,
+				5D5D036C158058BD00E8A525 /* MBUserRating.h */,
+				5D5D036D158058BD00E8A525 /* MBUserRating.m */,
+				5D5D036E158058BD00E8A525 /* MBUserTag.h */,
+				5D5D036F158058BD00E8A525 /* MBUserTag.m */,
+				5D5D0370158058BD00E8A525 /* MBWork.h */,
+				5D5D0371158058BD00E8A525 /* MBWork.m */,
+				5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */,
+				5D5D0373158058BD00E8A525 /* RateAndTaggableEntity.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
-				5D61B8A1155F5D840003006A /* docs */,
 				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
@@ -416,6 +458,8 @@
 		5D61B7CD155F3F9A0003006A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D0D24E5157D985100C1C311 /* XML-to-NSDictionary */,
+				5D5D03171580548400E8A525 /* KissXML */,
 				5D37CE8A156EED760073FA11 /* libxml2.dylib */,
 				5D61B7CE155F3F9A0003006A /* Foundation.framework */,
 				5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */,
@@ -427,11 +471,10 @@
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D24E5157D985100C1C311 /* XML-to-NSDictionary */,
-				5D0D24AB157D7A2600C1C311 /* src */,
-				5D0D24AA157D7A1E00C1C311 /* includes */,
-				5D61B7D3155F3F9B0003006A /* libmusicbrainz_objc.h */,
-				5D61B7D4155F3F9B0003006A /* libmusicbrainz_objc.m */,
+				5D5D0374158058BD00E8A525 /* MB.h */,
+				5D5D0375158058BD00E8A525 /* MBQuery.h */,
+				5D5D0376158058BD00E8A525 /* MBQuery.m */,
+				5D5D033A158058BD00E8A525 /* Entities */,
 				5D61B7D1155F3F9B0003006A /* Supporting Files */,
 			);
 			path = "libmusicbrainz-objc";
@@ -477,39 +520,44 @@
 				5D0D2515157D985200C1C311 /* XMLReaderTests-Prefix.pch in Headers */,
 				5D0D2516157D985200C1C311 /* XMLReaderTests.h in Headers */,
 				5D0D251A157D985200C1C311 /* XMLReader.h in Headers */,
-				5D5D02CD1580091F00E8A525 /* AccountInformation.h in Headers */,
-				5D5D02CE1580091F00E8A525 /* MB.h in Headers */,
-				5D5D02CF1580091F00E8A525 /* MBAlias.h in Headers */,
-				5D5D02D01580091F00E8A525 /* MBAnnotation.h in Headers */,
-				5D5D02D11580091F00E8A525 /* MBArtist.h in Headers */,
-				5D5D02D21580091F00E8A525 /* MBArtistCredit.h in Headers */,
-				5D5D02D31580091F00E8A525 /* MBCDStub.h in Headers */,
-				5D5D02D41580091F00E8A525 /* MBCollection.h in Headers */,
-				5D5D02D51580091F00E8A525 /* MBDisc.h in Headers */,
-				5D5D02D61580091F00E8A525 /* MBEntity-protected.h in Headers */,
-				5D5D02D71580091F00E8A525 /* MBEntity.h in Headers */,
-				5D5D02D81580091F00E8A525 /* MBFreeDbDisc.h in Headers */,
-				5D5D02D91580091F00E8A525 /* MBISRC.h in Headers */,
-				5D5D02DA1580091F00E8A525 /* MBLabel.h in Headers */,
-				5D5D02DB1580091F00E8A525 /* MBLabelInfo.h in Headers */,
-				5D5D02DC1580091F00E8A525 /* MBLifeSpan.h in Headers */,
-				5D5D02DD1580091F00E8A525 /* MBMedium.h in Headers */,
-				5D5D02DE1580091F00E8A525 /* MBNonMbTrack.h in Headers */,
-				5D5D02DF1580091F00E8A525 /* MBPUID.h in Headers */,
-				5D5D02E01580091F00E8A525 /* MBRating.h in Headers */,
-				5D5D02E11580091F00E8A525 /* MBRecording.h in Headers */,
-				5D5D02E21580091F00E8A525 /* MBRelation.h in Headers */,
-				5D5D02E31580091F00E8A525 /* MBRelease.h in Headers */,
-				5D5D02E41580091F00E8A525 /* MBReleaseGroup.h in Headers */,
-				5D5D02E51580091F00E8A525 /* MBTag.h in Headers */,
-				5D5D02E61580091F00E8A525 /* MBTrack.h in Headers */,
-				5D5D02E71580091F00E8A525 /* MBUserRating.h in Headers */,
-				5D5D02E81580091F00E8A525 /* MBUserTag.h in Headers */,
-				5D5D02E91580091F00E8A525 /* MBWork.h in Headers */,
-				5D5D02EA1580091F00E8A525 /* RateAndTaggableEntity.h in Headers */,
-				5D5D02EB1580091F00E8A525 /* Search.h in Headers */,
-				5D5D030415800C8C00E8A525 /* MBMetadata.h in Headers */,
-				5D5D03161580163E00E8A525 /* MBQuery.h in Headers */,
+				5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */,
+				5D5D03291580548400E8A525 /* NSString+DDXML.h in Headers */,
+				5D5D032B1580548400E8A525 /* DDXML.h in Headers */,
+				5D5D032C1580548400E8A525 /* DDXMLDocument.h in Headers */,
+				5D5D032E1580548400E8A525 /* DDXMLElement.h in Headers */,
+				5D5D03301580548400E8A525 /* DDXMLNode.h in Headers */,
+				5D5D03321580548400E8A525 /* DDXMLPrivate.h in Headers */,
+				5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */,
+				5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */,
+				5D5D037B158058BD00E8A525 /* MBArtist.h in Headers */,
+				5D5D037D158058BD00E8A525 /* MBArtistCredit.h in Headers */,
+				5D5D037F158058BD00E8A525 /* MBCDStub.h in Headers */,
+				5D5D0381158058BD00E8A525 /* MBCollection.h in Headers */,
+				5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */,
+				5D5D0385158058BD00E8A525 /* MBEntity-protected.h in Headers */,
+				5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */,
+				5D5D0388158058BD00E8A525 /* MBFreeDbDisc.h in Headers */,
+				5D5D038A158058BD00E8A525 /* MBISRC.h in Headers */,
+				5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */,
+				5D5D038E158058BD00E8A525 /* MBLabelInfo.h in Headers */,
+				5D5D0390158058BD00E8A525 /* MBLifeSpan.h in Headers */,
+				5D5D0392158058BD00E8A525 /* MBMedium.h in Headers */,
+				5D5D0394158058BD00E8A525 /* MBMetadata.h in Headers */,
+				5D5D0396158058BD00E8A525 /* MBNonMbTrack.h in Headers */,
+				5D5D0398158058BD00E8A525 /* MBPUID.h in Headers */,
+				5D5D039A158058BD00E8A525 /* MBRating.h in Headers */,
+				5D5D039C158058BD00E8A525 /* MBRecording.h in Headers */,
+				5D5D039E158058BD00E8A525 /* MBRelation.h in Headers */,
+				5D5D03A0158058BD00E8A525 /* MBRelease.h in Headers */,
+				5D5D03A2158058BD00E8A525 /* MBReleaseGroup.h in Headers */,
+				5D5D03A4158058BD00E8A525 /* MBTag.h in Headers */,
+				5D5D03A6158058BD00E8A525 /* MBTrack.h in Headers */,
+				5D5D03A8158058BD00E8A525 /* MBUserRating.h in Headers */,
+				5D5D03AA158058BD00E8A525 /* MBUserTag.h in Headers */,
+				5D5D03AC158058BD00E8A525 /* MBWork.h in Headers */,
+				5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */,
+				5D5D03B0158058BD00E8A525 /* MB.h in Headers */,
+				5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,39 +699,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D61B7D5155F3F9B0003006A /* libmusicbrainz_objc.m in Sources */,
-				5D0D24CE157D7A5700C1C311 /* AccountInformation.m in Sources */,
-				5D0D24CF157D7A5700C1C311 /* MBLabel.m in Sources */,
-				5D0D24D0157D7A5700C1C311 /* MBAlias.m in Sources */,
-				5D0D24D1157D7A5700C1C311 /* MBArtist.m in Sources */,
-				5D0D24D2157D7A5700C1C311 /* MBEntity.m in Sources */,
-				5D0D24D3157D7A5700C1C311 /* MBLifeSpan.m in Sources */,
-				5D0D24D4157D7A5700C1C311 /* MBRelease.m in Sources */,
-				5D0D24D5157D7A5700C1C311 /* MBReleaseGroup.m in Sources */,
-				5D0D24D6157D7A5700C1C311 /* Search.m in Sources */,
 				5D0D251B157D985200C1C311 /* XMLReader.m in Sources */,
-				5D5D029E157FB11C00E8A525 /* MBRecording.m in Sources */,
-				5D5D02A2157FB70500E8A525 /* MBWork.m in Sources */,
-				5D5D02A6157FB95000E8A525 /* MBDisc.m in Sources */,
-				5D5D02EE15800BC600E8A525 /* MBPUID.m in Sources */,
-				5D5D02F015800BCF00E8A525 /* MBISRC.m in Sources */,
-				5D5D02F215800BDF00E8A525 /* MBArtistCredit.m in Sources */,
-				5D5D02F415800BEE00E8A525 /* MBRelation.m in Sources */,
-				5D5D02F615800BFC00E8A525 /* MBTag.m in Sources */,
-				5D5D02F815800C0800E8A525 /* MBUserTag.m in Sources */,
-				5D5D02FA15800C2400E8A525 /* MBRating.m in Sources */,
-				5D5D02FC15800C3500E8A525 /* MBUserRating.m in Sources */,
-				5D5D02FE15800C4200E8A525 /* MBLabelInfo.m in Sources */,
-				5D5D030015800C5200E8A525 /* MBMedium.m in Sources */,
-				5D5D030215800C7700E8A525 /* MBMetadata.m in Sources */,
-				5D5D030615800CAA00E8A525 /* MBTrack.m in Sources */,
-				5D5D030815800CB300E8A525 /* MBAnnotation.m in Sources */,
-				5D5D030A15800CBB00E8A525 /* MBCDStub.m in Sources */,
-				5D5D030C1580138B00E8A525 /* MBFreeDbDisc.m in Sources */,
-				5D5D030E1580139900E8A525 /* MBCollection.m in Sources */,
-				5D5D0310158013AE00E8A525 /* MBNonMbTrack.m in Sources */,
-				5D5D0312158014B100E8A525 /* RateAndTaggableEntity.m in Sources */,
-				5D5D03141580163100E8A525 /* MBQuery.m in Sources */,
+				5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */,
+				5D5D032A1580548400E8A525 /* NSString+DDXML.m in Sources */,
+				5D5D032D1580548400E8A525 /* DDXMLDocument.m in Sources */,
+				5D5D032F1580548400E8A525 /* DDXMLElement.m in Sources */,
+				5D5D03311580548400E8A525 /* DDXMLNode.m in Sources */,
+				5D5D0378158058BD00E8A525 /* MBAlias.m in Sources */,
+				5D5D037A158058BD00E8A525 /* MBAnnotation.m in Sources */,
+				5D5D037C158058BD00E8A525 /* MBArtist.m in Sources */,
+				5D5D037E158058BD00E8A525 /* MBArtistCredit.m in Sources */,
+				5D5D0380158058BD00E8A525 /* MBCDStub.m in Sources */,
+				5D5D0382158058BD00E8A525 /* MBCollection.m in Sources */,
+				5D5D0384158058BD00E8A525 /* MBDisc.m in Sources */,
+				5D5D0387158058BD00E8A525 /* MBEntity.m in Sources */,
+				5D5D0389158058BD00E8A525 /* MBFreeDbDisc.m in Sources */,
+				5D5D038B158058BD00E8A525 /* MBISRC.m in Sources */,
+				5D5D038D158058BD00E8A525 /* MBLabel.m in Sources */,
+				5D5D038F158058BD00E8A525 /* MBLabelInfo.m in Sources */,
+				5D5D0391158058BD00E8A525 /* MBLifeSpan.m in Sources */,
+				5D5D0393158058BD00E8A525 /* MBMedium.m in Sources */,
+				5D5D0395158058BD00E8A525 /* MBMetadata.m in Sources */,
+				5D5D0397158058BD00E8A525 /* MBNonMbTrack.m in Sources */,
+				5D5D0399158058BD00E8A525 /* MBPUID.m in Sources */,
+				5D5D039B158058BD00E8A525 /* MBRating.m in Sources */,
+				5D5D039D158058BD00E8A525 /* MBRecording.m in Sources */,
+				5D5D039F158058BD00E8A525 /* MBRelation.m in Sources */,
+				5D5D03A1158058BD00E8A525 /* MBRelease.m in Sources */,
+				5D5D03A3158058BD00E8A525 /* MBReleaseGroup.m in Sources */,
+				5D5D03A5158058BD00E8A525 /* MBTag.m in Sources */,
+				5D5D03A7158058BD00E8A525 /* MBTrack.m in Sources */,
+				5D5D03A9158058BD00E8A525 /* MBUserRating.m in Sources */,
+				5D5D03AB158058BD00E8A525 /* MBUserTag.m in Sources */,
+				5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */,
+				5D5D03AF158058BD00E8A525 /* RateAndTaggableEntity.m in Sources */,
+				5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,8 +818,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -787,8 +839,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
