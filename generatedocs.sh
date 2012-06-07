@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 TEMP_DIR=/tmp
-COMMIT_HASH=`git rev-parse --short --verify HEAD`
+COMMIT_HASH=`git rev-parse --verify HEAD`
 
+rm -rf docs
 sed "s/^\(PROJECT_NUMBER *= \)/\1${COMMIT_HASH}/" doxygen.config | /Applications/Doxygen.app/Contents/Resources/doxygen -
 make --silent -C docs/html install
 rsync -a --exclude ".git/" --delete docs/html/ ../libmusicbrainz-objc-docs/
