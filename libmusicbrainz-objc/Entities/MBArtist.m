@@ -112,7 +112,7 @@ const NSString *       kUserRatingKey = @"user-rating";
 }
 
 - (MBRating *) Rating {
-  return [[MBRating alloc] initWithDict:[_dict objectForKey:kRatingKey]]
+  return [[MBRating alloc] initWithDict:[_dict objectForKey:kRatingKey]];
 }
 
 @end

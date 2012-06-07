@@ -20,7 +20,7 @@
 
 @end
 
-@interface MBQuery : NSObject <NSURLConnectionDataDelegate> {
+@interface MBQuery : NSObject <NSURLConnectionDelegate> {
  @private
   id<MBQueryDelegate> _delegate;
   NSString *_useragent;

@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D0D2508157D985200C1C311 /* Demo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24E8157D985100C1C311 /* Demo-Info.plist */; };
-		5D0D2509157D985200C1C311 /* Demo-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24E9157D985100C1C311 /* Demo-Prefix.pch */; };
-		5D0D250A157D985200C1C311 /* DemoAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24EA157D985100C1C311 /* DemoAppDelegate.h */; };
-		5D0D250C157D985200C1C311 /* DemoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24EC157D985100C1C311 /* DemoViewController.h */; };
-		5D0D250E157D985200C1C311 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24EE157D985100C1C311 /* DemoViewController.xib */; };
-		5D0D250F157D985200C1C311 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24F0157D985100C1C311 /* InfoPlist.strings */; };
-		5D0D2510157D985200C1C311 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24F2157D985100C1C311 /* MainWindow.xib */; };
-		5D0D2512157D985200C1C311 /* complex.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24F9157D985100C1C311 /* complex.xml */; };
-		5D0D2513157D985200C1C311 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24FA157D985100C1C311 /* InfoPlist.strings */; };
-		5D0D2514157D985200C1C311 /* XMLReaderTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D24FC157D985100C1C311 /* XMLReaderTests-Info.plist */; };
-		5D0D2515157D985200C1C311 /* XMLReaderTests-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24FD157D985100C1C311 /* XMLReaderTests-Prefix.pch */; };
-		5D0D2516157D985200C1C311 /* XMLReaderTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D24FE157D985100C1C311 /* XMLReaderTests.h */; };
-		5D0D2518157D985200C1C311 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D2500157D985100C1C311 /* LICENCE */; };
-		5D0D2519157D985200C1C311 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D2501157D985100C1C311 /* README */; };
-		5D0D251A157D985200C1C311 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0D2502157D985100C1C311 /* XMLReader.h */; };
-		5D0D251B157D985200C1C311 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D2503157D985100C1C311 /* XMLReader.m */; };
 		5D37CE8B156EED760073FA11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37CE8A156EED760073FA11 /* libxml2.dylib */; };
 		5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */; };
 		5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */; };
@@ -96,7 +80,73 @@
 		5D5D03B0158058BD00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; };
 		5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; };
 		5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
-		5D5D03B415805D4900E8A525 /* generatedocs.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D03B315805D4900E8A525 /* generatedocs.sh */; };
+		5D5D03BC158103DD00E8A525 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5D03BB158103DD00E8A525 /* Cocoa.framework */; };
+		5D5D03D91581052A00E8A525 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D03D61581052A00E8A525 /* InfoPlist.strings */; };
+		5D5D03DB1581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */; };
+		5D5D03DC1581056D00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03DD1581056D00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03DE1581056D00E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
+		5D5D03DF1581056D00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03E01581056D00E8A525 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
+		5D5D03E11581056D00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03E21581056D00E8A525 /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033E158058BD00E8A525 /* MBAnnotation.m */; };
+		5D5D03E31581056D00E8A525 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03E41581056D00E8A525 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0340158058BD00E8A525 /* MBArtist.m */; };
+		5D5D03E51581056D00E8A525 /* MBArtistCredit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0341158058BD00E8A525 /* MBArtistCredit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03E61581056D00E8A525 /* MBArtistCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0342158058BD00E8A525 /* MBArtistCredit.m */; };
+		5D5D03E71581056D00E8A525 /* MBCDStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0343158058BD00E8A525 /* MBCDStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03E81581056D00E8A525 /* MBCDStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0344158058BD00E8A525 /* MBCDStub.m */; };
+		5D5D03E91581056D00E8A525 /* MBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0345158058BD00E8A525 /* MBCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03EA1581056D00E8A525 /* MBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0346158058BD00E8A525 /* MBCollection.m */; };
+		5D5D03EB1581056D00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03EC1581056D00E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0348158058BD00E8A525 /* MBDisc.m */; };
+		5D5D03ED1581056D00E8A525 /* MBEntity-protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0349158058BD00E8A525 /* MBEntity-protected.h */; };
+		5D5D03EE1581056D00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03EF1581056D00E8A525 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034B158058BD00E8A525 /* MBEntity.m */; };
+		5D5D03F01581056D00E8A525 /* MBFreeDbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F11581056D00E8A525 /* MBFreeDbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* MBFreeDbDisc.m */; };
+		5D5D03F21581056D00E8A525 /* MBISRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBISRC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F31581056D00E8A525 /* MBISRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034F158058BD00E8A525 /* MBISRC.m */; };
+		5D5D03F41581056D00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F51581056D00E8A525 /* MBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0351158058BD00E8A525 /* MBLabel.m */; };
+		5D5D03F61581056D00E8A525 /* MBLabelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0352158058BD00E8A525 /* MBLabelInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F71581056D00E8A525 /* MBLabelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0353158058BD00E8A525 /* MBLabelInfo.m */; };
+		5D5D03F81581056D00E8A525 /* MBLifeSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0354158058BD00E8A525 /* MBLifeSpan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F91581056D00E8A525 /* MBLifeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0355158058BD00E8A525 /* MBLifeSpan.m */; };
+		5D5D03FA1581056D00E8A525 /* MBMedium.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0356158058BD00E8A525 /* MBMedium.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03FB1581056D00E8A525 /* MBMedium.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0357158058BD00E8A525 /* MBMedium.m */; };
+		5D5D03FC1581056D00E8A525 /* MBMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0358158058BD00E8A525 /* MBMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03FD1581056D00E8A525 /* MBMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0359158058BD00E8A525 /* MBMetadata.m */; };
+		5D5D03FE1581056D00E8A525 /* MBNonMbTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03FF1581056D00E8A525 /* MBNonMbTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035B158058BD00E8A525 /* MBNonMbTrack.m */; };
+		5D5D04001581056D00E8A525 /* MBPUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035C158058BD00E8A525 /* MBPUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04011581056D00E8A525 /* MBPUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035D158058BD00E8A525 /* MBPUID.m */; };
+		5D5D04021581056D00E8A525 /* MBRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035E158058BD00E8A525 /* MBRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04031581056D00E8A525 /* MBRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035F158058BD00E8A525 /* MBRating.m */; };
+		5D5D04041581056D00E8A525 /* MBRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0360158058BD00E8A525 /* MBRecording.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04051581056D00E8A525 /* MBRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0361158058BD00E8A525 /* MBRecording.m */; };
+		5D5D04061581056D00E8A525 /* MBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0362158058BD00E8A525 /* MBRelation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04071581056D00E8A525 /* MBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0363158058BD00E8A525 /* MBRelation.m */; };
+		5D5D04081581056D00E8A525 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0364158058BD00E8A525 /* MBRelease.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04091581056D00E8A525 /* MBRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0365158058BD00E8A525 /* MBRelease.m */; };
+		5D5D040A1581056D00E8A525 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D040B1581056D00E8A525 /* MBReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */; };
+		5D5D040C1581056D00E8A525 /* MBTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0368158058BD00E8A525 /* MBTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D040D1581056D00E8A525 /* MBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0369158058BD00E8A525 /* MBTag.m */; };
+		5D5D040E1581056D00E8A525 /* MBTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036A158058BD00E8A525 /* MBTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D040F1581056D00E8A525 /* MBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036B158058BD00E8A525 /* MBTrack.m */; };
+		5D5D04101581056D00E8A525 /* MBUserRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036C158058BD00E8A525 /* MBUserRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04111581056D00E8A525 /* MBUserRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036D158058BD00E8A525 /* MBUserRating.m */; };
+		5D5D04121581056D00E8A525 /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036E158058BD00E8A525 /* MBUserTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04131581056D00E8A525 /* MBUserTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036F158058BD00E8A525 /* MBUserTag.m */; };
+		5D5D04141581056D00E8A525 /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0370158058BD00E8A525 /* MBWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04151581056D00E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04161581056D00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04171581056D00E8A525 /* RateAndTaggableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0373158058BD00E8A525 /* RateAndTaggableEntity.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D04641581067D00E8A525 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D04381581067D00E8A525 /* XMLReader.h */; };
+		5D5D04651581067D00E8A525 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D04381581067D00E8A525 /* XMLReader.h */; };
+		5D5D04661581067D00E8A525 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D04391581067D00E8A525 /* XMLReader.m */; };
+		5D5D04671581067D00E8A525 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D04391581067D00E8A525 /* XMLReader.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */; };
 		5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DE155F3F9B0003006A /* UIKit.framework */; };
@@ -107,16 +157,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D0D251E157D985200C1C311 /* PBXContainerItemProxy */ = {
+		5D5D046A1581067D00E8A525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D0D24F5157D985100C1C311 /* Demo.xcodeproj */;
+			containerPortal = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ED2F6186137570CF001A1ABA;
 			remoteInfo = Demo;
 		};
-		5D0D2520157D985200C1C311 /* PBXContainerItemProxy */ = {
+		5D5D046C1581067D00E8A525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D0D24F5157D985100C1C311 /* Demo.xcodeproj */;
+			containerPortal = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ED2F61AA137570CF001A1ABA;
 			remoteInfo = XMLReaderTests;
@@ -131,27 +181,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D0D24E8157D985100C1C311 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
-		5D0D24E9157D985100C1C311 /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
-		5D0D24EA157D985100C1C311 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
-		5D0D24EB157D985100C1C311 /* DemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
-		5D0D24EC157D985100C1C311 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		5D0D24ED157D985100C1C311 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		5D0D24EF157D985100C1C311 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DemoViewController.xib; sourceTree = "<group>"; };
-		5D0D24F1157D985100C1C311 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D0D24F3157D985100C1C311 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		5D0D24F4157D985100C1C311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5D0D24F5157D985100C1C311 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Demo.xcodeproj; sourceTree = "<group>"; };
-		5D0D24F9157D985100C1C311 /* complex.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = complex.xml; sourceTree = "<group>"; };
-		5D0D24FB157D985100C1C311 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D0D24FC157D985100C1C311 /* XMLReaderTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLReaderTests-Info.plist"; sourceTree = "<group>"; };
-		5D0D24FD157D985100C1C311 /* XMLReaderTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMLReaderTests-Prefix.pch"; sourceTree = "<group>"; };
-		5D0D24FE157D985100C1C311 /* XMLReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReaderTests.h; sourceTree = "<group>"; };
-		5D0D24FF157D985100C1C311 /* XMLReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReaderTests.m; sourceTree = "<group>"; };
-		5D0D2500157D985100C1C311 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
-		5D0D2501157D985100C1C311 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		5D0D2502157D985100C1C311 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
-		5D0D2503157D985100C1C311 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D37CE8A156EED760073FA11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
@@ -226,6 +255,36 @@
 		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
 		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
 		5D5D03B315805D4900E8A525 /* generatedocs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generatedocs.sh; sourceTree = "<group>"; };
+		5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-objc-cocoa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5D03BB158103DD00E8A525 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5D5D03BE158103DE00E8A525 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5D5D03BF158103DE00E8A525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D5D03C0158103DE00E8A525 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D5D03D61581052A00E8A525 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		5D5D03D71581052A00E8A525 /* libmusicbrainz-objc-cocoa-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objc-cocoa-Info.plist"; sourceTree = "<group>"; };
+		5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-cocoa-Prefix.pch"; sourceTree = "<group>"; };
+		5D5D041B1581067D00E8A525 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5D5D041E1581067D00E8A525 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		5D5D041F1581067D00E8A525 /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		5D5D04201581067D00E8A525 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
+		5D5D04211581067D00E8A525 /* DemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
+		5D5D04221581067D00E8A525 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		5D5D04231581067D00E8A525 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		5D5D04251581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DemoViewController.xib; sourceTree = "<group>"; };
+		5D5D04271581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D5D04291581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5D5D042A1581067D00E8A525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D5D042B1581067D00E8A525 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Demo.xcodeproj; sourceTree = "<group>"; };
+		5D5D042F1581067D00E8A525 /* complex.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = complex.xml; sourceTree = "<group>"; };
+		5D5D04311581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D5D04321581067D00E8A525 /* XMLReaderTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLReaderTests-Info.plist"; sourceTree = "<group>"; };
+		5D5D04331581067D00E8A525 /* XMLReaderTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMLReaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		5D5D04341581067D00E8A525 /* XMLReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReaderTests.h; sourceTree = "<group>"; };
+		5D5D04351581067D00E8A525 /* XMLReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReaderTests.m; sourceTree = "<group>"; };
+		5D5D04361581067D00E8A525 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		5D5D04371581067D00E8A525 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5D5D04381581067D00E8A525 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		5D5D04391581067D00E8A525 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
@@ -242,6 +301,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5D5D03B6158103DD00E8A525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5D03BC158103DD00E8A525 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D61B7C8155F3F9A0003006A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,68 +332,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D0D24E5157D985100C1C311 /* XML-to-NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D24E6157D985100C1C311 /* Demo */,
-				5D0D2500157D985100C1C311 /* LICENCE */,
-				5D0D2501157D985100C1C311 /* README */,
-				5D0D2502157D985100C1C311 /* XMLReader.h */,
-				5D0D2503157D985100C1C311 /* XMLReader.m */,
-			);
-			name = "XML-to-NSDictionary";
-			path = "libmusicbrainz-objc/XML-to-NSDictionary";
-			sourceTree = "<group>";
-		};
-		5D0D24E6157D985100C1C311 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D24E7157D985100C1C311 /* Demo */,
-				5D0D24F5157D985100C1C311 /* Demo.xcodeproj */,
-				5D0D24F8157D985100C1C311 /* XMLReaderTests */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		5D0D24E7157D985100C1C311 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D24E8157D985100C1C311 /* Demo-Info.plist */,
-				5D0D24E9157D985100C1C311 /* Demo-Prefix.pch */,
-				5D0D24EA157D985100C1C311 /* DemoAppDelegate.h */,
-				5D0D24EB157D985100C1C311 /* DemoAppDelegate.m */,
-				5D0D24EC157D985100C1C311 /* DemoViewController.h */,
-				5D0D24ED157D985100C1C311 /* DemoViewController.m */,
-				5D0D24EE157D985100C1C311 /* DemoViewController.xib */,
-				5D0D24F0157D985100C1C311 /* InfoPlist.strings */,
-				5D0D24F2157D985100C1C311 /* MainWindow.xib */,
-				5D0D24F4157D985100C1C311 /* main.m */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		5D0D24F6157D985100C1C311 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D251F157D985200C1C311 /* Demo.app */,
-				5D0D2521157D985200C1C311 /* XMLReaderTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5D0D24F8157D985100C1C311 /* XMLReaderTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D0D24F9157D985100C1C311 /* complex.xml */,
-				5D0D24FA157D985100C1C311 /* InfoPlist.strings */,
-				5D0D24FC157D985100C1C311 /* XMLReaderTests-Info.plist */,
-				5D0D24FD157D985100C1C311 /* XMLReaderTests-Prefix.pch */,
-				5D0D24FE157D985100C1C311 /* XMLReaderTests.h */,
-				5D0D24FF157D985100C1C311 /* XMLReaderTests.m */,
-			);
-			path = XMLReaderTests;
-			sourceTree = "<group>";
-		};
 		5D5D03171580548400E8A525 /* KissXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,15 +440,106 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		5D5D03BD158103DE00E8A525 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D03BE158103DE00E8A525 /* AppKit.framework */,
+				5D5D03BF158103DE00E8A525 /* CoreData.framework */,
+				5D5D03C0158103DE00E8A525 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5D5D03D41581046A00E8A525 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D03D61581052A00E8A525 /* InfoPlist.strings */,
+				5D5D03D71581052A00E8A525 /* libmusicbrainz-objc-cocoa-Info.plist */,
+				5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */,
+			);
+			path = "libmusicbrainz-objc-cocoa";
+			sourceTree = "<group>";
+		};
+		5D5D041A1581067D00E8A525 /* XML-to-NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D041B1581067D00E8A525 /* .gitignore */,
+				5D5D041C1581067D00E8A525 /* Demo */,
+				5D5D04361581067D00E8A525 /* LICENCE */,
+				5D5D04371581067D00E8A525 /* README */,
+				5D5D04381581067D00E8A525 /* XMLReader.h */,
+				5D5D04391581067D00E8A525 /* XMLReader.m */,
+			);
+			path = "XML-to-NSDictionary";
+			sourceTree = "<group>";
+		};
+		5D5D041C1581067D00E8A525 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D041D1581067D00E8A525 /* Demo */,
+				5D5D042B1581067D00E8A525 /* Demo.xcodeproj */,
+				5D5D042E1581067D00E8A525 /* XMLReaderTests */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5D5D041D1581067D00E8A525 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D041E1581067D00E8A525 /* Demo-Info.plist */,
+				5D5D041F1581067D00E8A525 /* Demo-Prefix.pch */,
+				5D5D04201581067D00E8A525 /* DemoAppDelegate.h */,
+				5D5D04211581067D00E8A525 /* DemoAppDelegate.m */,
+				5D5D04221581067D00E8A525 /* DemoViewController.h */,
+				5D5D04231581067D00E8A525 /* DemoViewController.m */,
+				5D5D04241581067D00E8A525 /* DemoViewController.xib */,
+				5D5D04261581067D00E8A525 /* InfoPlist.strings */,
+				5D5D04281581067D00E8A525 /* MainWindow.xib */,
+				5D5D042A1581067D00E8A525 /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5D5D042C1581067D00E8A525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D046B1581067D00E8A525 /* Demo.app */,
+				5D5D046D1581067D00E8A525 /* XMLReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D5D042E1581067D00E8A525 /* XMLReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D042F1581067D00E8A525 /* complex.xml */,
+				5D5D04301581067D00E8A525 /* InfoPlist.strings */,
+				5D5D04321581067D00E8A525 /* XMLReaderTests-Info.plist */,
+				5D5D04331581067D00E8A525 /* XMLReaderTests-Prefix.pch */,
+				5D5D04341581067D00E8A525 /* XMLReaderTests.h */,
+				5D5D04351581067D00E8A525 /* XMLReaderTests.m */,
+			);
+			path = XMLReaderTests;
+			sourceTree = "<group>";
+		};
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
+				5D5D03D41581046A00E8A525 /* New Group */,
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
 				5D5D03B315805D4900E8A525 /* generatedocs.sh */,
 				5D61B89F155F5D640003006A /* doxygen.config */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
+				5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */,
 				5D61B7CD155F3F9A0003006A /* Frameworks */,
 				5D61B7CC155F3F9A0003006A /* Products */,
 			);
@@ -454,6 +550,7 @@
 			children = (
 				5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */,
 				5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */,
+				5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,12 +558,14 @@
 		5D61B7CD155F3F9A0003006A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D24E5157D985100C1C311 /* XML-to-NSDictionary */,
+				5D5D041A1581067D00E8A525 /* XML-to-NSDictionary */,
 				5D5D03171580548400E8A525 /* KissXML */,
 				5D37CE8A156EED760073FA11 /* libxml2.dylib */,
 				5D61B7CE155F3F9A0003006A /* Foundation.framework */,
 				5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */,
 				5D61B7DE155F3F9B0003006A /* UIKit.framework */,
+				5D5D03BB158103DD00E8A525 /* Cocoa.framework */,
+				5D5D03BD158103DE00E8A525 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,16 +612,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5D5D03B7158103DD00E8A525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5D03DC1581056D00E8A525 /* MB.h in Headers */,
+				5D5D03DD1581056D00E8A525 /* MBQuery.h in Headers */,
+				5D5D03DF1581056D00E8A525 /* MBAlias.h in Headers */,
+				5D5D03E11581056D00E8A525 /* MBAnnotation.h in Headers */,
+				5D5D03E31581056D00E8A525 /* MBArtist.h in Headers */,
+				5D5D03E51581056D00E8A525 /* MBArtistCredit.h in Headers */,
+				5D5D03E71581056D00E8A525 /* MBCDStub.h in Headers */,
+				5D5D03E91581056D00E8A525 /* MBCollection.h in Headers */,
+				5D5D03EB1581056D00E8A525 /* MBDisc.h in Headers */,
+				5D5D03EE1581056D00E8A525 /* MBEntity.h in Headers */,
+				5D5D03F61581056D00E8A525 /* MBLabelInfo.h in Headers */,
+				5D5D03F01581056D00E8A525 /* MBFreeDbDisc.h in Headers */,
+				5D5D03F41581056D00E8A525 /* MBLabel.h in Headers */,
+				5D5D03F81581056D00E8A525 /* MBLifeSpan.h in Headers */,
+				5D5D03F21581056D00E8A525 /* MBISRC.h in Headers */,
+				5D5D04161581056D00E8A525 /* RateAndTaggableEntity.h in Headers */,
+				5D5D04001581056D00E8A525 /* MBPUID.h in Headers */,
+				5D5D03FC1581056D00E8A525 /* MBMetadata.h in Headers */,
+				5D5D03FE1581056D00E8A525 /* MBNonMbTrack.h in Headers */,
+				5D5D03FA1581056D00E8A525 /* MBMedium.h in Headers */,
+				5D5D04081581056D00E8A525 /* MBRelease.h in Headers */,
+				5D5D04041581056D00E8A525 /* MBRecording.h in Headers */,
+				5D5D04021581056D00E8A525 /* MBRating.h in Headers */,
+				5D5D04061581056D00E8A525 /* MBRelation.h in Headers */,
+				5D5D040A1581056D00E8A525 /* MBReleaseGroup.h in Headers */,
+				5D5D040E1581056D00E8A525 /* MBTrack.h in Headers */,
+				5D5D040C1581056D00E8A525 /* MBTag.h in Headers */,
+				5D5D04141581056D00E8A525 /* MBWork.h in Headers */,
+				5D5D04121581056D00E8A525 /* MBUserTag.h in Headers */,
+				5D5D04101581056D00E8A525 /* MBUserRating.h in Headers */,
+				5D5D03DB1581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch in Headers */,
+				5D5D03ED1581056D00E8A525 /* MBEntity-protected.h in Headers */,
+				5D5D04651581067D00E8A525 /* XMLReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D61B7C9155F3F9A0003006A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D2509157D985200C1C311 /* Demo-Prefix.pch in Headers */,
-				5D0D250A157D985200C1C311 /* DemoAppDelegate.h in Headers */,
-				5D0D250C157D985200C1C311 /* DemoViewController.h in Headers */,
-				5D0D2515157D985200C1C311 /* XMLReaderTests-Prefix.pch in Headers */,
-				5D0D2516157D985200C1C311 /* XMLReaderTests.h in Headers */,
-				5D0D251A157D985200C1C311 /* XMLReader.h in Headers */,
 				5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */,
 				5D5D03291580548400E8A525 /* NSString+DDXML.h in Headers */,
 				5D5D032B1580548400E8A525 /* DDXML.h in Headers */,
@@ -561,12 +694,31 @@
 				5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */,
 				5D5D03B0158058BD00E8A525 /* MB.h in Headers */,
 				5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */,
+				5D5D04641581067D00E8A525 /* XMLReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5D5D03B9158103DD00E8A525 /* libmusicbrainz-objc-cocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5D03CB158103DE00E8A525 /* Build configuration list for PBXNativeTarget "libmusicbrainz-objc-cocoa" */;
+			buildPhases = (
+				5D5D03B5158103DD00E8A525 /* Sources */,
+				5D5D03B6158103DD00E8A525 /* Frameworks */,
+				5D5D03B7158103DD00E8A525 /* Headers */,
+				5D5D03B8158103DD00E8A525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libmusicbrainz-objc-cocoa";
+			productName = "libmusicbrainz-objc-cocoa";
+			productReference = 5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5D61B7CA155F3F9A0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D61B7EF155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-objc" */;
@@ -625,36 +777,45 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5D0D24F6157D985100C1C311 /* Products */;
-					ProjectRef = 5D0D24F5157D985100C1C311 /* Demo.xcodeproj */;
+					ProductGroup = 5D5D042C1581067D00E8A525 /* Products */;
+					ProjectRef = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				5D61B7CA155F3F9A0003006A /* libmusicbrainz-objc */,
 				5D61B7DA155F3F9B0003006A /* libmusicbrainz-objcTests */,
+				5D5D03B9158103DD00E8A525 /* libmusicbrainz-objc-cocoa */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5D0D251F157D985200C1C311 /* Demo.app */ = {
+		5D5D046B1581067D00E8A525 /* Demo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = Demo.app;
-			remoteRef = 5D0D251E157D985200C1C311 /* PBXContainerItemProxy */;
+			remoteRef = 5D5D046A1581067D00E8A525 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5D0D2521157D985200C1C311 /* XMLReaderTests.octest */ = {
+		5D5D046D1581067D00E8A525 /* XMLReaderTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XMLReaderTests.octest;
-			remoteRef = 5D0D2520157D985200C1C311 /* PBXContainerItemProxy */;
+			remoteRef = 5D5D046C1581067D00E8A525 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5D5D03B8158103DD00E8A525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5D03D91581052A00E8A525 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D61B7D8155F3F9B0003006A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,16 +828,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D2508157D985200C1C311 /* Demo-Info.plist in Resources */,
-				5D0D250E157D985200C1C311 /* DemoViewController.xib in Resources */,
-				5D0D250F157D985200C1C311 /* InfoPlist.strings in Resources */,
-				5D0D2510157D985200C1C311 /* MainWindow.xib in Resources */,
-				5D0D2512157D985200C1C311 /* complex.xml in Resources */,
-				5D0D2513157D985200C1C311 /* InfoPlist.strings in Resources */,
-				5D0D2514157D985200C1C311 /* XMLReaderTests-Info.plist in Resources */,
-				5D0D2518157D985200C1C311 /* LICENCE in Resources */,
-				5D0D2519157D985200C1C311 /* README in Resources */,
-				5D5D03B415805D4900E8A525 /* generatedocs.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,11 +850,47 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5D5D03B5158103DD00E8A525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5D03DE1581056D00E8A525 /* MBQuery.m in Sources */,
+				5D5D03E01581056D00E8A525 /* MBAlias.m in Sources */,
+				5D5D03E21581056D00E8A525 /* MBAnnotation.m in Sources */,
+				5D5D03E41581056D00E8A525 /* MBArtist.m in Sources */,
+				5D5D03E61581056D00E8A525 /* MBArtistCredit.m in Sources */,
+				5D5D03E81581056D00E8A525 /* MBCDStub.m in Sources */,
+				5D5D03EA1581056D00E8A525 /* MBCollection.m in Sources */,
+				5D5D03EC1581056D00E8A525 /* MBDisc.m in Sources */,
+				5D5D03EF1581056D00E8A525 /* MBEntity.m in Sources */,
+				5D5D03F11581056D00E8A525 /* MBFreeDbDisc.m in Sources */,
+				5D5D03F31581056D00E8A525 /* MBISRC.m in Sources */,
+				5D5D03F51581056D00E8A525 /* MBLabel.m in Sources */,
+				5D5D03F71581056D00E8A525 /* MBLabelInfo.m in Sources */,
+				5D5D03F91581056D00E8A525 /* MBLifeSpan.m in Sources */,
+				5D5D03FB1581056D00E8A525 /* MBMedium.m in Sources */,
+				5D5D03FD1581056D00E8A525 /* MBMetadata.m in Sources */,
+				5D5D03FF1581056D00E8A525 /* MBNonMbTrack.m in Sources */,
+				5D5D04011581056D00E8A525 /* MBPUID.m in Sources */,
+				5D5D04031581056D00E8A525 /* MBRating.m in Sources */,
+				5D5D04051581056D00E8A525 /* MBRecording.m in Sources */,
+				5D5D04071581056D00E8A525 /* MBRelation.m in Sources */,
+				5D5D04091581056D00E8A525 /* MBRelease.m in Sources */,
+				5D5D040B1581056D00E8A525 /* MBReleaseGroup.m in Sources */,
+				5D5D040D1581056D00E8A525 /* MBTag.m in Sources */,
+				5D5D040F1581056D00E8A525 /* MBTrack.m in Sources */,
+				5D5D04111581056D00E8A525 /* MBUserRating.m in Sources */,
+				5D5D04131581056D00E8A525 /* MBUserTag.m in Sources */,
+				5D5D04151581056D00E8A525 /* MBWork.m in Sources */,
+				5D5D04171581056D00E8A525 /* RateAndTaggableEntity.m in Sources */,
+				5D5D04671581067D00E8A525 /* XMLReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D61B7C7155F3F9A0003006A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D251B157D985200C1C311 /* XMLReader.m in Sources */,
 				5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */,
 				5D5D032A1580548400E8A525 /* NSString+DDXML.m in Sources */,
 				5D5D032D1580548400E8A525 /* DDXMLDocument.m in Sources */,
@@ -738,6 +925,7 @@
 				5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */,
 				5D5D03AF158058BD00E8A525 /* RateAndTaggableEntity.m in Sources */,
 				5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */,
+				5D5D04661581067D00E8A525 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,34 +948,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D0D24EE157D985100C1C311 /* DemoViewController.xib */ = {
+		5D5D04241581067D00E8A525 /* DemoViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D0D24EF157D985100C1C311 /* en */,
+				5D5D04251581067D00E8A525 /* en */,
 			);
 			name = DemoViewController.xib;
 			sourceTree = "<group>";
 		};
-		5D0D24F0157D985100C1C311 /* InfoPlist.strings */ = {
+		5D5D04261581067D00E8A525 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D0D24F1157D985100C1C311 /* en */,
+				5D5D04271581067D00E8A525 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5D0D24F2157D985100C1C311 /* MainWindow.xib */ = {
+		5D5D04281581067D00E8A525 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D0D24F3157D985100C1C311 /* en */,
+				5D5D04291581067D00E8A525 /* en */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		5D0D24FA157D985100C1C311 /* InfoPlist.strings */ = {
+		5D5D04301581067D00E8A525 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D0D24FB157D985100C1C311 /* en */,
+				5D5D04311581067D00E8A525 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -803,6 +991,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5D5D03CC158103DE00E8A525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libmusicbrainz-objc-cocoa/libmusicbrainz-objc-cocoa-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "libmusicbrainz-objc-cocoa/libmusicbrainz-objc-cocoa-Info.plist";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		5D5D03CD158103DE00E8A525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libmusicbrainz-objc-cocoa/libmusicbrainz-objc-cocoa-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "libmusicbrainz-objc-cocoa/libmusicbrainz-objc-cocoa-Info.plist";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		5D61B7ED155F3F9B0003006A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -914,6 +1157,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5D5D03CB158103DE00E8A525 /* Build configuration list for PBXNativeTarget "libmusicbrainz-objc-cocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5D03CC158103DE00E8A525 /* Debug */,
+				5D5D03CD158103DE00E8A525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5D61B7C5155F3F9A0003006A /* Build configuration list for PBXProject "libmusicbrainz-objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
