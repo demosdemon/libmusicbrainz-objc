@@ -11,5 +11,9 @@
 
 @interface MBLifeSpan : MBEntity
 
+@property (copy, nonatomic, readonly) NSString *Begin;
+@property (copy, nonatomic, readonly) NSString *End;
+@property (nonatomic, readonly) BOOL Ended;
+
 @end
 

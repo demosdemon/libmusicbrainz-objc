@@ -9,9 +9,9 @@
 ///
 /// @brief Label entity
 
-#import "MBEntity.h"
+#import "RateAndTaggableEntity.h"
 
-@interface MBLabel : MBEntity
+@interface MBLabel : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Type;

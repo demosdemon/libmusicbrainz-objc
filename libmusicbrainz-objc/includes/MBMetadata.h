@@ -7,9 +7,9 @@
 ///
 /// @brief Metadata Entity
 
-#import "MBEntity.h"
+#import "RateAndTaggableEntity.h"
 
-@interface MBMetadata : MBEntity
+@interface MBMetadata : MBRateAndTaggableEntity
 
 @end
 

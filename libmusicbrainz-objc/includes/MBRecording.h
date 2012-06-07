@@ -8,9 +8,9 @@
 ///
 /// @brief Recording Entity
 
-#import "MBEntity.h"
+#import "RateAndTaggableEntity.h"
 
-@interface MBRecording : MBEntity
+@interface MBRecording : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Title;

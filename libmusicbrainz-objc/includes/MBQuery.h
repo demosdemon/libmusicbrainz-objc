@@ -10,18 +10,27 @@
 
 #import <Foundation/Foundation.h>
 
+@class MBQuery, MBMetadata;
+
 @protocol MBQueryDelegate <NSObject>
+@optional
+
+-(void) query:(MBQuery *)query didReceiveResult:(MBMetadata *)result;
+-(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
 
 @end
 
-@interface MBQuery : NSObject {
+@interface MBQuery : NSObject <NSURLConnectionDataDelegate> {
  @private
   id<MBQueryDelegate> _delegate;
   NSString *_useragent;
   NSString *_server;
   NSUInteger _port;
-  NSString *_username;
-  NSString *_password;
+  
+  NSURLCredential *_credentials;
+  NSURLProtectionSpace *_protectionSpace;
+  
+  NSMutableData *_data;
 }
 
 -(id) initWithUserAgent:(NSString *)ua
@@ -34,8 +43,8 @@
 @property (copy, nonatomic) NSString *UserAgent;
 @property (copy, nonatomic) NSString *Server;
 @property (nonatomic, assign) NSUInteger Port;
--(void) setUsername:(NSString *)username;
--(void) setPassword:(NSString *)password;
+-(void) setUsername:(NSString *)username
+        andPassword:(NSString*)password;
 
 @end
 

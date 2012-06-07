@@ -9,11 +9,11 @@
 ///
 /// @brief Release entity
 
-#import "MBEntity.h"
+#import "RateAndTaggableEntity.h"
 
 @class MBTextRepresentation, MBArtistCredit, MBReleaseGroup;
 
-@interface MBRelease : MBEntity
+@interface MBRelease : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Title;
