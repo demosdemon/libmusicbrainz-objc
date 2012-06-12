@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D37CE8B156EED760073FA11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37CE8A156EED760073FA11 /* libxml2.dylib */; };
-		5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */; };
-		5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */; };
-		5D5D03291580548400E8A525 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031C1580548400E8A525 /* NSString+DDXML.h */; };
-		5D5D032A1580548400E8A525 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D031D1580548400E8A525 /* NSString+DDXML.m */; };
-		5D5D032B1580548400E8A525 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031E1580548400E8A525 /* DDXML.h */; };
-		5D5D032C1580548400E8A525 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D031F1580548400E8A525 /* DDXMLDocument.h */; };
-		5D5D032D1580548400E8A525 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03201580548400E8A525 /* DDXMLDocument.m */; };
-		5D5D032E1580548400E8A525 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03211580548400E8A525 /* DDXMLElement.h */; };
-		5D5D032F1580548400E8A525 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03221580548400E8A525 /* DDXMLElement.m */; };
-		5D5D03301580548400E8A525 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03231580548400E8A525 /* DDXMLNode.h */; };
-		5D5D03311580548400E8A525 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D03241580548400E8A525 /* DDXMLNode.m */; };
-		5D5D03321580548400E8A525 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03261580548400E8A525 /* DDXMLPrivate.h */; };
 		5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; };
 		5D5D0378158058BD00E8A525 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
 		5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; };
@@ -143,10 +131,6 @@
 		5D5D04151581056D00E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D04161581056D00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D04171581056D00E8A525 /* RateAndTaggableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0373158058BD00E8A525 /* RateAndTaggableEntity.m */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5D04641581067D00E8A525 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D04381581067D00E8A525 /* XMLReader.h */; };
-		5D5D04651581067D00E8A525 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D04381581067D00E8A525 /* XMLReader.h */; };
-		5D5D04661581067D00E8A525 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D04391581067D00E8A525 /* XMLReader.m */; };
-		5D5D04671581067D00E8A525 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D04391581067D00E8A525 /* XMLReader.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */; };
 		5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DE155F3F9B0003006A /* UIKit.framework */; };
@@ -157,20 +141,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D5D046A1581067D00E8A525 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED2F6186137570CF001A1ABA;
-			remoteInfo = Demo;
-		};
-		5D5D046C1581067D00E8A525 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED2F61AA137570CF001A1ABA;
-			remoteInfo = XMLReaderTests;
-		};
 		5D61B7E1155F3F9B0003006A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
@@ -182,18 +152,6 @@
 
 /* Begin PBXFileReference section */
 		5D37CE8A156EED760073FA11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
-		5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
-		5D5D031C1580548400E8A525 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
-		5D5D031D1580548400E8A525 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
-		5D5D031E1580548400E8A525 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
-		5D5D031F1580548400E8A525 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
-		5D5D03201580548400E8A525 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
-		5D5D03211580548400E8A525 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
-		5D5D03221580548400E8A525 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
-		5D5D03231580548400E8A525 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
-		5D5D03241580548400E8A525 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
-		5D5D03261580548400E8A525 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		5D5D033B158058BD00E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
 		5D5D033C158058BD00E8A525 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlias.m; sourceTree = "<group>"; };
 		5D5D033D158058BD00E8A525 /* MBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAnnotation.h; sourceTree = "<group>"; };
@@ -262,28 +220,6 @@
 		5D5D03D61581052A00E8A525 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		5D5D03D71581052A00E8A525 /* libmusicbrainz-objc-cocoa-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objc-cocoa-Info.plist"; sourceTree = "<group>"; };
 		5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-cocoa-Prefix.pch"; sourceTree = "<group>"; };
-		5D5D041B1581067D00E8A525 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		5D5D041E1581067D00E8A525 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
-		5D5D041F1581067D00E8A525 /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
-		5D5D04201581067D00E8A525 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
-		5D5D04211581067D00E8A525 /* DemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
-		5D5D04221581067D00E8A525 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		5D5D04231581067D00E8A525 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		5D5D04251581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DemoViewController.xib; sourceTree = "<group>"; };
-		5D5D04271581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D5D04291581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		5D5D042A1581067D00E8A525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5D5D042B1581067D00E8A525 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Demo.xcodeproj; sourceTree = "<group>"; };
-		5D5D042F1581067D00E8A525 /* complex.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = complex.xml; sourceTree = "<group>"; };
-		5D5D04311581067D00E8A525 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D5D04321581067D00E8A525 /* XMLReaderTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLReaderTests-Info.plist"; sourceTree = "<group>"; };
-		5D5D04331581067D00E8A525 /* XMLReaderTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMLReaderTests-Prefix.pch"; sourceTree = "<group>"; };
-		5D5D04341581067D00E8A525 /* XMLReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReaderTests.h; sourceTree = "<group>"; };
-		5D5D04351581067D00E8A525 /* XMLReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReaderTests.m; sourceTree = "<group>"; };
-		5D5D04361581067D00E8A525 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
-		5D5D04371581067D00E8A525 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		5D5D04381581067D00E8A525 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
-		5D5D04391581067D00E8A525 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
@@ -330,50 +266,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D5D03171580548400E8A525 /* KissXML */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D03181580548400E8A525 /* Additions */,
-				5D5D031B1580548400E8A525 /* Categories */,
-				5D5D031E1580548400E8A525 /* DDXML.h */,
-				5D5D031F1580548400E8A525 /* DDXMLDocument.h */,
-				5D5D03201580548400E8A525 /* DDXMLDocument.m */,
-				5D5D03211580548400E8A525 /* DDXMLElement.h */,
-				5D5D03221580548400E8A525 /* DDXMLElement.m */,
-				5D5D03231580548400E8A525 /* DDXMLNode.h */,
-				5D5D03241580548400E8A525 /* DDXMLNode.m */,
-				5D5D03251580548400E8A525 /* Private */,
-			);
-			name = KissXML;
-			path = KissXML/KissXML;
-			sourceTree = "<group>";
-		};
-		5D5D03181580548400E8A525 /* Additions */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D03191580548400E8A525 /* DDXMLElementAdditions.h */,
-				5D5D031A1580548400E8A525 /* DDXMLElementAdditions.m */,
-			);
-			path = Additions;
-			sourceTree = "<group>";
-		};
-		5D5D031B1580548400E8A525 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D031C1580548400E8A525 /* NSString+DDXML.h */,
-				5D5D031D1580548400E8A525 /* NSString+DDXML.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		5D5D03251580548400E8A525 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D03261580548400E8A525 /* DDXMLPrivate.h */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
 		5D5D033A158058BD00E8A525 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,13 +340,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		5D5D03D41581046A00E8A525 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,72 +350,9 @@
 			path = "libmusicbrainz-objc-cocoa";
 			sourceTree = "<group>";
 		};
-		5D5D041A1581067D00E8A525 /* XML-to-NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D041B1581067D00E8A525 /* .gitignore */,
-				5D5D041C1581067D00E8A525 /* Demo */,
-				5D5D04361581067D00E8A525 /* LICENCE */,
-				5D5D04371581067D00E8A525 /* README */,
-				5D5D04381581067D00E8A525 /* XMLReader.h */,
-				5D5D04391581067D00E8A525 /* XMLReader.m */,
-			);
-			path = "XML-to-NSDictionary";
-			sourceTree = "<group>";
-		};
-		5D5D041C1581067D00E8A525 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D041D1581067D00E8A525 /* Demo */,
-				5D5D042B1581067D00E8A525 /* Demo.xcodeproj */,
-				5D5D042E1581067D00E8A525 /* XMLReaderTests */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		5D5D041D1581067D00E8A525 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D041E1581067D00E8A525 /* Demo-Info.plist */,
-				5D5D041F1581067D00E8A525 /* Demo-Prefix.pch */,
-				5D5D04201581067D00E8A525 /* DemoAppDelegate.h */,
-				5D5D04211581067D00E8A525 /* DemoAppDelegate.m */,
-				5D5D04221581067D00E8A525 /* DemoViewController.h */,
-				5D5D04231581067D00E8A525 /* DemoViewController.m */,
-				5D5D04241581067D00E8A525 /* DemoViewController.xib */,
-				5D5D04261581067D00E8A525 /* InfoPlist.strings */,
-				5D5D04281581067D00E8A525 /* MainWindow.xib */,
-				5D5D042A1581067D00E8A525 /* main.m */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		5D5D042C1581067D00E8A525 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D046B1581067D00E8A525 /* Demo.app */,
-				5D5D046D1581067D00E8A525 /* XMLReaderTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5D5D042E1581067D00E8A525 /* XMLReaderTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D042F1581067D00E8A525 /* complex.xml */,
-				5D5D04301581067D00E8A525 /* InfoPlist.strings */,
-				5D5D04321581067D00E8A525 /* XMLReaderTests-Info.plist */,
-				5D5D04331581067D00E8A525 /* XMLReaderTests-Prefix.pch */,
-				5D5D04341581067D00E8A525 /* XMLReaderTests.h */,
-				5D5D04351581067D00E8A525 /* XMLReaderTests.m */,
-			);
-			path = XMLReaderTests;
-			sourceTree = "<group>";
-		};
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
-				5D5D03D41581046A00E8A525 /* New Group */,
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
@@ -554,8 +376,6 @@
 		5D61B7CD155F3F9A0003006A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D5D041A1581067D00E8A525 /* XML-to-NSDictionary */,
-				5D5D03171580548400E8A525 /* KissXML */,
 				5D37CE8A156EED760073FA11 /* libxml2.dylib */,
 				5D61B7CE155F3F9A0003006A /* Foundation.framework */,
 				5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */,
@@ -644,7 +464,6 @@
 				5D5D04101581056D00E8A525 /* MBUserRating.h in Headers */,
 				5D5D03DB1581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch in Headers */,
 				5D5D03ED1581056D00E8A525 /* MBEntity-protected.h in Headers */,
-				5D5D04651581067D00E8A525 /* XMLReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,13 +471,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5D03271580548400E8A525 /* DDXMLElementAdditions.h in Headers */,
-				5D5D03291580548400E8A525 /* NSString+DDXML.h in Headers */,
-				5D5D032B1580548400E8A525 /* DDXML.h in Headers */,
-				5D5D032C1580548400E8A525 /* DDXMLDocument.h in Headers */,
-				5D5D032E1580548400E8A525 /* DDXMLElement.h in Headers */,
-				5D5D03301580548400E8A525 /* DDXMLNode.h in Headers */,
-				5D5D03321580548400E8A525 /* DDXMLPrivate.h in Headers */,
 				5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */,
 				5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */,
 				5D5D037B158058BD00E8A525 /* MBArtist.h in Headers */,
@@ -690,7 +502,6 @@
 				5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */,
 				5D5D03B0158058BD00E8A525 /* MB.h in Headers */,
 				5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */,
-				5D5D04641581067D00E8A525 /* XMLReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,12 +582,6 @@
 			mainGroup = 5D61B7C0155F3F9A0003006A;
 			productRefGroup = 5D61B7CC155F3F9A0003006A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5D5D042C1581067D00E8A525 /* Products */;
-					ProjectRef = 5D5D042B1581067D00E8A525 /* Demo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				5D61B7CA155F3F9A0003006A /* libmusicbrainz-objc */,
@@ -785,23 +590,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		5D5D046B1581067D00E8A525 /* Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Demo.app;
-			remoteRef = 5D5D046A1581067D00E8A525 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5D5D046D1581067D00E8A525 /* XMLReaderTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = XMLReaderTests.octest;
-			remoteRef = 5D5D046C1581067D00E8A525 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5D5D03B8158103DD00E8A525 /* Resources */ = {
@@ -879,7 +667,6 @@
 				5D5D04131581056D00E8A525 /* MBUserTag.m in Sources */,
 				5D5D04151581056D00E8A525 /* MBWork.m in Sources */,
 				5D5D04171581056D00E8A525 /* RateAndTaggableEntity.m in Sources */,
-				5D5D04671581067D00E8A525 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,11 +674,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5D03281580548400E8A525 /* DDXMLElementAdditions.m in Sources */,
-				5D5D032A1580548400E8A525 /* NSString+DDXML.m in Sources */,
-				5D5D032D1580548400E8A525 /* DDXMLDocument.m in Sources */,
-				5D5D032F1580548400E8A525 /* DDXMLElement.m in Sources */,
-				5D5D03311580548400E8A525 /* DDXMLNode.m in Sources */,
 				5D5D0378158058BD00E8A525 /* MBAlias.m in Sources */,
 				5D5D037A158058BD00E8A525 /* MBAnnotation.m in Sources */,
 				5D5D037C158058BD00E8A525 /* MBArtist.m in Sources */,
@@ -921,7 +703,6 @@
 				5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */,
 				5D5D03AF158058BD00E8A525 /* RateAndTaggableEntity.m in Sources */,
 				5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */,
-				5D5D04661581067D00E8A525 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,38 +725,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D5D04241581067D00E8A525 /* DemoViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D5D04251581067D00E8A525 /* en */,
-			);
-			name = DemoViewController.xib;
-			sourceTree = "<group>";
-		};
-		5D5D04261581067D00E8A525 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D5D04271581067D00E8A525 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5D5D04281581067D00E8A525 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D5D04291581067D00E8A525 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		5D5D04301581067D00E8A525 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D5D04311581067D00E8A525 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		5D61B7E7155F3F9B0003006A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1160,6 +909,7 @@
 				5D5D03CD158103DE00E8A525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D61B7C5155F3F9A0003006A /* Build configuration list for PBXProject "libmusicbrainz-objc" */ = {
 			isa = XCConfigurationList;

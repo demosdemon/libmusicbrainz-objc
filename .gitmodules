@@ -1,6 +1,0 @@
-[submodule "XML-to-NSDictionary"]
-	path = XML-to-NSDictionary
-	url = https://github.com/demosdemon/XML-to-NSDictionary.git
-[submodule "KissXML"]
-	path = KissXML
-	url = https://github.com/robbiehanson/KissXML.git
