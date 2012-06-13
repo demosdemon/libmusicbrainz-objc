@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBMedium : MBEntity
+@interface MBMedium <MBEntity>
 
 @end
 

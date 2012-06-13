@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBLabelInfo : MBEntity
+@interface MBLabelInfo <MBEntity>
 
 @end
 

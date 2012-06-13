@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBTag : MBEntity
+@interface MBTag <MBEntity>
 
 @end
 

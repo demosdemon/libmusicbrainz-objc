@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBCDStub : MBEntity
+@interface MBCDStub <MBEntity>
 
 @end
 

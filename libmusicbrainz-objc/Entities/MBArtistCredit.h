@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBArtistCredit : MBEntity
+@interface MBArtistCredit <MBEntity>
 
 @end
 

@@ -9,7 +9,9 @@
 
 #import "MBEntity.h"
 
-@interface MBUserTag : MBEntity
+@interface MBUserTag <MBEntity>
+
+@property (copy, nonatomic) NSString * Name;
 
 @end
 

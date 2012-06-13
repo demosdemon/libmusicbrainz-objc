@@ -10,11 +10,21 @@
 
 @class MBRating, MBUserRating;
 
-@interface MBRateAndTaggableEntity : MBEntity
+@protocol MBRateAndTaggableEntity <MBEntity>
 
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects
-@property (nonatomic, readonly) NSArray *UserTagList; ///<NSArray of MBUserTag objects
-@property (nonatomic, readonly) MBRating *Rating;
-@property (nonatomic, readonly) MBUserRating *UserRating;
+@required
+
+/// All Rate and Taggable entities must have a mbid
+@property (copy, nonatomic, readonly) NSString * Id;
+
+/// NSAray of MBTag objects
+@property (nonatomic, readonly) NSArray * TagList;
+/// NSArray of MBUserTag objects
+@property (nonatomic, readonly) NSArray * UserTagList;
+@property (nonatomic, readonly) MBRating * Rating;
+@property (nonatomic, readonly) MBUserRating * UserRating;
+
+/// Element name for this type of RateAndTaggable, e.g.: artist, release
+@property (copy, nonatomic, readonly) NSString* ElementName; 
 
 @end

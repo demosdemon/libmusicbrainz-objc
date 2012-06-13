@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBAlias : MBEntity
+@interface MBAlias <MBEntity>
 
 @end
 

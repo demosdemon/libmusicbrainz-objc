@@ -11,7 +11,7 @@
 
 #import "RateAndTaggableEntity.h"
 
-@interface MBLabel : MBRateAndTaggableEntity
+@interface MBLabel <MBRateAndTaggableEntity>
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Type;

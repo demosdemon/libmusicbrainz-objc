@@ -11,7 +11,6 @@
 /// @brief Artist entity
 
 #import "MB.h"
-#import "MBEntity-protected.h"
 
 const NSString *             kTypeKey = @"@type";
 const NSString *               kIdKey = @"@id";
@@ -36,83 +35,5 @@ const NSString *           kRatingKey = @"rating";
 const NSString *       kUserRatingKey = @"user-rating";
 
 @implementation MBArtist
-
-- (NSString *) Id {
-  return [_dict objectForKey:kIdKey];
-}
-
-- (NSString *) Type {
-  return [_dict objectForKey:kTypeKey];
-}
-
-- (NSString *) Name {
-  return [_dict objectForKey:kNameKey];
-}
-
-- (NSString *) SortName {
-  return [_dict objectForKey:kSortNameKey];
-}
-
-- (NSString *) Gender {
-  return [_dict objectForKey:kGenderKey];
-}
-
-- (NSString *) Country {
-  return [_dict objectForKey:kCountryKey];
-}
-
-- (NSString *) Disambiguation {
-  return [_dict objectForKey:kDisambiguationKey];
-}
-
-- (NSArray *) IPIList {
-  id obj = [_dict objectForKey:kIpiListKey];
-  if ([obj isKindOfClass:[NSArray class]]) return obj;
-  return [NSArray arrayWithObject:obj];
-}
-
-- (MBLifeSpan *) Lifespan {
-  return [[MBLifeSpan alloc] initWithDict:[_dict objectForKey:kLifeSpanKey]];
-}
-
-- (NSArray *) AliasList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBAlias class]];
-}
-
-- (NSArray *) RecordingList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBRecording class]];
-}
-
-- (NSArray *) ReleaseList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBRelease class]];
-}
-
-- (NSArray *) ReleaseGroupList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBReleaseGroup class]];
-}
-
-- (NSArray *) LabelList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBLabel class]];
-}
-
-- (NSArray *) WorkList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBWork class]];
-}
-
-- (NSArray *) RelationListList {
-  //return [self list:[_dict objectForKey:kAliasListKey] type:[ class]];
-}
-
-- (NSArray *) TagList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBTag class]];
-}
-
-- (NSArray *) UserTagList {
-  return [self list:[_dict objectForKey:kAliasListKey] type:[MBUserTag class]];
-}
-
-- (MBRating *) Rating {
-  return [[MBRating alloc] initWithDict:[_dict objectForKey:kRatingKey]];
-}
 
 @end

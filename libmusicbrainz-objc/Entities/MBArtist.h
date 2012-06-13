@@ -14,7 +14,9 @@
 
 @class MBLifeSpan, MBRating, MBUserRating;
 
-@interface MBArtist : MBRateAndTaggableEntity
+@interface MBArtist <MBRateAndTaggableEntity> {
+  NSDictionary *_dict;
+}
 
 // All NSStrings* must be copy, nonatomic
 @property (copy, nonatomic, readonly) NSString *Id;

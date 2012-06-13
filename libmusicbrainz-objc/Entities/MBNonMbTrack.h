@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBNonMbTrack : MBEntity
+@interface MBNonMbTrack <MBEntity>
 
 @end
 

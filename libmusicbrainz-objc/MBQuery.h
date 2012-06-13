@@ -9,42 +9,83 @@
 ///   webservice.
 
 #import <Foundation/Foundation.h>
+#import "Entities/RateAndTaggableEntity.h"
 
-@class MBQuery, MBMetadata;
+@class MBQuery, MBMetadata, MBRelease, MBCollection, MBISRC, MBRecording;
 
-@protocol MBQueryDelegate <NSObject>
-@optional
-
+@protocol MBQueryDelegate <NSObject, NSXMLParserDelegate>
 -(void) query:(MBQuery *)query didReceiveResult:(MBMetadata *)result;
 -(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
-
 @end
 
-@interface MBQuery : NSObject <NSURLConnectionDelegate> {
+@interface MBQuery : NSObject <NSURLConnectionDataDelegate, NSXMLParserDelegate> 
+{
  @private
   id<MBQueryDelegate> _delegate;
   NSString *_useragent;
   NSString *_server;
-  NSUInteger _port;
+  NSInteger _port;
   
   NSURLCredential *_credentials;
-  NSURLProtectionSpace *_protectionSpace;
   
   NSMutableData *_data;
+  
+  NSError *_error;
+  
+  NSMutableDictionary *_submissionQueue;
 }
 
+#pragma mark - Initializers
+/// MBQuery must be initialized with a user agent string. If the string is empty
+/// nil is returned. delegate must also not be nil. Default Server:Port is 
+/// musicbrainz.org:80
 -(id) initWithUserAgent:(NSString *)ua
                Delegate:(id<MBQueryDelegate>)delegate;
+/// @see initWithUserAgent:Delegate:
 -(id) initWithUserAgent:(NSString *)ua
                Delegate:(id<MBQueryDelegate>)delegate
                  Server:(NSString *)server
-                   Port:(NSUInteger)port;
+                   Port:(NSInteger)port;
 
+#pragma mark - Properties
 @property (copy, nonatomic) NSString *UserAgent;
 @property (copy, nonatomic) NSString *Server;
-@property (nonatomic, assign) NSUInteger Port;
+@property (assign, nonatomic) NSInteger Port;
+@property (copy, nonatomic) NSString *Version;
 -(void) setUsername:(NSString *)username
-        andPassword:(NSString*)password;
+        Password:(NSString *)password;
+
+#pragma mark - Instance Methods
+- (void) queueUserTags:(NSArray *)userTags
+           forTaggable:(id<MBRateAndTaggableEntity>)taggable;
+
+- (void) queueRating:(MBUserRating *)rating
+          forRatable:(id<MBRateAndTaggableEntity>)ratable;
+
+- (void) addRelease:(MBRelease *)release 
+       toCollection:(MBCollection *)collection;
+
+- (void) removeRelease:(MBRelease *)release
+        fromCollection:(MBCollection *)collection;
+
+- (void) addReleases:(NSArray *)releases
+        toCollection:(MBCollection *)collection;
+
+- (void) removeReleases:(NSArray *)releases
+         fromCollection:(MBCollection *)collection;
+
+- (void) queueBarcode:(NSString *)barcode
+          forRelease:(MBRelease *)release;
+
+- (void) queueISRC:(MBISRC *)isrc
+      forRecording:(MBRecording *)recording;
+
+- (void) submitQueue;
+
+- (void) queryWithEntity:(NSString *)entity 
+                     uid:(NSString *)idstr 
+                resource:(NSString *)resource 
+              parameters:(NSDictionary *)parameters;
 
 @end
 

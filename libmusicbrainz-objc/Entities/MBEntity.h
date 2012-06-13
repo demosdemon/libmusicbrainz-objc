@@ -11,21 +11,28 @@
 #import <Foundation/Foundation.h>
 #import "MBQuery.h"
 
-@interface MBEntity : NSObject {
- @protected
-  NSDictionary *_dict;
-}
+@protocol MBEntity <NSObject, NSXMLParserDelegate>
 
-- (id) init;
-- (id) initWithDict:(NSDictionary*)dict;
-- (id) initWithXml:(NSString*)xml;
-- (id) initWithXml:(NSString*)xml 
-             Error:(NSError**)error;
-- (id) initWithXmlData:(NSData*)xml;
-- (id) initWithXmlData:(NSData*)xml 
-                 Error:(NSError**)error;
+@required
 
-- (NSDictionary*) getExtraAttributeByName:(NSString*)name;
-- (NSDictionary*) getExtraElementByName:(NSString*)name;
+@property (retain, atomic) id<MBEntity> parent;
+
+- (id) initWithParent:(id<MBEntity>)parent;
+
+- (void) parser:(NSXMLParser *)parser 
+didStartElement:(NSString *)elementName 
+   namespaceURI:(NSString *)namespaceURI 
+  qualifiedName:(NSString *)qName 
+     attributes:(NSDictionary *)attributeDict;
+
+- (void) parser:(NSXMLParser *)parser 
+  didEndElement:(NSString *)elementName 
+   namespaceURI:(NSString *)namespaceURI 
+  qualifiedName:(NSString *)qName;
+
+- (void) parser:(NSXMLParser *)parser 
+foundCharacters:(NSString *)string;
+
+
 
 @end

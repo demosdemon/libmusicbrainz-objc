@@ -10,7 +10,7 @@
 
 #import "RateAndTaggableEntity.h"
 
-@interface MBRecording : MBRateAndTaggableEntity
+@interface MBRecording <MBRateAndTaggableEntity>
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Title;

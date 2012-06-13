@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBPUID : MBEntity
+@interface MBPUID <MBEntity>
 
 @end
 
