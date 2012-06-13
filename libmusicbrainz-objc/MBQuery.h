@@ -18,7 +18,7 @@
 -(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
 @end
 
-@interface MBQuery : NSObject <NSURLConnectionDataDelegate, NSXMLParserDelegate> 
+@interface MBQuery : NSObject <NSXMLParserDelegate> 
 {
  @private
   id<MBQueryDelegate> _delegate;
@@ -28,11 +28,10 @@
   
   NSURLCredential *_credentials;
   
-  NSMutableData *_data;
-  
-  NSError *_error;
-  
   NSMutableDictionary *_submissionQueue;
+  
+  NSMutableArray *_requestQueue;
+  NSThread *_connectionThread;
 }
 
 #pragma mark - Initializers

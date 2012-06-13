@@ -11,6 +11,7 @@
 #import "MB.h"
 #import "NSMutableArray_QuackMethods.h"
 
+#define LIBRARY_USER_AGENT @"libmusicbrainz-objc-0.0.1"
 #define DEFAULT_SERVER @"musicbrainz.org"
 #define DEFAULT_PORT   80
 
@@ -37,6 +38,22 @@
 #define kEntityListFormat  @"<%@-list>%@</%@-list>"
 #define kMetadataFormat    @"<metadata xmlns=\"http://musicbrainz.org/ns/mmd-2.0#\">%@</metadata>"
 
+#define kNSURLTimeoutLength 60
+static NSString *toString(id obj) {
+  if ([obj isKindOfClass:[NSArray class]]) {
+    return toString([(NSArray*)obj componentsJoinedByString:@"+"]);
+  } else {
+    return [[NSString stringWithFormat:@"%@", obj] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+  }
+}
+
+static NSString *dictToQueryParameters(NSDictionary *dict) {
+  NSMutableArray *components = [NSMutableArray arrayWithCapacity:[dict count]];
+  [dict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+    [components addObject:[NSString stringWithFormat:@"%@=%@", toString(key), toString(obj)]];
+  }];
+  return [components componentsJoinedByString:@"&"];
+}
 
 @implementation MBQuery
 
@@ -71,6 +88,12 @@
     _delegate = delegate;
     _server = [server copy];
     _port = port;
+    
+    _requestQueue = [[NSMutableArray alloc] init];
+    _connectionThread = 
+      [[NSThread alloc] initWithTarget:self 
+                              selector:@selector(processConnectionQueue) 
+                                object:nil];
   }
   return self;
 }
@@ -349,60 +372,8 @@
   NSMutableString * endpoint = [[NSMutableString alloc] initWithString:entity];
   if (idstr) [endpoint appendFormat:@"/%@", idstr];
   if (resource) [endpoint appendFormat:@"/%@", resource];
-}
-
-#pragma mark - NSURLConnectionDelegate methods
-- (void) connection:(NSURLConnection *)connection 
-   didFailWithError:(NSError *)error 
-{
-  _data = nil;
-  if ([_delegate respondsToSelector:@selector(query:didFailWithError:)])
-    [_delegate query:self didFailWithError:error];
-}
-
-- (BOOL) connectionShouldUseCredentialStorage:(NSURLConnection *)connection 
-{
-  return YES;
-}
-
-- (void) connection:(NSURLConnection *)connection 
-willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge 
-{
-  if (![[challenge proposedCredential] isEqual:_credentials])
-    [[challenge sender] useCredential:_credentials 
-           forAuthenticationChallenge:challenge
-     ];
-}
-
-#pragma mark - NSURLConnectionDataDelegate methods
-- (void) connection:(NSURLConnection *)connection 
- didReceiveResponse:(NSURLResponse *)response 
-{
-  [_data setLength:0];
-}
-
-- (void) connection:(NSURLConnection *)connection 
-     didReceiveData:(NSData *)data 
-{
-  [_data appendData:data];
-}
-
-- (NSInputStream *) connection:(NSURLConnection *)connection 
-             needNewBodyStream:(NSURLRequest *)request
-{
   
-}
-
-- (void) connection:(NSURLConnection *)connection
-    didSendBodyData:(NSInteger)bytesWritten
-  totalBytesWritten:(NSInteger)totalBytesWritten
-totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
-{
   
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection 
-{
 }
 
 #pragma mark - NSXMLParserDelegate methods
@@ -438,25 +409,93 @@ didStartElement:(NSString *)elementName
 - (void) get:(NSString *)endpoint
   parameters:(NSDictionary *)parameters
 {
-
+  NSURL *requestUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@?%@", kBaseUrl(_server, _port), endpoint, dictToQueryParameters(parameters)]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:kNSURLTimeoutLength];
+  [request addValue:LIBRARY_USER_AGENT 
+ forHTTPHeaderField:@"User-Agent"];
+  
+  [self enqueueRequest:request];
 }
 
 - (void) post:(NSString *)endpoint
    parameters:(NSDictionary *)parameters
          data:(NSData *)data
 {
+  NSMutableDictionary *newParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
+  [newParameters setObject:@"client" forKey:_useragent];
   
+  NSURL *requestUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@?%@", kBaseUrl(_server, _port), endpoint, dictToQueryParameters(newParameters)]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:kNSURLTimeoutLength];
+  [request addValue:LIBRARY_USER_AGENT 
+ forHTTPHeaderField:@"User-Agent"];
+  [request setHTTPMethod:@"POST"];
+  [request setValue:@"application/xml; charset=utf-8" 
+ forHTTPHeaderField:@"Content-Type"];
+  [request setHTTPBody:data];
+  
+  [self enqueueRequest:request];
 }
 
 - (void) put:(NSString *)endpoint
   parameters:(NSDictionary *)parameters
 {
+  NSMutableDictionary *newParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
+  [newParameters setObject:@"client" forKey:_useragent];
   
+  NSURL *requestUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@?%@", kBaseUrl(_server, _port), endpoint, dictToQueryParameters(newParameters)]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:kNSURLTimeoutLength];
+  [request addValue:LIBRARY_USER_AGENT 
+ forHTTPHeaderField:@"User-Agent"];
+  [request setHTTPMethod:@"PUT"];
+  
+  [self enqueueRequest:request];
 }
 
 - (void) delete:(NSString *)endpoint 
      parameters:(NSDictionary *)parameters
 {
+  NSMutableDictionary *newParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
+  [newParameters setObject:@"client" forKey:_useragent];
+  
+  NSURL *requestUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@?%@", kBaseUrl(_server, _port), endpoint, dictToQueryParameters(newParameters)]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:kNSURLTimeoutLength];
+  [request addValue:LIBRARY_USER_AGENT 
+ forHTTPHeaderField:@"User-Agent"];
+  [request setHTTPMethod:@"DELETE"];
+  
+  [self enqueueRequest:request];
+}
+
+- (void) enqueueRequest:(NSURLRequest *)request {
+  @synchronized (_requestQueue) {
+    [_requestQueue enqueue:_requestQueue];
+  }
+  if (![_connectionThread isExecuting]) [_connectionThread start];
+}
+
+- (void) processConnectionQueue {
+  while ([_requestQueue count] > 0) {
+    NSURLRequest *request = nil;
+    @synchronized (_requestQueue) {
+      request = [_requestQueue dequeue];
+    }
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (!data) [self performSelectorOnMainThread:@selector(processError:) withObject:error waitUntilDone:NO];
+    else [self performSelectorOnMainThread:@selector(processData:) withObject:data waitUntilDone:NO];
+    
+    // sleep 1 second after every request, for rate limiting
+    [NSThread sleepForTimeInterval:1];
+  }
+}
+
+- (void) processData:(NSData*)data {
+  
+}
+
+- (void) processError:(NSError*)error {
+  
 }
 
 @end
