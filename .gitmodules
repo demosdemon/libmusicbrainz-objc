@@ -1,3 +1,6 @@
 [submodule "submodules/asi-http-request"]
 	path = submodules/asi-http-request
 	url = https://github.com/pokeb/asi-http-request.git
+[submodule "submodules/KissXML"]
+	path = submodules/KissXML
+	url = https://github.com/robbiehanson/KissXML.git
