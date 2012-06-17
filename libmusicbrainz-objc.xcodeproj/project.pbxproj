@@ -7,64 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; };
+		5D5D0377158058BD00E8A525 /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0378158058BD00E8A525 /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
-		5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; };
+		5D5D0379158058BD00E8A525 /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D037A158058BD00E8A525 /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033E158058BD00E8A525 /* MBAnnotation.m */; };
-		5D5D037B158058BD00E8A525 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; };
+		5D5D037B158058BD00E8A525 /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D037C158058BD00E8A525 /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0340158058BD00E8A525 /* MBArtist.m */; };
-		5D5D037D158058BD00E8A525 /* MBArtistCredit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0341158058BD00E8A525 /* MBArtistCredit.h */; };
+		5D5D037D158058BD00E8A525 /* MBArtistCredit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0341158058BD00E8A525 /* MBArtistCredit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D037E158058BD00E8A525 /* MBArtistCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0342158058BD00E8A525 /* MBArtistCredit.m */; };
-		5D5D037F158058BD00E8A525 /* MBCDStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0343158058BD00E8A525 /* MBCDStub.h */; };
+		5D5D037F158058BD00E8A525 /* MBCDStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0343158058BD00E8A525 /* MBCDStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0380158058BD00E8A525 /* MBCDStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0344158058BD00E8A525 /* MBCDStub.m */; };
-		5D5D0381158058BD00E8A525 /* MBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0345158058BD00E8A525 /* MBCollection.h */; };
+		5D5D0381158058BD00E8A525 /* MBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0345158058BD00E8A525 /* MBCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0382158058BD00E8A525 /* MBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0346158058BD00E8A525 /* MBCollection.m */; };
-		5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; };
+		5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0384158058BD00E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0348158058BD00E8A525 /* MBDisc.m */; };
-		5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; };
-		5D5D0388158058BD00E8A525 /* MBFreeDbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */; };
+		5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D0388158058BD00E8A525 /* MBFreeDbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreeDbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0389158058BD00E8A525 /* MBFreeDbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* MBFreeDbDisc.m */; };
-		5D5D038A158058BD00E8A525 /* MBISRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBISRC.h */; };
+		5D5D038A158058BD00E8A525 /* MBISRC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBISRC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D038B158058BD00E8A525 /* MBISRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034F158058BD00E8A525 /* MBISRC.m */; };
-		5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; };
+		5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D038D158058BD00E8A525 /* MBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0351158058BD00E8A525 /* MBLabel.m */; };
-		5D5D038E158058BD00E8A525 /* MBLabelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0352158058BD00E8A525 /* MBLabelInfo.h */; };
+		5D5D038E158058BD00E8A525 /* MBLabelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0352158058BD00E8A525 /* MBLabelInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D038F158058BD00E8A525 /* MBLabelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0353158058BD00E8A525 /* MBLabelInfo.m */; };
-		5D5D0390158058BD00E8A525 /* MBLifeSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0354158058BD00E8A525 /* MBLifeSpan.h */; };
+		5D5D0390158058BD00E8A525 /* MBLifeSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0354158058BD00E8A525 /* MBLifeSpan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0391158058BD00E8A525 /* MBLifeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0355158058BD00E8A525 /* MBLifeSpan.m */; };
-		5D5D0392158058BD00E8A525 /* MBMedium.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0356158058BD00E8A525 /* MBMedium.h */; };
+		5D5D0392158058BD00E8A525 /* MBMedium.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0356158058BD00E8A525 /* MBMedium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0393158058BD00E8A525 /* MBMedium.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0357158058BD00E8A525 /* MBMedium.m */; };
-		5D5D0394158058BD00E8A525 /* MBMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0358158058BD00E8A525 /* MBMetadata.h */; };
+		5D5D0394158058BD00E8A525 /* MBMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0358158058BD00E8A525 /* MBMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0395158058BD00E8A525 /* MBMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0359158058BD00E8A525 /* MBMetadata.m */; };
-		5D5D0396158058BD00E8A525 /* MBNonMbTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */; };
+		5D5D0396158058BD00E8A525 /* MBNonMbTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035A158058BD00E8A525 /* MBNonMbTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0397158058BD00E8A525 /* MBNonMbTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035B158058BD00E8A525 /* MBNonMbTrack.m */; };
-		5D5D0398158058BD00E8A525 /* MBPUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035C158058BD00E8A525 /* MBPUID.h */; };
+		5D5D0398158058BD00E8A525 /* MBPUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035C158058BD00E8A525 /* MBPUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0399158058BD00E8A525 /* MBPUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035D158058BD00E8A525 /* MBPUID.m */; };
-		5D5D039A158058BD00E8A525 /* MBRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035E158058BD00E8A525 /* MBRating.h */; };
+		5D5D039A158058BD00E8A525 /* MBRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D035E158058BD00E8A525 /* MBRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D039B158058BD00E8A525 /* MBRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D035F158058BD00E8A525 /* MBRating.m */; };
-		5D5D039C158058BD00E8A525 /* MBRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0360158058BD00E8A525 /* MBRecording.h */; };
+		5D5D039C158058BD00E8A525 /* MBRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0360158058BD00E8A525 /* MBRecording.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D039D158058BD00E8A525 /* MBRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0361158058BD00E8A525 /* MBRecording.m */; };
-		5D5D039E158058BD00E8A525 /* MBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0362158058BD00E8A525 /* MBRelation.h */; };
+		5D5D039E158058BD00E8A525 /* MBRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0362158058BD00E8A525 /* MBRelation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D039F158058BD00E8A525 /* MBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0363158058BD00E8A525 /* MBRelation.m */; };
-		5D5D03A0158058BD00E8A525 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0364158058BD00E8A525 /* MBRelease.h */; };
+		5D5D03A0158058BD00E8A525 /* MBRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0364158058BD00E8A525 /* MBRelease.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03A1158058BD00E8A525 /* MBRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0365158058BD00E8A525 /* MBRelease.m */; };
-		5D5D03A2158058BD00E8A525 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */; };
+		5D5D03A2158058BD00E8A525 /* MBReleaseGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03A3158058BD00E8A525 /* MBReleaseGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */; };
-		5D5D03A4158058BD00E8A525 /* MBTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0368158058BD00E8A525 /* MBTag.h */; };
+		5D5D03A4158058BD00E8A525 /* MBTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0368158058BD00E8A525 /* MBTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03A5158058BD00E8A525 /* MBTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0369158058BD00E8A525 /* MBTag.m */; };
-		5D5D03A6158058BD00E8A525 /* MBTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036A158058BD00E8A525 /* MBTrack.h */; };
+		5D5D03A6158058BD00E8A525 /* MBTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036A158058BD00E8A525 /* MBTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03A7158058BD00E8A525 /* MBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036B158058BD00E8A525 /* MBTrack.m */; };
-		5D5D03A8158058BD00E8A525 /* MBUserRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036C158058BD00E8A525 /* MBUserRating.h */; };
+		5D5D03A8158058BD00E8A525 /* MBUserRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036C158058BD00E8A525 /* MBUserRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03A9158058BD00E8A525 /* MBUserRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036D158058BD00E8A525 /* MBUserRating.m */; };
-		5D5D03AA158058BD00E8A525 /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036E158058BD00E8A525 /* MBUserTag.h */; };
+		5D5D03AA158058BD00E8A525 /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036E158058BD00E8A525 /* MBUserTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03AB158058BD00E8A525 /* MBUserTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D036F158058BD00E8A525 /* MBUserTag.m */; };
-		5D5D03AC158058BD00E8A525 /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0370158058BD00E8A525 /* MBWork.h */; };
+		5D5D03AC158058BD00E8A525 /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0370158058BD00E8A525 /* MBWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; };
-		5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; };
-		5D5D03B0158058BD00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; };
-		5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; };
+		5D5D03AE158058BD00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03B0158058BD00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
-		5D5D03BC158103DD00E8A525 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5D03BB158103DD00E8A525 /* Cocoa.framework */; };
 		5D5D03D91581052A00E8A525 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D03D61581052A00E8A525 /* InfoPlist.strings */; };
 		5D5D03DB1581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */; };
 		5D5D03DC1581056D00E8A525 /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -125,27 +124,73 @@
 		5D5D04151581056D00E8A525 /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D04161581056D00E8A525 /* RateAndTaggableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
-		5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */; };
-		5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7DE155F3F9B0003006A /* UIKit.framework */; };
-		5D61B7E0155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
-		5D61B7E3155F3F9B0003006A /* liblibmusicbrainz-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */; };
-		5D61B7E9155F3F9B0003006A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D61B7E7155F3F9B0003006A /* InfoPlist.strings */; };
-		5D61B7EC155F3F9B0003006A /* libmusicbrainz_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */; };
 		5D71B51F158834CA00588DAA /* NSMutableArray_QuackMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D71B51E158834C900588DAA /* NSMutableArray_QuackMethods.h */; };
 		5D71B520158834CA00588DAA /* NSMutableArray_QuackMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D71B51E158834C900588DAA /* NSMutableArray_QuackMethods.h */; };
 		5D71B522158834FC00588DAA /* NSMutableArray_QuackMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D71B521158834FC00588DAA /* NSMutableArray_QuackMethods.m */; };
 		5D71B523158834FC00588DAA /* NSMutableArray_QuackMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D71B521158834FC00588DAA /* NSMutableArray_QuackMethods.m */; };
+		5DA2CAE0158E6F2200D7FF11 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */; };
+		5DA2CAE2158E6F2B00D7FF11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		5DA2CAE4158E6F4F00D7FF11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */; };
+		5DA2CD7A158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD68158E70BF00D7FF11 /* ASICacheDelegate.h */; };
+		5DA2CD7B158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD68158E70BF00D7FF11 /* ASICacheDelegate.h */; };
+		5DA2CD7C158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */; };
+		5DA2CD7D158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */; };
+		5DA2CD7E158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD7F158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD80158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */; };
+		5DA2CD81158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */; };
+		5DA2CD82158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD83158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD84158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */; };
+		5DA2CD85158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */; };
+		5DA2CD86158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD87158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD88158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */; };
+		5DA2CD89158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */; };
+		5DA2CD8A158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD8B158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD8C158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */; };
+		5DA2CD8D158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */; };
+		5DA2CD8E158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD90158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */; };
+		5DA2CD91158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */; };
+		5DA2CD92158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD74158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h */; };
+		5DA2CD93158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD74158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h */; };
+		5DA2CD94158E70BF00D7FF11 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */; };
+		5DA2CD95158E70BF00D7FF11 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */; };
+		5DA2CD96158E70BF00D7FF11 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD98158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */; };
+		5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */; };
+		5DA2CD9A158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD9C158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */; };
+		5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */; };
+		5DA2CDA0158E70DA00D7FF11 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD9E158E70DA00D7FF11 /* ASIAuthenticationDialog.h */; };
+		5DA2CDA1158E70DA00D7FF11 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD9F158E70DA00D7FF11 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CDA4158E70EF00D7FF11 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDA2158E70EF00D7FF11 /* Reachability.h */; };
+		5DA2CDA5158E70EF00D7FF11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDA3158E70EF00D7FF11 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CDA8158E714300D7FF11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */; };
+		5DA2CDAA158E715500D7FF11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */; };
+		5DA2CDAC158E715F00D7FF11 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */; };
+		5DA2CDAE158E716800D7FF11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAD158E716800D7FF11 /* CoreGraphics.framework */; };
+		5DA2CDB0158E717E00D7FF11 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAF158E717E00D7FF11 /* libz.dylib */; };
+		5DA2CDB4158E721C00D7FF11 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDB3158E721C00D7FF11 /* libz.dylib */; };
+		5DA2CDB6158E723300D7FF11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDB5158E723300D7FF11 /* SystemConfiguration.framework */; };
+		5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */; };
+		5DA2CDC8158E77C900D7FF11 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */; };
+		5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */; };
+		5DA2CDCA158E77C900D7FF11 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */; };
+		5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBE158E77C900D7FF11 /* DDXML.h */; };
+		5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */; };
+		5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */; };
+		5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */; };
+		5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */; };
+		5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */; };
+		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; };
+		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5D61B7E1155F3F9B0003006A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D61B7CA155F3F9A0003006A;
-			remoteInfo = "libmusicbrainz-objc";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5D5D033B158058BD00E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
@@ -202,31 +247,64 @@
 		5D5D0370158058BD00E8A525 /* MBWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWork.h; sourceTree = "<group>"; };
 		5D5D0371158058BD00E8A525 /* MBWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWork.m; sourceTree = "<group>"; };
 		5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateAndTaggableEntity.h; sourceTree = "<group>"; };
-		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MB.h; sourceTree = "<group>"; };
-		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
-		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
+		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MB.h; path = "libmusicbrainz-objc/MB.h"; sourceTree = "<group>"; };
+		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBQuery.h; path = "libmusicbrainz-objc/MBQuery.h"; sourceTree = "<group>"; };
+		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBQuery.m; path = "libmusicbrainz-objc/MBQuery.m"; sourceTree = "<group>"; };
 		5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-objc-cocoa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D5D03BB158103DD00E8A525 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		5D5D03BE158103DE00E8A525 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		5D5D03BF158103DE00E8A525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		5D5D03C0158103DE00E8A525 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D5D03D61581052A00E8A525 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		5D5D03D71581052A00E8A525 /* libmusicbrainz-objc-cocoa-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objc-cocoa-Info.plist"; sourceTree = "<group>"; };
 		5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-cocoa-Prefix.pch"; sourceTree = "<group>"; };
 		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-objc-Prefix.pch"; sourceTree = "<group>"; };
-		5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libmusicbrainz-objcTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5D61B7DE155F3F9B0003006A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5D61B7E6155F3F9B0003006A /* libmusicbrainz-objcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objcTests-Info.plist"; sourceTree = "<group>"; };
-		5D61B7E8155F3F9B0003006A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_objcTests.h; sourceTree = "<group>"; };
-		5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_objcTests.m; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5D71B51E158834C900588DAA /* NSMutableArray_QuackMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_QuackMethods.h; sourceTree = "<group>"; };
-		5D71B521158834FC00588DAA /* NSMutableArray_QuackMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_QuackMethods.m; sourceTree = "<group>"; };
+		5D71B51E158834C900588DAA /* NSMutableArray_QuackMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableArray_QuackMethods.h; path = "libmusicbrainz-objc/NSMutableArray_QuackMethods.h"; sourceTree = "<group>"; };
+		5D71B521158834FC00588DAA /* NSMutableArray_QuackMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSMutableArray_QuackMethods.m; path = "libmusicbrainz-objc/NSMutableArray_QuackMethods.m"; sourceTree = "<group>"; };
+		5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		5DA2CD68158E70BF00D7FF11 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "submodules/asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = "<group>"; };
+		5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = "submodules/asi-http-request/Classes/ASIDataCompressor.h"; sourceTree = "<group>"; };
+		5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = "submodules/asi-http-request/Classes/ASIDataCompressor.m"; sourceTree = "<group>"; };
+		5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = "submodules/asi-http-request/Classes/ASIDataDecompressor.h"; sourceTree = "<group>"; };
+		5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = "submodules/asi-http-request/Classes/ASIDataDecompressor.m"; sourceTree = "<group>"; };
+		5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = "submodules/asi-http-request/Classes/ASIDownloadCache.h"; sourceTree = "<group>"; };
+		5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = "submodules/asi-http-request/Classes/ASIDownloadCache.m"; sourceTree = "<group>"; };
+		5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = "submodules/asi-http-request/Classes/ASIFormDataRequest.h"; sourceTree = "<group>"; };
+		5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = "submodules/asi-http-request/Classes/ASIFormDataRequest.m"; sourceTree = "<group>"; };
+		5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = "submodules/asi-http-request/Classes/ASIHTTPRequest.h"; sourceTree = "<group>"; };
+		5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = "submodules/asi-http-request/Classes/ASIHTTPRequest.m"; sourceTree = "<group>"; };
+		5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = "submodules/asi-http-request/Classes/ASIHTTPRequestConfig.h"; sourceTree = "<group>"; };
+		5DA2CD74158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = "submodules/asi-http-request/Classes/ASIHTTPRequestDelegate.h"; sourceTree = "<group>"; };
+		5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = "submodules/asi-http-request/Classes/ASIInputStream.h"; sourceTree = "<group>"; };
+		5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = "submodules/asi-http-request/Classes/ASIInputStream.m"; sourceTree = "<group>"; };
+		5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = "submodules/asi-http-request/Classes/ASINetworkQueue.h"; sourceTree = "<group>"; };
+		5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = "submodules/asi-http-request/Classes/ASINetworkQueue.m"; sourceTree = "<group>"; };
+		5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = "submodules/asi-http-request/Classes/ASIProgressDelegate.h"; sourceTree = "<group>"; };
+		5DA2CD9E158E70DA00D7FF11 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = "submodules/asi-http-request/Classes/ASIAuthenticationDialog.h"; sourceTree = "<group>"; };
+		5DA2CD9F158E70DA00D7FF11 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = "submodules/asi-http-request/Classes/ASIAuthenticationDialog.m"; sourceTree = "<group>"; };
+		5DA2CDA2158E70EF00D7FF11 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "submodules/asi-http-request/External/Reachability/Reachability.h"; sourceTree = "<group>"; };
+		5DA2CDA3158E70EF00D7FF11 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "submodules/asi-http-request/External/Reachability/Reachability.m"; sourceTree = "<group>"; };
+		5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5DA2CDAD158E716800D7FF11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DA2CDAF158E717E00D7FF11 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5DA2CDB3158E721C00D7FF11 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		5DA2CDB5158E723300D7FF11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		5DA2CDBE158E77C900D7FF11 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +312,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5D03BC158103DD00E8A525 /* Cocoa.framework in Frameworks */,
+				5DA2CAE2158E6F2B00D7FF11 /* Cocoa.framework in Frameworks */,
+				5DA2CDB6158E723300D7FF11 /* SystemConfiguration.framework in Frameworks */,
+				5DA2CDB4158E721C00D7FF11 /* libz.dylib in Frameworks */,
+				5DA2CAE0158E6F2200D7FF11 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,17 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D61B7D7155F3F9B0003006A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D61B7DD155F3F9B0003006A /* SenTestingKit.framework in Frameworks */,
-				5D61B7DF155F3F9B0003006A /* UIKit.framework in Frameworks */,
-				5D61B7E0155F3F9B0003006A /* Foundation.framework in Frameworks */,
-				5D61B7E3155F3F9B0003006A /* liblibmusicbrainz-objc.a in Frameworks */,
+				5DA2CAE4158E6F4F00D7FF11 /* libxml2.dylib in Frameworks */,
+				5DA2CDA8158E714300D7FF11 /* CFNetwork.framework in Frameworks */,
+				5DA2CDAA158E715500D7FF11 /* SystemConfiguration.framework in Frameworks */,
+				5DA2CDAE158E716800D7FF11 /* CoreGraphics.framework in Frameworks */,
+				5DA2CDAC158E715F00D7FF11 /* MobileCoreServices.framework in Frameworks */,
+				5DA2CDB0158E717E00D7FF11 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,17 +394,8 @@
 				5D5D0371158058BD00E8A525 /* MBWork.m */,
 				5D5D0372158058BD00E8A525 /* RateAndTaggableEntity.h */,
 			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		5D5D03BD158103DE00E8A525 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5D5D03BE158103DE00E8A525 /* AppKit.framework */,
-				5D5D03BF158103DE00E8A525 /* CoreData.framework */,
-				5D5D03C0158103DE00E8A525 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
+			name = Entities;
+			path = "libmusicbrainz-objc/Entities";
 			sourceTree = "<group>";
 		};
 		5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */ = {
@@ -337,6 +404,7 @@
 				5D5D03D61581052A00E8A525 /* InfoPlist.strings */,
 				5D5D03D71581052A00E8A525 /* libmusicbrainz-objc-cocoa-Info.plist */,
 				5D5D03D81581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch */,
+				5DA2CDB2158E71F500D7FF11 /* Frameworks */,
 			);
 			path = "libmusicbrainz-objc-cocoa";
 			sourceTree = "<group>";
@@ -344,10 +412,10 @@
 		5D61B7C0155F3F9A0003006A = {
 			isa = PBXGroup;
 			children = (
+				5DA2CDA6158E710400D7FF11 /* Classes */,
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
-				5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */,
 				5D5D03D51581052A00E8A525 /* libmusicbrainz-objc-cocoa */,
 				5D61B7CD155F3F9A0003006A /* Frameworks */,
 				5D61B7CC155F3F9A0003006A /* Products */,
@@ -358,7 +426,6 @@
 			isa = PBXGroup;
 			children = (
 				5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */,
-				5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */,
 				5D5D03BA158103DD00E8A525 /* libmusicbrainz-objc-cocoa.framework */,
 			);
 			name = Products;
@@ -367,16 +434,50 @@
 		5D61B7CD155F3F9A0003006A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D61B7CE155F3F9A0003006A /* Foundation.framework */,
-				5D61B7DC155F3F9B0003006A /* SenTestingKit.framework */,
-				5D61B7DE155F3F9B0003006A /* UIKit.framework */,
-				5D5D03BB158103DD00E8A525 /* Cocoa.framework */,
-				5D5D03BD158103DE00E8A525 /* Other Frameworks */,
+				5DA2CD67158E708800D7FF11 /* asi-http-request */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
+			isa = PBXGroup;
+			children = (
+				5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */,
+				5DA2CDB1158E718200D7FF11 /* Frameworks */,
+			);
+			path = "libmusicbrainz-objc";
+			sourceTree = "<group>";
+		};
+		5DA2CD67158E708800D7FF11 /* asi-http-request */ = {
+			isa = PBXGroup;
+			children = (
+				5DA2CD9E158E70DA00D7FF11 /* ASIAuthenticationDialog.h */,
+				5DA2CD9F158E70DA00D7FF11 /* ASIAuthenticationDialog.m */,
+				5DA2CD68158E70BF00D7FF11 /* ASICacheDelegate.h */,
+				5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */,
+				5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */,
+				5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */,
+				5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */,
+				5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */,
+				5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */,
+				5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */,
+				5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */,
+				5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */,
+				5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */,
+				5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */,
+				5DA2CD74158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h */,
+				5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */,
+				5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */,
+				5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */,
+				5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */,
+				5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */,
+				5DA2CDA2158E70EF00D7FF11 /* Reachability.h */,
+				5DA2CDA3158E70EF00D7FF11 /* Reachability.m */,
+			);
+			name = "asi-http-request";
+			sourceTree = "<group>";
+		};
+		5DA2CDA6158E710400D7FF11 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				5D5D0374158058BD00E8A525 /* MB.h */,
@@ -385,36 +486,78 @@
 				5D71B51E158834C900588DAA /* NSMutableArray_QuackMethods.h */,
 				5D71B521158834FC00588DAA /* NSMutableArray_QuackMethods.m */,
 				5D5D033A158058BD00E8A525 /* Entities */,
-				5D61B7D1155F3F9B0003006A /* Supporting Files */,
 			);
-			path = "libmusicbrainz-objc";
+			name = Classes;
 			sourceTree = "<group>";
 		};
-		5D61B7D1155F3F9B0003006A /* Supporting Files */ = {
+		5DA2CDB1158E718200D7FF11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */,
+				5DA2CDB7158E77C900D7FF11 /* KissXML */,
+				5D61B7CE155F3F9A0003006A /* Foundation.framework */,
+				5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */,
+				5DA2CDAF158E717E00D7FF11 /* libz.dylib */,
+				5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */,
+				5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */,
+				5DA2CDAD158E716800D7FF11 /* CoreGraphics.framework */,
+				5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5D61B7E4155F3F9B0003006A /* libmusicbrainz-objcTests */ = {
+		5DA2CDB2158E71F500D7FF11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D61B7EA155F3F9B0003006A /* libmusicbrainz_objcTests.h */,
-				5D61B7EB155F3F9B0003006A /* libmusicbrainz_objcTests.m */,
-				5D61B7E5155F3F9B0003006A /* Supporting Files */,
+				5DA2CDB3158E721C00D7FF11 /* libz.dylib */,
+				5DA2CDB5158E723300D7FF11 /* SystemConfiguration.framework */,
+				5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */,
+				5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */,
 			);
-			path = "libmusicbrainz-objcTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5D61B7E5155F3F9B0003006A /* Supporting Files */ = {
+		5DA2CDB7158E77C900D7FF11 /* KissXML */ = {
 			isa = PBXGroup;
 			children = (
-				5D61B7E6155F3F9B0003006A /* libmusicbrainz-objcTests-Info.plist */,
-				5D61B7E7155F3F9B0003006A /* InfoPlist.strings */,
+				5DA2CDB8158E77C900D7FF11 /* Additions */,
+				5DA2CDBB158E77C900D7FF11 /* Categories */,
+				5DA2CDBE158E77C900D7FF11 /* DDXML.h */,
+				5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */,
+				5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */,
+				5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */,
+				5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */,
+				5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */,
+				5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */,
+				5DA2CDC5158E77C900D7FF11 /* Private */,
 			);
-			name = "Supporting Files";
+			name = KissXML;
+			path = submodules/KissXML/KissXML;
+			sourceTree = SOURCE_ROOT;
+		};
+		5DA2CDB8158E77C900D7FF11 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */,
+				5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		5DA2CDBB158E77C900D7FF11 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */,
+				5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5DA2CDC5158E77C900D7FF11 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +599,17 @@
 				5D5D04101581056D00E8A525 /* MBUserRating.h in Headers */,
 				5D5D03DB1581052A00E8A525 /* libmusicbrainz-objc-cocoa-Prefix.pch in Headers */,
 				5D71B520158834CA00588DAA /* NSMutableArray_QuackMethods.h in Headers */,
+				5DA2CD7B158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */,
+				5DA2CD7D158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */,
+				5DA2CD81158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */,
+				5DA2CD85158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */,
+				5DA2CD89158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */,
+				5DA2CD8D158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */,
+				5DA2CD91158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */,
+				5DA2CD93158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h in Headers */,
+				5DA2CD95158E70BF00D7FF11 /* ASIInputStream.h in Headers */,
+				5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */,
+				5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +648,26 @@
 				5D5D03B0158058BD00E8A525 /* MB.h in Headers */,
 				5D5D03B1158058BD00E8A525 /* MBQuery.h in Headers */,
 				5D71B51F158834CA00588DAA /* NSMutableArray_QuackMethods.h in Headers */,
+				5DA2CD7A158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */,
+				5DA2CD7C158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */,
+				5DA2CD80158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */,
+				5DA2CD84158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */,
+				5DA2CD88158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */,
+				5DA2CD8C158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */,
+				5DA2CD90158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */,
+				5DA2CD92158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h in Headers */,
+				5DA2CD94158E70BF00D7FF11 /* ASIInputStream.h in Headers */,
+				5DA2CD98158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */,
+				5DA2CD9C158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
+				5DA2CDA0158E70DA00D7FF11 /* ASIAuthenticationDialog.h in Headers */,
+				5DA2CDA4158E70EF00D7FF11 /* Reachability.h in Headers */,
+				5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */,
+				5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */,
+				5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */,
+				5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */,
+				5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */,
+				5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */,
+				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,25 +710,6 @@
 			productReference = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-objc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5D61B7DA155F3F9B0003006A /* libmusicbrainz-objcTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D61B7F2155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-objcTests" */;
-			buildPhases = (
-				5D61B7D6155F3F9B0003006A /* Sources */,
-				5D61B7D7155F3F9B0003006A /* Frameworks */,
-				5D61B7D8155F3F9B0003006A /* Resources */,
-				5D61B7D9155F3F9B0003006A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D61B7E2155F3F9B0003006A /* PBXTargetDependency */,
-			);
-			name = "libmusicbrainz-objcTests";
-			productName = "libmusicbrainz-objcTests";
-			productReference = 5D61B7DB155F3F9B0003006A /* libmusicbrainz-objcTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -577,7 +732,6 @@
 			projectRoot = "";
 			targets = (
 				5D61B7CA155F3F9A0003006A /* libmusicbrainz-objc */,
-				5D61B7DA155F3F9B0003006A /* libmusicbrainz-objcTests */,
 				5D5D03B9158103DD00E8A525 /* libmusicbrainz-objc-cocoa */,
 			);
 		};
@@ -592,14 +746,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D61B7D8155F3F9B0003006A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D61B7E9155F3F9B0003006A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5D61B89E155F561B0003006A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,22 +754,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5D61B7D9155F3F9B0003006A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D5D03B5158103DD00E8A525 /* Sources */ = {
@@ -658,6 +788,13 @@
 				5D5D04131581056D00E8A525 /* MBUserTag.m in Sources */,
 				5D5D04151581056D00E8A525 /* MBWork.m in Sources */,
 				5D71B523158834FC00588DAA /* NSMutableArray_QuackMethods.m in Sources */,
+				5DA2CD7F158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */,
+				5DA2CD83158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */,
+				5DA2CD87158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */,
+				5DA2CD8B158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */,
+				5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */,
+				5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */,
+				5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,37 +830,24 @@
 				5D5D03AD158058BD00E8A525 /* MBWork.m in Sources */,
 				5D5D03B2158058BD00E8A525 /* MBQuery.m in Sources */,
 				5D71B522158834FC00588DAA /* NSMutableArray_QuackMethods.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D61B7D6155F3F9B0003006A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D61B7EC155F3F9B0003006A /* libmusicbrainz_objcTests.m in Sources */,
+				5DA2CD7E158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */,
+				5DA2CD82158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */,
+				5DA2CD86158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */,
+				5DA2CD8A158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */,
+				5DA2CD8E158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */,
+				5DA2CD96158E70BF00D7FF11 /* ASIInputStream.m in Sources */,
+				5DA2CD9A158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */,
+				5DA2CDA1158E70DA00D7FF11 /* ASIAuthenticationDialog.m in Sources */,
+				5DA2CDA5158E70EF00D7FF11 /* Reachability.m in Sources */,
+				5DA2CDC8158E77C900D7FF11 /* DDXMLElementAdditions.m in Sources */,
+				5DA2CDCA158E77C900D7FF11 /* NSString+DDXML.m in Sources */,
+				5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */,
+				5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */,
+				5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5D61B7E2155F3F9B0003006A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-objc */;
-			targetProxy = 5D61B7E1155F3F9B0003006A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5D61B7E7155F3F9B0003006A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D61B7E8155F3F9B0003006A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5D5D03CC158103DE00E8A525 /* Debug */ = {
@@ -859,36 +983,6 @@
 			};
 			name = Release;
 		};
-		5D61B7F3155F3F9B0003006A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
-				INFOPLIST_FILE = "libmusicbrainz-objcTests/libmusicbrainz-objcTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5D61B7F4155F3F9B0003006A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libmusicbrainz-objc/libmusicbrainz-objc-Prefix.pch";
-				INFOPLIST_FILE = "libmusicbrainz-objcTests/libmusicbrainz-objcTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -915,15 +1009,6 @@
 			buildConfigurations = (
 				5D61B7F0155F3F9B0003006A /* Debug */,
 				5D61B7F1155F3F9B0003006A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5D61B7F2155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-objcTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D61B7F3155F3F9B0003006A /* Debug */,
-				5D61B7F4155F3F9B0003006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

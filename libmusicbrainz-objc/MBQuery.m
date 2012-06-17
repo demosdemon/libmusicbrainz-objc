@@ -26,7 +26,7 @@
 
 #define kClientParameter @"client"
 
-#define kBaseUrl(server, port) [NSString stringWithFormat:@"http://%@:%@/ws/2/", server, port] 
+#define kBaseUrl(server, port) [NSString stringWithFormat:@"http://%@:%d/ws/2/", server, port] 
 #define kLength(string)        [string lengthOfBytesUsingEncoding:NSUTF8StringEncoding]
 
 #define kUserTagFormat     @"<user-tag><name>%@</name></user-tag>"
@@ -354,7 +354,7 @@ static NSString *dictToQueryParameters(NSDictionary *dict) {
     
     xmlString = [NSMutableString stringWithFormat:kMetadataFormat, 
                  [NSString stringWithFormat:kEntityListFormat, 
-                  @"recording", xmlString]];
+                  @"recording", xmlString, @"recording"]];
     
     [self post:@"recording" 
     parameters:[NSDictionary dictionary] 
