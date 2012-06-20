@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PerformanceTests Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PerformanceTests Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/requestsComplete">&nbsp;&nbsp;&nbsp;&nbsp;requestsComplete</option>
+	
+	<option value="//api/name/responseData">&nbsp;&nbsp;&nbsp;&nbsp;responseData</option>
+	
+	<option value="//api/name/testStartDate">&nbsp;&nbsp;&nbsp;&nbsp;testStartDate</option>
+	
+	<option value="//api/name/testURL">&nbsp;&nbsp;&nbsp;&nbsp;testURL</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/connection:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didFailWithError:</option>
+	
+	<option value="//api/name/connection:didReceiveData:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveData:</option>
+	
+	<option value="//api/name/connection:didReceiveResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveResponse:</option>
+	
+	<option value="//api/name/connectionDidFinishLoading:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionDidFinishLoading:</option>
+	
+	<option value="//api/name/requestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFailed:</option>
+	
+	<option value="//api/name/requestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFinished:</option>
+	
+	<option value="//api/name/runSynchronousASIHTTPRequests">&nbsp;&nbsp;&nbsp;&nbsp;- runSynchronousASIHTTPRequests</option>
+	
+	<option value="//api/name/runSynchronousNSURLConnections">&nbsp;&nbsp;&nbsp;&nbsp;- runSynchronousNSURLConnections</option>
+	
+	<option value="//api/name/setUp">&nbsp;&nbsp;&nbsp;&nbsp;- setUp</option>
+	
+	<option value="//api/name/startASIHTTPRequests">&nbsp;&nbsp;&nbsp;&nbsp;- startASIHTTPRequests</option>
+	
+	<option value="//api/name/startASIHTTPRequestsWithQueue">&nbsp;&nbsp;&nbsp;&nbsp;- startASIHTTPRequestsWithQueue</option>
+	
+	<option value="//api/name/startNSURLConnections">&nbsp;&nbsp;&nbsp;&nbsp;- startNSURLConnections</option>
+	
+	<option value="//api/name/testASIHTTPRequestAsyncPerformance">&nbsp;&nbsp;&nbsp;&nbsp;- testASIHTTPRequestAsyncPerformance</option>
+	
+	<option value="//api/name/testASIHTTPRequestSynchronousPerformance">&nbsp;&nbsp;&nbsp;&nbsp;- testASIHTTPRequestSynchronousPerformance</option>
+	
+	<option value="//api/name/testNSURLConnectionAsyncPerformance">&nbsp;&nbsp;&nbsp;&nbsp;- testNSURLConnectionAsyncPerformance</option>
+	
+	<option value="//api/name/testNSURLConnectionSynchronousPerformance">&nbsp;&nbsp;&nbsp;&nbsp;- testNSURLConnectionSynchronousPerformance</option>
+	
+	<option value="//api/name/testQueuedASIHTTPRequestAsyncPerformance">&nbsp;&nbsp;&nbsp;&nbsp;- testQueuedASIHTTPRequestAsyncPerformance</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestsComplete">requestsComplete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseData">responseData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testStartDate">testStartDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testURL">testURL</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didFailWithError:">connection:didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveData:">connection:didReceiveData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveResponse:">connection:didReceiveResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDidFinishLoading:">connectionDidFinishLoading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFailed:">requestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFinished:">requestFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runSynchronousASIHTTPRequests">runSynchronousASIHTTPRequests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runSynchronousNSURLConnections">runSynchronousNSURLConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUp">setUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startASIHTTPRequests">startASIHTTPRequests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startASIHTTPRequestsWithQueue">startASIHTTPRequestsWithQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startNSURLConnections">startNSURLConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testASIHTTPRequestAsyncPerformance">testASIHTTPRequestAsyncPerformance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testASIHTTPRequestSynchronousPerformance">testASIHTTPRequestSynchronousPerformance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testNSURLConnectionAsyncPerformance">testNSURLConnectionAsyncPerformance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testNSURLConnectionSynchronousPerformance">testNSURLConnectionSynchronousPerformance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testQueuedASIHTTPRequestAsyncPerformance">testQueuedASIHTTPRequestAsyncPerformance</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PerformanceTests Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PerformanceTests Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/ASITestCase.html">ASITestCase</a> : GHTestCase</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PerformanceTests.h<br />PerformanceTests.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testASIHTTPRequestAsyncPerformance">&ndash;&nbsp;testASIHTTPRequestAsyncPerformance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testNSURLConnectionAsyncPerformance">&ndash;&nbsp;testNSURLConnectionAsyncPerformance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testURL">&nbsp;&nbsp;testURL</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testStartDate">&nbsp;&nbsp;testStartDate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestsComplete">&nbsp;&nbsp;requestsComplete</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseData">&nbsp;&nbsp;responseData</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUp">&ndash;&nbsp;setUp</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testASIHTTPRequestSynchronousPerformance">&ndash;&nbsp;testASIHTTPRequestSynchronousPerformance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runSynchronousASIHTTPRequests">&ndash;&nbsp;runSynchronousASIHTTPRequests</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testNSURLConnectionSynchronousPerformance">&ndash;&nbsp;testNSURLConnectionSynchronousPerformance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runSynchronousNSURLConnections">&ndash;&nbsp;runSynchronousNSURLConnections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testQueuedASIHTTPRequestAsyncPerformance">&ndash;&nbsp;testQueuedASIHTTPRequestAsyncPerformance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startASIHTTPRequests">&ndash;&nbsp;startASIHTTPRequests</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startASIHTTPRequestsWithQueue">&ndash;&nbsp;startASIHTTPRequestsWithQueue</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFailed:">&ndash;&nbsp;requestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFinished:">&ndash;&nbsp;requestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startNSURLConnections">&ndash;&nbsp;startNSURLConnections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveResponse:">&ndash;&nbsp;connection:didReceiveResponse:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didFailWithError:">&ndash;&nbsp;connection:didFailWithError:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveData:">&ndash;&nbsp;connection:didReceiveData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDidFinishLoading:">&ndash;&nbsp;connectionDidFinishLoading:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/requestsComplete" title="requestsComplete"></a>
+	<h3 class="subsubtitle method-title">requestsComplete</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) int requestsComplete</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseData" title="responseData"></a>
+	<h3 class="subsubtitle method-title">responseData</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSMutableArray *responseData</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testStartDate" title="testStartDate"></a>
+	<h3 class="subsubtitle method-title">testStartDate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSDate *testStartDate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testURL" title="testURL"></a>
+	<h3 class="subsubtitle method-title">testURL</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSURL *testURL</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didFailWithError:" title="connection:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">connection:didFailWithError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnectionSubclass *)<em>connection</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveData:" title="connection:didReceiveData:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnectionSubclass *)<em>connection</em> didReceiveData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveResponse:" title="connection:didReceiveResponse:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveResponse:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnectionSubclass *)<em>connection</em> didReceiveResponse:(NSURLResponse *)<em>response</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDidFinishLoading:" title="connectionDidFinishLoading:"></a>
+	<h3 class="subsubtitle method-title">connectionDidFinishLoading:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connectionDidFinishLoading:(NSURLConnectionSubclass *)<em>connection</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFailed:" title="requestFailed:"></a>
+	<h3 class="subsubtitle method-title">requestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFinished:" title="requestFinished:"></a>
+	<h3 class="subsubtitle method-title">requestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runSynchronousASIHTTPRequests" title="runSynchronousASIHTTPRequests"></a>
+	<h3 class="subsubtitle method-title">runSynchronousASIHTTPRequests</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)runSynchronousASIHTTPRequests</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runSynchronousNSURLConnections" title="runSynchronousNSURLConnections"></a>
+	<h3 class="subsubtitle method-title">runSynchronousNSURLConnections</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)runSynchronousNSURLConnections</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUp" title="setUp"></a>
+	<h3 class="subsubtitle method-title">setUp</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setUp</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startASIHTTPRequests" title="startASIHTTPRequests"></a>
+	<h3 class="subsubtitle method-title">startASIHTTPRequests</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startASIHTTPRequests</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startASIHTTPRequestsWithQueue" title="startASIHTTPRequestsWithQueue"></a>
+	<h3 class="subsubtitle method-title">startASIHTTPRequestsWithQueue</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startASIHTTPRequestsWithQueue</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startNSURLConnections" title="startNSURLConnections"></a>
+	<h3 class="subsubtitle method-title">startNSURLConnections</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startNSURLConnections</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testASIHTTPRequestAsyncPerformance" title="testASIHTTPRequestAsyncPerformance"></a>
+	<h3 class="subsubtitle method-title">testASIHTTPRequestAsyncPerformance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testASIHTTPRequestAsyncPerformance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testASIHTTPRequestSynchronousPerformance" title="testASIHTTPRequestSynchronousPerformance"></a>
+	<h3 class="subsubtitle method-title">testASIHTTPRequestSynchronousPerformance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testASIHTTPRequestSynchronousPerformance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testNSURLConnectionAsyncPerformance" title="testNSURLConnectionAsyncPerformance"></a>
+	<h3 class="subsubtitle method-title">testNSURLConnectionAsyncPerformance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testNSURLConnectionAsyncPerformance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testNSURLConnectionSynchronousPerformance" title="testNSURLConnectionSynchronousPerformance"></a>
+	<h3 class="subsubtitle method-title">testNSURLConnectionSynchronousPerformance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testNSURLConnectionSynchronousPerformance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testQueuedASIHTTPRequestAsyncPerformance" title="testQueuedASIHTTPRequestAsyncPerformance"></a>
+	<h3 class="subsubtitle method-title">testQueuedASIHTTPRequestAsyncPerformance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testQueuedASIHTTPRequestAsyncPerformance</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

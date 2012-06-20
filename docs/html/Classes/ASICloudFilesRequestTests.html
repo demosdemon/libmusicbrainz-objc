@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ASICloudFilesRequestTests Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ASICloudFilesRequestTests Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/networkQueue">&nbsp;&nbsp;&nbsp;&nbsp;networkQueue</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/authenticate">&nbsp;&nbsp;&nbsp;&nbsp;- authenticate</option>
+	
+	<option value="//api/name/dealloc">&nbsp;&nbsp;&nbsp;&nbsp;- dealloc</option>
+	
+	<option value="//api/name/testAccountInfo">&nbsp;&nbsp;&nbsp;&nbsp;- testAccountInfo</option>
+	
+	<option value="//api/name/testAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;- testAuthentication</option>
+	
+	<option value="//api/name/testCDNContainerInfo">&nbsp;&nbsp;&nbsp;&nbsp;- testCDNContainerInfo</option>
+	
+	<option value="//api/name/testCDNContainerList">&nbsp;&nbsp;&nbsp;&nbsp;- testCDNContainerList</option>
+	
+	<option value="//api/name/testCDNContainerListWithParams">&nbsp;&nbsp;&nbsp;&nbsp;- testCDNContainerListWithParams</option>
+	
+	<option value="//api/name/testCDNPost">&nbsp;&nbsp;&nbsp;&nbsp;- testCDNPost</option>
+	
+	<option value="//api/name/testCDNPut">&nbsp;&nbsp;&nbsp;&nbsp;- testCDNPut</option>
+	
+	<option value="//api/name/testContainerCreate">&nbsp;&nbsp;&nbsp;&nbsp;- testContainerCreate</option>
+	
+	<option value="//api/name/testContainerDelete">&nbsp;&nbsp;&nbsp;&nbsp;- testContainerDelete</option>
+	
+	<option value="//api/name/testContainerInfo">&nbsp;&nbsp;&nbsp;&nbsp;- testContainerInfo</option>
+	
+	<option value="//api/name/testContainerList">&nbsp;&nbsp;&nbsp;&nbsp;- testContainerList</option>
+	
+	<option value="//api/name/testDateParser">&nbsp;&nbsp;&nbsp;&nbsp;- testDateParser</option>
+	
+	<option value="//api/name/testDeleteObject">&nbsp;&nbsp;&nbsp;&nbsp;- testDeleteObject</option>
+	
+	<option value="//api/name/testGetObject">&nbsp;&nbsp;&nbsp;&nbsp;- testGetObject</option>
+	
+	<option value="//api/name/testObjectInfo">&nbsp;&nbsp;&nbsp;&nbsp;- testObjectInfo</option>
+	
+	<option value="//api/name/testObjectList">&nbsp;&nbsp;&nbsp;&nbsp;- testObjectList</option>
+	
+	<option value="//api/name/testPostObject">&nbsp;&nbsp;&nbsp;&nbsp;- testPostObject</option>
+	
+	<option value="//api/name/testPutObject">&nbsp;&nbsp;&nbsp;&nbsp;- testPutObject</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkQueue">networkQueue</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticate">authenticate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealloc">dealloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAccountInfo">testAccountInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAuthentication">testAuthentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCDNContainerInfo">testCDNContainerInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCDNContainerList">testCDNContainerList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCDNContainerListWithParams">testCDNContainerListWithParams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCDNPost">testCDNPost</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCDNPut">testCDNPut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testContainerCreate">testContainerCreate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testContainerDelete">testContainerDelete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testContainerInfo">testContainerInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testContainerList">testContainerList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDateParser">testDateParser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDeleteObject">testDeleteObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testGetObject">testGetObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testObjectInfo">testObjectInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testObjectList">testObjectList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPostObject">testPostObject</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPutObject">testPutObject</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ASICloudFilesRequestTests Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ASICloudFilesRequestTests Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/ASITestCase.html">ASITestCase</a> : GHTestCase</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ASICloudFilesRequestTests.h<br />ASICloudFilesRequestTests.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkQueue">&nbsp;&nbsp;networkQueue</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticate">&ndash;&nbsp;authenticate</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAuthentication">&ndash;&nbsp;testAuthentication</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDateParser">&ndash;&nbsp;testDateParser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAccountInfo">&ndash;&nbsp;testAccountInfo</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testContainerList">&ndash;&nbsp;testContainerList</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testContainerCreate">&ndash;&nbsp;testContainerCreate</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testContainerDelete">&ndash;&nbsp;testContainerDelete</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testContainerInfo">&ndash;&nbsp;testContainerInfo</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testObjectInfo">&ndash;&nbsp;testObjectInfo</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testObjectList">&ndash;&nbsp;testObjectList</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testGetObject">&ndash;&nbsp;testGetObject</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPutObject">&ndash;&nbsp;testPutObject</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPostObject">&ndash;&nbsp;testPostObject</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDeleteObject">&ndash;&nbsp;testDeleteObject</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCDNContainerInfo">&ndash;&nbsp;testCDNContainerInfo</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCDNContainerList">&ndash;&nbsp;testCDNContainerList</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCDNContainerListWithParams">&ndash;&nbsp;testCDNContainerListWithParams</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCDNPut">&ndash;&nbsp;testCDNPut</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCDNPost">&ndash;&nbsp;testCDNPost</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/networkQueue" title="networkQueue"></a>
+	<h3 class="subsubtitle method-title">networkQueue</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) ASINetworkQueue *networkQueue</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticate" title="authenticate"></a>
+	<h3 class="subsubtitle method-title">authenticate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)authenticate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="subsubtitle method-title">dealloc</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)dealloc</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAccountInfo" title="testAccountInfo"></a>
+	<h3 class="subsubtitle method-title">testAccountInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAccountInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAuthentication" title="testAuthentication"></a>
+	<h3 class="subsubtitle method-title">testAuthentication</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAuthentication</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCDNContainerInfo" title="testCDNContainerInfo"></a>
+	<h3 class="subsubtitle method-title">testCDNContainerInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCDNContainerInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCDNContainerList" title="testCDNContainerList"></a>
+	<h3 class="subsubtitle method-title">testCDNContainerList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCDNContainerList</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCDNContainerListWithParams" title="testCDNContainerListWithParams"></a>
+	<h3 class="subsubtitle method-title">testCDNContainerListWithParams</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCDNContainerListWithParams</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCDNPost" title="testCDNPost"></a>
+	<h3 class="subsubtitle method-title">testCDNPost</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCDNPost</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCDNPut" title="testCDNPut"></a>
+	<h3 class="subsubtitle method-title">testCDNPut</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCDNPut</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testContainerCreate" title="testContainerCreate"></a>
+	<h3 class="subsubtitle method-title">testContainerCreate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testContainerCreate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testContainerDelete" title="testContainerDelete"></a>
+	<h3 class="subsubtitle method-title">testContainerDelete</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testContainerDelete</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testContainerInfo" title="testContainerInfo"></a>
+	<h3 class="subsubtitle method-title">testContainerInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testContainerInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testContainerList" title="testContainerList"></a>
+	<h3 class="subsubtitle method-title">testContainerList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testContainerList</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDateParser" title="testDateParser"></a>
+	<h3 class="subsubtitle method-title">testDateParser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDateParser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDeleteObject" title="testDeleteObject"></a>
+	<h3 class="subsubtitle method-title">testDeleteObject</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDeleteObject</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testGetObject" title="testGetObject"></a>
+	<h3 class="subsubtitle method-title">testGetObject</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testGetObject</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testObjectInfo" title="testObjectInfo"></a>
+	<h3 class="subsubtitle method-title">testObjectInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testObjectInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testObjectList" title="testObjectList"></a>
+	<h3 class="subsubtitle method-title">testObjectList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testObjectList</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPostObject" title="testPostObject"></a>
+	<h3 class="subsubtitle method-title">testPostObject</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPostObject</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPutObject" title="testPutObject"></a>
+	<h3 class="subsubtitle method-title">testPutObject</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPutObject</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

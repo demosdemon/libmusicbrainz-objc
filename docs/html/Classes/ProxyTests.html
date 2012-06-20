@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ProxyTests Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ProxyTests Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/complete">&nbsp;&nbsp;&nbsp;&nbsp;complete</option>
+	
+	<option value="//api/name/queue">&nbsp;&nbsp;&nbsp;&nbsp;queue</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/authenticationNeededForRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- authenticationNeededForRequest:</option>
+	
+	<option value="//api/name/proxyAuthenticationNeededForRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- proxyAuthenticationNeededForRequest:</option>
+	
+	<option value="//api/name/requestDone:">&nbsp;&nbsp;&nbsp;&nbsp;- requestDone:</option>
+	
+	<option value="//api/name/requestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFailed:</option>
+	
+	<option value="//api/name/requestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFinished:</option>
+	
+	<option value="//api/name/testAutoConfigureWithPAC">&nbsp;&nbsp;&nbsp;&nbsp;- testAutoConfigureWithPAC</option>
+	
+	<option value="//api/name/testAutoConfigureWithSystemPAC">&nbsp;&nbsp;&nbsp;&nbsp;- testAutoConfigureWithSystemPAC</option>
+	
+	<option value="//api/name/testDoubleAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;- testDoubleAuthentication</option>
+	
+	<option value="//api/name/testProxy">&nbsp;&nbsp;&nbsp;&nbsp;- testProxy</option>
+	
+	<option value="//api/name/testProxyAutodetect">&nbsp;&nbsp;&nbsp;&nbsp;- testProxyAutodetect</option>
+	
+	<option value="//api/name/testProxyForHTTPS">&nbsp;&nbsp;&nbsp;&nbsp;- testProxyForHTTPS</option>
+	
+	<option value="//api/name/testProxyWithDelegateSupplyingCredentials">&nbsp;&nbsp;&nbsp;&nbsp;- testProxyWithDelegateSupplyingCredentials</option>
+	
+	<option value="//api/name/testProxyWithSuppliedAuthenticationCredentials">&nbsp;&nbsp;&nbsp;&nbsp;- testProxyWithSuppliedAuthenticationCredentials</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/complete">complete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queue">queue</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationNeededForRequest:">authenticationNeededForRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proxyAuthenticationNeededForRequest:">proxyAuthenticationNeededForRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestDone:">requestDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFailed:">requestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFinished:">requestFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAutoConfigureWithPAC">testAutoConfigureWithPAC</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAutoConfigureWithSystemPAC">testAutoConfigureWithSystemPAC</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDoubleAuthentication">testDoubleAuthentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testProxy">testProxy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testProxyAutodetect">testProxyAutodetect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testProxyForHTTPS">testProxyForHTTPS</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testProxyWithDelegateSupplyingCredentials">testProxyWithDelegateSupplyingCredentials</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testProxyWithSuppliedAuthenticationCredentials">testProxyWithSuppliedAuthenticationCredentials</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ProxyTests Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ProxyTests Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/ASITestCase.html">ASITestCase</a> : GHTestCase</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ProxyTests.h<br />ProxyTests.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testProxy">&ndash;&nbsp;testProxy</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testProxyAutodetect">&ndash;&nbsp;testProxyAutodetect</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testProxyWithSuppliedAuthenticationCredentials">&ndash;&nbsp;testProxyWithSuppliedAuthenticationCredentials</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDoubleAuthentication">&ndash;&nbsp;testDoubleAuthentication</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testProxyForHTTPS">&ndash;&nbsp;testProxyForHTTPS</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queue">&nbsp;&nbsp;queue</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/complete">&nbsp;&nbsp;complete</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAutoConfigureWithPAC">&ndash;&nbsp;testAutoConfigureWithPAC</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAutoConfigureWithSystemPAC">&ndash;&nbsp;testAutoConfigureWithSystemPAC</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testProxyWithDelegateSupplyingCredentials">&ndash;&nbsp;testProxyWithDelegateSupplyingCredentials</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFinished:">&ndash;&nbsp;requestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFailed:">&ndash;&nbsp;requestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proxyAuthenticationNeededForRequest:">&ndash;&nbsp;proxyAuthenticationNeededForRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestDone:">&ndash;&nbsp;requestDone:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationNeededForRequest:">&ndash;&nbsp;authenticationNeededForRequest:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/complete" title="complete"></a>
+	<h3 class="subsubtitle method-title">complete</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign) BOOL complete</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queue" title="queue"></a>
+	<h3 class="subsubtitle method-title">queue</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) ASINetworkQueue *queue</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationNeededForRequest:" title="authenticationNeededForRequest:"></a>
+	<h3 class="subsubtitle method-title">authenticationNeededForRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)authenticationNeededForRequest:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proxyAuthenticationNeededForRequest:" title="proxyAuthenticationNeededForRequest:"></a>
+	<h3 class="subsubtitle method-title">proxyAuthenticationNeededForRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)proxyAuthenticationNeededForRequest:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestDone:" title="requestDone:"></a>
+	<h3 class="subsubtitle method-title">requestDone:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestDone:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFailed:" title="requestFailed:"></a>
+	<h3 class="subsubtitle method-title">requestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFinished:" title="requestFinished:"></a>
+	<h3 class="subsubtitle method-title">requestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAutoConfigureWithPAC" title="testAutoConfigureWithPAC"></a>
+	<h3 class="subsubtitle method-title">testAutoConfigureWithPAC</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAutoConfigureWithPAC</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAutoConfigureWithSystemPAC" title="testAutoConfigureWithSystemPAC"></a>
+	<h3 class="subsubtitle method-title">testAutoConfigureWithSystemPAC</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAutoConfigureWithSystemPAC</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDoubleAuthentication" title="testDoubleAuthentication"></a>
+	<h3 class="subsubtitle method-title">testDoubleAuthentication</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDoubleAuthentication</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testProxy" title="testProxy"></a>
+	<h3 class="subsubtitle method-title">testProxy</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testProxy</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testProxyAutodetect" title="testProxyAutodetect"></a>
+	<h3 class="subsubtitle method-title">testProxyAutodetect</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testProxyAutodetect</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testProxyForHTTPS" title="testProxyForHTTPS"></a>
+	<h3 class="subsubtitle method-title">testProxyForHTTPS</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testProxyForHTTPS</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testProxyWithDelegateSupplyingCredentials" title="testProxyWithDelegateSupplyingCredentials"></a>
+	<h3 class="subsubtitle method-title">testProxyWithDelegateSupplyingCredentials</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testProxyWithDelegateSupplyingCredentials</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testProxyWithSuppliedAuthenticationCredentials" title="testProxyWithSuppliedAuthenticationCredentials"></a>
+	<h3 class="subsubtitle method-title">testProxyWithSuppliedAuthenticationCredentials</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testProxyWithSuppliedAuthenticationCredentials</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

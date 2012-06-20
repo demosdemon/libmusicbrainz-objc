@@ -1,0 +1,698 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ASIInputStream Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ASIInputStream Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/request">&nbsp;&nbsp;&nbsp;&nbsp;request</option>
+	
+	<option value="//api/name/stream">&nbsp;&nbsp;&nbsp;&nbsp;stream</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/initialize">&nbsp;&nbsp;&nbsp;&nbsp;+ initialize</option>
+	
+	<option value="//api/name/inputStreamWithData:request:">&nbsp;&nbsp;&nbsp;&nbsp;+ inputStreamWithData:request:</option>
+	
+	<option value="//api/name/inputStreamWithFileAtPath:request:">&nbsp;&nbsp;&nbsp;&nbsp;+ inputStreamWithFileAtPath:request:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/dealloc">&nbsp;&nbsp;&nbsp;&nbsp;- dealloc</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;- delegate</option>
+	
+	<option value="//api/name/forwardInvocation:">&nbsp;&nbsp;&nbsp;&nbsp;- forwardInvocation:</option>
+	
+	<option value="//api/name/methodSignatureForSelector:">&nbsp;&nbsp;&nbsp;&nbsp;- methodSignatureForSelector:</option>
+	
+	<option value="//api/name/open">&nbsp;&nbsp;&nbsp;&nbsp;- open</option>
+	
+	<option value="//api/name/propertyForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- propertyForKey:</option>
+	
+	<option value="//api/name/read:maxLength:">&nbsp;&nbsp;&nbsp;&nbsp;- read:maxLength:</option>
+	
+	<option value="//api/name/removeFromRunLoop:forMode:">&nbsp;&nbsp;&nbsp;&nbsp;- removeFromRunLoop:forMode:</option>
+	
+	<option value="//api/name/scheduleInRunLoop:forMode:">&nbsp;&nbsp;&nbsp;&nbsp;- scheduleInRunLoop:forMode:</option>
+	
+	<option value="//api/name/setDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setDelegate:</option>
+	
+	<option value="//api/name/setProperty:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setProperty:forKey:</option>
+	
+	<option value="//api/name/streamError">&nbsp;&nbsp;&nbsp;&nbsp;- streamError</option>
+	
+	<option value="//api/name/streamStatus">&nbsp;&nbsp;&nbsp;&nbsp;- streamStatus</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request">request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stream">stream</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialize">initialize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputStreamWithData:request:">inputStreamWithData:request:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputStreamWithFileAtPath:request:">inputStreamWithFileAtPath:request:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealloc">dealloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forwardInvocation:">forwardInvocation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/methodSignatureForSelector:">methodSignatureForSelector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/open">open</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyForKey:">propertyForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/read:maxLength:">read:maxLength:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFromRunLoop:forMode:">removeFromRunLoop:forMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scheduleInRunLoop:forMode:">scheduleInRunLoop:forMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDelegate:">setDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setProperty:forKey:">setProperty:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamError">streamError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamStatus">streamStatus</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ASIInputStream Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ASIInputStream Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ASIInputStream.h<br />ASIInputStream.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputStreamWithFileAtPath:request:">+&nbsp;inputStreamWithFileAtPath:request:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputStreamWithData:request:">+&nbsp;inputStreamWithData:request:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stream">&nbsp;&nbsp;stream</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request">&nbsp;&nbsp;request</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialize">+&nbsp;initialize</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/read:maxLength:">&ndash;&nbsp;read:maxLength:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/open">&ndash;&nbsp;open</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&ndash;&nbsp;delegate</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDelegate:">&ndash;&nbsp;setDelegate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scheduleInRunLoop:forMode:">&ndash;&nbsp;scheduleInRunLoop:forMode:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFromRunLoop:forMode:">&ndash;&nbsp;removeFromRunLoop:forMode:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyForKey:">&ndash;&nbsp;propertyForKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setProperty:forKey:">&ndash;&nbsp;setProperty:forKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamStatus">&ndash;&nbsp;streamStatus</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streamError">&ndash;&nbsp;streamError</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/methodSignatureForSelector:">&ndash;&nbsp;methodSignatureForSelector:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/forwardInvocation:">&ndash;&nbsp;forwardInvocation:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/request" title="request"></a>
+	<h3 class="subsubtitle method-title">request</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ASIHTTPRequest *request</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stream" title="stream"></a>
+	<h3 class="subsubtitle method-title">stream</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSInputStream *stream</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initialize" title="initialize"></a>
+	<h3 class="subsubtitle method-title">initialize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)initialize</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputStreamWithData:request:" title="inputStreamWithData:request:"></a>
+	<h3 class="subsubtitle method-title">inputStreamWithData:request:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)inputStreamWithData:(NSData *)<em>data</em> request:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputStreamWithFileAtPath:request:" title="inputStreamWithFileAtPath:request:"></a>
+	<h3 class="subsubtitle method-title">inputStreamWithFileAtPath:request:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)inputStreamWithFileAtPath:(NSString *)<em>path</em> request:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="subsubtitle method-title">dealloc</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)dealloc</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)delegate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/forwardInvocation:" title="forwardInvocation:"></a>
+	<h3 class="subsubtitle method-title">forwardInvocation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)forwardInvocation:(NSInvocation *)<em>anInvocation</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/methodSignatureForSelector:" title="methodSignatureForSelector:"></a>
+	<h3 class="subsubtitle method-title">methodSignatureForSelector:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMethodSignature *)methodSignatureForSelector:(SEL)<em>aSelector</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/open" title="open"></a>
+	<h3 class="subsubtitle method-title">open</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)open</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyForKey:" title="propertyForKey:"></a>
+	<h3 class="subsubtitle method-title">propertyForKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)propertyForKey:(NSString *)<em>key</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/read:maxLength:" title="read:maxLength:"></a>
+	<h3 class="subsubtitle method-title">read:maxLength:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)read:(uint8_t *)<em>buffer</em> maxLength:(NSUInteger)<em>len</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFromRunLoop:forMode:" title="removeFromRunLoop:forMode:"></a>
+	<h3 class="subsubtitle method-title">removeFromRunLoop:forMode:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeFromRunLoop:(NSRunLoop *)<em>aRunLoop</em> forMode:(NSString *)<em>mode</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scheduleInRunLoop:forMode:" title="scheduleInRunLoop:forMode:"></a>
+	<h3 class="subsubtitle method-title">scheduleInRunLoop:forMode:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)scheduleInRunLoop:(NSRunLoop *)<em>aRunLoop</em> forMode:(NSString *)<em>mode</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDelegate:" title="setDelegate:"></a>
+	<h3 class="subsubtitle method-title">setDelegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setDelegate:(id)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setProperty:forKey:" title="setProperty:forKey:"></a>
+	<h3 class="subsubtitle method-title">setProperty:forKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setProperty:(id)<em>property</em> forKey:(NSString *)<em>key</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamError" title="streamError"></a>
+	<h3 class="subsubtitle method-title">streamError</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSError *)streamError</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streamStatus" title="streamStatus"></a>
+	<h3 class="subsubtitle method-title">streamStatus</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSStreamStatus)streamStatus</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

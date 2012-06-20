@@ -1,0 +1,1103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AppDelegate Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AppDelegate Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bigFetchRequest">&nbsp;&nbsp;&nbsp;&nbsp;bigFetchRequest</option>
+	
+	<option value="//api/name/rowData">&nbsp;&nbsp;&nbsp;&nbsp;rowData</option>
+	
+	<option value="//api/name/tableQueue">&nbsp;&nbsp;&nbsp;&nbsp;tableQueue</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/URLFetchWithProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- URLFetchWithProgress:</option>
+	
+	<option value="//api/name/URLFetchWithProgressComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- URLFetchWithProgressComplete:</option>
+	
+	<option value="//api/name/URLFetchWithProgressFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- URLFetchWithProgressFailed:</option>
+	
+	<option value="//api/name/authSheetDidEnd:returnCode:contextInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- authSheetDidEnd:returnCode:contextInfo:</option>
+	
+	<option value="//api/name/authenticationNeededForRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- authenticationNeededForRequest:</option>
+	
+	<option value="//api/name/clearCache:">&nbsp;&nbsp;&nbsp;&nbsp;- clearCache:</option>
+	
+	<option value="//api/name/dealloc">&nbsp;&nbsp;&nbsp;&nbsp;- dealloc</option>
+	
+	<option value="//api/name/dismissAuthSheet:">&nbsp;&nbsp;&nbsp;&nbsp;- dismissAuthSheet:</option>
+	
+	<option value="//api/name/fetchThreeImages:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchThreeImages:</option>
+	
+	<option value="//api/name/fetchTopSecretInformation:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchTopSecretInformation:</option>
+	
+	<option value="//api/name/fetchURL:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchURL:</option>
+	
+	<option value="//api/name/fetchWebPage:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchWebPage:</option>
+	
+	<option value="//api/name/imageFetch1Complete:">&nbsp;&nbsp;&nbsp;&nbsp;- imageFetch1Complete:</option>
+	
+	<option value="//api/name/imageFetch2Complete:">&nbsp;&nbsp;&nbsp;&nbsp;- imageFetch2Complete:</option>
+	
+	<option value="//api/name/imageFetch3Complete:">&nbsp;&nbsp;&nbsp;&nbsp;- imageFetch3Complete:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/numberOfRowsInTableView:">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfRowsInTableView:</option>
+	
+	<option value="//api/name/postFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- postFailed:</option>
+	
+	<option value="//api/name/postFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- postFinished:</option>
+	
+	<option value="//api/name/postWithProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- postWithProgress:</option>
+	
+	<option value="//api/name/proxyAuthenticationNeededForRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- proxyAuthenticationNeededForRequest:</option>
+	
+	<option value="//api/name/reloadTableData:">&nbsp;&nbsp;&nbsp;&nbsp;- reloadTableData:</option>
+	
+	<option value="//api/name/resumeURLFetchWithProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeURLFetchWithProgress:</option>
+	
+	<option value="//api/name/rowImageDownloadFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- rowImageDownloadFinished:</option>
+	
+	<option value="//api/name/simpleURLFetch:">&nbsp;&nbsp;&nbsp;&nbsp;- simpleURLFetch:</option>
+	
+	<option value="//api/name/stopURLFetchWithProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- stopURLFetchWithProgress:</option>
+	
+	<option value="//api/name/tableView:objectValueForTableColumn:row:">&nbsp;&nbsp;&nbsp;&nbsp;- tableView:objectValueForTableColumn:row:</option>
+	
+	<option value="//api/name/tableViewDataFetchFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewDataFetchFailed:</option>
+	
+	<option value="//api/name/tableViewDataFetchFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- tableViewDataFetchFinished:</option>
+	
+	<option value="//api/name/throttleBandwidth:">&nbsp;&nbsp;&nbsp;&nbsp;- throttleBandwidth:</option>
+	
+	<option value="//api/name/topSecretFetchComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- topSecretFetchComplete:</option>
+	
+	<option value="//api/name/updateBandwidthUsageIndicator">&nbsp;&nbsp;&nbsp;&nbsp;- updateBandwidthUsageIndicator</option>
+	
+	<option value="//api/name/webPageFetchFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- webPageFetchFailed:</option>
+	
+	<option value="//api/name/webPageFetchSucceeded:">&nbsp;&nbsp;&nbsp;&nbsp;- webPageFetchSucceeded:</option>
+	
+	<option value="//api/name/webView:decidePolicyForNavigationAction:request:frame:decisionListener:">&nbsp;&nbsp;&nbsp;&nbsp;- webView:decidePolicyForNavigationAction:request:frame:decisionListener:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bigFetchRequest">bigFetchRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowData">rowData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableQueue">tableQueue</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLFetchWithProgress:">URLFetchWithProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLFetchWithProgressComplete:">URLFetchWithProgressComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLFetchWithProgressFailed:">URLFetchWithProgressFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authSheetDidEnd:returnCode:contextInfo:">authSheetDidEnd:returnCode:contextInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationNeededForRequest:">authenticationNeededForRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearCache:">clearCache:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dealloc">dealloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dismissAuthSheet:">dismissAuthSheet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchThreeImages:">fetchThreeImages:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchTopSecretInformation:">fetchTopSecretInformation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchURL:">fetchURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchWebPage:">fetchWebPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageFetch1Complete:">imageFetch1Complete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageFetch2Complete:">imageFetch2Complete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageFetch3Complete:">imageFetch3Complete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfRowsInTableView:">numberOfRowsInTableView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postFailed:">postFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postFinished:">postFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postWithProgress:">postWithProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proxyAuthenticationNeededForRequest:">proxyAuthenticationNeededForRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadTableData:">reloadTableData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeURLFetchWithProgress:">resumeURLFetchWithProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowImageDownloadFinished:">rowImageDownloadFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/simpleURLFetch:">simpleURLFetch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopURLFetchWithProgress:">stopURLFetchWithProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView:objectValueForTableColumn:row:">tableView:objectValueForTableColumn:row:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewDataFetchFailed:">tableViewDataFetchFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableViewDataFetchFinished:">tableViewDataFetchFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/throttleBandwidth:">throttleBandwidth:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topSecretFetchComplete:">topSecretFetchComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateBandwidthUsageIndicator">updateBandwidthUsageIndicator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webPageFetchFailed:">webPageFetchFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webPageFetchSucceeded:">webPageFetchSucceeded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webView:decidePolicyForNavigationAction:request:frame:decisionListener:">webView:decidePolicyForNavigationAction:request:frame:decisionListener:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AppDelegate Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AppDelegate Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AppDelegate.h<br />AppDelegate.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/simpleURLFetch:">&ndash;&nbsp;simpleURLFetch:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLFetchWithProgress:">&ndash;&nbsp;URLFetchWithProgress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopURLFetchWithProgress:">&ndash;&nbsp;stopURLFetchWithProgress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumeURLFetchWithProgress:">&ndash;&nbsp;resumeURLFetchWithProgress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchThreeImages:">&ndash;&nbsp;fetchThreeImages:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dismissAuthSheet:">&ndash;&nbsp;dismissAuthSheet:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchTopSecretInformation:">&ndash;&nbsp;fetchTopSecretInformation:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postWithProgress:">&ndash;&nbsp;postWithProgress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/throttleBandwidth:">&ndash;&nbsp;throttleBandwidth:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadTableData:">&ndash;&nbsp;reloadTableData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearCache:">&ndash;&nbsp;clearCache:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchWebPage:">&ndash;&nbsp;fetchWebPage:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bigFetchRequest">&nbsp;&nbsp;bigFetchRequest</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowData">&nbsp;&nbsp;rowData</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableQueue">&nbsp;&nbsp;tableQueue</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLFetchWithProgressComplete:">&ndash;&nbsp;URLFetchWithProgressComplete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLFetchWithProgressFailed:">&ndash;&nbsp;URLFetchWithProgressFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateBandwidthUsageIndicator">&ndash;&nbsp;updateBandwidthUsageIndicator</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageFetch1Complete:">&ndash;&nbsp;imageFetch1Complete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageFetch2Complete:">&ndash;&nbsp;imageFetch2Complete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageFetch3Complete:">&ndash;&nbsp;imageFetch3Complete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topSecretFetchComplete:">&ndash;&nbsp;topSecretFetchComplete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationNeededForRequest:">&ndash;&nbsp;authenticationNeededForRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proxyAuthenticationNeededForRequest:">&ndash;&nbsp;proxyAuthenticationNeededForRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authSheetDidEnd:returnCode:contextInfo:">&ndash;&nbsp;authSheetDidEnd:returnCode:contextInfo:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postFinished:">&ndash;&nbsp;postFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postFailed:">&ndash;&nbsp;postFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewDataFetchFailed:">&ndash;&nbsp;tableViewDataFetchFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableViewDataFetchFinished:">&ndash;&nbsp;tableViewDataFetchFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfRowsInTableView:">&ndash;&nbsp;numberOfRowsInTableView:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView:objectValueForTableColumn:row:">&ndash;&nbsp;tableView:objectValueForTableColumn:row:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowImageDownloadFinished:">&ndash;&nbsp;rowImageDownloadFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webView:decidePolicyForNavigationAction:request:frame:decisionListener:">&ndash;&nbsp;webView:decidePolicyForNavigationAction:request:frame:decisionListener:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchURL:">&ndash;&nbsp;fetchURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webPageFetchFailed:">&ndash;&nbsp;webPageFetchFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webPageFetchSucceeded:">&ndash;&nbsp;webPageFetchSucceeded:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bigFetchRequest" title="bigFetchRequest"></a>
+	<h3 class="subsubtitle method-title">bigFetchRequest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) ASIHTTPRequest *bigFetchRequest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowData" title="rowData"></a>
+	<h3 class="subsubtitle method-title">rowData</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSMutableArray *rowData</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableQueue" title="tableQueue"></a>
+	<h3 class="subsubtitle method-title">tableQueue</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) ASINetworkQueue *tableQueue</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URLFetchWithProgress:" title="URLFetchWithProgress:"></a>
+	<h3 class="subsubtitle method-title">URLFetchWithProgress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)URLFetchWithProgress:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URLFetchWithProgressComplete:" title="URLFetchWithProgressComplete:"></a>
+	<h3 class="subsubtitle method-title">URLFetchWithProgressComplete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)URLFetchWithProgressComplete:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URLFetchWithProgressFailed:" title="URLFetchWithProgressFailed:"></a>
+	<h3 class="subsubtitle method-title">URLFetchWithProgressFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)URLFetchWithProgressFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authSheetDidEnd:returnCode:contextInfo:" title="authSheetDidEnd:returnCode:contextInfo:"></a>
+	<h3 class="subsubtitle method-title">authSheetDidEnd:returnCode:contextInfo:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)authSheetDidEnd:(NSWindow *)<em>sheet</em> returnCode:(int)<em>returnCode</em> contextInfo:(void *)<em>contextInfo</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationNeededForRequest:" title="authenticationNeededForRequest:"></a>
+	<h3 class="subsubtitle method-title">authenticationNeededForRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)authenticationNeededForRequest:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearCache:" title="clearCache:"></a>
+	<h3 class="subsubtitle method-title">clearCache:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)clearCache:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="subsubtitle method-title">dealloc</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)dealloc</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dismissAuthSheet:" title="dismissAuthSheet:"></a>
+	<h3 class="subsubtitle method-title">dismissAuthSheet:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)dismissAuthSheet:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchThreeImages:" title="fetchThreeImages:"></a>
+	<h3 class="subsubtitle method-title">fetchThreeImages:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)fetchThreeImages:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchTopSecretInformation:" title="fetchTopSecretInformation:"></a>
+	<h3 class="subsubtitle method-title">fetchTopSecretInformation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)fetchTopSecretInformation:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchURL:" title="fetchURL:"></a>
+	<h3 class="subsubtitle method-title">fetchURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchURL:(NSURL *)<em>url</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchWebPage:" title="fetchWebPage:"></a>
+	<h3 class="subsubtitle method-title">fetchWebPage:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)fetchWebPage:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageFetch1Complete:" title="imageFetch1Complete:"></a>
+	<h3 class="subsubtitle method-title">imageFetch1Complete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)imageFetch1Complete:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageFetch2Complete:" title="imageFetch2Complete:"></a>
+	<h3 class="subsubtitle method-title">imageFetch2Complete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)imageFetch2Complete:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageFetch3Complete:" title="imageFetch3Complete:"></a>
+	<h3 class="subsubtitle method-title">imageFetch3Complete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)imageFetch3Complete:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfRowsInTableView:" title="numberOfRowsInTableView:"></a>
+	<h3 class="subsubtitle method-title">numberOfRowsInTableView:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfRowsInTableView:(NSTableView *)<em>aTableView</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postFailed:" title="postFailed:"></a>
+	<h3 class="subsubtitle method-title">postFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)postFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postFinished:" title="postFinished:"></a>
+	<h3 class="subsubtitle method-title">postFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)postFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postWithProgress:" title="postWithProgress:"></a>
+	<h3 class="subsubtitle method-title">postWithProgress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)postWithProgress:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proxyAuthenticationNeededForRequest:" title="proxyAuthenticationNeededForRequest:"></a>
+	<h3 class="subsubtitle method-title">proxyAuthenticationNeededForRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)proxyAuthenticationNeededForRequest:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadTableData:" title="reloadTableData:"></a>
+	<h3 class="subsubtitle method-title">reloadTableData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)reloadTableData:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumeURLFetchWithProgress:" title="resumeURLFetchWithProgress:"></a>
+	<h3 class="subsubtitle method-title">resumeURLFetchWithProgress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)resumeURLFetchWithProgress:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowImageDownloadFinished:" title="rowImageDownloadFinished:"></a>
+	<h3 class="subsubtitle method-title">rowImageDownloadFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)rowImageDownloadFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/simpleURLFetch:" title="simpleURLFetch:"></a>
+	<h3 class="subsubtitle method-title">simpleURLFetch:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)simpleURLFetch:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopURLFetchWithProgress:" title="stopURLFetchWithProgress:"></a>
+	<h3 class="subsubtitle method-title">stopURLFetchWithProgress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)stopURLFetchWithProgress:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView:objectValueForTableColumn:row:" title="tableView:objectValueForTableColumn:row:"></a>
+	<h3 class="subsubtitle method-title">tableView:objectValueForTableColumn:row:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)tableView:(NSTableView *)<em>aTableView</em> objectValueForTableColumn:(NSTableColumn *)<em>aTableColumn</em> row:(NSInteger)<em>rowIndex</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewDataFetchFailed:" title="tableViewDataFetchFailed:"></a>
+	<h3 class="subsubtitle method-title">tableViewDataFetchFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableViewDataFetchFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableViewDataFetchFinished:" title="tableViewDataFetchFinished:"></a>
+	<h3 class="subsubtitle method-title">tableViewDataFetchFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tableViewDataFetchFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/throttleBandwidth:" title="throttleBandwidth:"></a>
+	<h3 class="subsubtitle method-title">throttleBandwidth:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)throttleBandwidth:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topSecretFetchComplete:" title="topSecretFetchComplete:"></a>
+	<h3 class="subsubtitle method-title">topSecretFetchComplete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)topSecretFetchComplete:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateBandwidthUsageIndicator" title="updateBandwidthUsageIndicator"></a>
+	<h3 class="subsubtitle method-title">updateBandwidthUsageIndicator</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateBandwidthUsageIndicator</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webPageFetchFailed:" title="webPageFetchFailed:"></a>
+	<h3 class="subsubtitle method-title">webPageFetchFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)webPageFetchFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webPageFetchSucceeded:" title="webPageFetchSucceeded:"></a>
+	<h3 class="subsubtitle method-title">webPageFetchSucceeded:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)webPageFetchSucceeded:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webView:decidePolicyForNavigationAction:request:frame:decisionListener:" title="webView:decidePolicyForNavigationAction:request:frame:decisionListener:"></a>
+	<h3 class="subsubtitle method-title">webView:decidePolicyForNavigationAction:request:frame:decisionListener:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)webView:(WebView *)<em>sender</em> decidePolicyForNavigationAction:(NSDictionary *)<em>actionInformation</em> request:(NSURLRequest *)<em>request</em> frame:(WebFrame *)<em>frame</em> decisionListener:(id)<em>listener</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

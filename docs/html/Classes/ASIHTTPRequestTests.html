@@ -1,0 +1,2203 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ASIHTTPRequestTests Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">libmusicbrainz-objc </a></h1>
+				<a id="developerHome" href="../index.html">Brandon LeBlanc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ASIHTTPRequestTests Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/responseData">&nbsp;&nbsp;&nbsp;&nbsp;responseData</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/asyncFail:">&nbsp;&nbsp;&nbsp;&nbsp;- asyncFail:</option>
+	
+	<option value="//api/name/asyncSuccess:">&nbsp;&nbsp;&nbsp;&nbsp;- asyncSuccess:</option>
+	
+	<option value="//api/name/authenticationNeededForRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- authenticationNeededForRequest:</option>
+	
+	<option value="//api/name/changeURLFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- changeURLFailed:</option>
+	
+	<option value="//api/name/delegateTestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateTestFailed:</option>
+	
+	<option value="//api/name/delegateTestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateTestFinished:</option>
+	
+	<option value="//api/name/delegateTestResponseHeaders:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateTestResponseHeaders:</option>
+	
+	<option value="//api/name/delegateTestStarted:">&nbsp;&nbsp;&nbsp;&nbsp;- delegateTestStarted:</option>
+	
+	<option value="//api/name/downloadFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadFinished:</option>
+	
+	<option value="//api/name/performDelegateMethodsTest">&nbsp;&nbsp;&nbsp;&nbsp;- performDelegateMethodsTest</option>
+	
+	<option value="//api/name/performDownloadProgressTest">&nbsp;&nbsp;&nbsp;&nbsp;- performDownloadProgressTest</option>
+	
+	<option value="//api/name/performPartialFetchTest">&nbsp;&nbsp;&nbsp;&nbsp;- performPartialFetchTest</option>
+	
+	<option value="//api/name/performPostBodyStreamedFromDiskTest">&nbsp;&nbsp;&nbsp;&nbsp;- performPostBodyStreamedFromDiskTest</option>
+	
+	<option value="//api/name/performUploadProgressTest">&nbsp;&nbsp;&nbsp;&nbsp;- performUploadProgressTest</option>
+	
+	<option value="//api/name/redirectURLTestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- redirectURLTestFailed:</option>
+	
+	<option value="//api/name/redirectURLTestSucceeded:">&nbsp;&nbsp;&nbsp;&nbsp;- redirectURLTestSucceeded:</option>
+	
+	<option value="//api/name/request:didGetMoreData:">&nbsp;&nbsp;&nbsp;&nbsp;- request:didGetMoreData:</option>
+	
+	<option value="//api/name/request:didReceiveResponseHeaders:">&nbsp;&nbsp;&nbsp;&nbsp;- request:didReceiveResponseHeaders:</option>
+	
+	<option value="//api/name/request:isGoingToRedirectToURL:">&nbsp;&nbsp;&nbsp;&nbsp;- request:isGoingToRedirectToURL:</option>
+	
+	<option value="//api/name/requestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFailed:</option>
+	
+	<option value="//api/name/requestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFinished:</option>
+	
+	<option value="//api/name/requestStarted:">&nbsp;&nbsp;&nbsp;&nbsp;- requestStarted:</option>
+	
+	<option value="//api/name/runCancelTest">&nbsp;&nbsp;&nbsp;&nbsp;- runCancelTest</option>
+	
+	<option value="//api/name/runRedirectedResume">&nbsp;&nbsp;&nbsp;&nbsp;- runRedirectedResume</option>
+	
+	<option value="//api/name/runRemoveUploadProgressTest">&nbsp;&nbsp;&nbsp;&nbsp;- runRemoveUploadProgressTest</option>
+	
+	<option value="//api/name/setDoubleValue:">&nbsp;&nbsp;&nbsp;&nbsp;- setDoubleValue:</option>
+	
+	<option value="//api/name/setProgress:">&nbsp;&nbsp;&nbsp;&nbsp;- setProgress:</option>
+	
+	<option value="//api/name/test000SSL">&nbsp;&nbsp;&nbsp;&nbsp;- test000SSL</option>
+	
+	<option value="//api/name/test303Redirect">&nbsp;&nbsp;&nbsp;&nbsp;- test303Redirect</option>
+	
+	<option value="//api/name/test30xCrash">&nbsp;&nbsp;&nbsp;&nbsp;- test30xCrash</option>
+	
+	<option value="//api/name/testAccurateProgressFallback">&nbsp;&nbsp;&nbsp;&nbsp;- testAccurateProgressFallback</option>
+	
+	<option value="//api/name/testAsynchronous">&nbsp;&nbsp;&nbsp;&nbsp;- testAsynchronous</option>
+	
+	<option value="//api/name/testAutomaticRedirection">&nbsp;&nbsp;&nbsp;&nbsp;- testAutomaticRedirection</option>
+	
+	<option value="//api/name/testAutomaticRetry">&nbsp;&nbsp;&nbsp;&nbsp;- testAutomaticRetry</option>
+	
+	<option value="//api/name/testBase64Encode">&nbsp;&nbsp;&nbsp;&nbsp;- testBase64Encode</option>
+	
+	<option value="//api/name/testBasicAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;- testBasicAuthentication</option>
+	
+	<option value="//api/name/testBasicDownload">&nbsp;&nbsp;&nbsp;&nbsp;- testBasicDownload</option>
+	
+	<option value="//api/name/testCancel">&nbsp;&nbsp;&nbsp;&nbsp;- testCancel</option>
+	
+	<option value="//api/name/testChangeURLOnAuthenticationRetry">&nbsp;&nbsp;&nbsp;&nbsp;- testChangeURLOnAuthenticationRetry</option>
+	
+	<option value="//api/name/testCharacterEncoding">&nbsp;&nbsp;&nbsp;&nbsp;- testCharacterEncoding</option>
+	
+	<option value="//api/name/testCloseConnection">&nbsp;&nbsp;&nbsp;&nbsp;- testCloseConnection</option>
+	
+	<option value="//api/name/testCompressedBody">&nbsp;&nbsp;&nbsp;&nbsp;- testCompressedBody</option>
+	
+	<option value="//api/name/testCompressedResponse">&nbsp;&nbsp;&nbsp;&nbsp;- testCompressedResponse</option>
+	
+	<option value="//api/name/testCompressedResponseDelegateDataHandling">&nbsp;&nbsp;&nbsp;&nbsp;- testCompressedResponseDelegateDataHandling</option>
+	
+	<option value="//api/name/testCompressedResponseDownloadToFile">&nbsp;&nbsp;&nbsp;&nbsp;- testCompressedResponseDownloadToFile</option>
+	
+	<option value="//api/name/testConditionalGET">&nbsp;&nbsp;&nbsp;&nbsp;- testConditionalGET</option>
+	
+	<option value="//api/name/testCookies">&nbsp;&nbsp;&nbsp;&nbsp;- testCookies</option>
+	
+	<option value="//api/name/testCopy">&nbsp;&nbsp;&nbsp;&nbsp;- testCopy</option>
+	
+	<option value="//api/name/testDelegateMethods">&nbsp;&nbsp;&nbsp;&nbsp;- testDelegateMethods</option>
+	
+	<option value="//api/name/testDelegateRedirectHandling">&nbsp;&nbsp;&nbsp;&nbsp;- testDelegateRedirectHandling</option>
+	
+	<option value="//api/name/testDelegateResponseDataHandling">&nbsp;&nbsp;&nbsp;&nbsp;- testDelegateResponseDataHandling</option>
+	
+	<option value="//api/name/testDigestAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;- testDigestAuthentication</option>
+	
+	<option value="//api/name/testDownloadContentLength">&nbsp;&nbsp;&nbsp;&nbsp;- testDownloadContentLength</option>
+	
+	<option value="//api/name/testDownloadProgress">&nbsp;&nbsp;&nbsp;&nbsp;- testDownloadProgress</option>
+	
+	<option value="//api/name/testException">&nbsp;&nbsp;&nbsp;&nbsp;- testException</option>
+	
+	<option value="//api/name/testFetchToInvalidPath">&nbsp;&nbsp;&nbsp;&nbsp;- testFetchToInvalidPath</option>
+	
+	<option value="//api/name/testFileDownload">&nbsp;&nbsp;&nbsp;&nbsp;- testFileDownload</option>
+	
+	<option value="//api/name/testHTTPVersion">&nbsp;&nbsp;&nbsp;&nbsp;- testHTTPVersion</option>
+	
+	<option value="//api/name/testMimeType">&nbsp;&nbsp;&nbsp;&nbsp;- testMimeType</option>
+	
+	<option value="//api/name/testNTLMHandshake">&nbsp;&nbsp;&nbsp;&nbsp;- testNTLMHandshake</option>
+	
+	<option value="//api/name/testNilPortCredentialsMatching">&nbsp;&nbsp;&nbsp;&nbsp;- testNilPortCredentialsMatching</option>
+	
+	<option value="//api/name/testPartialFetch">&nbsp;&nbsp;&nbsp;&nbsp;- testPartialFetch</option>
+	
+	<option value="//api/name/testPersistentConnections">&nbsp;&nbsp;&nbsp;&nbsp;- testPersistentConnections</option>
+	
+	<option value="//api/name/testPostBodyStreamedFromDisk">&nbsp;&nbsp;&nbsp;&nbsp;- testPostBodyStreamedFromDisk</option>
+	
+	<option value="//api/name/testPreserveResponseWhenDownloadComplete">&nbsp;&nbsp;&nbsp;&nbsp;- testPreserveResponseWhenDownloadComplete</option>
+	
+	<option value="//api/name/testRFC1123DateParsing">&nbsp;&nbsp;&nbsp;&nbsp;- testRFC1123DateParsing</option>
+	
+	<option value="//api/name/testReachability">&nbsp;&nbsp;&nbsp;&nbsp;- testReachability</option>
+	
+	<option value="//api/name/testRedirectPreservesSession">&nbsp;&nbsp;&nbsp;&nbsp;- testRedirectPreservesSession</option>
+	
+	<option value="//api/name/testRedirectToNewDomain">&nbsp;&nbsp;&nbsp;&nbsp;- testRedirectToNewDomain</option>
+	
+	<option value="//api/name/testRedirectedResume">&nbsp;&nbsp;&nbsp;&nbsp;- testRedirectedResume</option>
+	
+	<option value="//api/name/testRemoveCredentialsFromKeychain">&nbsp;&nbsp;&nbsp;&nbsp;- testRemoveCredentialsFromKeychain</option>
+	
+	<option value="//api/name/testRemoveUploadProgress">&nbsp;&nbsp;&nbsp;&nbsp;- testRemoveUploadProgress</option>
+	
+	<option value="//api/name/testRequestMethod">&nbsp;&nbsp;&nbsp;&nbsp;- testRequestMethod</option>
+	
+	<option value="//api/name/testResponseStatusMessage">&nbsp;&nbsp;&nbsp;&nbsp;- testResponseStatusMessage</option>
+	
+	<option value="//api/name/testResumeChecksContentRangeHeader">&nbsp;&nbsp;&nbsp;&nbsp;- testResumeChecksContentRangeHeader</option>
+	
+	<option value="//api/name/testResumeWithAutomaticTimeoutRetry">&nbsp;&nbsp;&nbsp;&nbsp;- testResumeWithAutomaticTimeoutRetry</option>
+	
+	<option value="//api/name/testSubclass">&nbsp;&nbsp;&nbsp;&nbsp;- testSubclass</option>
+	
+	<option value="//api/name/testThrottlingDownloadBandwidth">&nbsp;&nbsp;&nbsp;&nbsp;- testThrottlingDownloadBandwidth</option>
+	
+	<option value="//api/name/testThrottlingUploadBandwidth">&nbsp;&nbsp;&nbsp;&nbsp;- testThrottlingUploadBandwidth</option>
+	
+	<option value="//api/name/testTimeOut">&nbsp;&nbsp;&nbsp;&nbsp;- testTimeOut</option>
+	
+	<option value="//api/name/testTimeOutWithoutDownloadDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- testTimeOutWithoutDownloadDelegate</option>
+	
+	<option value="//api/name/testTooMuchRedirection">&nbsp;&nbsp;&nbsp;&nbsp;- testTooMuchRedirection</option>
+	
+	<option value="//api/name/testUploadContentLength">&nbsp;&nbsp;&nbsp;&nbsp;- testUploadContentLength</option>
+	
+	<option value="//api/name/testUploadProgress">&nbsp;&nbsp;&nbsp;&nbsp;- testUploadProgress</option>
+	
+	<option value="//api/name/testUserAgent">&nbsp;&nbsp;&nbsp;&nbsp;- testUserAgent</option>
+	
+	<option value="//api/name/theTestRequest:didReceiveData:">&nbsp;&nbsp;&nbsp;&nbsp;- theTestRequest:didReceiveData:</option>
+	
+	<option value="//api/name/theTestRequestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- theTestRequestFinished:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseData">responseData</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncFail:">asyncFail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncSuccess:">asyncSuccess:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationNeededForRequest:">authenticationNeededForRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeURLFailed:">changeURLFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateTestFailed:">delegateTestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateTestFinished:">delegateTestFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateTestResponseHeaders:">delegateTestResponseHeaders:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegateTestStarted:">delegateTestStarted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadFinished:">downloadFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performDelegateMethodsTest">performDelegateMethodsTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performDownloadProgressTest">performDownloadProgressTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performPartialFetchTest">performPartialFetchTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performPostBodyStreamedFromDiskTest">performPostBodyStreamedFromDiskTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performUploadProgressTest">performUploadProgressTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redirectURLTestFailed:">redirectURLTestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redirectURLTestSucceeded:">redirectURLTestSucceeded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request:didGetMoreData:">request:didGetMoreData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request:didReceiveResponseHeaders:">request:didReceiveResponseHeaders:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request:isGoingToRedirectToURL:">request:isGoingToRedirectToURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFailed:">requestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFinished:">requestFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestStarted:">requestStarted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runCancelTest">runCancelTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runRedirectedResume">runRedirectedResume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runRemoveUploadProgressTest">runRemoveUploadProgressTest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDoubleValue:">setDoubleValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setProgress:">setProgress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/test000SSL">test000SSL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/test303Redirect">test303Redirect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/test30xCrash">test30xCrash</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAccurateProgressFallback">testAccurateProgressFallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAsynchronous">testAsynchronous</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAutomaticRedirection">testAutomaticRedirection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testAutomaticRetry">testAutomaticRetry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testBase64Encode">testBase64Encode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testBasicAuthentication">testBasicAuthentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testBasicDownload">testBasicDownload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCancel">testCancel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testChangeURLOnAuthenticationRetry">testChangeURLOnAuthenticationRetry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCharacterEncoding">testCharacterEncoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCloseConnection">testCloseConnection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCompressedBody">testCompressedBody</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCompressedResponse">testCompressedResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCompressedResponseDelegateDataHandling">testCompressedResponseDelegateDataHandling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCompressedResponseDownloadToFile">testCompressedResponseDownloadToFile</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testConditionalGET">testConditionalGET</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCookies">testCookies</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testCopy">testCopy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDelegateMethods">testDelegateMethods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDelegateRedirectHandling">testDelegateRedirectHandling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDelegateResponseDataHandling">testDelegateResponseDataHandling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDigestAuthentication">testDigestAuthentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDownloadContentLength">testDownloadContentLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testDownloadProgress">testDownloadProgress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testException">testException</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testFetchToInvalidPath">testFetchToInvalidPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testFileDownload">testFileDownload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testHTTPVersion">testHTTPVersion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testMimeType">testMimeType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testNTLMHandshake">testNTLMHandshake</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testNilPortCredentialsMatching">testNilPortCredentialsMatching</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPartialFetch">testPartialFetch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPersistentConnections">testPersistentConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPostBodyStreamedFromDisk">testPostBodyStreamedFromDisk</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testPreserveResponseWhenDownloadComplete">testPreserveResponseWhenDownloadComplete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRFC1123DateParsing">testRFC1123DateParsing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testReachability">testReachability</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRedirectPreservesSession">testRedirectPreservesSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRedirectToNewDomain">testRedirectToNewDomain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRedirectedResume">testRedirectedResume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRemoveCredentialsFromKeychain">testRemoveCredentialsFromKeychain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRemoveUploadProgress">testRemoveUploadProgress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRequestMethod">testRequestMethod</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testResponseStatusMessage">testResponseStatusMessage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testResumeChecksContentRangeHeader">testResumeChecksContentRangeHeader</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testResumeWithAutomaticTimeoutRetry">testResumeWithAutomaticTimeoutRetry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testSubclass">testSubclass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testThrottlingDownloadBandwidth">testThrottlingDownloadBandwidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testThrottlingUploadBandwidth">testThrottlingUploadBandwidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testTimeOut">testTimeOut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testTimeOutWithoutDownloadDelegate">testTimeOutWithoutDownloadDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testTooMuchRedirection">testTooMuchRedirection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testUploadContentLength">testUploadContentLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testUploadProgress">testUploadProgress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testUserAgent">testUserAgent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/theTestRequest:didReceiveData:">theTestRequest:didReceiveData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/theTestRequestFinished:">theTestRequestFinished:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ASIHTTPRequestTests Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ASIHTTPRequestTests Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/ASITestCase.html">ASITestCase</a> : GHTestCase</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ASIHTTPRequestTests.h<br />ASIHTTPRequestTests.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testBasicDownload">&ndash;&nbsp;testBasicDownload</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testBase64Encode">&ndash;&nbsp;testBase64Encode</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDelegateMethods">&ndash;&nbsp;testDelegateMethods</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testConditionalGET">&ndash;&nbsp;testConditionalGET</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testException">&ndash;&nbsp;testException</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testTimeOut">&ndash;&nbsp;testTimeOut</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRequestMethod">&ndash;&nbsp;testRequestMethod</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testHTTPVersion">&ndash;&nbsp;testHTTPVersion</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testUserAgent">&ndash;&nbsp;testUserAgent</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAutomaticRedirection">&ndash;&nbsp;testAutomaticRedirection</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/test30xCrash">&ndash;&nbsp;test30xCrash</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testUploadContentLength">&ndash;&nbsp;testUploadContentLength</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDownloadContentLength">&ndash;&nbsp;testDownloadContentLength</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testFileDownload">&ndash;&nbsp;testFileDownload</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDownloadProgress">&ndash;&nbsp;testDownloadProgress</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testUploadProgress">&ndash;&nbsp;testUploadProgress</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCookies">&ndash;&nbsp;testCookies</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRemoveCredentialsFromKeychain">&ndash;&nbsp;testRemoveCredentialsFromKeychain</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testBasicAuthentication">&ndash;&nbsp;testBasicAuthentication</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDigestAuthentication">&ndash;&nbsp;testDigestAuthentication</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testNTLMHandshake">&ndash;&nbsp;testNTLMHandshake</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCharacterEncoding">&ndash;&nbsp;testCharacterEncoding</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCompressedResponse">&ndash;&nbsp;testCompressedResponse</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCompressedResponseDownloadToFile">&ndash;&nbsp;testCompressedResponseDownloadToFile</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/test000SSL">&ndash;&nbsp;test000SSL</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRedirectPreservesSession">&ndash;&nbsp;testRedirectPreservesSession</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testTooMuchRedirection">&ndash;&nbsp;testTooMuchRedirection</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRedirectToNewDomain">&ndash;&nbsp;testRedirectToNewDomain</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/test303Redirect">&ndash;&nbsp;test303Redirect</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testSubclass">&ndash;&nbsp;testSubclass</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testTimeOutWithoutDownloadDelegate">&ndash;&nbsp;testTimeOutWithoutDownloadDelegate</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testThrottlingDownloadBandwidth">&ndash;&nbsp;testThrottlingDownloadBandwidth</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testThrottlingUploadBandwidth">&ndash;&nbsp;testThrottlingUploadBandwidth</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testReachability">&ndash;&nbsp;testReachability</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAutomaticRetry">&ndash;&nbsp;testAutomaticRetry</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCloseConnection">&ndash;&nbsp;testCloseConnection</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPersistentConnections">&ndash;&nbsp;testPersistentConnections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testNilPortCredentialsMatching">&ndash;&nbsp;testNilPortCredentialsMatching</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseData">&nbsp;&nbsp;responseData</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCancel">&ndash;&nbsp;testCancel</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runCancelTest">&ndash;&nbsp;runCancelTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performDelegateMethodsTest">&ndash;&nbsp;performDelegateMethodsTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestStarted:">&ndash;&nbsp;requestStarted:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request:didReceiveResponseHeaders:">&ndash;&nbsp;request:didReceiveResponseHeaders:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFinished:">&ndash;&nbsp;requestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFailed:">&ndash;&nbsp;requestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateTestStarted:">&ndash;&nbsp;delegateTestStarted:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateTestResponseHeaders:">&ndash;&nbsp;delegateTestResponseHeaders:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateTestFinished:">&ndash;&nbsp;delegateTestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegateTestFailed:">&ndash;&nbsp;delegateTestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testResumeChecksContentRangeHeader">&ndash;&nbsp;testResumeChecksContentRangeHeader</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRedirectedResume">&ndash;&nbsp;testRedirectedResume</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runRedirectedResume">&ndash;&nbsp;runRedirectedResume</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request:didGetMoreData:">&ndash;&nbsp;request:didGetMoreData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadFinished:">&ndash;&nbsp;downloadFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCompressedResponseDelegateDataHandling">&ndash;&nbsp;testCompressedResponseDelegateDataHandling</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performDownloadProgressTest">&ndash;&nbsp;performDownloadProgressTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performUploadProgressTest">&ndash;&nbsp;performUploadProgressTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPostBodyStreamedFromDisk">&ndash;&nbsp;testPostBodyStreamedFromDisk</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performPostBodyStreamedFromDiskTest">&ndash;&nbsp;performPostBodyStreamedFromDiskTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPreserveResponseWhenDownloadComplete">&ndash;&nbsp;testPreserveResponseWhenDownloadComplete</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testPartialFetch">&ndash;&nbsp;testPartialFetch</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performPartialFetchTest">&ndash;&nbsp;performPartialFetchTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCompressedBody">&ndash;&nbsp;testCompressedBody</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testFetchToInvalidPath">&ndash;&nbsp;testFetchToInvalidPath</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testResponseStatusMessage">&ndash;&nbsp;testResponseStatusMessage</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAsynchronous">&ndash;&nbsp;testAsynchronous</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncFail:">&ndash;&nbsp;asyncFail:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncSuccess:">&ndash;&nbsp;asyncSuccess:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDoubleValue:">&ndash;&nbsp;setDoubleValue:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setProgress:">&ndash;&nbsp;setProgress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testCopy">&ndash;&nbsp;testCopy</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRemoveUploadProgress">&ndash;&nbsp;testRemoveUploadProgress</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runRemoveUploadProgressTest">&ndash;&nbsp;runRemoveUploadProgressTest</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testMimeType">&ndash;&nbsp;testMimeType</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDelegateResponseDataHandling">&ndash;&nbsp;testDelegateResponseDataHandling</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/theTestRequestFinished:">&ndash;&nbsp;theTestRequestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/theTestRequest:didReceiveData:">&ndash;&nbsp;theTestRequest:didReceiveData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRFC1123DateParsing">&ndash;&nbsp;testRFC1123DateParsing</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testAccurateProgressFallback">&ndash;&nbsp;testAccurateProgressFallback</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testResumeWithAutomaticTimeoutRetry">&ndash;&nbsp;testResumeWithAutomaticTimeoutRetry</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testChangeURLOnAuthenticationRetry">&ndash;&nbsp;testChangeURLOnAuthenticationRetry</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeURLFailed:">&ndash;&nbsp;changeURLFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationNeededForRequest:">&ndash;&nbsp;authenticationNeededForRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testDelegateRedirectHandling">&ndash;&nbsp;testDelegateRedirectHandling</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/redirectURLTestSucceeded:">&ndash;&nbsp;redirectURLTestSucceeded:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/redirectURLTestFailed:">&ndash;&nbsp;redirectURLTestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request:isGoingToRedirectToURL:">&ndash;&nbsp;request:isGoingToRedirectToURL:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/responseData" title="responseData"></a>
+	<h3 class="subsubtitle method-title">responseData</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSMutableData *responseData</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncFail:" title="asyncFail:"></a>
+	<h3 class="subsubtitle method-title">asyncFail:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)asyncFail:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncSuccess:" title="asyncSuccess:"></a>
+	<h3 class="subsubtitle method-title">asyncSuccess:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)asyncSuccess:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationNeededForRequest:" title="authenticationNeededForRequest:"></a>
+	<h3 class="subsubtitle method-title">authenticationNeededForRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)authenticationNeededForRequest:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeURLFailed:" title="changeURLFailed:"></a>
+	<h3 class="subsubtitle method-title">changeURLFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)changeURLFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateTestFailed:" title="delegateTestFailed:"></a>
+	<h3 class="subsubtitle method-title">delegateTestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delegateTestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateTestFinished:" title="delegateTestFinished:"></a>
+	<h3 class="subsubtitle method-title">delegateTestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delegateTestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateTestResponseHeaders:" title="delegateTestResponseHeaders:"></a>
+	<h3 class="subsubtitle method-title">delegateTestResponseHeaders:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delegateTestResponseHeaders:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegateTestStarted:" title="delegateTestStarted:"></a>
+	<h3 class="subsubtitle method-title">delegateTestStarted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delegateTestStarted:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadFinished:" title="downloadFinished:"></a>
+	<h3 class="subsubtitle method-title">downloadFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)downloadFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performDelegateMethodsTest" title="performDelegateMethodsTest"></a>
+	<h3 class="subsubtitle method-title">performDelegateMethodsTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)performDelegateMethodsTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performDownloadProgressTest" title="performDownloadProgressTest"></a>
+	<h3 class="subsubtitle method-title">performDownloadProgressTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)performDownloadProgressTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performPartialFetchTest" title="performPartialFetchTest"></a>
+	<h3 class="subsubtitle method-title">performPartialFetchTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)performPartialFetchTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performPostBodyStreamedFromDiskTest" title="performPostBodyStreamedFromDiskTest"></a>
+	<h3 class="subsubtitle method-title">performPostBodyStreamedFromDiskTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)performPostBodyStreamedFromDiskTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performUploadProgressTest" title="performUploadProgressTest"></a>
+	<h3 class="subsubtitle method-title">performUploadProgressTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)performUploadProgressTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/redirectURLTestFailed:" title="redirectURLTestFailed:"></a>
+	<h3 class="subsubtitle method-title">redirectURLTestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)redirectURLTestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/redirectURLTestSucceeded:" title="redirectURLTestSucceeded:"></a>
+	<h3 class="subsubtitle method-title">redirectURLTestSucceeded:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)redirectURLTestSucceeded:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request:didGetMoreData:" title="request:didGetMoreData:"></a>
+	<h3 class="subsubtitle method-title">request:didGetMoreData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)request:(ASIHTTPRequest *)<em>request</em> didGetMoreData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request:didReceiveResponseHeaders:" title="request:didReceiveResponseHeaders:"></a>
+	<h3 class="subsubtitle method-title">request:didReceiveResponseHeaders:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)request:(ASIHTTPRequest *)<em>request</em> didReceiveResponseHeaders:(NSDictionary *)<em>newResponseHeaders</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request:isGoingToRedirectToURL:" title="request:isGoingToRedirectToURL:"></a>
+	<h3 class="subsubtitle method-title">request:isGoingToRedirectToURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)request:(ASIHTTPRequest *)<em>request</em> isGoingToRedirectToURL:(NSURL *)<em>url</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFailed:" title="requestFailed:"></a>
+	<h3 class="subsubtitle method-title">requestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFinished:" title="requestFinished:"></a>
+	<h3 class="subsubtitle method-title">requestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestStarted:" title="requestStarted:"></a>
+	<h3 class="subsubtitle method-title">requestStarted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestStarted:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runCancelTest" title="runCancelTest"></a>
+	<h3 class="subsubtitle method-title">runCancelTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)runCancelTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runRedirectedResume" title="runRedirectedResume"></a>
+	<h3 class="subsubtitle method-title">runRedirectedResume</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)runRedirectedResume</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runRemoveUploadProgressTest" title="runRemoveUploadProgressTest"></a>
+	<h3 class="subsubtitle method-title">runRemoveUploadProgressTest</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)runRemoveUploadProgressTest</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDoubleValue:" title="setDoubleValue:"></a>
+	<h3 class="subsubtitle method-title">setDoubleValue:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setDoubleValue:(double)<em>newProgress</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setProgress:" title="setProgress:"></a>
+	<h3 class="subsubtitle method-title">setProgress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setProgress:(float)<em>newProgress</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/test000SSL" title="test000SSL"></a>
+	<h3 class="subsubtitle method-title">test000SSL</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)test000SSL</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/test303Redirect" title="test303Redirect"></a>
+	<h3 class="subsubtitle method-title">test303Redirect</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)test303Redirect</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/test30xCrash" title="test30xCrash"></a>
+	<h3 class="subsubtitle method-title">test30xCrash</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)test30xCrash</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAccurateProgressFallback" title="testAccurateProgressFallback"></a>
+	<h3 class="subsubtitle method-title">testAccurateProgressFallback</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAccurateProgressFallback</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAsynchronous" title="testAsynchronous"></a>
+	<h3 class="subsubtitle method-title">testAsynchronous</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAsynchronous</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAutomaticRedirection" title="testAutomaticRedirection"></a>
+	<h3 class="subsubtitle method-title">testAutomaticRedirection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAutomaticRedirection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testAutomaticRetry" title="testAutomaticRetry"></a>
+	<h3 class="subsubtitle method-title">testAutomaticRetry</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testAutomaticRetry</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testBase64Encode" title="testBase64Encode"></a>
+	<h3 class="subsubtitle method-title">testBase64Encode</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testBase64Encode</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testBasicAuthentication" title="testBasicAuthentication"></a>
+	<h3 class="subsubtitle method-title">testBasicAuthentication</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testBasicAuthentication</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testBasicDownload" title="testBasicDownload"></a>
+	<h3 class="subsubtitle method-title">testBasicDownload</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testBasicDownload</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCancel" title="testCancel"></a>
+	<h3 class="subsubtitle method-title">testCancel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCancel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testChangeURLOnAuthenticationRetry" title="testChangeURLOnAuthenticationRetry"></a>
+	<h3 class="subsubtitle method-title">testChangeURLOnAuthenticationRetry</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testChangeURLOnAuthenticationRetry</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCharacterEncoding" title="testCharacterEncoding"></a>
+	<h3 class="subsubtitle method-title">testCharacterEncoding</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCharacterEncoding</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCloseConnection" title="testCloseConnection"></a>
+	<h3 class="subsubtitle method-title">testCloseConnection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCloseConnection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCompressedBody" title="testCompressedBody"></a>
+	<h3 class="subsubtitle method-title">testCompressedBody</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCompressedBody</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCompressedResponse" title="testCompressedResponse"></a>
+	<h3 class="subsubtitle method-title">testCompressedResponse</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCompressedResponse</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCompressedResponseDelegateDataHandling" title="testCompressedResponseDelegateDataHandling"></a>
+	<h3 class="subsubtitle method-title">testCompressedResponseDelegateDataHandling</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCompressedResponseDelegateDataHandling</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCompressedResponseDownloadToFile" title="testCompressedResponseDownloadToFile"></a>
+	<h3 class="subsubtitle method-title">testCompressedResponseDownloadToFile</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCompressedResponseDownloadToFile</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testConditionalGET" title="testConditionalGET"></a>
+	<h3 class="subsubtitle method-title">testConditionalGET</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testConditionalGET</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCookies" title="testCookies"></a>
+	<h3 class="subsubtitle method-title">testCookies</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCookies</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testCopy" title="testCopy"></a>
+	<h3 class="subsubtitle method-title">testCopy</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testCopy</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDelegateMethods" title="testDelegateMethods"></a>
+	<h3 class="subsubtitle method-title">testDelegateMethods</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDelegateMethods</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDelegateRedirectHandling" title="testDelegateRedirectHandling"></a>
+	<h3 class="subsubtitle method-title">testDelegateRedirectHandling</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDelegateRedirectHandling</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDelegateResponseDataHandling" title="testDelegateResponseDataHandling"></a>
+	<h3 class="subsubtitle method-title">testDelegateResponseDataHandling</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDelegateResponseDataHandling</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDigestAuthentication" title="testDigestAuthentication"></a>
+	<h3 class="subsubtitle method-title">testDigestAuthentication</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDigestAuthentication</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDownloadContentLength" title="testDownloadContentLength"></a>
+	<h3 class="subsubtitle method-title">testDownloadContentLength</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDownloadContentLength</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testDownloadProgress" title="testDownloadProgress"></a>
+	<h3 class="subsubtitle method-title">testDownloadProgress</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testDownloadProgress</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testException" title="testException"></a>
+	<h3 class="subsubtitle method-title">testException</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testException</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testFetchToInvalidPath" title="testFetchToInvalidPath"></a>
+	<h3 class="subsubtitle method-title">testFetchToInvalidPath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testFetchToInvalidPath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testFileDownload" title="testFileDownload"></a>
+	<h3 class="subsubtitle method-title">testFileDownload</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testFileDownload</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testHTTPVersion" title="testHTTPVersion"></a>
+	<h3 class="subsubtitle method-title">testHTTPVersion</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testHTTPVersion</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testMimeType" title="testMimeType"></a>
+	<h3 class="subsubtitle method-title">testMimeType</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testMimeType</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testNTLMHandshake" title="testNTLMHandshake"></a>
+	<h3 class="subsubtitle method-title">testNTLMHandshake</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testNTLMHandshake</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testNilPortCredentialsMatching" title="testNilPortCredentialsMatching"></a>
+	<h3 class="subsubtitle method-title">testNilPortCredentialsMatching</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testNilPortCredentialsMatching</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPartialFetch" title="testPartialFetch"></a>
+	<h3 class="subsubtitle method-title">testPartialFetch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPartialFetch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPersistentConnections" title="testPersistentConnections"></a>
+	<h3 class="subsubtitle method-title">testPersistentConnections</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPersistentConnections</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPostBodyStreamedFromDisk" title="testPostBodyStreamedFromDisk"></a>
+	<h3 class="subsubtitle method-title">testPostBodyStreamedFromDisk</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPostBodyStreamedFromDisk</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testPreserveResponseWhenDownloadComplete" title="testPreserveResponseWhenDownloadComplete"></a>
+	<h3 class="subsubtitle method-title">testPreserveResponseWhenDownloadComplete</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testPreserveResponseWhenDownloadComplete</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRFC1123DateParsing" title="testRFC1123DateParsing"></a>
+	<h3 class="subsubtitle method-title">testRFC1123DateParsing</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRFC1123DateParsing</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testReachability" title="testReachability"></a>
+	<h3 class="subsubtitle method-title">testReachability</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testReachability</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRedirectPreservesSession" title="testRedirectPreservesSession"></a>
+	<h3 class="subsubtitle method-title">testRedirectPreservesSession</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRedirectPreservesSession</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRedirectToNewDomain" title="testRedirectToNewDomain"></a>
+	<h3 class="subsubtitle method-title">testRedirectToNewDomain</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRedirectToNewDomain</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRedirectedResume" title="testRedirectedResume"></a>
+	<h3 class="subsubtitle method-title">testRedirectedResume</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRedirectedResume</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRemoveCredentialsFromKeychain" title="testRemoveCredentialsFromKeychain"></a>
+	<h3 class="subsubtitle method-title">testRemoveCredentialsFromKeychain</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRemoveCredentialsFromKeychain</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRemoveUploadProgress" title="testRemoveUploadProgress"></a>
+	<h3 class="subsubtitle method-title">testRemoveUploadProgress</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRemoveUploadProgress</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRequestMethod" title="testRequestMethod"></a>
+	<h3 class="subsubtitle method-title">testRequestMethod</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRequestMethod</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testResponseStatusMessage" title="testResponseStatusMessage"></a>
+	<h3 class="subsubtitle method-title">testResponseStatusMessage</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testResponseStatusMessage</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testResumeChecksContentRangeHeader" title="testResumeChecksContentRangeHeader"></a>
+	<h3 class="subsubtitle method-title">testResumeChecksContentRangeHeader</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testResumeChecksContentRangeHeader</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testResumeWithAutomaticTimeoutRetry" title="testResumeWithAutomaticTimeoutRetry"></a>
+	<h3 class="subsubtitle method-title">testResumeWithAutomaticTimeoutRetry</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testResumeWithAutomaticTimeoutRetry</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testSubclass" title="testSubclass"></a>
+	<h3 class="subsubtitle method-title">testSubclass</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testSubclass</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testThrottlingDownloadBandwidth" title="testThrottlingDownloadBandwidth"></a>
+	<h3 class="subsubtitle method-title">testThrottlingDownloadBandwidth</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testThrottlingDownloadBandwidth</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testThrottlingUploadBandwidth" title="testThrottlingUploadBandwidth"></a>
+	<h3 class="subsubtitle method-title">testThrottlingUploadBandwidth</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testThrottlingUploadBandwidth</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testTimeOut" title="testTimeOut"></a>
+	<h3 class="subsubtitle method-title">testTimeOut</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testTimeOut</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testTimeOutWithoutDownloadDelegate" title="testTimeOutWithoutDownloadDelegate"></a>
+	<h3 class="subsubtitle method-title">testTimeOutWithoutDownloadDelegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testTimeOutWithoutDownloadDelegate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testTooMuchRedirection" title="testTooMuchRedirection"></a>
+	<h3 class="subsubtitle method-title">testTooMuchRedirection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testTooMuchRedirection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testUploadContentLength" title="testUploadContentLength"></a>
+	<h3 class="subsubtitle method-title">testUploadContentLength</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testUploadContentLength</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testUploadProgress" title="testUploadProgress"></a>
+	<h3 class="subsubtitle method-title">testUploadProgress</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testUploadProgress</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testUserAgent" title="testUserAgent"></a>
+	<h3 class="subsubtitle method-title">testUserAgent</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testUserAgent</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/theTestRequest:didReceiveData:" title="theTestRequest:didReceiveData:"></a>
+	<h3 class="subsubtitle method-title">theTestRequest:didReceiveData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)theTestRequest:(ASIHTTPRequest *)<em>request</em> didReceiveData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/theTestRequestFinished:" title="theTestRequestFinished:"></a>
+	<h3 class="subsubtitle method-title">theTestRequestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)theTestRequestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Brandon LeBlanc. All rights reserved. (Last updated: 2012-06-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
