@@ -10,7 +10,6 @@
 
 #import "MB.h"
 #import "ASIHTTPRequest.h"
-#import "XML.h"
 
 #define LIBRARY_USER_AGENT @"libmusicbrainz-objc-0.0.1"
 #define DEFAULT_SERVER @"musicbrainz.org"

@@ -9,7 +9,6 @@
 /// @brief Base class for all entities
 
 #import <Foundation/Foundation.h>
-#import "../XML.h"
 
 @interface MBEntity : NSObject
 {

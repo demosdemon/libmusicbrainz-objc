@@ -10,10 +10,10 @@
 
 #import "MB.h"
 
-#define StringEqual(string1, string2) ([((NSString *)string1) caseInsensitiveCompare:((NSString *)string2)])
+#define kStringEqual(string1, string2) ([((NSString *)string1) caseInsensitiveCompare:((NSString *)string2)])
 
-#define kISRC_Regex           @"^[A-Z{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}$"
-#define kUUID_Regex           @"^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$"
+#define kISRC_Regex @"^[A-Z{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}$"
+#define kUUID_Regex @"^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$"
 
 #define kErrorKey        @"error"
 #define kListKey         @"list"
@@ -123,71 +123,71 @@
 {
   NSString *name = [element localName];
   
-  if (StringEqual([name substringFromIndex:[name length]-4], kListKey))
+  if (kStringEqual([name substringFromIndex:[name length]-4], kListKey))
     return [MBList entityWithElement:element];
-  else if (StringEqual(name, kErrorKey))
+  else if (kStringEqual(name, kErrorKey))
     return [MBError entityWithElement:element];
-  else if (StringEqual(name, kMetadataKey))
+  else if (kStringEqual(name, kMetadataKey))
     return [MBMetadata entityWithElement:element];
-  else if (StringEqual(name, kLifespanKey))
+  else if (kStringEqual(name, kLifespanKey))
     return [MBLifeSpan entityWithElement:element];
-  else if (StringEqual(name, kTextRepresentationKey))
+  else if (kStringEqual(name, kTextRepresentationKey))
     return [MBTextRepresentation entityWithElement:element];
-  else if (StringEqual(name, kIPIKey))
+  else if (kStringEqual(name, kIPIKey))
     return [MBIPI entityWithElement:element];
-  else if (StringEqual(name, kArtistKey))
+  else if (kStringEqual(name, kArtistKey))
     return [MBArtist entityWithElement:element];
-  else if (StringEqual(name, kReleaseKey))
+  else if (kStringEqual(name, kReleaseKey))
     return [MBRelease entityWithElement:element];
-  else if (StringEqual(name, kReleaseGroupKey))
+  else if (kStringEqual(name, kReleaseGroupKey))
     return [MBReleaseGroup entityWithElement:element];
-  else if (StringEqual(name, kRecordingKey))
+  else if (kStringEqual(name, kRecordingKey))
     return [MBRecording entityWithElement:element];
-  else if (StringEqual(name, kLabelKey))
+  else if (kStringEqual(name, kLabelKey))
     return [MBLabel entityWithElement:element];
-  else if (StringEqual(name, kWorkKey))
+  else if (kStringEqual(name, kWorkKey))
     return [MBWork entityWithElement:element];
-  else if (StringEqual(name, kDiscKey))
+  else if (kStringEqual(name, kDiscKey))
     return [MBDisc entityWithElement:element];
-  else if (StringEqual(name, kPUIDKey))
+  else if (kStringEqual(name, kPUIDKey))
     return [MBPUID entityWithElement:element];
-  else if (StringEqual(name, kISRCKey))
+  else if (kStringEqual(name, kISRCKey))
     return [MBISRC entityWithElement:element];
-  else if (StringEqual(name, kArtistCreditKey))
+  else if (kStringEqual(name, kArtistCreditKey))
     return [MBArtistCredit entityWithElement:element];
-  else if (StringEqual(name, kNameCreditKey))
+  else if (kStringEqual(name, kNameCreditKey))
     return [MBNameCredit entityWithElement:element];
-  else if (StringEqual(name, kRelationKey))
+  else if (kStringEqual(name, kRelationKey))
     return [MBRelation entityWithElement:element];
-  else if (StringEqual(name, kAttributeKey))
+  else if (kStringEqual(name, kAttributeKey))
     return [MBAttribute entityWithElement:element];
-  else if (StringEqual(name, kAliasKey))
+  else if (kStringEqual(name, kAliasKey))
     return [MBAlias entityWithElement:element];
-  else if (StringEqual(name, kISWCKey))
+  else if (kStringEqual(name, kISWCKey))
     return [MBISWC entityWithElement:element];
-  else if (StringEqual(name, kTagKey))
+  else if (kStringEqual(name, kTagKey))
     return [MBTag entityWithElement:element];
-  else if (StringEqual(name, kUserTagKey))
+  else if (kStringEqual(name, kUserTagKey))
     return [MBUserTag entityWithElement:element];
-  else if (StringEqual(name, kRatingKey))
+  else if (kStringEqual(name, kRatingKey))
     return [MBRating entityWithElement:element];
-  else if (StringEqual(name, kUserRatingKey))
+  else if (kStringEqual(name, kUserRatingKey))
     return [MBUserRating entityWithElement:element];
-  else if (StringEqual(name, kLabelInfoKey))
+  else if (kStringEqual(name, kLabelInfoKey))
     return [MBLabelInfo entityWithElement:element];
-  else if (StringEqual(name, kMediumKey))
+  else if (kStringEqual(name, kMediumKey))
     return [MBMedium entityWithElement:element];
-  else if (StringEqual(name, kTrackKey))
+  else if (kStringEqual(name, kTrackKey))
     return [MBTrack entityWithElement:element];
-  else if (StringEqual(name, kAnnotationKey))
+  else if (kStringEqual(name, kAnnotationKey))
     return [MBAnnotation entityWithElement:element];
-  else if (StringEqual(name, kCDStubKey))
+  else if (kStringEqual(name, kCDStubKey))
     return [MBCDStub entityWithElement:element];
-  else if (StringEqual(name, kFreeDBDiscKey))
+  else if (kStringEqual(name, kFreeDBDiscKey))
     return [MBFreeDbDisc entityWithElement:element];
-  else if (StringEqual(name, kNonMBTrackKey))
+  else if (kStringEqual(name, kNonMBTrackKey))
     return [MBNonMbTrack entityWithElement:element];
-  else if (StringEqual(name, kCollectionKey))
+  else if (kStringEqual(name, kCollectionKey))
     return [MBCollection entityWithElement:element];
 
   NSLog(@"Entity %@ did not match", name);
@@ -196,12 +196,18 @@
 
 + (BOOL) validatePUID:(NSString *)puid
 {
-  // TODO: Implementation
+  NSError *error = nil;
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:kUUID_Regex options:0 error:&error];
+  if (error) return NO;
+  return ([[regex matchesInString:puid options:0 range:NSMakeRange(0, [puid length])] count] == 1);
 }
 
 + (BOOL) validateISRC:(NSString *)isrc
 {
-  // TODO: Implementation
+  NSError *error = nil;
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:kISRC_Regex options:0 error:&error];
+  if (error) return NO;
+  return ([[regex matchesInString:isrc options:0 range:NSMakeRange(0, [isrc length])] count] == 1);
 }
 
 
