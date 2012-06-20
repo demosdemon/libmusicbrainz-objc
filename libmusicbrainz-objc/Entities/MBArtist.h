@@ -10,13 +10,10 @@
 ///
 /// @brief Artist entity
 
-#import "RateAndTaggableEntity.h"
+#import "MBRateAndTaggableEntity.h"
+#import "MBLifeSpan.h"
 
-@class MBLifeSpan, MBRating, MBUserRating;
-
-@interface MBArtist <MBRateAndTaggableEntity> {
-  NSDictionary *_dict;
-}
+@interface MBArtist : MBRateAndTaggableEntity
 
 // All NSStrings* must be copy, nonatomic
 @property (copy, nonatomic, readonly) NSString *Id;

@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBRelation <MBEntity>
+@interface MBRelation : MBEntity
 
 @end
 

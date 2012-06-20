@@ -8,9 +8,10 @@
 ///
 /// @brief Work Entity
 
-#import "RateAndTaggableEntity.h"
+#import "MBRateAndTaggableEntity.h"
+#import "MBArtistCredit.h"
 
-@interface MBWork <MBRateAndTaggableEntity>
+@interface MBWork : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Type;
@@ -21,9 +22,5 @@
 @property (copy, nonatomic, readonly) NSString *Disambiguation;
 @property (nonatomic, readonly) NSArray *AliasList; ///< NSArray of MBAlias objects
 @property (nonatomic, readonly) NSArray *RelationListList; ///< NSArray of NSArray objects that contain MBRelation objects
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects
-@property (nonatomic, readonly) NSArray *UserTagList; ///< NSArray of MBUserTag objects
-@property (nonatomic, readonly) MBRating *Rating;
-@property (nonatomic, readonly) MBUserRating *UserRating;
 
 @end

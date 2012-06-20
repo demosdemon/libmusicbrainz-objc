@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBRating <MBEntity>
+@interface MBRating : MBEntity
 
 @end
 

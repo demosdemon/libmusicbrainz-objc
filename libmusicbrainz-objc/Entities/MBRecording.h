@@ -8,9 +8,10 @@
 ///
 /// @brief Recording Entity
 
-#import "RateAndTaggableEntity.h"
+#import "MBRateAndTaggableEntity.h"
+#import "MBArtistCredit.h"
 
-@interface MBRecording <MBRateAndTaggableEntity>
+@interface MBRecording : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Title;
@@ -21,9 +22,5 @@
 @property (nonatomic, readonly) NSArray *PUIDList; ///< NSArray of MBPUID objects
 @property (nonatomic, readonly) NSArray *ISRCList; ///< NSArray of MBISRC objects
 @property (nonatomic, readonly) NSArray *RelationListList; ///< NSArray of NSArray objects that contain MBRelation objects
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects
-@property (nonatomic, readonly) NSArray *UserTagList; ///< NSArray of MBUserTag objects
-@property (nonatomic, readonly) MBRating *Rating;
-@property (nonatomic, readonly) MBUserRating *UserRating;
 
 @end

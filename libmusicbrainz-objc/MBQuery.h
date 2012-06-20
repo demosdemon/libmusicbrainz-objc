@@ -9,16 +9,21 @@
 ///   webservice.
 
 #import <Foundation/Foundation.h>
-#import "Entities/RateAndTaggableEntity.h"
+#import "ASIHTTPRequestDelegate.h"
+#import "Entities/MBMetadata.h"
+#import "Entities/MBRateAndTaggableEntity.h"
+#import "Entities/MBRelease.h"
+#import "Entities/MBCollection.h"
+#import "Entities/MBISRC.h"
+#import "Entities/MBRecording.h"
 
-@class MBQuery, MBMetadata, MBRelease, MBCollection, MBISRC, MBRecording;
-
+@class MBQuery;
 @protocol MBQueryDelegate <NSObject, NSXMLParserDelegate>
 -(void) query:(MBQuery *)query didReceiveResult:(MBMetadata *)result;
 -(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
 @end
 
-@interface MBQuery : NSObject <NSXMLParserDelegate> 
+@interface MBQuery : NSObject <ASIHTTPRequestDelegate>
 {
  @private
   id<MBQueryDelegate> _delegate;
@@ -30,8 +35,6 @@
   
   NSMutableDictionary *_submissionQueue;
   
-  NSMutableArray *_requestQueue;
-  NSThread *_connectionThread;
 }
 
 #pragma mark - Initializers
@@ -55,29 +58,6 @@
         Password:(NSString *)password;
 
 #pragma mark - Instance Methods
-- (void) queueUserTags:(NSArray *)userTags
-           forTaggable:(id<MBRateAndTaggableEntity>)taggable;
-
-- (void) queueRating:(MBUserRating *)rating
-          forRatable:(id<MBRateAndTaggableEntity>)ratable;
-
-- (void) addRelease:(MBRelease *)release 
-       toCollection:(MBCollection *)collection;
-
-- (void) removeRelease:(MBRelease *)release
-        fromCollection:(MBCollection *)collection;
-
-- (void) addReleases:(NSArray *)releases
-        toCollection:(MBCollection *)collection;
-
-- (void) removeReleases:(NSArray *)releases
-         fromCollection:(MBCollection *)collection;
-
-- (void) queueBarcode:(NSString *)barcode
-          forRelease:(MBRelease *)release;
-
-- (void) queueISRC:(MBISRC *)isrc
-      forRecording:(MBRecording *)recording;
 
 - (void) submitQueue;
 

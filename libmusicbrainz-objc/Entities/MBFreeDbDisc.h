@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBFreeDbDisc <MBEntity>
+@interface MBFreeDbDisc : MBEntity
 
 @end
 

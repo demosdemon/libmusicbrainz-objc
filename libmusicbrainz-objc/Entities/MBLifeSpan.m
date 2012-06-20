@@ -9,25 +9,14 @@
 
 #import "MB.h"
 
-const NSString *kBeginKey = @"begin";
-const NSString *kEndKey   = @"end";
-const NSString *kEndedKey = @"ended";
-const NSString *kTrue     = @"true";
-
 @implementation MBLifeSpan
 
--(NSString *) Begin {
-  return [_dict objectForKey:kBeginKey];
+- (void) parseElement:(NSXMLElement *)element
+{
+  // TODO: Implelemt
+  [super parseElement:element];
 }
 
--(NSString *) End {
-  return [_dict objectForKey:kEndKey];
-}
-
--(BOOL) Ended {
-  NSString *ended = [_dict objectForKey:kEndedKey];
-  return (ended && [ended isEqualToString:kTrue]);
-}
 
 @end
 

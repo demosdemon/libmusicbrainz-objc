@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBISRC <MBEntity>
+@interface MBISRC : MBEntity
 
 @end
 

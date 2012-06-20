@@ -10,7 +10,7 @@
 
 #import "MBEntity.h"
 
-@interface MBDisc <MBEntity>
+@interface MBDisc : MBEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (nonatomic, readonly) NSNumber *Sectors;

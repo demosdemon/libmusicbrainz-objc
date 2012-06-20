@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBCollection <MBEntity>
+@interface MBCollection : MBEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 

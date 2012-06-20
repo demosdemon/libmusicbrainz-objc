@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "MBQuery.h"
 #import "Entities/MBEntity.h"
+#import "Entities/MBError.h"
 #import "Entities/MBMetadata.h"
 #import "Entities/MBArtist.h"
 #import "Entities/MBRelease.h"
@@ -37,5 +38,10 @@
 #import "Entities/MBNonMbTrack.h"
 #import "Entities/MBCollection.h"
 #import "Entities/MBLifeSpan.h"
-#import "Entities/RateAndTaggableEntity.h"
-
+#import "Entities/MBRateAndTaggableEntity.h"
+#import "Entities/MBList.h"
+#import "Entities/MBTextRepresentation.h"
+#import "Entities/MBNameCredit.h"
+#import "Entities/MBAttribute.h"
+#import "Entities/MBISWC.h"
+#import "Entities/MBIPI.h"

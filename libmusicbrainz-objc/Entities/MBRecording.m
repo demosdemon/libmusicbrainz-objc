@@ -10,20 +10,12 @@
 
 #import "MB.h"
 
-const NSString *kIdKey = @"@id";
-const NSString *kTitleKey = @"title";
-const NSString *kLengthKey = @"length";
-const NSString *kDisambiguationKey = @"disambiguation";
-const NSString *kArtistCreditKey = @"artist-credit";
-const NSString *kReleaseListKey = @"release-list";
-const NSString *kPUIDListKey = @"puid-list";
-const NSString *kISRCListKey = @"isrc-list";
-const NSString *kRelationListKey = @"relation-list";
-const NSString *kTagListKey = @"tag-list";
-const NSString *kUserTagListKey = @"user-tag-list";
-const NSString *kRatingKey = @"rating";
-const NSString *kUserRatingKey = @"user-rating";
-
 @implementation MBRecording
+
+- (void) parseElement:(NSXMLElement *)element
+{
+  // TODO: Implelemt
+  [super parseElement:element];
+}
 
 @end

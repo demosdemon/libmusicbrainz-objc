@@ -9,11 +9,12 @@
 ///
 /// @brief Release entity
 
-#import "RateAndTaggableEntity.h"
+#import "MBRateAndTaggableEntity.h"
+#import "MBTextRepresentation.h"
+#import "MBArtistCredit.h"
+#import "MBReleaseGroup.h"
 
-@class MBTextRepresentation, MBArtistCredit, MBReleaseGroup;
-
-@interface MBRelease <MBRateAndTaggableEntity>
+@interface MBRelease : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Title;
@@ -31,8 +32,6 @@
 @property (nonatomic, readonly) NSArray *LabelInfoList; ///< NSArray of MBLabelInfo objects
 @property (nonatomic, readonly) NSArray *MediumList; ///< NSArray of MBMedium objects
 @property (nonatomic, readonly) NSArray *RelationListList; ///< NSArray of NSArrays that contain MBRelation objects;
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects;
-@property (nonatomic, readonly) NSArray *UserTagList; ///< NSArray of MBUserTag objects;
 @property (nonatomic, readonly) NSArray *CollectionList; ///< NSArray of MBCollection objects
 
 @end

@@ -9,9 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBLifeSpan <MBEntity> {
-  NSDictionary * _dict;
-}
+@interface MBLifeSpan : MBEntity
 
 @property (copy, nonatomic, readonly) NSString *Begin;
 @property (copy, nonatomic, readonly) NSString *End;

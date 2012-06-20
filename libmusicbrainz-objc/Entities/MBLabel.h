@@ -9,9 +9,10 @@
 ///
 /// @brief Label entity
 
-#import "RateAndTaggableEntity.h"
+#import "MBRateAndTaggableEntity.h"
+#import "MBLifeSpan.h"
 
-@interface MBLabel <MBRateAndTaggableEntity>
+@interface MBLabel : MBRateAndTaggableEntity
 
 @property (copy, nonatomic, readonly) NSString *Id;
 @property (copy, nonatomic, readonly) NSString *Type;
@@ -24,9 +25,5 @@
 @property (nonatomic, readonly) MBLifeSpan *LifeSpan;
 @property (nonatomic, readonly) NSArray *AliasList; ///< NSArray of MBAlias objects
 @property (nonatomic, readonly) NSArray *ReleaseList; ///< NSArray of MBRelease objects
-@property (nonatomic, readonly) NSArray *TagList; ///< NSArray of MBTag objects
-@property (nonatomic, readonly) NSArray *UserTagList; ///< NSArray of MBUserTag objects
-@property (nonatomic, readonly) MBRating *Rating;
-@property (nonatomic, readonly) MBUserRating *UserRating;
 
 @end

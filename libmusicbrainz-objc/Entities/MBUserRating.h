@@ -9,7 +9,7 @@
 
 #import "MBEntity.h"
 
-@interface MBUserRating <MBEntity>
+@interface MBUserRating : MBEntity
 
 @property (retain, nonatomic) NSNumber * Value;
 

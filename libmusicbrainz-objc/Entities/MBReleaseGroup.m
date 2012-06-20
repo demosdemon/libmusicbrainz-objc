@@ -11,22 +11,13 @@
 
 #import "MB.h"
 
-const NSString *kIdKey = @"@id";
-const NSString *kTypeKey = @"@type";
-const NSString *kTitleKey = @"title";
-const NSString *kDisambiguationKey = @"disambiguation";
-const NSString *kFirstReleaseDateKey = @"first-release-date";
-const NSString *kPrimaryTypeKey = @"primary-type";
-const NSString *kSecondaryTypeListKey = @"secondary-type-list";
-const NSString *kSecondaryTypeKey = @"secondary-type";
-const NSString *kArtistCreditKey = @"artist-credit";
-const NSString *kReleaseListKey = @"release-list";
-const NSString *kRelationListKey = @"relation-list";
-const NSString *kTagListKey = @"tag-list";
-const NSString *kUserTagListKey = @"user-tag-list";
-const NSString *kRatingKey = @"rating";
-const NSString *kUserRatingKey = @"user-rating";
-
 @implementation MBReleaseGroup
+
+- (void) parseElement:(NSXMLElement *)element
+{
+  // TODO: Implelemt
+  [super parseElement:element];
+}
+
 
 @end

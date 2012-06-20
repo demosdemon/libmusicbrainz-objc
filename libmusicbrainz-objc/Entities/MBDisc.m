@@ -10,10 +10,13 @@
 
 #import "MB.h"
 
-const NSString *kIdKey = @"@id";
-const NSString *kSectorsKey = @"sectors";
-const NSString *kReleaseListKey = @"relase-list";
-
 @implementation MBDisc
+
+- (void) parseElement:(NSXMLElement *)element
+{
+  // TODO: Implelemt
+  [super parseElement:element];
+}
+
 
 @end
