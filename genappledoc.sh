@@ -26,9 +26,8 @@ appledoc \
 	--keep-intermediate-files \
 	--no-warn-undocumented-object \
 	--no-warn-undocumented-member \
-	--ignore KissXML \
-	--ignore XML-to-NSDictionary \
 	--ignore docs \
+	--ignore submodules \
 	$DIRECTORY
 
 git add -A
