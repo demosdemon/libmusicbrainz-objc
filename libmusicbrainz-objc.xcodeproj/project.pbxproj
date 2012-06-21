@@ -222,7 +222,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D08F35415900B3200E35D2A /* XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML.h; sourceTree = "<group>"; };
+		5D08F35415900B3200E35D2A /* XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XML.h; path = "libmusicbrainz-objc/XML.h"; sourceTree = "<group>"; };
 		5D19DE83159105C200FCF572 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntity.m; sourceTree = "<group>"; };
 		5D19DE8715916E9300FCF572 /* MBList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBList.h; sourceTree = "<group>"; };
 		5D19DE8815916E9300FCF572 /* MBList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBList.m; sourceTree = "<group>"; };
@@ -502,7 +502,6 @@
 		5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5D08F35415900B3200E35D2A /* XML.h */,
 				5D61B7D2155F3F9B0003006A /* libmusicbrainz-objc-Prefix.pch */,
 				5DA2CDB1158E718200D7FF11 /* Frameworks */,
 			);
@@ -542,6 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5D0374158058BD00E8A525 /* MB.h */,
+				5D08F35415900B3200E35D2A /* XML.h */,
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
 				5D5D033A158058BD00E8A525 /* Entities */,
