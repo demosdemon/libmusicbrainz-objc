@@ -8,6 +8,10 @@
 /// 
 /// @brief Base class for all entities
 
+#if ! __has_feature(objc_arc)
+# warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
+#endif
+
 #import "MB.h"
 
 #define kStringEqual(string1, string2) ([((NSString *)string1) caseInsensitiveCompare:((NSString *)string2)])
@@ -61,6 +65,10 @@
     [_elements setValue:[MBEntity xmlNodeToObject:elem
                                     previousValue:[_elements objectForKey:[elem localName]]]
                  forKey:[elem localName]];
+}
+
++ (NSString *) entityType {
+  return @"";
 }
 
 @synthesize ExtraAttributes = _attributes;

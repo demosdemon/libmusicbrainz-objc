@@ -8,6 +8,10 @@
 /// 
 /// @brief Base class for all lists
 
+#if ! __has_feature(objc_arc)
+# warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
+#endif
+
 #import "MBList.h"
 
 @implementation MBList
@@ -18,5 +22,8 @@
   [super parseElement:element];
 }
 
++ (NSString *) entityType {
+  return @"-list";
+}
 
 @end

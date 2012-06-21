@@ -42,5 +42,6 @@
  */
 - (void) parseElement:(NSXMLElement *)element;
 
++ (NSString *) entityType;
 
 @end
