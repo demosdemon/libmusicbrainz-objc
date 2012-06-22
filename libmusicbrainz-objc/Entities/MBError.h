@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "../XML.h"
 
-@interface MBError
+@interface MBError : NSObject
 
 + (NSError *) entityWithElement:(NSXMLElement *)element;
 
