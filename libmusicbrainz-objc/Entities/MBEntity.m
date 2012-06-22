@@ -125,74 +125,13 @@
 
 + (id) xmlElementToEntity:(NSXMLElement *)element
 {
+  if (!element) return nil;
+  
   NSString *name = [element localName];
   
-  if (kStringEqual([name substringFromIndex:[name length]-4], kListKey))
-    return [MBList entityWithElement:element];
-  else if (kStringEqual(name, kErrorKey))
-    return [MBError entityWithElement:element];
-  else if (kStringEqual(name, kMetadataKey))
-    return [MBMetadata entityWithElement:element];
-  else if (kStringEqual(name, kLifespanKey))
-    return [MBLifeSpan entityWithElement:element];
-  else if (kStringEqual(name, kTextRepresentationKey))
-    return [MBTextRepresentation entityWithElement:element];
-  else if (kStringEqual(name, kIPIKey))
-    return [MBIPI entityWithElement:element];
-  else if (kStringEqual(name, kArtistKey))
-    return [MBArtist entityWithElement:element];
-  else if (kStringEqual(name, kReleaseKey))
-    return [MBRelease entityWithElement:element];
-  else if (kStringEqual(name, kReleaseGroupKey))
-    return [MBReleaseGroup entityWithElement:element];
-  else if (kStringEqual(name, kRecordingKey))
-    return [MBRecording entityWithElement:element];
-  else if (kStringEqual(name, kLabelKey))
-    return [MBLabel entityWithElement:element];
-  else if (kStringEqual(name, kWorkKey))
-    return [MBWork entityWithElement:element];
-  else if (kStringEqual(name, kDiscKey))
-    return [MBDisc entityWithElement:element];
-  else if (kStringEqual(name, kPUIDKey))
-    return [MBPUID entityWithElement:element];
-  else if (kStringEqual(name, kISRCKey))
-    return [MBISRC entityWithElement:element];
-  else if (kStringEqual(name, kArtistCreditKey))
-    return [MBArtistCredit entityWithElement:element];
-  else if (kStringEqual(name, kNameCreditKey))
-    return [MBNameCredit entityWithElement:element];
-  else if (kStringEqual(name, kRelationKey))
-    return [MBRelation entityWithElement:element];
-  else if (kStringEqual(name, kAttributeKey))
-    return [MBAttribute entityWithElement:element];
-  else if (kStringEqual(name, kAliasKey))
-    return [MBAlias entityWithElement:element];
-  else if (kStringEqual(name, kISWCKey))
-    return [MBISWC entityWithElement:element];
-  else if (kStringEqual(name, kTagKey))
-    return [MBTag entityWithElement:element];
-  else if (kStringEqual(name, kUserTagKey))
-    return [MBUserTag entityWithElement:element];
-  else if (kStringEqual(name, kRatingKey))
-    return [MBRating entityWithElement:element];
-  else if (kStringEqual(name, kUserRatingKey))
-    return [MBUserRating entityWithElement:element];
-  else if (kStringEqual(name, kLabelInfoKey))
-    return [MBLabelInfo entityWithElement:element];
-  else if (kStringEqual(name, kMediumKey))
-    return [MBMedium entityWithElement:element];
-  else if (kStringEqual(name, kTrackKey))
-    return [MBTrack entityWithElement:element];
-  else if (kStringEqual(name, kAnnotationKey))
-    return [MBAnnotation entityWithElement:element];
-  else if (kStringEqual(name, kCDStubKey))
-    return [MBCDStub entityWithElement:element];
-  else if (kStringEqual(name, kFreeDBDiscKey))
-    return [MBFreeDbDisc entityWithElement:element];
-  else if (kStringEqual(name, kNonMBTrackKey))
-    return [MBNonMbTrack entityWithElement:element];
-  else if (kStringEqual(name, kCollectionKey))
-    return [MBCollection entityWithElement:element];
+  Class type = [[MBEntity keyToClassDictionary] objectForKey:name];
+  if (type && [type isSubclassOfClass:[MBEntity class]])
+    return [type entityWithElement:element];
 
   NSLog(@"Entity %@ did not match", name);
   return [MBEntity entityWithElement:element];
@@ -214,6 +153,48 @@
   return ([[regex matchesInString:isrc options:0 range:NSMakeRange(0, [isrc length])] count] == 1);
 }
 
-
++ (NSDictionary *) keyToClassDictionary
+{
+  static NSDictionary *dict = nil;
+  static dispatch_once_t pred;
+  dispatch_once(&pred, ^{
+    dict = @{
+      kErrorKey : [MBError class],
+      kListKey : [MBList class],
+      kMetadataKey : [MBMetadata class],
+      kLifespanKey : [MBLifeSpan class],
+      kTextRepresentationKey : [MBTextRepresentation class],
+      kIPIKey : [MBIPI class],
+      kArtistKey : [MBArtist class],
+      kReleaseKey : [MBRelease class],
+      kReleaseGroupKey : [MBReleaseGroup class],
+      kRecordingKey : [MBRecording class],
+      kLabelKey : [MBLabel class],
+      kWorkKey : [MBWork class],
+      kDiscKey : [MBDisc class],
+      kPUIDKey : [MBPUID class],
+      kISRCKey : [MBISRC class],
+      kArtistCreditKey : [MBArtistCredit class],
+      kNameCreditKey : [MBNameCredit class],
+      kRelationKey : [MBRelation class],
+      kAttributeKey : [MBAttribute class],
+      kAliasKey : [MBAlias class],
+      kISWCKey : [MBISWC class],
+      kTagKey : [MBTag class],
+      kUserTagKey : [MBUserTag class],
+      kRatingKey : [MBRating class],
+      kUserRatingKey : [MBUserRating class],
+      kLabelInfoKey : [MBLabelInfo class],
+      kMediumKey : [MBMedium class],
+      kTrackKey : [MBTrack class],
+      kAnnotationKey : [MBAnnotation class],
+      kCDStubKey : [MBCDStub class],
+      kFreeDBDiscKey : [MBFreeDbDisc class],
+      kNonMBTrackKey : [MBNonMbTrack class],
+      kCollectionKey : [MBCollection class],
+    };
+  });
+  return dict;
+}
 
 @end
