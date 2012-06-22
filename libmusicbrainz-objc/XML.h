@@ -16,13 +16,11 @@
  * https://github.com/robbiehanson/KissXML/wiki/Reference
  **/
 
+#if TARGET_OS_IPHONE && 1
+
 #import "DDXMLNode.h"
 #import "DDXMLElement.h"
 #import "DDXMLDocument.h"
-
-
-
-#if TARGET_OS_IPHONE && 1
 
 // Since KissXML is a drop in replacement for NSXML,
 // it may be desireable (when writing cross-platform code to be used on both Mac OS X and iOS)
@@ -39,12 +37,14 @@
 #ifndef NSXMLDocument
 #define NSXMLDocument DDXMLDocument
 #endif
-
 #ifndef NSXMLInvalidKind
 #define NSXMLInvalidKind DDXMLInvalidKind
 #endif
 #ifndef NSXMLDocumentKind
 #define NSXMLDocumentKind DDXMLDocumentKind
+#endif
+#ifndef NSXMLDocumentXMLKind
+#define NSXMLDocumentXMLKind DDXMLDocumentXMLKind
 #endif
 #ifndef NSXMLElementKind
 #define NSXMLElementKind DDXMLElementKind
