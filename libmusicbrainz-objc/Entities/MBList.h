@@ -12,4 +12,6 @@
 
 @interface MBList : MBEntity
 
+- (NSString *) elementName;
+
 @end

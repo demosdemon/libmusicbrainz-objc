@@ -126,15 +126,8 @@
 + (id) xmlElementToEntity:(NSXMLElement *)element
 {
   if (!element) return nil;
-  
-  NSString *name = [element localName];
-  
-  Class type = [[MBEntity elementNameToClassDictionary] objectForKey:name];
-  if (type && [type isSubclassOfClass:[MBEntity class]])
-    return [type entityWithElement:element];
-
-  NSLog(@"Entity %@ did not match", name);
-  return [MBEntity entityWithElement:element];
+  Class type = [MBEntity classForElementName:[element localName]];
+  return [type entityWithElement:element];
 }
 
 + (BOOL) validatePUID:(NSString *)puid
@@ -160,7 +153,6 @@
   dispatch_once(&pred, ^{
     dict = @{
       kErrorKey : [MBError class],
-      kListKey : [MBList class],
       kMetadataKey : [MBMetadata class],
       kLifespanKey : [MBLifeSpan class],
       kTextRepresentationKey : [MBTextRepresentation class],
@@ -195,6 +187,34 @@
     };
   });
   return dict;
+}
+
++ (Class) classForElementName:(NSString *)name
+{
+  if (kStringEqual([name substringFromIndex:[name length]-4], kListKey))
+    return [MBList class];
+  
+  Class type = [[MBEntity elementNameToClassDictionary] objectForKey:name];
+  if (type) return type;
+  
+  NSLog(@"Entity %@ did not match", name);
+  return [MBEntity class];
+}
+
++ (NSString *) elementNameForEntity:(MBEntity*)entity
+{
+  if ([entity isMemberOfClass:[MBList class]]) return [(MBList*)entity elementName];
+  
+  __block NSString *ret = nil;
+  [[MBEntity elementNameToClassDictionary] enumerateKeysAndObjectsUsingBlock:^(NSString *key, Class value, BOOL *stop){
+    if ([entity isMemberOfClass:value]) {
+      ret = key;
+      *stop = YES;
+    }
+  }];
+  
+  if (!ret) ret = @"";
+  return ret;
 }
 
 @end
