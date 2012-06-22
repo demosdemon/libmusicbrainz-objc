@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>MBError Class Reference</title>
+		<title>libmusicbrainz_iphoneos_test Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">MBError Class Reference</h1>
+				<h1 class="hideInXcode">libmusicbrainz_iphoneos_test Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -26,8 +26,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -40,11 +38,15 @@
 	
 	
 	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/entityWithElement:">&nbsp;&nbsp;&nbsp;&nbsp;+ entityWithElement:</option>
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setUp">&nbsp;&nbsp;&nbsp;&nbsp;- setUp</option>
+	
+	<option value="//api/name/tearDown">&nbsp;&nbsp;&nbsp;&nbsp;- tearDown</option>
+	
+	<option value="//api/name/testExample">&nbsp;&nbsp;&nbsp;&nbsp;- testExample</option>
 	
 	
 	
@@ -55,8 +57,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -70,20 +70,24 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityWithElement:">entityWithElement:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUp">setUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tearDown">tearDown</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testExample">testExample</a></span></li>
 	
 </ul></li>
-
-
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="MBError Class Reference" name="top"></a>
+				<a title="libmusicbrainz_iphoneos_test Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -92,7 +96,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">MBError Class Reference</h1>
+						<h1 class="title title-header">libmusicbrainz_iphoneos_test Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -100,28 +104,13 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value">SenTestCase</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBError.h<br />MBError.m</td>
+	<td class="specification-value">libmusicbrainz_iphoneos_test.h<br />libmusicbrainz_iphoneos_test.m</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@file MBError.h
-@author Joachim LeBlanc
-@date June 19 2012
-@copyright
-   2012 Joachim LeBlanc <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x64;&#x65;&#x6d;&#111;&#x73;&#x64;&#101;&#x6d;&#111;&#x6e;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#x64;&#x65;&#x6d;&#x6f;&#115;&#x64;&#x65;&#109;&#x6f;&#x6e;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#x63;&#111;&#109;</a> \n
-   This program is made available under the terms of the MIT License.</p>
-
-<p>@brief Base class for all errors</p>
-					</div>
 					
 					
 					
@@ -138,7 +127,21 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/entityWithElement:">+&nbsp;entityWithElement:</a></code>
+		<code><a href="#//api/name/setUp">&ndash;&nbsp;setUp</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tearDown">&ndash;&nbsp;tearDown</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testExample">&ndash;&nbsp;testExample</a></code>
 		
 	</span>
 	
@@ -154,24 +157,46 @@
 					
 					
 					
+					
+					
 					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/entityWithElement:" title="entityWithElement:"></a>
-	<h3 class="subsubtitle method-title">entityWithElement:</h3>
+	<a name="//api/name/setUp" title="setUp"></a>
+	<h3 class="subsubtitle method-title">setUp</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSError *)entityWithElement:(NSXMLElement *)<em>element</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setUp</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tearDown" title="tearDown"></a>
+	<h3 class="subsubtitle method-title">tearDown</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)tearDown</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testExample" title="testExample"></a>
+	<h3 class="subsubtitle method-title">testExample</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testExample</code></div>
 
     
 </div>
 						
 					</div>
-					
-					
 					
 					
 				</div>
