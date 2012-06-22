@@ -158,6 +158,11 @@
 		5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624315941EDB002E6A65 /* libmusicbrainz-iphoneos.pch */; };
 		5D81624C1594219F002E6A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8162491594219F002E6A65 /* InfoPlist.strings */; };
 		5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */; };
+		5D91CD72159424A600A2DC01 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD71159424A600A2DC01 /* SenTestingKit.framework */; };
+		5D91CD74159424A600A2DC01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD73159424A600A2DC01 /* UIKit.framework */; };
+		5D91CD76159424A600A2DC01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD75159424A600A2DC01 /* Foundation.framework */; };
+		5D91CD7C159424A600A2DC01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D91CD7A159424A600A2DC01 /* InfoPlist.strings */; };
+		5D91CD7F159424A600A2DC01 /* libmusicbrainz_iphoneos_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D91CD7E159424A600A2DC01 /* libmusicbrainz_iphoneos_test.m */; };
 		5DA2CAE0158E6F2200D7FF11 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */; };
 		5DA2CAE2158E6F2B00D7FF11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5DA2CAE4158E6F4F00D7FF11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */; };
@@ -306,6 +311,15 @@
 		5D8162491594219F002E6A65 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "libmusicbrainz-macos/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libmusicbrainz-macos.pch"; path = "libmusicbrainz-macos/libmusicbrainz-macos.pch"; sourceTree = SOURCE_ROOT; };
 		5D81624B1594219F002E6A65 /* libmusicbrainz-macos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "libmusicbrainz-macos.plist"; path = "libmusicbrainz-macos/libmusicbrainz-macos.plist"; sourceTree = SOURCE_ROOT; };
+		5D91CD70159424A600A2DC01 /* libmusicbrainz-iphoneos-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libmusicbrainz-iphoneos-test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D91CD71159424A600A2DC01 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D91CD73159424A600A2DC01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D91CD75159424A600A2DC01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5D91CD79159424A600A2DC01 /* libmusicbrainz-iphoneos-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-iphoneos-test-Info.plist"; sourceTree = "<group>"; };
+		5D91CD7B159424A600A2DC01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D91CD7D159424A600A2DC01 /* libmusicbrainz_iphoneos_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libmusicbrainz_iphoneos_test.h; sourceTree = "<group>"; };
+		5D91CD7E159424A600A2DC01 /* libmusicbrainz_iphoneos_test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libmusicbrainz_iphoneos_test.m; sourceTree = "<group>"; };
+		5D91CD80159424A600A2DC01 /* libmusicbrainz-iphoneos-test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libmusicbrainz-iphoneos-test-Prefix.pch"; sourceTree = "<group>"; };
 		5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -375,6 +389,16 @@
 				5DA2CDAE158E716800D7FF11 /* CoreGraphics.framework in Frameworks */,
 				5DA2CDAC158E715F00D7FF11 /* MobileCoreServices.framework in Frameworks */,
 				5DA2CDB0158E717E00D7FF11 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D91CD6C159424A600A2DC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D91CD76159424A600A2DC01 /* Foundation.framework in Frameworks */,
+				5D91CD72159424A600A2DC01 /* SenTestingKit.framework in Frameworks */,
+				5D91CD74159424A600A2DC01 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +501,7 @@
 				5D64F54A155F6DC500F47DBF /* README.md */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */,
+				5D91CD77159424A600A2DC01 /* libmusicbrainz-iphoneos-test */,
 				5D5D03D51581052A00E8A525 /* libmusicbrainz-macos */,
 				5D61B7CD155F3F9A0003006A /* Frameworks */,
 				5D61B7CC155F3F9A0003006A /* Products */,
@@ -488,6 +513,7 @@
 			children = (
 				5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */,
 				5D5D03BA158103DD00E8A525 /* libmusicbrainz-macos.framework */,
+				5D91CD70159424A600A2DC01 /* libmusicbrainz-iphoneos-test.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,6 +545,29 @@
 				5DA2CDB1158E718200D7FF11 /* Frameworks */,
 			);
 			name = "libmusicbrainz-iphoneos";
+			sourceTree = "<group>";
+		};
+		5D91CD77159424A600A2DC01 /* libmusicbrainz-iphoneos-test */ = {
+			isa = PBXGroup;
+			children = (
+				5D91CD7D159424A600A2DC01 /* libmusicbrainz_iphoneos_test.h */,
+				5D91CD7E159424A600A2DC01 /* libmusicbrainz_iphoneos_test.m */,
+				5D91CD78159424A600A2DC01 /* Supporting Files */,
+			);
+			path = "libmusicbrainz-iphoneos-test";
+			sourceTree = "<group>";
+		};
+		5D91CD78159424A600A2DC01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D91CD71159424A600A2DC01 /* SenTestingKit.framework */,
+				5D91CD73159424A600A2DC01 /* UIKit.framework */,
+				5D91CD75159424A600A2DC01 /* Foundation.framework */,
+				5D91CD79159424A600A2DC01 /* libmusicbrainz-iphoneos-test-Info.plist */,
+				5D91CD7A159424A600A2DC01 /* InfoPlist.strings */,
+				5D91CD80159424A600A2DC01 /* libmusicbrainz-iphoneos-test-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5DA2CD67158E708800D7FF11 /* asi-http-request */ = {
@@ -785,6 +834,24 @@
 			productReference = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		5D91CD6F159424A600A2DC01 /* libmusicbrainz-iphoneos-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D91CD83159424A600A2DC01 /* Build configuration list for PBXNativeTarget "libmusicbrainz-iphoneos-test" */;
+			buildPhases = (
+				5D91CD6B159424A600A2DC01 /* Sources */,
+				5D91CD6C159424A600A2DC01 /* Frameworks */,
+				5D91CD6D159424A600A2DC01 /* Resources */,
+				5D91CD6E159424A600A2DC01 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libmusicbrainz-iphoneos-test";
+			productName = "libmusicbrainz-iphoneos-test";
+			productReference = 5D91CD70159424A600A2DC01 /* libmusicbrainz-iphoneos-test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -808,6 +875,7 @@
 			targets = (
 				5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */,
 				5D5D03B9158103DD00E8A525 /* libmusicbrainz-macos */,
+				5D91CD6F159424A600A2DC01 /* libmusicbrainz-iphoneos-test */,
 			);
 		};
 /* End PBXProject section */
@@ -828,7 +896,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D91CD6D159424A600A2DC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D91CD7C159424A600A2DC01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D91CD6E159424A600A2DC01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D5D03B5158103DD00E8A525 /* Sources */ = {
@@ -938,7 +1030,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D91CD6B159424A600A2DC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D91CD7F159424A600A2DC01 /* libmusicbrainz_iphoneos_test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D91CD7A159424A600A2DC01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D91CD7B159424A600A2DC01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5D5D03CC158103DE00E8A525 /* Debug */ = {
@@ -1080,6 +1191,44 @@
 			};
 			name = Release;
 		};
+		5D91CD81159424A600A2DC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libmusicbrainz-iphoneos-test/libmusicbrainz-iphoneos-test-Prefix.pch";
+				INFOPLIST_FILE = "libmusicbrainz-iphoneos-test/libmusicbrainz-iphoneos-test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5D91CD82159424A600A2DC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libmusicbrainz-iphoneos-test/libmusicbrainz-iphoneos-test-Prefix.pch";
+				INFOPLIST_FILE = "libmusicbrainz-iphoneos-test/libmusicbrainz-iphoneos-test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1109,6 +1258,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5D91CD83159424A600A2DC01 /* Build configuration list for PBXNativeTarget "libmusicbrainz-iphoneos-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D91CD81159424A600A2DC01 /* Debug */,
+				5D91CD82159424A600A2DC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
