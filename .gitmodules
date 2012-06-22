@@ -4,3 +4,6 @@
 [submodule "submodules/KissXML"]
 	path = submodules/KissXML
 	url = https://github.com/robbiehanson/KissXML.git
+[submodule "submodules/gtm"]
+	path = submodules/gtm
+	url = https://github.com/innerfence/google-toolbox-for-mac.git

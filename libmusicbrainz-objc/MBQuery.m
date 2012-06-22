@@ -121,7 +121,7 @@
 {
   NSError *error = nil;
   if ([[request requestMethod] isEqualToString:@"GET"]) {
-    NSXMLDocument *doc = [[NSXMLDocument alloc] initWithData:[request responseData] options:DDXMLDocumentXMLKind error:&error];
+    NSXMLDocument *doc = [[NSXMLDocument alloc] initWithData:[request responseData] options:NSXMLDocumentXMLKind error:&error];
     if (error)
       [self didFailWithError:error];
     else
