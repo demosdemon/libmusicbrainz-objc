@@ -129,7 +129,7 @@
   
   NSString *name = [element localName];
   
-  Class type = [[MBEntity keyToClassDictionary] objectForKey:name];
+  Class type = [[MBEntity elementNameToClassDictionary] objectForKey:name];
   if (type && [type isSubclassOfClass:[MBEntity class]])
     return [type entityWithElement:element];
 
@@ -153,7 +153,7 @@
   return ([[regex matchesInString:isrc options:0 range:NSMakeRange(0, [isrc length])] count] == 1);
 }
 
-+ (NSDictionary *) keyToClassDictionary
++ (NSDictionary *) elementNameToClassDictionary
 {
   static NSDictionary *dict = nil;
   static dispatch_once_t pred;
