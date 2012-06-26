@@ -184,23 +184,23 @@
 		5DA2CD7B158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD68158E70BF00D7FF11 /* ASICacheDelegate.h */; };
 		5DA2CD7C158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */; };
 		5DA2CD7D158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD69158E70BF00D7FF11 /* ASIDataCompressor.h */; };
-		5DA2CD7E158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD7E158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD7F158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6A158E70BF00D7FF11 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD80158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */; };
 		5DA2CD81158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6B158E70BF00D7FF11 /* ASIDataDecompressor.h */; };
-		5DA2CD82158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD82158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD83158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6C158E70BF00D7FF11 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD84158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */; };
 		5DA2CD85158E70BF00D7FF11 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6D158E70BF00D7FF11 /* ASIDownloadCache.h */; };
-		5DA2CD86158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD86158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD87158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD6E158E70BF00D7FF11 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD88158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */; };
 		5DA2CD89158E70BF00D7FF11 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD6F158E70BF00D7FF11 /* ASIFormDataRequest.h */; };
-		5DA2CD8A158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD8A158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD8B158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD70158E70BF00D7FF11 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD8C158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */; };
 		5DA2CD8D158E70BF00D7FF11 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD71158E70BF00D7FF11 /* ASIHTTPRequest.h */; };
-		5DA2CD8E158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD8E158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD72158E70BF00D7FF11 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD90158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */; };
 		5DA2CD91158E70BF00D7FF11 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD73158E70BF00D7FF11 /* ASIHTTPRequestConfig.h */; };
@@ -208,18 +208,18 @@
 		5DA2CD93158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD74158E70BF00D7FF11 /* ASIHTTPRequestDelegate.h */; };
 		5DA2CD94158E70BF00D7FF11 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */; };
 		5DA2CD95158E70BF00D7FF11 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD75158E70BF00D7FF11 /* ASIInputStream.h */; };
-		5DA2CD96158E70BF00D7FF11 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD96158E70BF00D7FF11 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD76158E70BF00D7FF11 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD98158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */; };
 		5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD77158E70BF00D7FF11 /* ASINetworkQueue.h */; };
-		5DA2CD9A158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CD9A158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD78158E70BF00D7FF11 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DA2CD9C158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */; };
 		5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD79158E70BF00D7FF11 /* ASIProgressDelegate.h */; };
 		5DA2CDA0158E70DA00D7FF11 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CD9E158E70DA00D7FF11 /* ASIAuthenticationDialog.h */; };
-		5DA2CDA1158E70DA00D7FF11 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD9F158E70DA00D7FF11 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CDA1158E70DA00D7FF11 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CD9F158E70DA00D7FF11 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CDA4158E70EF00D7FF11 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDA2158E70EF00D7FF11 /* Reachability.h */; };
-		5DA2CDA5158E70EF00D7FF11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDA3158E70EF00D7FF11 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5DA2CDA5158E70EF00D7FF11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDA3158E70EF00D7FF11 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5DA2CDA8158E714300D7FF11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */; };
 		5DA2CDAA158E715500D7FF11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */; };
 		5DA2CDAC158E715F00D7FF11 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */; };
@@ -228,17 +228,19 @@
 		5DA2CDB4158E721C00D7FF11 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDB3158E721C00D7FF11 /* libz.dylib */; };
 		5DA2CDB6158E723300D7FF11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDB5158E723300D7FF11 /* SystemConfiguration.framework */; };
 		5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */; };
-		5DA2CDC8158E77C900D7FF11 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */; };
+		5DA2CDC8158E77C900D7FF11 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */; };
-		5DA2CDCA158E77C900D7FF11 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */; };
+		5DA2CDCA158E77C900D7FF11 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBE158E77C900D7FF11 /* DDXML.h */; };
 		5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */; };
-		5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */; };
+		5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */; };
-		5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */; };
+		5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */; };
-		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; };
+		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
+		5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; };
+		5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -378,6 +380,7 @@
 		5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -547,6 +550,7 @@
 			children = (
 				5D08F35415900B3200E35D2A /* XML.h */,
 				5D5D0374158058BD00E8A525 /* MB.h */,
+				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
 				5D5D033A158058BD00E8A525 /* Entities */,
@@ -742,6 +746,7 @@
 				5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */,
 				5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
 				5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */,
+				5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +813,7 @@
 				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
 				5D08F35515900B3200E35D2A /* XML.h in Headers */,
 				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
+				5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,7 +846,6 @@
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
 				5D61B89E155F561B0003006A /* Resources */,
-				5DF08A84159A532D00B594B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -950,20 +955,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PROJECT_DIR}/genappledoc.sh\n\nexit 0\n";
-		};
-		5DF08A84159A532D00B594B0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/genappledoc.sh\n\nexit 0\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -22,5 +22,12 @@ PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
 	--keep-intermediate-files \
 	--ignore "docs" \
 	--ignore "submodules" \
+  --ignore ".git" \
+  --ignore "DerivedData" \
+  --ignore "build" \
+  --ignore ".m" \
 	--logformat "xcode" \
+  --verbose 2 \
+  --no-warn-unknown-directive \
+  --no-warn-invalid-crossref\
 	"$DIRECTORY"

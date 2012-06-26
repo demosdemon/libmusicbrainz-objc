@@ -1,19 +1,24 @@
-/// 
-/// @file MBDisc.h
-/// @author Brandon LeBlanc
-/// @date Jun 06 2012
-/// @copyright 
-///   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
-///   This program is made available under the terms of the MIT License.
-///
-/// @brief Work Entity
+//
+// @file MBDisc.h
+// @author Brandon LeBlanc
+// @date Jun 06 2012
+// @copyright
+//   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
+//   This program is made available under the terms of the MIT License.
+//
+// @brief Work Entity
 
 #import "MBEntity.h"
+#import "MBList.h"
 
+/// Represents a `<disc/>` element
 @interface MBDisc : MBEntity
 
+/// Unique ID for this entity
 @property (copy, nonatomic, readonly) NSString *Id;
+/// Number of sectors on the disc
 @property (nonatomic, readonly) NSNumber *Sectors;
-@property (nonatomic, readonly) NSArray *ReleaseList; ///< NSArray of MBRelease objects
+/// MBList with MBRelease objects
+@property (nonatomic, readonly) MBList *ReleaseList;
 
 @end

@@ -81,7 +81,6 @@
 @synthesize UserAgent = _useragent;
 @synthesize Server = _server;
 @synthesize Port = _port;
-@synthesize Version = _version;
 - (void) setUsername:(NSString *)username
             Password:(NSString*)password 
 {
