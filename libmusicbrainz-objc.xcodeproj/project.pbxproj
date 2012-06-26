@@ -364,6 +364,7 @@
 		5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,6 +500,7 @@
 			children = (
 				5D64F527155F671E00F47DBF /* LICENSE */,
 				5D64F54A155F6DC500F47DBF /* README.md */,
+				5DF08A86159A534A00B594B0 /* genappledoc.sh */,
 				5D61B7D0155F3F9B0003006A /* libmusicbrainz-objc */,
 				5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */,
 				5D91CD77159424A600A2DC01 /* libmusicbrainz-iphoneos-test */,
@@ -824,6 +826,7 @@
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
 				5D61B89E155F561B0003006A /* Resources */,
+				5DF08A84159A532D00B594B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -919,6 +922,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		5DF08A84159A532D00B594B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/genappledoc.sh\n\nexit 0\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1266,6 +1283,7 @@
 				5D91CD82159424A600A2DC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
