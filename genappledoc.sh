@@ -1,10 +1,13 @@
 #!/usr/bin/env sh
 
+git merge -s recursive -X theirs master
+
 DIRECTORY=`dirname $0`
 OUTPUT="docs"
 VERSION=`git rev-parse --verify master`
 PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
 
+git rm -rf "$DIRECTORY/$OUTPUT"
 /usr/local/bin/appledoc \
 	--create-html \
 	--create-docset \
@@ -24,3 +27,7 @@ PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
 	--ignore "submodules" \
 	--logformat "xcode" \
 	"$DIRECTORY"
+
+git add docs
+git commit -m "Update docs to commit $VERSION"
+
