@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5DAAFE4B159A62D200450C32 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DAAFE4E159A62D200450C32 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				5DAAFE52159A62E600450C32 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5D08F35515900B3200E35D2A /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D08F35415900B3200E35D2A /* XML.h */; };
 		5D19DE84159105C300FCF572 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D19DE83159105C200FCF572 /* MBEntity.m */; };
@@ -879,6 +893,7 @@
 				5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */,
 				5D5D03B9158103DD00E8A525 /* libmusicbrainz-macos */,
 				5D91CD6F159424A600A2DC01 /* libmusicbrainz-iphoneos-test */,
+				5DAAFE4B159A62D200450C32 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -922,6 +937,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		5DAAFE52159A62E600450C32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/genappledoc.sh\n\nexit 0\n";
 		};
 		5DF08A84159A532D00B594B0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1246,6 +1274,20 @@
 			};
 			name = Release;
 		};
+		5DAAFE4C159A62D200450C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5DAAFE4D159A62D200450C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1284,6 +1326,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DAAFE4E159A62D200450C32 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAAFE4C159A62D200450C32 /* Debug */,
+				5DAAFE4D159A62D200450C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

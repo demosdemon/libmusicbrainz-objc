@@ -11,3 +11,4 @@ You can access the documentation documentation in several ways:
     1. Click the `+` button
     1. Add the docset feed: `feed://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc.atom`
 1. Generate the documentation from the project repository with the `genappledoc.sh` script ([appledoc](http://gentlebytes.com/appledoc/) must be installed for this to work)
+1. Generate the documentation within xcode using the Documentation target ([appledoc](http://gentlebytes.com/appledoc/) must be installed for this to work)
