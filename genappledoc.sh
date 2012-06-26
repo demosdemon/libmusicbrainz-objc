@@ -5,12 +5,14 @@ git merge -s recursive -X theirs master
 DIRECTORY=`dirname $0`
 OUTPUT=docs
 VERSION=`git rev-parse --verify master`
-PUBLUSH_URL=http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish
+PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
 
-rm -rf $DIRECTORY/$OUTPUT
 appledoc \
+	--clean-output \
+	--create-html \
+	--create-docset \
 	--project-name libmusicbrainz-objc \
-	--project-company "Brandon LeBlanc" \
+	--project-company "MetaBrainz" \
 	--project-version $VERSION \
 	--company-id org.metabrainz \
 	--output $DIRECTORY/$OUTPUT \
@@ -21,15 +23,19 @@ appledoc \
 	--docset-feed-url $PUBLISH_URL/%DOCSETATOMFILENAME \
 	--docset-package-url $PUBLISH_URL/%DOCSETPACKAGEFILENAME \
 	--publish-docset \
-	--print-settings \
-	--no-install-docset \
 	--keep-intermediate-files \
+	--print-settings \
 	--no-warn-undocumented-object \
 	--no-warn-undocumented-member \
+	--no-warn-missing-arg \
+	--no-warn-empty-description \
+	--no-warn-invalid-crossref \
+	--no-warn-empty-description \
+	--no-warn-unknown-directiv \
 	--ignore docs \
 	--ignore submodules \
 	$DIRECTORY
 
-git add -A
+git add docs
 git commit -m "Update docs to commit $VERSION"
 

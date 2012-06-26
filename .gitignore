@@ -23,3 +23,8 @@ DerivedData
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# appledoc
+docs/docset-installed.txt
+docs/docset/*
+
