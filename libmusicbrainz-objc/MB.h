@@ -1,12 +1,12 @@
-/// 
-/// @file MB.h
-/// @author Joachim LeBlanc
-/// @date Jun 05 2012
-/// @copyright 
-///   2012 Joachim LeBlanc <demosdemon@gmail.com> \n
-///   This program is made available under the terms of the MIT License.
-/// 
-/// @brief Entry point to the api, import this file and nothing else.
+//
+// @file MB.h
+// @author Joachim LeBlanc
+// @date Jun 05 2012
+// @copyright
+//   2012 Joachim LeBlanc <demosdemon@gmail.com> \n
+//   This program is made available under the terms of the MIT License.
+//
+// @brief Entry point to the api, import this file and nothing else.
 
 #import <Foundation/Foundation.h>
 #import "MBQuery.h"

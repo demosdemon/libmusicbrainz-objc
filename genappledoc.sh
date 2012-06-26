@@ -25,7 +25,14 @@ git rm -rf "$DIRECTORY/$OUTPUT"
 	--keep-intermediate-files \
 	--ignore "docs" \
 	--ignore "submodules" \
+  --ignore ".git" \
+  --ignore "DerivedData" \
+  --ignore "build" \
+  --ignore ".m" \
 	--logformat "xcode" \
+  --verbose 2 \
+  --no-warn-unknown-directive \
+  --no-warn-invalid-crossref\
 	"$DIRECTORY"
 
 git add docs
