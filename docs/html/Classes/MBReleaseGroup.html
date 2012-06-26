@@ -63,11 +63,6 @@
 	
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/parseElement:">&nbsp;&nbsp;&nbsp;&nbsp;- parseElement:</option>
-	
-	
 	
 </select>
 				</li>
@@ -115,12 +110,6 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseElement:">parseElement:</a></span></li>
-	
-</ul></li>
-
 
 			</ul>
 		</nav>
@@ -146,7 +135,7 @@
 	<td class="specification-value"><a href="../Classes/MBRateAndTaggableEntity.html">MBRateAndTaggableEntity</a> : <a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBReleaseGroup.h<br />MBReleaseGroup.m</td>
+	<td class="specification-value">MBReleaseGroup.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -156,15 +145,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@file MBReleaseGroup.h
-@author Jens Lukas
-@date Jul 25 2010
-@copyright
-   2010 Jens Lukas <a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#99;&#x6f;&#x6e;&#x74;&#x61;&#99;&#116;&#64;&#106;&#x65;&#110;&#x73;&#108;&#x75;&#x6b;&#97;&#x73;&#46;&#x63;&#x6f;&#109;">&#x63;&#x6f;&#x6e;&#x74;&#x61;&#99;&#116;&#64;&#106;&#101;&#110;&#x73;&#x6c;&#x75;&#107;&#97;&#x73;&#46;&#99;&#x6f;&#x6d;</a> \n
-   2012 Brandon LeBlanc <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x64;&#101;&#x6d;&#111;&#115;&#100;&#101;&#x6d;&#111;&#110;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#x64;&#101;&#x6d;&#111;&#x73;&#100;&#101;&#x6d;&#111;&#110;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;</a> \n
-   This program is made available under the terms of the MIT License.</p>
-
-<p>@brief ReleaseGroup entity</p>
+						<p>Represents a <code>&lt;release-group/&gt;</code> element</p>
 					</div>
 					
 					
@@ -177,88 +158,71 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/Id">&nbsp;&nbsp;Id</a></code>
-		
+		<span class="tooltip"><p>Unique MusicBrainz ID for this entity</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/Type">&nbsp;&nbsp;Type</a></code>
-		
+		<span class="tooltip"><p>Type of release group</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/Title">&nbsp;&nbsp;Title</a></code>
-		
+		<span class="tooltip"><p>Title of the release group</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/Disambiguation">&nbsp;&nbsp;Disambiguation</a></code>
-		
+		<span class="tooltip"><p>Disambiguation comment for the release group</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/FirstReleaseDate">&nbsp;&nbsp;FirstReleaseDate</a></code>
-		
+		<span class="tooltip"><p>Earliest date from <a href="../Classes/MBRelease.html">MBRelease</a> in <a href="#//api/name/ReleaseList">ReleaseList</a></p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/SecondaryTypeList">&nbsp;&nbsp;SecondaryTypeList</a></code>
-		
+		<span class="tooltip"><p>NSArray with NSString objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/ArtistCredit">&nbsp;&nbsp;ArtistCredit</a></code>
-		<span class="tooltip"><p>&lt; NSArray of NSString objects</p></span>
+		<span class="tooltip"><p>Artist credit for this release</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/ReleaseList">&nbsp;&nbsp;ReleaseList</a></code>
-		
+		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelease.html">MBRelease</a> objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/RelationListList">&nbsp;&nbsp;RelationListList</a></code>
-		<span class="tooltip"><p>&lt; NSArray of <a href="../Classes/MBRelease.html">MBRelease</a> objects</p></span>
+		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/parseElement:">&ndash;&nbsp;parseElement:</a></code>
-		<span class="tooltip"><p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p></span>
-	</span>
-	
 	
 </li>
 						</ul>
@@ -280,7 +244,7 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	
 	
 	<div class="method-subsection brief-description">
-		<p>&lt; NSArray of NSString objects</p>
+		<p>Artist credit for this release</p>
 	</div>		
 	
     
@@ -297,7 +261,7 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>&lt; NSArray of NSString objects</p>
+		<p>Artist credit for this release</p>
 	</div>
 	
 	
@@ -319,47 +283,14 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	<h3 class="subsubtitle method-title">Disambiguation</h3>
 	
 	
-
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Disambiguation</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/FirstReleaseDate" title="FirstReleaseDate"></a>
-	<h3 class="subsubtitle method-title">FirstReleaseDate</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *FirstReleaseDate</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="subsubtitle method-title">Id</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Id</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/RelationListList" title="RelationListList"></a>
-	<h3 class="subsubtitle method-title">RelationListList</h3>
-	
-	
 	
 	<div class="method-subsection brief-description">
-		<p>&lt; NSArray of <a href="../Classes/MBRelease.html">MBRelease</a> objects</p>
+		<p>Disambiguation comment for the release group</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *RelationListList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Disambiguation</code></div>
 
     
 	
@@ -371,7 +302,130 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>&lt; NSArray of <a href="../Classes/MBRelease.html">MBRelease</a> objects</p>
+		<p>Disambiguation comment for the release group</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/FirstReleaseDate" title="FirstReleaseDate"></a>
+	<h3 class="subsubtitle method-title">FirstReleaseDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Earliest date from <a href="../Classes/MBRelease.html">MBRelease</a> in <a href="#//api/name/ReleaseList">ReleaseList</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *FirstReleaseDate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Earliest date from <a href="../Classes/MBRelease.html">MBRelease</a> in <a href="#//api/name/ReleaseList">ReleaseList</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="subsubtitle method-title">Id</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unique MusicBrainz ID for this entity</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Id</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unique MusicBrainz ID for this entity</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/RelationListList" title="RelationListList"></a>
+	<h3 class="subsubtitle method-title">RelationListList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationListList</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p>
 	</div>
 	
 	
@@ -393,70 +447,14 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	<h3 class="subsubtitle method-title">ReleaseList</h3>
 	
 	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *ReleaseList</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/SecondaryTypeList" title="SecondaryTypeList"></a>
-	<h3 class="subsubtitle method-title">SecondaryTypeList</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *SecondaryTypeList</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/Title" title="Title"></a>
-	<h3 class="subsubtitle method-title">Title</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Title</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/Type" title="Type"></a>
-	<h3 class="subsubtitle method-title">Type</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Type</code></div>
-
-    
-</div>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/parseElement:" title="parseElement:"></a>
-	<h3 class="subsubtitle method-title">parseElement:</h3>
-	
-	
 	
 	<div class="method-subsection brief-description">
-		<p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p>
+		<p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelease.html">MBRelease</a> objects</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)parseElement:(NSXMLElement *)<em>element</em></code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *ReleaseList</code></div>
 
     
 	
@@ -468,11 +466,7 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p><div class="warning"><p><strong>Warning:</strong> Subclasses must override this method. For extra attribute and extra
-attributes to appear in the repsective properties, overriden implementations
-must call [super parseElement:] when done processing</p></div>
+		<p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelease.html">MBRelease</a> objects</p>
 	</div>
 	
 	
@@ -483,13 +477,140 @@ must call [super parseElement:] when done processing</p></div>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MBEntity.h</code><br />
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SecondaryTypeList" title="SecondaryTypeList"></a>
+	<h3 class="subsubtitle method-title">SecondaryTypeList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>NSArray with NSString objects</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *SecondaryTypeList</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NSArray with NSString objects</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Title" title="Title"></a>
+	<h3 class="subsubtitle method-title">Title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Title of the release group</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Title of the release group</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Type" title="Type"></a>
+	<h3 class="subsubtitle method-title">Type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Type of release group</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Type of release group</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBReleaseGroup.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
+					
+					
+					
+					
 					
 					
 				</div>

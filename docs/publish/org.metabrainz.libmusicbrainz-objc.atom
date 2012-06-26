@@ -1,20 +1,20 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc.atom/20120626160855</id>
+    <id>http://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc.atom/20120626183603</id>
     <title type="text">libmusicbrainz-objc Documentation</title>
     <rights>Copyright © 2012 MetaBrainz. All rights reserved.</rights>
     <link rel="self" href="http://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc.atom"></link>
     <docset:publisherName>MetaBrainz</docset:publisherName>
     <docset:publisherID>org.metabrainz.documentation</docset:publisherID>
-    <updated>2012-06-26T16:08:55-05:00</updated>
+    <updated>2012-06-26T18:36:03-05:00</updated>
     <entry>
-        <id>tag:demosdemon.github.com,2012-06-26:org.metabrainz.libmusicbrainz-objc/72.0.0</id>
+        <id>tag:demosdemon.github.com,2012-06-26:org.metabrainz.libmusicbrainz-objc/0.0.0</id>
         <title type="text">libmusicbrainz-objc Documentation</title>
-        <updated>2012-06-26T16:08:55-05:00</updated>
-        <content type="text">libmusicbrainz-objc Documentation (v72.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc-72cae011d501cab62757bcdc5e7ec1b58d0f41f1.xar" length="218153"></link>
+        <updated>2012-06-26T18:36:03-05:00</updated>
+        <content type="text">libmusicbrainz-objc Documentation (v0.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc-cfc308186c07712de92103a414d9586732554535.xar" length="178934"></link>
         <docset:identifier>org.metabrainz.libmusicbrainz-objc</docset:identifier>
-        <docset:version>72.0.0</docset:version>
+        <docset:version>0.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
     </entry>
 </feed>

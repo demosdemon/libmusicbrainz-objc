@@ -107,7 +107,7 @@
 	<td class="specification-value">NSObject<br />NSXMLParserDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBQuery.h</td>
+	<td class="specification-value">MBQueryDelegate.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -117,14 +117,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@file <a href="../Classes/MBQuery.html">MBQuery</a>.h
-@date Jun 06 2012
-@copyright
-   2012 Brandon LeBlanc <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#100;&#101;&#109;&#111;&#115;&#100;&#101;&#x6d;&#x6f;&#x6e;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#100;&#101;&#x6d;&#111;&#x73;&#x64;&#101;&#x6d;&#x6f;&#110;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a> \n
-   This program is made avaliable under the terms of the MIT License.</p>
-
-<p>@brief Query object for handling communications with MusicBrainz
-   webservice.</p>
+						<p>Delegate for <a href="../Classes/MBQuery.html">MBQuery</a></p>
 					</div>
 					
 					
@@ -143,14 +136,14 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/query:didReceiveResult:">&ndash;&nbsp;query:didReceiveResult:</a></code>
-		
+		<span class="tooltip"><p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/query:didFailWithError:">&ndash;&nbsp;query:didFailWithError:</a></code>
-		
+		<span class="tooltip"><p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -176,10 +169,55 @@
 	<h3 class="subsubtitle method-title">query:didFailWithError:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didFailWithError:(NSError *)<em>error</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>The <a href="../Classes/MBQuery.html">MBQuery</a> object that recieved the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBQueryDelegate.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -187,10 +225,55 @@
 	<h3 class="subsubtitle method-title">query:didReceiveResult:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didReceiveResult:(MBMetadata *)<em>result</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>The <a href="../Classes/MBQuery.html">MBQuery</a> object that recieved the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>The result of the request</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBQueryDelegate.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>

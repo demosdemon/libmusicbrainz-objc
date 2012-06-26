@@ -32,19 +32,12 @@
 	
 	
 	
-	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
 	
-	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/parseElement:">&nbsp;&nbsp;&nbsp;&nbsp;- parseElement:</option>
 	
 	
 	
@@ -60,9 +53,6 @@
 
 
 
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-</ul></li>
 
 
 
@@ -70,13 +60,6 @@
 
 
 
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseElement:">parseElement:</a></span></li>
-	
-</ul></li>
 
 
 			</ul>
@@ -103,7 +86,7 @@
 	<td class="specification-value"><a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBIPI.h<br />MBIPI.m</td>
+	<td class="specification-value">MBIPI.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -113,41 +96,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@file MBIPI.h
-@author Joachim LeBlanc
-@date June 19 2012
-@copyright
-   2012 Joachim LeBlanc <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#100;&#x65;&#x6d;&#111;&#115;&#x64;&#x65;&#109;&#x6f;&#110;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#x64;&#x65;&#109;&#111;&#115;&#x64;&#101;&#109;&#111;&#x6e;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a> \n
-   This program is made available under the terms of the MIT License.</p>
-
-<p>@brief</p>
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-tasks">
-						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
-						
-						
-						
-						
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/parseElement:">&ndash;&nbsp;parseElement:</a></code>
-		<span class="tooltip"><p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
+						<p>Represents an <code>&lt;ipi/&gt;</code> element</p>
 					</div>
 					
 					
@@ -158,58 +107,9 @@ children and elements will appear in <a href="../Classes/MBEntity.html#//api/nam
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/parseElement:" title="parseElement:"></a>
-	<h3 class="subsubtitle method-title">parseElement:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)parseElement:(NSXMLElement *)<em>element</em></code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Overridden implementations must detach or remove children and attribute used
-from the element before calling [super parseElement:], otherwise all
-children and elements will appear in <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a></p><div class="warning"><p><strong>Warning:</strong> Subclasses must override this method. For extra attribute and extra
-attributes to appear in the repsective properties, overriden implementations
-must call [super parseElement:] when done processing</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MBEntity.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
+					
+					
+					
 					
 					
 				</div>
