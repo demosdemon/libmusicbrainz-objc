@@ -143,7 +143,7 @@
 #pragma mark - Private methods
 + (NSString *) urlEscape:(NSString *)unencodedString
 {
-	return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)unencodedString, NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8));
+	return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)unencodedString, NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8));
 }
 
 // Put a query string onto the end of a url
