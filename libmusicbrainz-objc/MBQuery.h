@@ -49,7 +49,7 @@
 ///
 /// @param delegate MBQueryDelegate that recieves callbacks for recieved data
 - (id) initWithUserAgent:(NSString *)ua
-               Delegate:(id<MBQueryDelegate>)delegate;
+                Delegate:(id<MBQueryDelegate>)delegate;
 
 /// Main initializer.
 ///
@@ -75,17 +75,17 @@
 /// recommended format is "application-version", where version does not contain
 /// a - character.
 /// @warning ua must not be empty or nil.
-@property (copy, nonatomic) NSString *UserAgent;
+@property (copy, nonatomic) NSString * UserAgent;
 /// Server to connect to.
 ///
 /// Default is musicbrainz.org
-@property (copy, nonatomic) NSString *Server;
+@property (copy, nonatomic) NSString * Server;
 /// Port to use when connecting.
 ///
 /// Default is 80
 @property (assign, nonatomic) NSInteger Port;
 /// MBQueryDelegate that recieves callbaks for recieved data
-@property (assign, atomic) id<MBQueryDelegate> Delegate;
+@property (retain, atomic) id<MBQueryDelegate> Delegate;
 
 /// Set the username and password to authenticate with when making mutable
 /// requests or getting user specific information, like collections,

@@ -15,12 +15,12 @@
 #import "MB.h"
 #import "ASIHTTPRequest.h"
 
-#define LIBRARY_USER_AGENT @"libmusicbrainz-objc-0.0.1"
-#define DEFAULT_SERVER @"musicbrainz.org"
-#define DEFAULT_PORT   80
-#define MAX_REQUESTS   2
+#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-0.0.1"
+#define DEFAULT_SERVER         @"musicbrainz.org"
+#define DEFAULT_PORT           80
+#define MAX_REQUESTS           2
 #define AUTHENTICATION_SERVICE @"http"
-#define AUTHENTICATION_REALM @"musicbrainz.org"
+#define AUTHENTICATION_REALM   @"musicbrainz.org"
 
 #define kTagQueueKey     @"tag"
 #define kRatingQueueKey  @"rating"
@@ -81,6 +81,8 @@
 @synthesize UserAgent = _useragent;
 @synthesize Server = _server;
 @synthesize Port = _port;
+@synthesize Delegate = _delegate;
+
 - (void) setUsername:(NSString *)username
             Password:(NSString*)password 
 {
