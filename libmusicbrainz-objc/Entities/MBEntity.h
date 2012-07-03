@@ -12,7 +12,11 @@
 
 /// Base class for all elements in the XML Webservice Schema
 ///
-/// All subclasses must implement parseElement:
+/// MBEntity does all the heavy lifting. MBEntity takes the data from the 
+/// webservice response and will create the corresponding objects, set the 
+/// corresponding properties, and if the xml response represents an unknown
+/// yet still valid attribute or element, the extra information will be stored
+/// in ExtraAttributes and ExtraElements, respectively. 
 @interface MBEntity : NSObject
 {
  @private
@@ -20,43 +24,52 @@
   NSMutableDictionary *_elements;
 }
 
-/// Key will be name of attribute, Value will be NSString
+/// Extra Attributes Dictionary
+///
+/// Keys and Values are NSString objects.
 @property (copy, nonatomic, readonly) NSDictionary *ExtraAttributes;
 
-/** Key will be name of element, Value will be either an NSDictionary, NSArray,
- *  or NSString depending on the type of element. Keys for attributes for elements
- *  in the dictionary will prefixed with @ to prevent overlapping.
- */
+/// ExtraElements Dictionary
+///
+/// Keys are NSString with the element name.
+/// Values are MBEntity or NSString objects.
 @property (copy, nonatomic, readonly) NSDictionary *ExtraElements;
 
+/// Main initializer. 
+///
 /// Inits the entity with the XML element it represents
 /// @param element XML Element this object represents. If element is nil, nil is
 /// returned
 - (id) initWithElement:(NSXMLElement *)element;
-/// Quit allocation and initialization of the entity
+
+/// Quick allocation and initialization of the entity
 ///
 /// Inits the entity with the XML element it represents
 /// @param element XML Element this object represents. If element is nil, nil is
 /// returned
 + (id) entityWithElement:(NSXMLElement *)element;
 
+/// XML Element to MBEntity
+///
 /// Determine which type of entity the element represents and returns a new
 /// allocation of that object with the element
 /// @param element XML Element the object should represent. If element is nil,
 /// nil is returned
 + (id) xmlElementToEntity:(NSXMLElement *)element;
 
-/**
- *  Overridden implementations must detach or remove children and attribute used
- *  from the element before calling [super parseElement:], otherwise all 
- *  children and elements will appear in ExtraAttributes and ExtraElements
- *
- *  @warning Subclasses must override this method. For extra attribute and extra
- *  attributes to appear in the repsective properties, overriden implementations
- *  must call [super parseElement:] when done processing
- *
- * @param element The element this object represents
- */
+/// Parse XML Element that represents this object.
+///
+/// This method will iterate through every attribute and element in the XML data
+/// that corresponds to this object. It will call `set<key>:` for every attribute
+/// and element where key is the the the local name of the attribute or element.
+/// If `set<key>:` is not defined by the subclass, the attribute or element will
+/// be added to ExtraAttributes or ExtraElements. Using `@synthesize` is fine for
+/// attributes as the passed value will always be an NSString or NSNull type but
+/// is not adequate for elements because the value passed will be the 
+/// NSXMLElement (DDXMLElement on iOS) for that element.
+///
+/// @param element NSXMLElement (DDXMLElement on iOS) that corresponds to this
+/// object
 - (void) parseElement:(NSXMLElement *)element;
 
 
