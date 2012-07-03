@@ -241,6 +241,8 @@
 		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
 		5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; };
 		5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; };
+		5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */; };
+		5DB4E8C915A1F7CA00AB3A74 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -381,6 +383,8 @@
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
+		5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRequest.h; sourceTree = "<group>"; };
+		5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRequest.m; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -553,6 +557,8 @@
 				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
+				5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */,
+				5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */,
 				5D5D033A158058BD00E8A525 /* Entities */,
 			);
 			path = "libmusicbrainz-objc";
@@ -814,6 +820,7 @@
 				5D08F35515900B3200E35D2A /* XML.h in Headers */,
 				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
 				5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */,
+				5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +970,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA2CD7F158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */,
+				5DA2CD83158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */,
+				5DA2CD87158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */,
+				5DA2CD8B158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */,
+				5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */,
+				5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */,
+				5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */,
 				5D5D03DE1581056D00E8A525 /* MBQuery.m in Sources */,
 				5D5D03E01581056D00E8A525 /* MBAlias.m in Sources */,
 				5D5D03E21581056D00E8A525 /* MBAnnotation.m in Sources */,
@@ -990,13 +1004,6 @@
 				5D5D04111581056D00E8A525 /* MBUserRating.m in Sources */,
 				5D5D04131581056D00E8A525 /* MBUserTag.m in Sources */,
 				5D5D04151581056D00E8A525 /* MBWork.m in Sources */,
-				5DA2CD7F158E70BF00D7FF11 /* ASIDataCompressor.m in Sources */,
-				5DA2CD83158E70BF00D7FF11 /* ASIDataDecompressor.m in Sources */,
-				5DA2CD87158E70BF00D7FF11 /* ASIDownloadCache.m in Sources */,
-				5DA2CD8B158E70BF00D7FF11 /* ASIFormDataRequest.m in Sources */,
-				5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */,
-				5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */,
-				5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */,
 				5D19DE85159105C300FCF572 /* MBEntity.m in Sources */,
 				5D19DE8C15916E9400FCF572 /* MBList.m in Sources */,
 				5D19DE8F15917DD100FCF572 /* MBRateAndTaggableEntity.m in Sources */,
@@ -1063,6 +1070,7 @@
 				5D19DEA6159183FC00FCF572 /* MBAttribute.m in Sources */,
 				5D19DEAC1591844800FCF572 /* MBISWC.m in Sources */,
 				5D19DEB21591860500FCF572 /* MBIPI.m in Sources */,
+				5DB4E8C915A1F7CA00AB3A74 /* MBRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1325,6 +1333,7 @@
 				5DAAFE4D159A62D200450C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

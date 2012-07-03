@@ -10,6 +10,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MBQuery.h"
+#import "MBRequest.h"
+#import "MBQueryDelegate.h"
 #import "Entities/MBEntity.h"
 #import "Entities/MBError.h"
 #import "Entities/MBMetadata.h"

@@ -17,6 +17,7 @@
 /// @param query The MBQuery object that recieved the request
 /// @param result The result of the request
 -(void) query:(MBQuery *)query didReceiveResult:(MBMetadata *)result;
+
 /// Called when MBQuery failed to recieve a result or process the result
 /// @param query The MBQuery object that recieved the request
 /// @param error The error
