@@ -5,7 +5,7 @@ OUTPUT="docs"
 VERSION=`git rev-parse --verify master`
 PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
 
-/usr/local/bin/appledoc \
+/usr/bin/env appledoc \
   --create-html \
   --create-docset \
   --project-name "libmusicbrainz-objc" \
