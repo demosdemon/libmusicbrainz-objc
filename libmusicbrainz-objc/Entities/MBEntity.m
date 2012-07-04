@@ -86,7 +86,7 @@
 
 - (Class) classForElementName
 {
-  if (kStringEqual([self substringFromIndex:self.length-4], kListKey))
+  if ([[self substringFromIndex:self.length-4] equals:kListKey])
     return [MBList class];
   
   Class type = NSClassFromString([@"MB" stringByAppendingString:[self capitalizedElementToKey]]);

@@ -11,8 +11,8 @@
 // @brief Artist entity
 
 #import "MBRateAndTaggableEntity.h"
-#import "MBLifeSpan.h"
-#import "MBList.h"
+
+@class MBLifeSpan, MBList;
 
 /// Represents an `<artist/>` element
 @interface MBArtist : MBRateAndTaggableEntity

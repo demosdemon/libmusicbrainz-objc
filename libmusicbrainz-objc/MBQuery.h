@@ -8,17 +8,12 @@
 // @brief Query object for handling communications with MusicBrainz
 //   webservice.
 
-#import <Foundation/Foundation.h>
 #import "ASIHTTPRequestDelegate.h"
-#import "MBQueryDelegate.h"
-#import "Entities/MBMetadata.h"
-#import "Entities/MBRateAndTaggableEntity.h"
-#import "Entities/MBRelease.h"
-#import "Entities/MBCollection.h"
-#import "Entities/MBISRC.h"
-#import "Entities/MBRecording.h"
 
-@class MBQuery;
+@protocol MBQueryDelegate;
+
+@class MBQuery, MBMetadata, MBRateAndTaggableEntity, MBRelease, MBCollection;
+@class MBISRC, MBRecording;
 
 /// Main interface with the webservice, handles all communication to and from
 /// the webservice.

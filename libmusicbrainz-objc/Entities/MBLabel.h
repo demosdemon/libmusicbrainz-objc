@@ -10,8 +10,8 @@
 // @brief Label entity
 
 #import "MBRateAndTaggableEntity.h"
-#import "MBLifeSpan.h"
-#import "MBList.h"
+
+@class MBLifeSpan, MBList;
 
 /// Represents a `<label/>` element
 @interface MBLabel : MBRateAndTaggableEntity

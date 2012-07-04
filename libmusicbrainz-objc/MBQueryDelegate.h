@@ -6,9 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
-
-@class MBQuery, MBMetadata;
+@class MBQuery, MBRequest, MBMetadata;
 
 /// Delegate for MBQuery
 @protocol MBQueryDelegate <NSObject, NSXMLParserDelegate>
@@ -22,5 +20,8 @@
 /// @param query The MBQuery object that recieved the request
 /// @param error The error
 -(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
+
+- (void) query:(MBQuery *)query didCompleteRequest:(MBRequest *)request withResult:(MBMetadata *)result;
+- (void) query:(MBQuery *)query didCompleteRequest:(MBRequest *)request withError:(NSError *)error;
 
 @end
