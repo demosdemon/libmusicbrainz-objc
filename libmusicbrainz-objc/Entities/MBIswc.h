@@ -11,6 +11,6 @@
 #import "MBEntity.h"
 
 /// Represents an `<iswc/>` element
-@interface MBISWC : MBEntity
+@interface MBIswc : MBEntity
 
 @end

@@ -14,7 +14,6 @@
 #   define DLog(...)
 #endif
 
-// ALog always displays output regardless of the DEBUG setting
 #define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 #define NOT_IMPLEMENTED() \
@@ -35,8 +34,8 @@
 #import "Entities/MBLabel.h"
 #import "Entities/MBWork.h"
 #import "Entities/MBDisc.h"
-#import "Entities/MBPUID.h"
-#import "Entities/MBISRC.h"
+#import "Entities/MBPuid.h"
+#import "Entities/MBIsrc.h"
 #import "Entities/MBArtistCredit.h"
 #import "Entities/MBRelation.h"
 #import "Entities/MBAlias.h"
@@ -48,9 +47,9 @@
 #import "Entities/MBMedium.h"
 #import "Entities/MBTrack.h"
 #import "Entities/MBAnnotation.h"
-#import "Entities/MBCDStub.h"
-#import "Entities/MBFreeDbDisc.h"
-#import "Entities/MBNonMbTrack.h"
+#import "Entities/MBCdStub.h"
+#import "Entities/FreedbDisc.h"
+#import "Entities/MBNonmbTrack.h"
 #import "Entities/MBCollection.h"
 #import "Entities/MBLifeSpan.h"
 #import "Entities/MBRateAndTaggableEntity.h"

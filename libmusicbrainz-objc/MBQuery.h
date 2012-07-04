@@ -13,10 +13,14 @@
 @protocol MBQueryDelegate;
 
 @class MBQuery, MBMetadata, MBRateAndTaggableEntity, MBRelease, MBCollection;
-@class MBISRC, MBRecording;
+@class MBIsrc, MBRecording;
 
-/// Main interface with the webservice, handles all communication to and from
-/// the webservice.
+/// Main interface with the webservice.
+///
+/// MBQuery handles all communication to and from the webservice. Use MBRequest
+/// to form the request. Use MBQueryDelegate to receive callbacks on success
+/// or failure. If the request fails due to network connectivity, MBQuery
+/// will not resend the request.
 @interface MBQuery : NSObject <ASIHTTPRequestDelegate>
 {
  @private
@@ -64,6 +68,7 @@
                    Port:(NSInteger)port;
 
 #pragma mark - Properties
+
 /// User Agent string.
 ///
 /// Client name to report to the webservice for mutable requests. The
@@ -71,14 +76,17 @@
 /// a - character.
 /// @warning ua must not be empty or nil.
 @property (copy, nonatomic) NSString * UserAgent;
+
 /// Server to connect to.
 ///
 /// Default is musicbrainz.org
 @property (copy, nonatomic) NSString * Server;
+
 /// Port to use when connecting.
 ///
 /// Default is 80
 @property (assign, nonatomic) NSInteger Port;
+
 /// MBQueryDelegate that recieves callbaks for recieved data
 @property (retain, atomic) id<MBQueryDelegate> Delegate;
 

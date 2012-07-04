@@ -15,7 +15,9 @@
 #import "MB.h"
 #import "ASIHTTPRequest.h"
 
-#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-0.0.1"
+
+#define VERSION @"0.1"
+#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" VERSION
 #define DEFAULT_SERVER         @"musicbrainz.org"
 #define DEFAULT_PORT           80
 #define MAX_REQUESTS           2
@@ -226,14 +228,16 @@
 
 - (void) didFailWithError:(NSError*)error
 {
-  if (_delegate && [_delegate respondsToSelector:@selector(query:didReceiveResult:)])
-    [_delegate query:self didFailWithError:error];
+  NOT_IMPLEMENTED();
+//  if (_delegate && [_delegate respondsToSelector:@selector(query:didReceiveResult:)])
+//    [_delegate query:self didFailWithError:error];
 }
 
 - (void) didFinishWithMetadata:(MBMetadata*)metadata
 {
-  if (_delegate && [_delegate respondsToSelector:@selector(query:didReceiveResult:)])
-    [_delegate query:self didReceiveResult:metadata];
+  NOT_IMPLEMENTED();
+//  if (_delegate && [_delegate respondsToSelector:@selector(query:didReceiveResult:)])
+//    [_delegate query:self didReceiveResult:metadata];
 }
 
 @end

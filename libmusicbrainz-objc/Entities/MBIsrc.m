@@ -13,7 +13,7 @@
 
 #import "MB.h"
 
-@implementation MBISRC
+@implementation MBIsrc
 
 - (void) parseElement:(NSXMLElement *)element
 {

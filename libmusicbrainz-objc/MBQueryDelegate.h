@@ -11,17 +11,26 @@
 /// Delegate for MBQuery
 @protocol MBQueryDelegate <NSObject, NSXMLParserDelegate>
 
-/// Called when MBQuery recieved a successful payload from the webserver
-/// @param query The MBQuery object that recieved the request
-/// @param result The result of the request
--(void) query:(MBQuery *)query didReceiveResult:(MBMetadata *)result;
+@required
 
-/// Called when MBQuery failed to recieve a result or process the result
-/// @param query The MBQuery object that recieved the request
-/// @param error The error
--(void) query:(MBQuery *)query didFailWithError:(NSError *)error;
-
+/// Success Callback
+///
+/// MBQuery will send a message to the delegate when the request is finished
+/// and successful.
+///
+/// @param query The query object that handled the request
+/// @param request The request
+/// @param result The result
 - (void) query:(MBQuery *)query didCompleteRequest:(MBRequest *)request withResult:(MBMetadata *)result;
+
+/// Error Callback
+///
+/// MBQuery will send a message to the delegate whenever anything causes the
+/// request to fail. If there is any error information, it will be sent as well.
+///
+/// @param query The query object that handled the request
+/// @param request The request
+/// @param error The error object (if any)
 - (void) query:(MBQuery *)query didCompleteRequest:(MBRequest *)request withError:(NSError *)error;
 
 @end
