@@ -44,9 +44,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/query:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- query:didFailWithError:</option>
+	<option value="//api/name/query:didCompleteRequest:withError:">&nbsp;&nbsp;&nbsp;&nbsp;- query:didCompleteRequest:withError:</option>
 	
-	<option value="//api/name/query:didReceiveResult:">&nbsp;&nbsp;&nbsp;&nbsp;- query:didReceiveResult:</option>
+	<option value="//api/name/query:didCompleteRequest:withResult:">&nbsp;&nbsp;&nbsp;&nbsp;- query:didCompleteRequest:withResult:</option>
 	
 	
 	
@@ -76,9 +76,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query:didFailWithError:">query:didFailWithError:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query:didCompleteRequest:withError:">query:didCompleteRequest:withError:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query:didReceiveResult:">query:didReceiveResult:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query:didCompleteRequest:withResult:">query:didCompleteRequest:withResult:</a></span></li>
 	
 </ul></li>
 
@@ -135,15 +135,15 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/query:didReceiveResult:">&ndash;&nbsp;query:didReceiveResult:</a></code>
-		<span class="tooltip"><p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p></span>
+		<code><a href="#//api/name/query:didCompleteRequest:withResult:">&ndash;&nbsp;query:didCompleteRequest:withResult:</a></code>
+		<span class="tooltip"><p>Success Callback</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/query:didFailWithError:">&ndash;&nbsp;query:didFailWithError:</a></code>
-		<span class="tooltip"><p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p></span>
+		<code><a href="#//api/name/query:didCompleteRequest:withError:">&ndash;&nbsp;query:didCompleteRequest:withError:</a></code>
+		<span class="tooltip"><p>Error Callback</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -165,18 +165,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/query:didFailWithError:" title="query:didFailWithError:"></a>
-	<h3 class="subsubtitle method-title">query:didFailWithError:</h3>
+	<a name="//api/name/query:didCompleteRequest:withError:" title="query:didCompleteRequest:withError:"></a>
+	<h3 class="subsubtitle method-title">query:didCompleteRequest:withError:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p>
+		<p>Error Callback</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didFailWithError:(NSError *)<em>error</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didCompleteRequest:(MBRequest *)<em>request</em> withError:(NSError *)<em>error</em></code></div>
 
     
 	
@@ -185,12 +185,17 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>query</em></dt>
-			<dd><p>The <a href="../Classes/MBQuery.html">MBQuery</a> object that recieved the request</p></dd>
+			<dd><p>The query object that handled the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>The request</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>error</em></dt>
-			<dd><p>The error</p></dd>
+			<dd><p>The error object (if any)</p></dd>
 		</dl>
 		
 	</div>
@@ -203,7 +208,10 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> failed to recieve a result or process the result</p>
+		<p>Error Callback</p>
+
+<p><a href="../Classes/MBQuery.html">MBQuery</a> will send a message to the delegate whenever anything causes the
+request to fail. If there is any error information, it will be sent as well.</p>
 	</div>
 	
 	
@@ -221,18 +229,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/query:didReceiveResult:" title="query:didReceiveResult:"></a>
-	<h3 class="subsubtitle method-title">query:didReceiveResult:</h3>
+	<a name="//api/name/query:didCompleteRequest:withResult:" title="query:didCompleteRequest:withResult:"></a>
+	<h3 class="subsubtitle method-title">query:didCompleteRequest:withResult:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p>
+		<p>Success Callback</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didReceiveResult:(MBMetadata *)<em>result</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)query:(MBQuery *)<em>query</em> didCompleteRequest:(MBRequest *)<em>request</em> withResult:(MBMetadata *)<em>result</em></code></div>
 
     
 	
@@ -241,12 +249,17 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>query</em></dt>
-			<dd><p>The <a href="../Classes/MBQuery.html">MBQuery</a> object that recieved the request</p></dd>
+			<dd><p>The query object that handled the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>The request</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>result</em></dt>
-			<dd><p>The result of the request</p></dd>
+			<dd><p>The result</p></dd>
 		</dl>
 		
 	</div>
@@ -259,7 +272,10 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Called when <a href="../Classes/MBQuery.html">MBQuery</a> recieved a successful payload from the webserver</p>
+		<p>Success Callback</p>
+
+<p><a href="../Classes/MBQuery.html">MBQuery</a> will send a message to the delegate when the request is finished
+and successful.</p>
 	</div>
 	
 	
@@ -289,7 +305,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-06-26)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

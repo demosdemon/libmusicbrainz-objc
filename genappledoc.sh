@@ -32,3 +32,7 @@ PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
   --no-warn-unknown-directive \
   --no-warn-invalid-crossref\
   "$DIRECTORY"
+
+git add docs
+git commit -m "Update docs to commit $VERSION"
+
