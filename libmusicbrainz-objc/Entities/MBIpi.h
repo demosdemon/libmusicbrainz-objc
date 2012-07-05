@@ -11,6 +11,6 @@
 #import "MBEntity.h"
 
 /// Represents an `<ipi/>` element
-@interface MBIPI : MBEntity
+@interface MBIpi : MBEntity
 
 @end

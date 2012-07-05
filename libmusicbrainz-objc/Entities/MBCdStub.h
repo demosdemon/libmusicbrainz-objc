@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<cd-stub/>` element
-@interface MBCDStub : MBEntity
+@interface MBCdStub : MBEntity
 
 @end
 

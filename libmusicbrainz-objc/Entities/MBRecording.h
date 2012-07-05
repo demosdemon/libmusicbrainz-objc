@@ -9,8 +9,8 @@
 // @brief Recording Entity
 
 #import "MBRateAndTaggableEntity.h"
-#import "MBArtistCredit.h"
-#import "MBList.h"
+
+@class MBArtistCredit, MBList;
 
 /// Represents a `<recording/>` element
 @interface MBRecording : MBRateAndTaggableEntity

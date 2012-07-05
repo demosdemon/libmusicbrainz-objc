@@ -1,5 +1,5 @@
-///
-/// @file MBIPI.m
+/// 
+/// @file MBISWC.m
 /// @author Joachim LeBlanc
 /// @date June 19 2012
 /// @copyright 
@@ -12,9 +12,9 @@
 # warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
 
-#import "MBIPI.h"
+#import "MBIswc.h"
 
-@implementation MBIPI
+@implementation MBIswc
 
 - (void) parseElement:(NSXMLElement *)element
 {

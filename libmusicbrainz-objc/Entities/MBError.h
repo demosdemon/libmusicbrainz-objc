@@ -8,9 +8,6 @@
 //
 // @brief Base class for all errors
 
-#import <Foundation/Foundation.h>
-#import "../XML.h"
-
 /// Helperclass to create error objects from webservice responses
 @interface MBError : NSObject
 

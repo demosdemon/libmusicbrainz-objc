@@ -10,8 +10,8 @@
 // @brief ReleaseGroup entity
 
 #import "MBRateAndTaggableEntity.h"
-#import "MBArtistCredit.h"
-#import "MBList.h"
+
+@class MBArtistCredit, MBList;
 
 /// Represents a `<release-group/>` element
 @interface MBReleaseGroup : MBRateAndTaggableEntity

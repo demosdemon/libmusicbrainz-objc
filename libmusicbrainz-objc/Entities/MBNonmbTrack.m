@@ -13,7 +13,7 @@
 
 #import "MB.h"
 
-@implementation MBNonMbTrack
+@implementation MBNonmbTrack
 
 - (void) parseElement:(NSXMLElement *)element
 {

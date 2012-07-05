@@ -9,8 +9,8 @@
 // @brief Work Entity
 
 #import "MBRateAndTaggableEntity.h"
-#import "MBArtistCredit.h"
-#import "MBList.h"
+
+@class MBArtistCredit, MBList;
 
 /// Represents a `<work/>` element
 @interface MBWork : MBRateAndTaggableEntity

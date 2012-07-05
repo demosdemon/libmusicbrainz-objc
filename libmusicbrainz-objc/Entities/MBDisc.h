@@ -9,7 +9,8 @@
 // @brief Work Entity
 
 #import "MBEntity.h"
-#import "MBList.h"
+
+@class MBList;
 
 /// Represents a `<disc/>` element
 @interface MBDisc : MBEntity
