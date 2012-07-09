@@ -243,6 +243,8 @@
 		5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; };
 		5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */; };
 		5DB4E8C915A1F7CA00AB3A74 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */; };
+		5DB56B9E15AA931F00885759 /* MBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB56B9D15AA931F00885759 /* MBUtils.h */; };
+		5DB56B9F15AA931F00885759 /* MBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB56B9D15AA931F00885759 /* MBUtils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -385,6 +387,7 @@
 		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
 		5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRequest.h; sourceTree = "<group>"; };
 		5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRequest.m; sourceTree = "<group>"; };
+		5DB56B9D15AA931F00885759 /* MBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUtils.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -559,6 +562,7 @@
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
 				5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */,
 				5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */,
+				5DB56B9D15AA931F00885759 /* MBUtils.h */,
 				5D5D033A158058BD00E8A525 /* Entities */,
 			);
 			path = "libmusicbrainz-objc";
@@ -753,6 +757,7 @@
 				5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
 				5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */,
 				5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */,
+				5DB56B9F15AA931F00885759 /* MBUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +826,7 @@
 				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
 				5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */,
 				5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */,
+				5DB56B9E15AA931F00885759 /* MBUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

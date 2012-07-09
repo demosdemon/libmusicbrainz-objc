@@ -24,7 +24,7 @@
 @interface MBQuery : NSObject <ASIHTTPRequestDelegate>
 {
  @private
-  id<MBQueryDelegate> _delegate;
+  __unsafe_unretained id<MBQueryDelegate> _delegate;
   NSString *_useragent;
   NSString *_server;
   NSInteger _port;
@@ -88,7 +88,7 @@
 @property (assign, nonatomic) NSInteger Port;
 
 /// MBQueryDelegate that recieves callbaks for recieved data
-@property (retain, atomic) id<MBQueryDelegate> Delegate;
+@property (assign, atomic) id<MBQueryDelegate> Delegate;
 
 /// Set the username and password to authenticate with when making mutable
 /// requests or getting user specific information, like collections,
@@ -122,4 +122,3 @@
               parameters:(NSDictionary *)parameters;
 
 @end
-

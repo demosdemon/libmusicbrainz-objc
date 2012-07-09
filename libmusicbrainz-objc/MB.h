@@ -8,19 +8,8 @@
 //
 // @brief Entry point to the api, import this file and nothing else.
 
-#ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#   define DLog(...)
-#endif
-
-#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-
-#define NOT_IMPLEMENTED() \
-  ALog(@"Not Implemented exception thrown"); \
-  [NSException raise:@"Not Implemented" format:@"Not Implemented", __FILE__]
-
 #import <Foundation/Foundation.h>
+#import "MBUtils.h"
 #import "MBQuery.h"
 #import "MBRequest.h"
 #import "MBQueryDelegate.h"
