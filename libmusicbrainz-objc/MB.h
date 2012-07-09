@@ -36,7 +36,7 @@
 #import "Entities/MBMedium.h"
 #import "Entities/MBTrack.h"
 #import "Entities/MBAnnotation.h"
-#import "Entities/MBCdStub.h"
+#import "Entities/MBCdstub.h"
 #import "Entities/MBFreedbDisc.h"
 #import "Entities/MBNonmbTrack.h"
 #import "Entities/MBCollection.h"
