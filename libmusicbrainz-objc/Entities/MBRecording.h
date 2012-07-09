@@ -16,22 +16,22 @@
 @interface MBRecording : MBRateAndTaggableEntity
 
 /// Unique MusicBrainz ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
 /// Title of this recording
-@property (copy, nonatomic, readonly) NSString *Title;
+@property (nonatomic, readonly) NSString *Title;
 /// Length in seconds of this recoding
 @property (nonatomic, readonly) NSNumber *Length;
 /// Disambiguation comment for this recording.
-@property (copy, nonatomic, readonly) NSString *Disambiguation;
+@property (nonatomic, readonly) NSString *Disambiguation;
 /// Artist Credit for this recording.
 @property (nonatomic, readonly) MBArtistCredit *ArtistCredit;
 /// MBList with MBRelease objects
 @property (nonatomic, readonly) MBList *ReleaseList;
 /// MBList with MBPUID objects
-@property (nonatomic, readonly) MBList *PUIDList;
+@property (nonatomic, readonly) MBList *PuidList;
 /// MBList with MBISRC objects
-@property (nonatomic, readonly) MBList *ISRCList;
+@property (nonatomic, readonly) MBList *IsrcList;
 /// MBList with MBRelation objects
-@property (nonatomic, readonly) MBList *RelationListList;
+@property (nonatomic, readonly) MBList *RelationList;
 
 @end

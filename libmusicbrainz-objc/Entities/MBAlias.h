@@ -12,5 +12,11 @@
 /// Represents an `<alias/>` element
 @interface MBAlias : MBEntity
 
+@property (nonatomic, readonly) NSString * Locale;
+@property (nonatomic, readonly) NSString * SortName;
+@property (nonatomic, readonly) NSString * Primary;
+@property (nonatomic, readonly) NSString * BeginDate;
+@property (nonatomic, readonly) NSString * EndDate;
+
 @end
 

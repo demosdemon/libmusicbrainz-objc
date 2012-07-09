@@ -9,8 +9,15 @@
 
 #import "MBEntity.h"
 
-/// Represents a `<cd-stub/>` element
-@interface MBCdStub : MBEntity
+/// Represents a `<cdstub/>` element
+@interface MBCdstub : MBEntity
+
+@property (nonatomic, readonly) NSString * Id;
+@property (nonatomic, readonly) NSString * Title;
+@property (nonatomic, readonly) NSString * Artist;
+@property (nonatomic, readonly) NSString * Barcode;
+@property (nonatomic, readonly) NSString * Comment;
+@property (nonatomic, readonly) MBList * NonmbTrackList;
 
 @end
 

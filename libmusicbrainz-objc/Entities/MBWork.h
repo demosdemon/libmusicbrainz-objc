@@ -16,24 +16,26 @@
 @interface MBWork : MBRateAndTaggableEntity
 
 /// Unique MusicBrainz ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
 /// Type of work
-@property (copy, nonatomic, readonly) NSString *Type;
+@property (nonatomic, readonly) NSString *Type;
 /// Title of the work
-@property (copy, nonatomic, readonly) NSString *Title;
+@property (nonatomic, readonly) NSString *Title;
 /// ISO-639 Laguage
 ///
 /// Matches the regular expression `[a-z]{3}` or empty
-@property (copy, nonatomic, readonly) NSString *Language;
+@property (nonatomic, readonly) NSString *Language;
 /// Artist Credit for the work
 @property (nonatomic, readonly) MBArtistCredit *ArtistCredit;
+/// ISWC
+@property (nonatomic, readonly) MBIsrc *Iswc;
 /// MBList with MBISWC objects
-@property (nonatomic, readonly) MBList *ISWCList;
+@property (nonatomic, readonly) MBList *IswcList;
 /// Disambiguation comment for this work
-@property (copy, nonatomic, readonly) NSString *Disambiguation;
+@property (nonatomic, readonly) NSString *Disambiguation;
 /// MBList with MBAlias objects
 @property (nonatomic, readonly) MBList *AliasList;
 /// MBList with MBRelation objects
-@property (nonatomic, readonly) MBList *RelationListList; ///< NSArray of NSArray objects that contain MBRelation objects
+@property (nonatomic, readonly) MBList *RelationList;
 
 @end

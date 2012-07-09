@@ -13,13 +13,7 @@
 
 #import "MB.h"
 
-@implementation MBCdStub
-
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
+@implementation MBCdstub
 
 
 @end

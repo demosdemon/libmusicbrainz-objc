@@ -12,5 +12,8 @@
 /// Represents a `<rating/>` element
 @interface MBRating : MBEntity
 
+@property (nonatomic, readonly) NSNumber * VotesCount;
+@property (nonatomic, readonly) NSNumber * Value;
+
 @end
 

@@ -13,4 +13,7 @@
 /// Represents a `<text-representation/>` element
 @interface MBTextRepresentation : MBEntity
 
+@property (nonatomic, readonly) NSString * Language;
+@property (nonatomic, readonly) NSString * Script;
+
 @end

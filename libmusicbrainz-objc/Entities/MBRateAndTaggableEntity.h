@@ -20,10 +20,10 @@
   MBUserRating * _userRating;
 }
 
-@property (retain, nonatomic, readonly) MBList * TagList;
-@property (retain, nonatomic, readonly) MBList * UserTagList;
-@property (retain, nonatomic, readonly) MBRating * Rating;
-@property (retain, nonatomic, readonly) MBUserRating * UserRating;
+@property (nonatomic, readonly) MBList * TagList;
+@property (nonatomic, readonly) MBList * UserTagList;
+@property (nonatomic, readonly) MBRating * Rating;
+@property (nonatomic, readonly) MBUserRating * UserRating;
 
 - (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request;
 - (void) addUserTag:(NSString *)tag usingRequest:(MBRequest *)request;

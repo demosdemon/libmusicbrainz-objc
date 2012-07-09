@@ -13,4 +13,6 @@
 /// Represents an `<iswc/>` element
 @interface MBIswc : MBEntity
 
+@property (nonatomic, readonly) NSString * Value;
+
 @end

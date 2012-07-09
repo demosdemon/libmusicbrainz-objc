@@ -12,5 +12,8 @@
 /// Represents a `<isrc/>` element
 @interface MBIsrc : MBEntity
 
+@property (nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) MBList *RecordingList;
+
 @end
 

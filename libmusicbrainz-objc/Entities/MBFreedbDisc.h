@@ -12,5 +12,12 @@
 /// Represents a `<freedb-disc/>` element
 @interface MBFreedbDisc : MBEntity
 
+@property (nonatomic, readonly) NSString * Id;
+@property (nonatomic, readonly) NSString * Title;
+@property (nonatomic, readonly) NSString * Artist;
+@property (nonatomic, readonly) NSString * Category;
+@property (nonatomic, readonly) NSString * Year;
+@property (nonatomic, readonly) MBList * NonmbTrackList;
+
 @end
 

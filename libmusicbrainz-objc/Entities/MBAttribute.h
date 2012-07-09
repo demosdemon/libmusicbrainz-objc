@@ -13,4 +13,6 @@
 /// Represents an `<attribute/>` element
 @interface MBAttribute : MBEntity
 
+@property (nonatomic, readonly) NSString * Value;
+
 @end

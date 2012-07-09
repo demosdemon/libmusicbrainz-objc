@@ -16,7 +16,7 @@
 @interface MBDisc : MBEntity
 
 /// Unique ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
 /// Number of sectors on the disc
 @property (nonatomic, readonly) NSNumber *Sectors;
 /// MBList with MBRelease objects

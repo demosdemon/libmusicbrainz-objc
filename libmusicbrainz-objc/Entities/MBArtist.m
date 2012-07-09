@@ -18,11 +18,5 @@
 
 @implementation MBArtist
 
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
-
 
 @end

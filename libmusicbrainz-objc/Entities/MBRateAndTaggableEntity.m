@@ -19,12 +19,6 @@
 @synthesize Rating = _rating;
 @synthesize UserRating = _userRating;
 
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
-
 - (void) setTagList:(NSXMLElement *)node
 {
   _tagList = [MBList entityWithElement:node];

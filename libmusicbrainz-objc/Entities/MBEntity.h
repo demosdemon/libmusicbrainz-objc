@@ -25,13 +25,13 @@
 /// Extra Attributes Dictionary
 ///
 /// Keys and Values are NSString objects.
-@property (copy, nonatomic, readonly) NSDictionary *ExtraAttributes;
+@property (nonatomic, readonly) NSDictionary *ExtraAttributes;
 
 /// ExtraElements Dictionary
 ///
 /// Keys are NSString with the element name.
 /// Values are MBEntity or NSString objects.
-@property (copy, nonatomic, readonly) NSDictionary *ExtraElements;
+@property (nonatomic, readonly) NSDictionary *ExtraElements;
 
 /// Main initializer. 
 ///
