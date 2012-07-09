@@ -44,15 +44,15 @@
 	
 	<option value="//api/name/Disambiguation">&nbsp;&nbsp;&nbsp;&nbsp;Disambiguation</option>
 	
-	<option value="//api/name/ISRCList">&nbsp;&nbsp;&nbsp;&nbsp;ISRCList</option>
-	
 	<option value="//api/name/Id">&nbsp;&nbsp;&nbsp;&nbsp;Id</option>
+	
+	<option value="//api/name/IsrcList">&nbsp;&nbsp;&nbsp;&nbsp;IsrcList</option>
 	
 	<option value="//api/name/Length">&nbsp;&nbsp;&nbsp;&nbsp;Length</option>
 	
-	<option value="//api/name/PUIDList">&nbsp;&nbsp;&nbsp;&nbsp;PUIDList</option>
+	<option value="//api/name/PuidList">&nbsp;&nbsp;&nbsp;&nbsp;PuidList</option>
 	
-	<option value="//api/name/RelationListList">&nbsp;&nbsp;&nbsp;&nbsp;RelationListList</option>
+	<option value="//api/name/RelationList">&nbsp;&nbsp;&nbsp;&nbsp;RelationList</option>
 	
 	<option value="//api/name/ReleaseList">&nbsp;&nbsp;&nbsp;&nbsp;ReleaseList</option>
 	
@@ -90,15 +90,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Disambiguation">Disambiguation</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ISRCList">ISRCList</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Id">Id</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IsrcList">IsrcList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Length">Length</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/PUIDList">PUIDList</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/PuidList">PuidList</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationListList">RelationListList</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationList">RelationList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ReleaseList">ReleaseList</a></span></li>
 	
@@ -135,7 +135,7 @@
 	<td class="specification-value"><a href="../Classes/MBRateAndTaggableEntity.html">MBRateAndTaggableEntity</a> : <a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBRecording.h</td>
+	<td class="specification-value">MBRecording.h<br />MBRecording.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -205,21 +205,21 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/PUIDList">&nbsp;&nbsp;PUIDList</a></code>
+		<code><a href="#//api/name/PuidList">&nbsp;&nbsp;PuidList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with MBPUID objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/ISRCList">&nbsp;&nbsp;ISRCList</a></code>
+		<code><a href="#//api/name/IsrcList">&nbsp;&nbsp;IsrcList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with MBISRC objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/RelationListList">&nbsp;&nbsp;RelationListList</a></code>
+		<code><a href="#//api/name/RelationList">&nbsp;&nbsp;RelationList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -290,7 +290,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Disambiguation</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Disambiguation</code></div>
 
     
 	
@@ -320,18 +320,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/ISRCList" title="ISRCList"></a>
-	<h3 class="subsubtitle method-title">ISRCList</h3>
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="subsubtitle method-title">Id</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p><a href="../Classes/MBList.html">MBList</a> with MBISRC objects</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *ISRCList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Id</code></div>
 
     
 	
@@ -343,7 +343,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p><a href="../Classes/MBList.html">MBList</a> with MBISRC objects</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>
 	
 	
@@ -361,18 +361,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="subsubtitle method-title">Id</h3>
+	<a name="//api/name/IsrcList" title="IsrcList"></a>
+	<h3 class="subsubtitle method-title">IsrcList</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p><a href="../Classes/MBList.html">MBList</a> with MBISRC objects</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Id</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *IsrcList</code></div>
 
     
 	
@@ -384,7 +384,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p><a href="../Classes/MBList.html">MBList</a> with MBISRC objects</p>
 	</div>
 	
 	
@@ -443,8 +443,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/PUIDList" title="PUIDList"></a>
-	<h3 class="subsubtitle method-title">PUIDList</h3>
+	<a name="//api/name/PuidList" title="PuidList"></a>
+	<h3 class="subsubtitle method-title">PuidList</h3>
 	
 	
 	
@@ -454,7 +454,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *PUIDList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *PuidList</code></div>
 
     
 	
@@ -484,8 +484,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/RelationListList" title="RelationListList"></a>
-	<h3 class="subsubtitle method-title">RelationListList</h3>
+	<a name="//api/name/RelationList" title="RelationList"></a>
+	<h3 class="subsubtitle method-title">RelationList</h3>
 	
 	
 	
@@ -495,7 +495,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationListList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationList</code></div>
 
     
 	
@@ -577,7 +577,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Title</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Title</code></div>
 
     
 	
@@ -623,7 +623,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

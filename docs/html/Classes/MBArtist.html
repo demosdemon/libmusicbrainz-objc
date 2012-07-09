@@ -48,9 +48,11 @@
 	
 	<option value="//api/name/Gender">&nbsp;&nbsp;&nbsp;&nbsp;Gender</option>
 	
-	<option value="//api/name/IPIList">&nbsp;&nbsp;&nbsp;&nbsp;IPIList</option>
-	
 	<option value="//api/name/Id">&nbsp;&nbsp;&nbsp;&nbsp;Id</option>
+	
+	<option value="//api/name/Ipi">&nbsp;&nbsp;&nbsp;&nbsp;Ipi</option>
+	
+	<option value="//api/name/IpiList">&nbsp;&nbsp;&nbsp;&nbsp;IpiList</option>
 	
 	<option value="//api/name/LabelList">&nbsp;&nbsp;&nbsp;&nbsp;LabelList</option>
 	
@@ -60,7 +62,7 @@
 	
 	<option value="//api/name/RecordingList">&nbsp;&nbsp;&nbsp;&nbsp;RecordingList</option>
 	
-	<option value="//api/name/RelationListList">&nbsp;&nbsp;&nbsp;&nbsp;RelationListList</option>
+	<option value="//api/name/RelationList">&nbsp;&nbsp;&nbsp;&nbsp;RelationList</option>
 	
 	<option value="//api/name/ReleaseGroupList">&nbsp;&nbsp;&nbsp;&nbsp;ReleaseGroupList</option>
 	
@@ -108,9 +110,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Gender">Gender</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IPIList">IPIList</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Id">Id</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Ipi">Ipi</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IpiList">IpiList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/LabelList">LabelList</a></span></li>
 	
@@ -120,7 +124,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RecordingList">RecordingList</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationListList">RelationListList</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationList">RelationList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ReleaseGroupList">ReleaseGroupList</a></span></li>
 	
@@ -163,7 +167,7 @@
 	<td class="specification-value"><a href="../Classes/MBRateAndTaggableEntity.html">MBRateAndTaggableEntity</a> : <a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBArtist.h</td>
+	<td class="specification-value">MBArtist.h<br />MBArtist.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -240,7 +244,14 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/IPIList">&nbsp;&nbsp;IPIList</a></code>
+		<code><a href="#//api/name/Ipi">&nbsp;&nbsp;Ipi</a></code>
+		<span class="tooltip"><p>Artist IPI</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/IpiList">&nbsp;&nbsp;IpiList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with MBIPI objects.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -296,7 +307,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/RelationListList">&nbsp;&nbsp;RelationListList</a></code>
+		<code><a href="#//api/name/RelationList">&nbsp;&nbsp;RelationList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -367,7 +378,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Country</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Country</code></div>
 
     
 	
@@ -410,7 +421,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Disambiguation</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Disambiguation</code></div>
 
     
 	
@@ -451,7 +462,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Gender</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Gender</code></div>
 
     
 	
@@ -481,18 +492,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/IPIList" title="IPIList"></a>
-	<h3 class="subsubtitle method-title">IPIList</h3>
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="subsubtitle method-title">Id</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p><a href="../Classes/MBList.html">MBList</a> with MBIPI objects.</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *IPIList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Id</code></div>
 
     
 	
@@ -504,7 +515,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p><a href="../Classes/MBList.html">MBList</a> with MBIPI objects.</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>
 	
 	
@@ -522,18 +533,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="subsubtitle method-title">Id</h3>
+	<a name="//api/name/Ipi" title="Ipi"></a>
+	<h3 class="subsubtitle method-title">Ipi</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p>Artist IPI</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Id</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBIpi *Ipi</code></div>
 
     
 	
@@ -545,7 +556,50 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p>Artist IPI</p>
+
+<p>Deprecated before first release.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/IpiList" title="IpiList"></a>
+	<h3 class="subsubtitle method-title">IpiList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/MBList.html">MBList</a> with MBIPI objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *IpiList</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MBList.html">MBList</a> with MBIPI objects.</p>
 	</div>
 	
 	
@@ -656,7 +710,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Name</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Name</code></div>
 
     
 	
@@ -727,8 +781,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/RelationListList" title="RelationListList"></a>
-	<h3 class="subsubtitle method-title">RelationListList</h3>
+	<a name="//api/name/RelationList" title="RelationList"></a>
+	<h3 class="subsubtitle method-title">RelationList</h3>
 	
 	
 	
@@ -738,7 +792,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationListList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationList</code></div>
 
     
 	
@@ -861,7 +915,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *SortName</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *SortName</code></div>
 
     
 	
@@ -902,7 +956,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Type</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Type</code></div>
 
     
 	
@@ -991,7 +1045,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

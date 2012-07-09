@@ -46,13 +46,15 @@
 	
 	<option value="//api/name/Disambiguation">&nbsp;&nbsp;&nbsp;&nbsp;Disambiguation</option>
 	
-	<option value="//api/name/ISWCList">&nbsp;&nbsp;&nbsp;&nbsp;ISWCList</option>
-	
 	<option value="//api/name/Id">&nbsp;&nbsp;&nbsp;&nbsp;Id</option>
+	
+	<option value="//api/name/Iswc">&nbsp;&nbsp;&nbsp;&nbsp;Iswc</option>
+	
+	<option value="//api/name/IswcList">&nbsp;&nbsp;&nbsp;&nbsp;IswcList</option>
 	
 	<option value="//api/name/Language">&nbsp;&nbsp;&nbsp;&nbsp;Language</option>
 	
-	<option value="//api/name/RelationListList">&nbsp;&nbsp;&nbsp;&nbsp;RelationListList</option>
+	<option value="//api/name/RelationList">&nbsp;&nbsp;&nbsp;&nbsp;RelationList</option>
 	
 	<option value="//api/name/Title">&nbsp;&nbsp;&nbsp;&nbsp;Title</option>
 	
@@ -92,13 +94,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Disambiguation">Disambiguation</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ISWCList">ISWCList</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Id">Id</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Iswc">Iswc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IswcList">IswcList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Language">Language</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationListList">RelationListList</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/RelationList">RelationList</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Title">Title</a></span></li>
 	
@@ -135,7 +139,7 @@
 	<td class="specification-value"><a href="../Classes/MBRateAndTaggableEntity.html">MBRateAndTaggableEntity</a> : <a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBWork.h</td>
+	<td class="specification-value">MBWork.h<br />MBWork.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -198,7 +202,14 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/ISWCList">&nbsp;&nbsp;ISWCList</a></code>
+		<code><a href="#//api/name/Iswc">&nbsp;&nbsp;Iswc</a></code>
+		<span class="tooltip"><p>ISWC</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/IswcList">&nbsp;&nbsp;IswcList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with MBISWC objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -219,7 +230,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/RelationListList">&nbsp;&nbsp;RelationListList</a></code>
+		<code><a href="#//api/name/RelationList">&nbsp;&nbsp;RelationList</a></code>
 		<span class="tooltip"><p><a href="../Classes/MBList.html">MBList</a> with <a href="../Classes/MBRelation.html">MBRelation</a> objects</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -331,7 +342,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Disambiguation</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Disambiguation</code></div>
 
     
 	
@@ -361,18 +372,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/ISWCList" title="ISWCList"></a>
-	<h3 class="subsubtitle method-title">ISWCList</h3>
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="subsubtitle method-title">Id</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p><a href="../Classes/MBList.html">MBList</a> with MBISWC objects</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *ISWCList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Id</code></div>
 
     
 	
@@ -384,7 +395,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p><a href="../Classes/MBList.html">MBList</a> with MBISWC objects</p>
+		<p>Unique MusicBrainz ID for this entity</p>
 	</div>
 	
 	
@@ -402,18 +413,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="subsubtitle method-title">Id</h3>
+	<a name="//api/name/Iswc" title="Iswc"></a>
+	<h3 class="subsubtitle method-title">Iswc</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p>ISWC</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Id</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBIsrc *Iswc</code></div>
 
     
 	
@@ -425,7 +436,48 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Unique MusicBrainz ID for this entity</p>
+		<p>ISWC</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBWork.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/IswcList" title="IswcList"></a>
+	<h3 class="subsubtitle method-title">IswcList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/MBList.html">MBList</a> with MBISWC objects</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *IswcList</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/MBList.html">MBList</a> with MBISWC objects</p>
 	</div>
 	
 	
@@ -454,7 +506,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Language</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Language</code></div>
 
     
 	
@@ -486,8 +538,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/RelationListList" title="RelationListList"></a>
-	<h3 class="subsubtitle method-title">RelationListList</h3>
+	<a name="//api/name/RelationList" title="RelationList"></a>
+	<h3 class="subsubtitle method-title">RelationList</h3>
 	
 	
 	
@@ -497,7 +549,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationListList</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *RelationList</code></div>
 
     
 	
@@ -538,7 +590,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Title</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Title</code></div>
 
     
 	
@@ -579,7 +631,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic, readonly) NSString *Type</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Type</code></div>
 
     
 	
@@ -625,7 +677,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

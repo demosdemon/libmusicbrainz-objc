@@ -32,8 +32,23 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/DiscList">&nbsp;&nbsp;&nbsp;&nbsp;DiscList</option>
+	
+	<option value="//api/name/Format">&nbsp;&nbsp;&nbsp;&nbsp;Format</option>
+	
+	<option value="//api/name/Position">&nbsp;&nbsp;&nbsp;&nbsp;Position</option>
+	
+	<option value="//api/name/Title">&nbsp;&nbsp;&nbsp;&nbsp;Title</option>
+	
+	<option value="//api/name/TrackList">&nbsp;&nbsp;&nbsp;&nbsp;TrackList</option>
 	
 	
 	
@@ -53,9 +68,27 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/DiscList">DiscList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Format">Format</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Position">Position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/Title">Title</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/TrackList">TrackList</a></span></li>
+	
+</ul></li>
 
 
 
@@ -86,7 +119,7 @@
 	<td class="specification-value"><a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBMedium.h</td>
+	<td class="specification-value">MBMedium.h<br />MBMedium.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -103,9 +136,119 @@
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/Title">&nbsp;&nbsp;Title</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/Position">&nbsp;&nbsp;Position</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/Format">&nbsp;&nbsp;Format</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/DiscList">&nbsp;&nbsp;DiscList</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/TrackList">&nbsp;&nbsp;TrackList</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/DiscList" title="DiscList"></a>
+	<h3 class="subsubtitle method-title">DiscList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *DiscList</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Format" title="Format"></a>
+	<h3 class="subsubtitle method-title">Format</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Format</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Position" title="Position"></a>
+	<h3 class="subsubtitle method-title">Position</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *Position</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/Title" title="Title"></a>
+	<h3 class="subsubtitle method-title">Title</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *Title</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/TrackList" title="TrackList"></a>
+	<h3 class="subsubtitle method-title">TrackList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MBList *TrackList</code></div>
+
+    
+</div>
+						
+					</div>
 					
 					
 					
@@ -122,7 +265,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

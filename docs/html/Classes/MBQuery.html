@@ -51,19 +51,48 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/addQueryStringToUrl:params:">&nbsp;&nbsp;&nbsp;&nbsp;+ addQueryStringToUrl:params:</option>
+	
+	<option value="//api/name/initialize">&nbsp;&nbsp;&nbsp;&nbsp;+ initialize</option>
+	
+	<option value="//api/name/urlEscape:">&nbsp;&nbsp;&nbsp;&nbsp;+ urlEscape:</option>
+	
+	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/delete:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:parameters:</option>
+	
+	<option value="//api/name/didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- didFailWithError:</option>
+	
+	<option value="//api/name/didFinishWithMetadata:">&nbsp;&nbsp;&nbsp;&nbsp;- didFinishWithMetadata:</option>
+	
+	<option value="//api/name/get:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- get:parameters:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
 	
 	<option value="//api/name/initWithUserAgent:Delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithUserAgent:Delegate:</option>
 	
 	<option value="//api/name/initWithUserAgent:Delegate:Server:Port:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithUserAgent:Delegate:Server:Port:</option>
 	
+	<option value="//api/name/post:parameters:data:">&nbsp;&nbsp;&nbsp;&nbsp;- post:parameters:data:</option>
+	
+	<option value="//api/name/put:parameters:data:">&nbsp;&nbsp;&nbsp;&nbsp;- put:parameters:data:</option>
+	
 	<option value="//api/name/queryWithEntity:uid:resource:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- queryWithEntity:uid:resource:parameters:</option>
+	
+	<option value="//api/name/requestFailed:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFailed:</option>
+	
+	<option value="//api/name/requestFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- requestFinished:</option>
 	
 	<option value="//api/name/setUsername:Password:">&nbsp;&nbsp;&nbsp;&nbsp;- setUsername:Password:</option>
 	
 	<option value="//api/name/submitQueue">&nbsp;&nbsp;&nbsp;&nbsp;- submitQueue</option>
+	
+	<option value="//api/name/urlWithEndpoint:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- urlWithEndpoint:parameters:</option>
 	
 	
 	
@@ -101,19 +130,49 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addQueryStringToUrl:params:">addQueryStringToUrl:params:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialize">initialize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/urlEscape:">urlEscape:</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:parameters:">delete:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFailWithError:">didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didFinishWithMetadata:">didFinishWithMetadata:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/get:parameters:">get:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithUserAgent:Delegate:">initWithUserAgent:Delegate:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithUserAgent:Delegate:Server:Port:">initWithUserAgent:Delegate:Server:Port:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/post:parameters:data:">post:parameters:data:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/put:parameters:data:">put:parameters:data:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryWithEntity:uid:resource:parameters:">queryWithEntity:uid:resource:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFailed:">requestFailed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestFinished:">requestFinished:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUsername:Password:">setUsername:Password:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/submitQueue">submitQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/urlWithEndpoint:parameters:">urlWithEndpoint:parameters:</a></span></li>
 	
 </ul></li>
 
@@ -145,7 +204,7 @@
 	<td class="specification-value">ASIHTTPRequestDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MBQuery.h</td>
+	<td class="specification-value">MBQuery.h<br />MBQuery.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -173,7 +232,7 @@ will not resend the request.</p>
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -245,6 +304,105 @@ on success else else [MBQueryDelegate query:didFailWithError:] on failure</p></s
 </li>
 						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialize">+&nbsp;initialize</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFinished:">&ndash;&nbsp;requestFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestFailed:">&ndash;&nbsp;requestFailed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/urlEscape:">+&nbsp;urlEscape:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addQueryStringToUrl:params:">+&nbsp;addQueryStringToUrl:params:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/urlWithEndpoint:parameters:">&ndash;&nbsp;urlWithEndpoint:parameters:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/get:parameters:">&ndash;&nbsp;get:parameters:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/post:parameters:data:">&ndash;&nbsp;post:parameters:data:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/put:parameters:data:">&ndash;&nbsp;put:parameters:data:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:parameters:">&ndash;&nbsp;delete:parameters:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFailWithError:">&ndash;&nbsp;didFailWithError:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didFinishWithMetadata:">&ndash;&nbsp;didFinishWithMetadata:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -267,7 +425,7 @@ on success else else [MBQueryDelegate query:didFailWithError:] on failure</p></s
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (retain, atomic) id&lt;&gt; Delegate</code></div>
+	<div class="method-subsection method-declaration"><code>@property (assign, atomic) id&lt;&gt; Delegate</code></div>
 
     
 	
@@ -431,11 +589,105 @@ a &ndash; character.</p><div class="warning"><p><strong>Warning:</strong> ua mus
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addQueryStringToUrl:params:" title="addQueryStringToUrl:params:"></a>
+	<h3 class="subsubtitle method-title">addQueryStringToUrl:params:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)addQueryStringToUrl:(NSString *)<em>url</em> params:(NSDictionary *)<em>params</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialize" title="initialize"></a>
+	<h3 class="subsubtitle method-title">initialize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)initialize</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/urlEscape:" title="urlEscape:"></a>
+	<h3 class="subsubtitle method-title">urlEscape:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)urlEscape:(NSString *)<em>unencodedString</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
 					
 					
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:parameters:" title="delete:parameters:"></a>
+	<h3 class="subsubtitle method-title">delete:parameters:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delete:(NSString *)<em>endpoint</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFailWithError:" title="didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">didFailWithError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didFailWithError:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didFinishWithMetadata:" title="didFinishWithMetadata:"></a>
+	<h3 class="subsubtitle method-title">didFinishWithMetadata:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didFinishWithMetadata:(MBMetadata *)<em>metadata</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/get:parameters:" title="get:parameters:"></a>
+	<h3 class="subsubtitle method-title">get:parameters:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)get:(NSString *)<em>endpoint</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/initWithUserAgent:Delegate:" title="initWithUserAgent:Delegate:"></a>
@@ -571,6 +823,28 @@ nil is returned. delegate must also not be nil.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/post:parameters:data:" title="post:parameters:data:"></a>
+	<h3 class="subsubtitle method-title">post:parameters:data:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)post:(NSString *)<em>endpoint</em> parameters:(NSDictionary *)<em>parameters</em> data:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/put:parameters:data:" title="put:parameters:data:"></a>
+	<h3 class="subsubtitle method-title">put:parameters:data:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)put:(NSString *)<em>endpoint</em> parameters:(NSDictionary *)<em>parameters</em> data:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/queryWithEntity:uid:resource:parameters:" title="queryWithEntity:uid:resource:parameters:"></a>
 	<h3 class="subsubtitle method-title">queryWithEntity:uid:resource:parameters:</h3>
 	
@@ -637,6 +911,28 @@ on success else else [MBQueryDelegate query:didFailWithError:] on failure</p>
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFailed:" title="requestFailed:"></a>
+	<h3 class="subsubtitle method-title">requestFailed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFailed:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestFinished:" title="requestFinished:"></a>
+	<h3 class="subsubtitle method-title">requestFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)requestFinished:(ASIHTTPRequest *)<em>request</em></code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -745,6 +1041,17 @@ will persist until at least the end of life of this object.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/urlWithEndpoint:parameters:" title="urlWithEndpoint:parameters:"></a>
+	<h3 class="subsubtitle method-title">urlWithEndpoint:parameters:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)urlWithEndpoint:(NSString *)<em>endpoint</em> parameters:(NSDictionary *)<em>params</em></code></div>
+
+    
+</div>
+						
 					</div>
 					
 					
@@ -758,7 +1065,7 @@ will persist until at least the end of life of this object.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-04)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
