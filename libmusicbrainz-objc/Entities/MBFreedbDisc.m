@@ -13,7 +13,7 @@
 
 #import "MB.h"
 
-@implementation FreedbDisc
+@implementation MBFreedbDisc
 
 - (void) parseElement:(NSXMLElement *)element
 {

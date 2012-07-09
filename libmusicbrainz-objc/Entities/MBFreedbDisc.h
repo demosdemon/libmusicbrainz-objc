@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<freedb-disc/>` element
-@interface FreedbDisc : MBEntity
+@interface MBFreedbDisc : MBEntity
 
 @end
 

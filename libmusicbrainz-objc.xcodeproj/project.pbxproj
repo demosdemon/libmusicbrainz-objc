@@ -69,8 +69,8 @@
 		5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D0384158058BD00E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0348158058BD00E8A525 /* MBDisc.m */; };
 		5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5D0388158058BD00E8A525 /* FreedbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* FreedbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5D0389158058BD00E8A525 /* FreedbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* FreedbDisc.m */; };
+		5D5D0388158058BD00E8A525 /* MBFreedbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D0389158058BD00E8A525 /* MBFreedbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */; };
 		5D5D038A158058BD00E8A525 /* MBIsrc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBIsrc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D038B158058BD00E8A525 /* MBIsrc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034F158058BD00E8A525 /* MBIsrc.m */; };
 		5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,8 +129,8 @@
 		5D5D03EB1581056D00E8A525 /* MBDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0347158058BD00E8A525 /* MBDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03EC1581056D00E8A525 /* MBDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0348158058BD00E8A525 /* MBDisc.m */; };
 		5D5D03EE1581056D00E8A525 /* MBEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034A158058BD00E8A525 /* MBEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5D03F01581056D00E8A525 /* FreedbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* FreedbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D5D03F11581056D00E8A525 /* FreedbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* FreedbDisc.m */; };
+		5D5D03F01581056D00E8A525 /* MBFreedbDisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5D03F11581056D00E8A525 /* MBFreedbDisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */; };
 		5D5D03F21581056D00E8A525 /* MBIsrc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D034E158058BD00E8A525 /* MBIsrc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5D03F31581056D00E8A525 /* MBIsrc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D034F158058BD00E8A525 /* MBIsrc.m */; };
 		5D5D03F41581056D00E8A525 /* MBLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0350158058BD00E8A525 /* MBLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -278,8 +278,8 @@
 		5D5D0347158058BD00E8A525 /* MBDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDisc.h; sourceTree = "<group>"; };
 		5D5D0348158058BD00E8A525 /* MBDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDisc.m; sourceTree = "<group>"; };
 		5D5D034A158058BD00E8A525 /* MBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEntity.h; sourceTree = "<group>"; };
-		5D5D034C158058BD00E8A525 /* FreedbDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreedbDisc.h; sourceTree = "<group>"; };
-		5D5D034D158058BD00E8A525 /* FreedbDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreedbDisc.m; sourceTree = "<group>"; };
+		5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFreedbDisc.h; sourceTree = "<group>"; };
+		5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFreedbDisc.m; sourceTree = "<group>"; };
 		5D5D034E158058BD00E8A525 /* MBIsrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBIsrc.h; sourceTree = "<group>"; };
 		5D5D034F158058BD00E8A525 /* MBIsrc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIsrc.m; sourceTree = "<group>"; };
 		5D5D0350158058BD00E8A525 /* MBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLabel.h; sourceTree = "<group>"; };
@@ -482,8 +482,8 @@
 				5D5D033E158058BD00E8A525 /* MBAnnotation.m */,
 				5D5D0343158058BD00E8A525 /* MBCdStub.h */,
 				5D5D0344158058BD00E8A525 /* MBCdStub.m */,
-				5D5D034C158058BD00E8A525 /* FreedbDisc.h */,
-				5D5D034D158058BD00E8A525 /* FreedbDisc.m */,
+				5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */,
+				5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */,
 				5D5D035A158058BD00E8A525 /* MBNonmbTrack.h */,
 				5D5D035B158058BD00E8A525 /* MBNonmbTrack.m */,
 				5D5D0345158058BD00E8A525 /* MBCollection.h */,
@@ -714,7 +714,7 @@
 				5D5D03EB1581056D00E8A525 /* MBDisc.h in Headers */,
 				5D5D03EE1581056D00E8A525 /* MBEntity.h in Headers */,
 				5D5D03F61581056D00E8A525 /* MBLabelInfo.h in Headers */,
-				5D5D03F01581056D00E8A525 /* FreedbDisc.h in Headers */,
+				5D5D03F01581056D00E8A525 /* MBFreedbDisc.h in Headers */,
 				5D5D03F41581056D00E8A525 /* MBLabel.h in Headers */,
 				5D5D03F81581056D00E8A525 /* MBLifeSpan.h in Headers */,
 				5D5D03F21581056D00E8A525 /* MBIsrc.h in Headers */,
@@ -768,7 +768,7 @@
 				5D5D0381158058BD00E8A525 /* MBCollection.h in Headers */,
 				5D5D0383158058BD00E8A525 /* MBDisc.h in Headers */,
 				5D5D0386158058BD00E8A525 /* MBEntity.h in Headers */,
-				5D5D0388158058BD00E8A525 /* FreedbDisc.h in Headers */,
+				5D5D0388158058BD00E8A525 /* MBFreedbDisc.h in Headers */,
 				5D5D038A158058BD00E8A525 /* MBIsrc.h in Headers */,
 				5D5D038C158058BD00E8A525 /* MBLabel.h in Headers */,
 				5D5D038E158058BD00E8A525 /* MBLabelInfo.h in Headers */,
@@ -985,7 +985,7 @@
 				5D5D03E81581056D00E8A525 /* MBCdStub.m in Sources */,
 				5D5D03EA1581056D00E8A525 /* MBCollection.m in Sources */,
 				5D5D03EC1581056D00E8A525 /* MBDisc.m in Sources */,
-				5D5D03F11581056D00E8A525 /* FreedbDisc.m in Sources */,
+				5D5D03F11581056D00E8A525 /* MBFreedbDisc.m in Sources */,
 				5D5D03F31581056D00E8A525 /* MBIsrc.m in Sources */,
 				5D5D03F51581056D00E8A525 /* MBLabel.m in Sources */,
 				5D5D03F71581056D00E8A525 /* MBLabelInfo.m in Sources */,
@@ -1027,7 +1027,7 @@
 				5D5D0380158058BD00E8A525 /* MBCdStub.m in Sources */,
 				5D5D0382158058BD00E8A525 /* MBCollection.m in Sources */,
 				5D5D0384158058BD00E8A525 /* MBDisc.m in Sources */,
-				5D5D0389158058BD00E8A525 /* FreedbDisc.m in Sources */,
+				5D5D0389158058BD00E8A525 /* MBFreedbDisc.m in Sources */,
 				5D5D038B158058BD00E8A525 /* MBIsrc.m in Sources */,
 				5D5D038D158058BD00E8A525 /* MBLabel.m in Sources */,
 				5D5D038F158058BD00E8A525 /* MBLabelInfo.m in Sources */,
