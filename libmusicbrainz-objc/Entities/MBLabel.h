@@ -11,34 +11,40 @@
 
 #import "MBRateAndTaggableEntity.h"
 
-@class MBLifeSpan, MBList;
+@class MBLifeSpan, MBList, MBIpi;
 
 /// Represents a `<label/>` element
 @interface MBLabel : MBRateAndTaggableEntity
 
 /// Unique MusicBrainz ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
 /// Type of label
-@property (copy, nonatomic, readonly) NSString *Type;
+@property (nonatomic, readonly) NSString *Type;
 /// Name of the label
-@property (copy, nonatomic, readonly) NSString *Name;
+@property (nonatomic, readonly) NSString *Name;
 /// Sort name for the label
-@property (copy, nonatomic, readonly) NSString *SortName;
+@property (nonatomic, readonly) NSString *SortName;
 /// Label Code for the label
 @property (nonatomic, readonly) NSNumber *LabelCode;
+/// Artist IPI
+///
+/// Deprecated before first release.
+@property (nonatomic, readonly) MBIpi *Ipi DEPRECATED_ATTRIBUTE;
 /// MBList with MBIPI objects
 @property (nonatomic, readonly) MBList *IpiList;
 /// Disambiguation comment for the label
-@property (copy, nonatomic, readonly) NSString *Disambiguation;
+@property (nonatomic, readonly) NSString *Disambiguation;
 /// ISO-3166 Country for the label
 ///
 /// Matches regular expression `[A-Z]{2}` or empty
-@property (copy, nonatomic, readonly) NSString *Country;
+@property (nonatomic, readonly) NSString *Country;
 /// Lifespan of the label
 @property (nonatomic, readonly) MBLifeSpan *LifeSpan;
 /// MBList with MBAlias objects
 @property (nonatomic, readonly) MBList *AliasList;
 /// MBList with MBRelease objects
-@property (nonatomic, readonly) MBList *ReleaseList; ///< NSArray of MBRelease objects
+@property (nonatomic, readonly) MBList *ReleaseList;
+/// MBList with MBRelation objects
+@property (nonatomic, readonly) MBList *RelationList;
 
 @end

@@ -12,5 +12,10 @@
 /// Represents an `<annotation/>` element
 @interface MBAnnotation : MBEntity
 
+@property (nonatomic, readonly) NSString * Type;
+@property (nonatomic, readonly) NSString * Entity;
+@property (nonatomic, readonly) NSString * Name;
+@property (nonatomic, readonly) NSString * Text;
+
 @end
 

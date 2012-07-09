@@ -12,32 +12,36 @@
 
 #import "MBRateAndTaggableEntity.h"
 
-@class MBLifeSpan, MBList;
+@class MBLifeSpan, MBList, MBIpi;
 
 /// Represents an `<artist/>` element
 @interface MBArtist : MBRateAndTaggableEntity
 
 // All NSStrings* must be copy, nonatomic
 /// Unique MusicBrainz ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
 /// Type of artist.
 ///
 /// Either "person" or "group"
-@property (copy, nonatomic, readonly) NSString *Type;
+@property (nonatomic, readonly) NSString *Type;
 /// Name of the artist
-@property (copy, nonatomic, readonly) NSString *Name;
+@property (nonatomic, readonly) NSString *Name;
 /// Sort name for the artist
-@property (copy, nonatomic, readonly) NSString *SortName;
+@property (nonatomic, readonly) NSString *SortName;
 /// Gender of the artist if Type is "person".
-@property (copy, nonatomic, readonly) NSString *Gender;
+@property (nonatomic, readonly) NSString *Gender;
 /// ISO-3166 Country for the artist
 ///
 /// Matches regular expression `[A-Z]{2}` or empty
-@property (copy, nonatomic, readonly) NSString *Country;
+@property (nonatomic, readonly) NSString *Country;
 /// Disambiguation comment for the artist.
-@property (copy, nonatomic, readonly) NSString *Disambiguation;
+@property (nonatomic, readonly) NSString *Disambiguation;
+/// Artist IPI
+///
+/// Deprecated before first release.
+@property (nonatomic, readonly) MBIpi *Ipi DEPRECATED_ATTRIBUTE;
 /// MBList with MBIPI objects.
-@property (nonatomic, readonly) MBList *IPIList;
+@property (nonatomic, readonly) MBList *IpiList;
 /// Lifespan of this artist
 @property (nonatomic, readonly) MBLifeSpan *Lifespan;
 /// MBList with MBAlias objects
@@ -53,6 +57,6 @@
 /// MBList with MBWork objects
 @property (nonatomic, readonly) MBList *WorkList;
 /// MBList with MBRelation objects
-@property (nonatomic, readonly) MBList *RelationListList;
+@property (nonatomic, readonly) MBList *RelationList;
 
 @end

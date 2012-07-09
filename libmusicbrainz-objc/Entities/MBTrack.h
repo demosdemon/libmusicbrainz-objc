@@ -12,5 +12,12 @@
 /// Represents a `<track/>` element
 @interface MBTrack : MBEntity
 
+@property (nonatomic, readonly) NSNumber * Position;
+@property (nonatomic, readonly) NSString * Number;
+@property (nonatomic, readonly) NSString * Title;
+@property (nonatomic, readonly) NSNumber * Length;
+@property (nonatomic, readonly) MBArtistCredit * ArtistCredit;
+@property (nonatomic, readonly) MBRecording * Recording;
+
 @end
 

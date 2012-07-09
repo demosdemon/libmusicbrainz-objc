@@ -12,5 +12,8 @@
 /// Represents a `<tag/>` element
 @interface MBTag : MBEntity
 
+@property (nonatomic, readonly) NSNumber * Count;
+@property (nonatomic, readonly) NSString * Name;
+
 @end
 

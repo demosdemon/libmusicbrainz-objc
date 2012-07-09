@@ -9,8 +9,12 @@
 
 #import "MBEntity.h"
 
+@class MBList;
+
 /// Represents an `<artist-credit/>` element
 @interface MBArtistCredit : MBEntity
+
+@property (nonatomic, readonly) MBList * Value;
 
 @end
 

@@ -12,5 +12,8 @@
 /// Represents a `<puid/>` element
 @interface MBPuid : MBEntity
 
+@property (nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) MBList *RecordingList;
+
 @end
 

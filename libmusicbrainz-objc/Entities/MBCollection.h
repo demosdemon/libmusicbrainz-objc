@@ -13,7 +13,10 @@
 @interface MBCollection : MBEntity
 
 /// Unique MusicBrainz ID for this entity
-@property (copy, nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString *Id;
+@property (nonatomic, readonly) NSString * Name;
+@property (nonatomic, readonly) NSString * Editor;
+@property (nonatomic, readonly) MBList * ReleaseList;
 
 @end
 

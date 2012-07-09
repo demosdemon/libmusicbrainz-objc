@@ -9,8 +9,13 @@
 // @brief
 
 #import "MBEntity.h"
+@class MBArtist;
 
 /// Represents a `<name-credit/>` element
 @interface MBNameCredit : MBEntity
+
+@property (nonatomic, readonly) NSString * Joinphrase;
+@property (nonatomic, readonly) NSString * Name;
+@property (nonatomic, readonly) MBArtist * Artist;
 
 @end

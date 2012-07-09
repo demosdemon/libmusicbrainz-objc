@@ -13,6 +13,9 @@
 /// Represents all `<*-list/>` elements
 @interface MBList : MBEntity
 
+@property (nonatomic, readonly) NSNumber * Count;
+@property (nonatomic, readonly) NSNumber * Offset;
+
 /// Returns the type of elements this List contains
 - (NSString *) elementName;
 

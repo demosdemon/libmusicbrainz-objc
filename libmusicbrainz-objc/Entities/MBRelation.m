@@ -15,12 +15,6 @@
 
 @implementation MBRelation
 
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
-
 
 @end
 

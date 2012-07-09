@@ -13,7 +13,7 @@
 @interface MBUserTag : MBEntity
 
 /// Name of the tag
-@property (copy, nonatomic) NSString * Name;
+@property (nonatomic, readonly) NSString * Name;
 
 @end
 

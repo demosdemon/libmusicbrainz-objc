@@ -12,5 +12,8 @@
 /// Represents a `<label-info/>` element
 @interface MBLabelInfo : MBEntity
 
+@property (nonatomic, readonly) NSString * CatalogNumber;
+@property (nonatomic, readonly) MBLabel * Label;
+
 @end
 

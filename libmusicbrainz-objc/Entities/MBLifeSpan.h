@@ -14,10 +14,10 @@
 
 /// String that matches the regular expression `[0-9]{4}(-[0-9]{2}){0,2}`
 /// May be empty.
-@property (copy, nonatomic, readonly) NSString *Begin;
+@property (nonatomic, readonly) NSString * Begin;
 /// String that matches the regular expression `[0-9]{4}(-[0-9]{2}){0,2}`.
 /// May be empty.
-@property (copy, nonatomic, readonly) NSString *End;
+@property (nonatomic, readonly) NSString * End;
 /// Boolean value to represent unknown end dates.
 @property (nonatomic, readonly) BOOL Ended;
 

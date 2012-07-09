@@ -13,4 +13,6 @@
 /// Represents an `<ipi/>` element
 @interface MBIpi : MBEntity
 
+@property (nonatomic, readonly) NSString * Value;
+
 @end

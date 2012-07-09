@@ -12,5 +12,9 @@
 /// Represents a `<nonmb-track/>` element
 @interface MBNonmbTrack : MBEntity
 
+@property (nonatomic, readonly) NSString * Title;
+@property (nonatomic, readonly) NSString * Artist;
+@property (nonatomic, readonly) NSNumber * Length;
+
 @end
 

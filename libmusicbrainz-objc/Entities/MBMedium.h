@@ -9,8 +9,16 @@
 
 #import "MBEntity.h"
 
+@class MBList;
+
 /// Represents a `<medium/>` element
 @interface MBMedium : MBEntity
+
+@property (nonatomic, readonly) NSString * Title;
+@property (nonatomic, readonly) NSNumber * Position;
+@property (nonatomic, readonly) NSString * Format;
+@property (nonatomic, readonly) MBList * DiscList;
+@property (nonatomic, readonly) MBList * TrackList;
 
 @end
 
