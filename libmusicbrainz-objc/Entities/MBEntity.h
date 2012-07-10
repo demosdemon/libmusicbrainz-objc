@@ -47,14 +47,6 @@
 /// returned
 + (id) entityWithElement:(NSXMLElement *)element;
 
-/// XML Element to MBEntity
-///
-/// Determine which type of entity the element represents and returns a new
-/// allocation of that object with the element
-/// @param element XML Element the object should represent. If element is nil,
-/// nil is returned
-+ (id) xmlElementToEntity:(NSXMLElement *)element;
-
 /// Parse XML Element that represents this object.
 ///
 /// This method will iterate through every attribute and element in the XML data

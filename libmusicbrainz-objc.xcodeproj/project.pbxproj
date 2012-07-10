@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5D01A02E15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */; };
+		5D01A02F15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */; };
+		5D01A03015AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */; };
+		5D01A03115AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */; };
 		5D08F35515900B3200E35D2A /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D08F35415900B3200E35D2A /* XML.h */; };
 		5D19DE84159105C300FCF572 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D19DE83159105C200FCF572 /* MBEntity.m */; };
 		5D19DE85159105C300FCF572 /* MBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D19DE83159105C200FCF572 /* MBEntity.m */; };
@@ -248,6 +252,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MBKeyManipulation.h"; sourceTree = "<group>"; };
+		5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MBKeyManipulation.m"; sourceTree = "<group>"; };
 		5D08F35415900B3200E35D2A /* XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML.h; sourceTree = "<group>"; };
 		5D19DE83159105C200FCF572 /* MBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntity.m; sourceTree = "<group>"; };
 		5D19DE8715916E9300FCF572 /* MBList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBList.h; sourceTree = "<group>"; };
@@ -430,6 +436,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D01A02815AC966D00784C76 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */,
+				5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		5D5D033A158058BD00E8A525 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +579,7 @@
 				5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */,
 				5DB56B9D15AA931F00885759 /* MBUtils.h */,
 				5D5D033A158058BD00E8A525 /* Entities */,
+				5D01A02815AC966D00784C76 /* Categories */,
 			);
 			path = "libmusicbrainz-objc";
 			sourceTree = "<group>";
@@ -758,6 +774,7 @@
 				5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */,
 				5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */,
 				5DB56B9F15AA931F00885759 /* MBUtils.h in Headers */,
+				5D01A02F15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +844,7 @@
 				5DAAFE54159A641000450C32 /* MBQueryDelegate.h in Headers */,
 				5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */,
 				5DB56B9E15AA931F00885759 /* MBUtils.h in Headers */,
+				5D01A02E15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1037,7 @@
 				5D19DEA7159183FC00FCF572 /* MBAttribute.m in Sources */,
 				5D19DEAD1591844800FCF572 /* MBIswc.m in Sources */,
 				5D19DEB31591860500FCF572 /* MBIpi.m in Sources */,
+				5D01A03115AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1077,6 +1096,7 @@
 				5D19DEAC1591844800FCF572 /* MBIswc.m in Sources */,
 				5D19DEB21591860500FCF572 /* MBIpi.m in Sources */,
 				5DB4E8C915A1F7CA00AB3A74 /* MBRequest.m in Sources */,
+				5D01A03015AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

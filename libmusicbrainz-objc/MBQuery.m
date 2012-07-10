@@ -15,7 +15,6 @@
 #import "MB.h"
 #import "ASIHTTPRequest.h"
 
-
 #define VERSION @"0.1"
 #define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" VERSION
 #define DEFAULT_SERVER         @"musicbrainz.org"
