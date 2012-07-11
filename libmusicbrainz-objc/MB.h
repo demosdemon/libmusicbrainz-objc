@@ -9,6 +9,7 @@
 // @brief Entry point to the api, import this file and nothing else.
 
 #import <Foundation/Foundation.h>
+#import "XML.h"
 #import "MBQuery.h"
 #import "MBQueryDelegate.h"
 #import "MBRequest.h"
