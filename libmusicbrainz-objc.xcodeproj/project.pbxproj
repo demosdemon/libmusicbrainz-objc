@@ -176,6 +176,10 @@
 		5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624315941EDB002E6A65 /* libmusicbrainz-iphoneos.pch */; };
 		5D81624C1594219F002E6A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8162491594219F002E6A65 /* InfoPlist.strings */; };
 		5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */; };
+		5D82775E15AD114500B4A8EB /* MBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D82775C15AD114300B4A8EB /* MBMessage.h */; };
+		5D82775F15AD114500B4A8EB /* MBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D82775C15AD114300B4A8EB /* MBMessage.h */; };
+		5D82776015AD114500B4A8EB /* MBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82775D15AD114400B4A8EB /* MBMessage.m */; };
+		5D82776115AD114500B4A8EB /* MBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82775D15AD114400B4A8EB /* MBMessage.m */; };
 		5D91CD72159424A600A2DC01 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD71159424A600A2DC01 /* SenTestingKit.framework */; };
 		5D91CD74159424A600A2DC01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD73159424A600A2DC01 /* UIKit.framework */; };
 		5D91CD76159424A600A2DC01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91CD75159424A600A2DC01 /* Foundation.framework */; };
@@ -337,6 +341,8 @@
 		5D8162491594219F002E6A65 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "libmusicbrainz-macos/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libmusicbrainz-macos.pch"; path = "libmusicbrainz-macos/libmusicbrainz-macos.pch"; sourceTree = SOURCE_ROOT; };
 		5D81624B1594219F002E6A65 /* libmusicbrainz-macos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "libmusicbrainz-macos.plist"; path = "libmusicbrainz-macos/libmusicbrainz-macos.plist"; sourceTree = SOURCE_ROOT; };
+		5D82775C15AD114300B4A8EB /* MBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMessage.h; sourceTree = "<group>"; };
+		5D82775D15AD114400B4A8EB /* MBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMessage.m; sourceTree = "<group>"; };
 		5D91CD70159424A600A2DC01 /* libmusicbrainz-iphoneos-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libmusicbrainz-iphoneos-test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D91CD71159424A600A2DC01 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D91CD73159424A600A2DC01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -448,76 +454,78 @@
 		5D5D033A158058BD00E8A525 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				5D5D034A158058BD00E8A525 /* MBEntity.h */,
-				5D19DE83159105C200FCF572 /* MBEntity.m */,
-				5D5D0372158058BD00E8A525 /* MBRateAndTaggableEntity.h */,
-				5D19DE8D15917DD000FCF572 /* MBRateAndTaggableEntity.m */,
-				5D19DE9015917E9000FCF572 /* MBError.h */,
-				5D19DE9115917E9100FCF572 /* MBError.m */,
-				5D5D0358158058BD00E8A525 /* MBMetadata.h */,
-				5D5D0359158058BD00E8A525 /* MBMetadata.m */,
-				5D5D0354158058BD00E8A525 /* MBLifeSpan.h */,
-				5D5D0355158058BD00E8A525 /* MBLifeSpan.m */,
-				5D5D033F158058BD00E8A525 /* MBArtist.h */,
-				5D5D0340158058BD00E8A525 /* MBArtist.m */,
-				5D5D0364158058BD00E8A525 /* MBRelease.h */,
-				5D5D0365158058BD00E8A525 /* MBRelease.m */,
-				5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */,
-				5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */,
-				5D5D0360158058BD00E8A525 /* MBRecording.h */,
-				5D5D0361158058BD00E8A525 /* MBRecording.m */,
-				5D5D0350158058BD00E8A525 /* MBLabel.h */,
-				5D5D0351158058BD00E8A525 /* MBLabel.m */,
-				5D5D0370158058BD00E8A525 /* MBWork.h */,
-				5D5D0371158058BD00E8A525 /* MBWork.m */,
-				5D5D0347158058BD00E8A525 /* MBDisc.h */,
-				5D5D0348158058BD00E8A525 /* MBDisc.m */,
-				5D5D035C158058BD00E8A525 /* MBPuid.h */,
-				5D5D035D158058BD00E8A525 /* MBPuid.m */,
-				5D5D034E158058BD00E8A525 /* MBIsrc.h */,
-				5D5D034F158058BD00E8A525 /* MBIsrc.m */,
-				5D5D0341158058BD00E8A525 /* MBArtistCredit.h */,
-				5D5D0342158058BD00E8A525 /* MBArtistCredit.m */,
-				5D5D0362158058BD00E8A525 /* MBRelation.h */,
-				5D5D0363158058BD00E8A525 /* MBRelation.m */,
 				5D5D033B158058BD00E8A525 /* MBAlias.h */,
-				5D5D033C158058BD00E8A525 /* MBAlias.m */,
-				5D5D0368158058BD00E8A525 /* MBTag.h */,
-				5D5D0369158058BD00E8A525 /* MBTag.m */,
-				5D5D036E158058BD00E8A525 /* MBUserTag.h */,
-				5D5D036F158058BD00E8A525 /* MBUserTag.m */,
-				5D5D035E158058BD00E8A525 /* MBRating.h */,
-				5D5D035F158058BD00E8A525 /* MBRating.m */,
-				5D5D036C158058BD00E8A525 /* MBUserRating.h */,
-				5D5D036D158058BD00E8A525 /* MBUserRating.m */,
-				5D5D0352158058BD00E8A525 /* MBLabelInfo.h */,
-				5D5D0353158058BD00E8A525 /* MBLabelInfo.m */,
-				5D5D0356158058BD00E8A525 /* MBMedium.h */,
-				5D5D0357158058BD00E8A525 /* MBMedium.m */,
-				5D5D036A158058BD00E8A525 /* MBTrack.h */,
-				5D5D036B158058BD00E8A525 /* MBTrack.m */,
 				5D5D033D158058BD00E8A525 /* MBAnnotation.h */,
-				5D5D033E158058BD00E8A525 /* MBAnnotation.m */,
-				5D5D0343158058BD00E8A525 /* MBCdstub.h */,
-				5D5D0344158058BD00E8A525 /* MBCdstub.m */,
-				5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */,
-				5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */,
-				5D5D035A158058BD00E8A525 /* MBNonmbTrack.h */,
-				5D5D035B158058BD00E8A525 /* MBNonmbTrack.m */,
-				5D5D0345158058BD00E8A525 /* MBCollection.h */,
-				5D5D0346158058BD00E8A525 /* MBCollection.m */,
-				5D19DE8715916E9300FCF572 /* MBList.h */,
-				5D19DE8815916E9300FCF572 /* MBList.m */,
-				5D19DE96159183B700FCF572 /* MBTextRepresentation.h */,
-				5D19DE97159183BA00FCF572 /* MBTextRepresentation.m */,
-				5D19DE9C159183D900FCF572 /* MBNameCredit.h */,
-				5D19DE9D159183DC00FCF572 /* MBNameCredit.m */,
+				5D5D033F158058BD00E8A525 /* MBArtist.h */,
+				5D5D0341158058BD00E8A525 /* MBArtistCredit.h */,
 				5D19DEA2159183F700FCF572 /* MBAttribute.h */,
-				5D19DEA3159183FA00FCF572 /* MBAttribute.m */,
-				5D19DEA81591841000FCF572 /* MBIswc.h */,
-				5D19DEA91591841C00FCF572 /* MBIswc.m */,
+				5D5D0343158058BD00E8A525 /* MBCdstub.h */,
+				5D5D0345158058BD00E8A525 /* MBCollection.h */,
+				5D5D0347158058BD00E8A525 /* MBDisc.h */,
+				5D5D034A158058BD00E8A525 /* MBEntity.h */,
+				5D19DE9015917E9000FCF572 /* MBError.h */,
+				5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */,
 				5D19DEAE159185FD00FCF572 /* MBIpi.h */,
+				5D5D034E158058BD00E8A525 /* MBIsrc.h */,
+				5D19DEA81591841000FCF572 /* MBIswc.h */,
+				5D5D0350158058BD00E8A525 /* MBLabel.h */,
+				5D5D0352158058BD00E8A525 /* MBLabelInfo.h */,
+				5D5D0354158058BD00E8A525 /* MBLifeSpan.h */,
+				5D19DE8715916E9300FCF572 /* MBList.h */,
+				5D5D0356158058BD00E8A525 /* MBMedium.h */,
+				5D82775C15AD114300B4A8EB /* MBMessage.h */,
+				5D5D0358158058BD00E8A525 /* MBMetadata.h */,
+				5D19DE9C159183D900FCF572 /* MBNameCredit.h */,
+				5D5D035A158058BD00E8A525 /* MBNonmbTrack.h */,
+				5D5D035C158058BD00E8A525 /* MBPuid.h */,
+				5D5D0372158058BD00E8A525 /* MBRateAndTaggableEntity.h */,
+				5D5D035E158058BD00E8A525 /* MBRating.h */,
+				5D5D0360158058BD00E8A525 /* MBRecording.h */,
+				5D5D0362158058BD00E8A525 /* MBRelation.h */,
+				5D5D0364158058BD00E8A525 /* MBRelease.h */,
+				5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */,
+				5D5D0368158058BD00E8A525 /* MBTag.h */,
+				5D19DE96159183B700FCF572 /* MBTextRepresentation.h */,
+				5D5D036A158058BD00E8A525 /* MBTrack.h */,
+				5D5D036C158058BD00E8A525 /* MBUserRating.h */,
+				5D5D036E158058BD00E8A525 /* MBUserTag.h */,
+				5D5D0370158058BD00E8A525 /* MBWork.h */,
+				5D5D033C158058BD00E8A525 /* MBAlias.m */,
+				5D5D033E158058BD00E8A525 /* MBAnnotation.m */,
+				5D5D0340158058BD00E8A525 /* MBArtist.m */,
+				5D5D0342158058BD00E8A525 /* MBArtistCredit.m */,
+				5D19DEA3159183FA00FCF572 /* MBAttribute.m */,
+				5D5D0344158058BD00E8A525 /* MBCdstub.m */,
+				5D5D0346158058BD00E8A525 /* MBCollection.m */,
+				5D5D0348158058BD00E8A525 /* MBDisc.m */,
+				5D19DE83159105C200FCF572 /* MBEntity.m */,
+				5D19DE9115917E9100FCF572 /* MBError.m */,
+				5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */,
 				5D19DEAF1591860000FCF572 /* MBIpi.m */,
+				5D5D034F158058BD00E8A525 /* MBIsrc.m */,
+				5D19DEA91591841C00FCF572 /* MBIswc.m */,
+				5D5D0351158058BD00E8A525 /* MBLabel.m */,
+				5D5D0353158058BD00E8A525 /* MBLabelInfo.m */,
+				5D5D0355158058BD00E8A525 /* MBLifeSpan.m */,
+				5D19DE8815916E9300FCF572 /* MBList.m */,
+				5D5D0357158058BD00E8A525 /* MBMedium.m */,
+				5D82775D15AD114400B4A8EB /* MBMessage.m */,
+				5D5D0359158058BD00E8A525 /* MBMetadata.m */,
+				5D19DE9D159183DC00FCF572 /* MBNameCredit.m */,
+				5D5D035B158058BD00E8A525 /* MBNonmbTrack.m */,
+				5D5D035D158058BD00E8A525 /* MBPuid.m */,
+				5D19DE8D15917DD000FCF572 /* MBRateAndTaggableEntity.m */,
+				5D5D035F158058BD00E8A525 /* MBRating.m */,
+				5D5D0361158058BD00E8A525 /* MBRecording.m */,
+				5D5D0363158058BD00E8A525 /* MBRelation.m */,
+				5D5D0365158058BD00E8A525 /* MBRelease.m */,
+				5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */,
+				5D5D0369158058BD00E8A525 /* MBTag.m */,
+				5D19DE97159183BA00FCF572 /* MBTextRepresentation.m */,
+				5D5D036B158058BD00E8A525 /* MBTrack.m */,
+				5D5D036D158058BD00E8A525 /* MBUserRating.m */,
+				5D5D036F158058BD00E8A525 /* MBUserTag.m */,
+				5D5D0371158058BD00E8A525 /* MBWork.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -775,6 +783,7 @@
 				5DAAFE55159A641000450C32 /* MBQueryDelegate.h in Headers */,
 				5DB56B9F15AA931F00885759 /* MBUtils.h in Headers */,
 				5D01A02F15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */,
+				5D82775F15AD114500B4A8EB /* MBMessage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +854,7 @@
 				5DB4E8C815A1F7CA00AB3A74 /* MBRequest.h in Headers */,
 				5DB56B9E15AA931F00885759 /* MBUtils.h in Headers */,
 				5D01A02E15AC96A100784C76 /* NSString+MBKeyManipulation.h in Headers */,
+				5D82775E15AD114500B4A8EB /* MBMessage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1038,6 +1048,7 @@
 				5D19DEAD1591844800FCF572 /* MBIswc.m in Sources */,
 				5D19DEB31591860500FCF572 /* MBIpi.m in Sources */,
 				5D01A03115AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */,
+				5D82776115AD114500B4A8EB /* MBMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,6 +1108,7 @@
 				5D19DEB21591860500FCF572 /* MBIpi.m in Sources */,
 				5DB4E8C915A1F7CA00AB3A74 /* MBRequest.m in Sources */,
 				5D01A03015AC96A100784C76 /* NSString+MBKeyManipulation.m in Sources */,
+				5D82776015AD114500B4A8EB /* MBMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

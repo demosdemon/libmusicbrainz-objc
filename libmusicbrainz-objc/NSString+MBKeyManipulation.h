@@ -1,3 +1,4 @@
+//
 // @file NSString+MBKeyManipulation.h
 // @author Joachim LeBlanc
 // @date Jul 09 2012

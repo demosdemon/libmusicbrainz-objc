@@ -1,3 +1,4 @@
+//
 // @file NSString+MBKeyManipulation.m
 // @author Joachim LeBlanc
 // @date Jul 09 2012
@@ -13,6 +14,8 @@
 
 #import "MB.h"
 #import "NSString+MBKeyManipulation.h"
+
+
 
 @implementation NSString (MBKeyManipulation)
 
@@ -55,40 +58,25 @@
   static NSDictionary * elementToClassDict;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    elementToClassDict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          [MBError class], kErrorKey, 
-                          [MBMetadata class], kMetadataKey,
-                          [MBLifeSpan class], kLifespanKey,
-                          [MBArtist class], kArtistKey,
-                          [MBRelease class], kReleaseKey,
-                          [MBReleaseGroup class], kReleaseGroupKey,
-                          [MBRecording class], kRecordingKey,
-                          [MBLabel class], kLabelKey,
-                          [MBWork class], kWorkKey,
-                          [MBDisc class], kDiscKey,
-                          [MBPuid class], kPUIDKey,
-                          [MBIsrc class], kISRCKey,
-                          [MBArtistCredit class], kArtistCreditKey,
-                          [MBRelation class], kRelationKey,
-                          [MBAlias class], kAliasKey,
-                          [MBTag class], kTagKey,
-                          [MBUserTag class], kUserTagKey,
-                          [MBRating class], kRatingKey,
-                          [MBUserRating class], kUserRatingKey,
-                          [MBLabelInfo class], kLabelInfoKey,
-                          [MBMedium class], kMediumKey,
-                          [MBTrack class], kTrackKey,
-                          [MBAnnotation class], kAnnotationKey,
-                          [MBCdstub class], kCDStubKey,
-                          [MBFreedbDisc class], kFreeDBDiscKey,
-                          [MBNonmbTrack class], kNonMBTrackKey,
-                          [MBCollection class], kCollectionKey,
-                          [MBTextRepresentation class], kTextRepresentationKey,
-                          [MBNameCredit class], kNameCreditKey,
-                          [MBAttribute class], kAttributeKey,
-                          [MBIswc class], kISWCKey,
-                          [MBIpi class], kIPIKey,
-                          nil];
+    const id classes[] = { [MBAlias class], [MBAnnotation class], [MBArtist class], [MBArtistCredit class],
+      [MBAttribute class], [MBCdstub class], [MBCollection class], [MBDisc class], [MBError class], 
+      [MBFreedbDisc class], [MBIpi class], [MBIsrc class], [MBIswc class], [MBLabel class], [MBLabelInfo class],
+      [MBLifeSpan class], [MBMedium class], [MBMessage class], [MBMetadata class], [MBNameCredit class],
+      [MBNonmbTrack class], [MBPuid class], [MBRating class], [MBRecording class], [MBRelation class], 
+      [MBRelease class], [MBReleaseGroup class], [MBTag class], [MBTextRepresentation class], [MBTrack class],
+      [MBUserRating class], [MBUserTag class], [MBWork class]
+    };
+    const id keys[] = { kAliasKey, kAnnotationKey, kArtistKey, kArtistCreditKey,
+      kAttributeKey, kCDStubKey, kCollectionKey, kDiscKey, kErrorKey, 
+      kFreeDBDiscKey, kIPIKey, kISRCKey, kISWCKey, kLabelKey, kLabelInfoKey,
+      kLifespanKey, kMediumKey, kMessageKey, kMetadataKey, kNameCreditKey,
+      kNonMBTrackKey, kPUIDKey, kRatingKey, kRecordingKey, kRelationKey, 
+      kReleaseKey, kReleaseGroupKey, kTagKey, kTextRepresentationKey, kTrackKey,
+      kUserRatingKey, kUserTagKey, kWorkKey
+    };
+    elementToClassDict = [NSDictionary dictionaryWithObjects:classes 
+                                                     forKeys:keys 
+                                                       count:33];
   });
 
   Class type = [elementToClassDict objectForKey:self];
