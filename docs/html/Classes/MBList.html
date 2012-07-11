@@ -51,7 +51,15 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/countByEnumeratingWithState:objects:count:">&nbsp;&nbsp;&nbsp;&nbsp;- countByEnumeratingWithState:objects:count:</option>
+	
+	<option value="//api/name/elementAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- elementAtIndex:</option>
+	
+	<option value="//api/name/elementCount">&nbsp;&nbsp;&nbsp;&nbsp;- elementCount</option>
+	
 	<option value="//api/name/elementName">&nbsp;&nbsp;&nbsp;&nbsp;- elementName</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
 	
 	<option value="//api/name/parseElement:">&nbsp;&nbsp;&nbsp;&nbsp;- parseElement:</option>
 	
@@ -91,7 +99,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countByEnumeratingWithState:objects:count:">countByEnumeratingWithState:objects:count:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementAtIndex:">elementAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementCount">elementCount</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementName">elementName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseElement:">parseElement:</a></span></li>
 	
@@ -120,6 +136,9 @@
 						<tr>
 	<td class="specification-title">Inherits from</td>
 	<td class="specification-value"><a href="../Classes/MBEntity.html">MBEntity</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSFastEnumeration</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">MBList.h<br />MBList.m</td>
@@ -164,6 +183,20 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/elementCount">&ndash;&nbsp;elementCount</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementAtIndex:">&ndash;&nbsp;elementAtIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/elementName">&ndash;&nbsp;elementName</a></code>
 		<span class="tooltip"><p>Returns the type of elements this List contains</p></span>
 	</span>
@@ -179,8 +212,22 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/parseElement:">&ndash;&nbsp;parseElement:</a></code>
 		<span class="tooltip"><p>Parse XML Element that represents this object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countByEnumeratingWithState:objects:count:">&ndash;&nbsp;countByEnumeratingWithState:objects:count:</a></code>
+		
 	</span>
 	
 	
@@ -230,6 +277,39 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/countByEnumeratingWithState:objects:count:" title="countByEnumeratingWithState:objects:count:"></a>
+	<h3 class="subsubtitle method-title">countByEnumeratingWithState:objects:count:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)<em>state</em> objects:(id __unsafe_unretained [ ])<em>buffer</em> count:(NSUInteger)<em>len</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementAtIndex:" title="elementAtIndex:"></a>
+	<h3 class="subsubtitle method-title">elementAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)elementAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementCount" title="elementCount"></a>
+	<h3 class="subsubtitle method-title">elementCount</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)elementCount</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/elementName" title="elementName"></a>
 	<h3 class="subsubtitle method-title">elementName</h3>
 	
@@ -268,6 +348,17 @@
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -344,7 +435,7 @@ NSXMLElement (DDXMLElement on iOS) for that element.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-09)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-11)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
