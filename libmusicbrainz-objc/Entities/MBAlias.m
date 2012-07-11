@@ -15,5 +15,10 @@
 
 @implementation MBAlias
 
+MB_ATTRIBUTE(Locale);
+MB_ATTRIBUTE(SortName);
+MB_ATTRIBUTE(Primary);
+MB_ATTRIBUTE(BeginDate);
+MB_ATTRIBUTE(EndDate);
 
 @end

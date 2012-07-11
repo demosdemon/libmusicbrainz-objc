@@ -15,5 +15,11 @@
 
 @implementation MBFreedbDisc
 
+MB_ATTRIBUTE(Id);
+MB_STRING_ELEMENT(Title);
+MB_STRING_ELEMENT(Artist);
+MB_STRING_ELEMENT(Category);
+MB_STRING_ELEMENT(Year);
+MB_ELEMENT(NonmbTrackList);
 
 @end

@@ -16,5 +16,18 @@
 
 @implementation MBLabel
 
+MB_ATTRIBUTE(Id);
+MB_ATTRIBUTE(Type);
+MB_STRING_ELEMENT(Name);
+MB_STRING_ELEMENT(SortName);
+MB_NUMBER_ELEMENT(LabelCode);
+MB_ELEMENT(Ipi);
+MB_ELEMENT(IpiList);
+MB_STRING_ELEMENT(Disambiguation);
+MB_STRING_ELEMENT(Country);
+MB_ELEMENT(LifeSpan);
+MB_ELEMENT(AliasList);
+MB_ELEMENT(ReleaseList);
+MB_ELEMENT(RelationList);
 
 @end

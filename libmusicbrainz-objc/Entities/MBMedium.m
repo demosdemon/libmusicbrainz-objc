@@ -15,5 +15,10 @@
 
 @implementation MBMedium
 
+MB_STRING_ELEMENT(Title);
+MB_NUMBER_ELEMENT(Position);
+MB_STRING_ELEMENT(Format);
+MB_ELEMENT(DiscList);
+MB_ELEMENT(TrackList);
 
 @end

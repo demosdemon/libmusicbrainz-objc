@@ -16,5 +16,9 @@
 
 @implementation MBIpi
 
+- (NSString *) Value
+{
+  return self.StringValue;
+}
 
 @end

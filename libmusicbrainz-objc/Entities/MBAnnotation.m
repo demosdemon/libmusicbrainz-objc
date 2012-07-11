@@ -15,5 +15,9 @@
 
 @implementation MBAnnotation
 
+MB_ATTRIBUTE(Type);
+MB_STRING_ELEMENT(Entity);
+MB_STRING_ELEMENT(Name);
+MB_STRING_ELEMENT(Text);
 
 @end

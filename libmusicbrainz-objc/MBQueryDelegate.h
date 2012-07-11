@@ -1,10 +1,11 @@
 //
-//  MBQueryDelegate.h
-//  libmusicbrainz-objc
+// @file MBQueryDelegate.h
+// @date Jun 26 2012
+// @copyright
+//   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
+//   This program is made avaliable under the terms of the MIT License.
 //
-//  Created by Joachim LeBlanc on 6/26/12.
-//
-//
+// @brief 
 
 @class MBQuery, MBRequest, MBMetadata;
 

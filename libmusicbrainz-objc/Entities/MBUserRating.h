@@ -13,7 +13,7 @@
 @interface MBUserRating : MBEntity
 
 /// Value of the rating. 1-5
-@property (retain, nonatomic) NSNumber * Value;
+@property (nonatomic, readonly) NSNumber * Value;
 
 @end
 

@@ -15,5 +15,8 @@
 
 @implementation MBNonmbTrack
 
+MB_STRING_ELEMENT(Title);
+MB_STRING_ELEMENT(Artist);
+MB_NUMBER_ELEMENT(Length);
 
 @end

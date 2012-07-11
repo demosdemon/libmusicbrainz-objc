@@ -15,5 +15,11 @@
 
 @implementation MBTrack
 
+MB_NUMBER_ELEMENT(Position);
+MB_STRING_ELEMENT(Number);
+MB_STRING_ELEMENT(Title);
+MB_NUMBER_ELEMENT(Length);
+MB_ELEMENT(ArtistCredit);
+MB_ELEMENT(Recording);
 
 @end

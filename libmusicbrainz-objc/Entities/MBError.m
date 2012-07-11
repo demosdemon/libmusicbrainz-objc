@@ -18,8 +18,7 @@
 
 + (NSError *) entityWithElement:(NSXMLElement *)element
 {
-  //TODO: Implement
-  return nil;
+  NOT_IMPLEMENTED();
 }
 
 

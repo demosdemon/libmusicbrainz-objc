@@ -15,5 +15,16 @@
 
 @implementation MBRating
 
+@synthesize VotesCount = _VotesCount;
+
+- (void) setVotesCount:(NSString *)string
+{
+  _VotesCount = [string number];
+}
+
+- (NSNumber *) Value
+{
+  return [self.StringValue number];
+}
 
 @end

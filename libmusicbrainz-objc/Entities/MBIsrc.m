@@ -15,5 +15,7 @@
 
 @implementation MBIsrc
 
+MB_ATTRIBUTE(Id);
+MB_ELEMENT(RecordingList);
 
 @end

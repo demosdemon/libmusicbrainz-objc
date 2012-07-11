@@ -16,4 +16,9 @@
 
 @implementation MBAttribute
 
+- (NSString *) Value
+{
+  return self.StringValue;
+}
+
 @end

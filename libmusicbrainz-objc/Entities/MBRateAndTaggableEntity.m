@@ -3,7 +3,7 @@
 // @author Jamie McDonald
 // @date Mar 10 2012
 // @copyright 
-//   2012 Jamie McDonald \n
+//   2012 Brandon LeBlanc <demosdemon@gmail.com> \n
 //   This program is made available under the terms of the MIT License.
 
 #if ! __has_feature(objc_arc)
@@ -14,30 +14,10 @@
 
 @implementation MBRateAndTaggableEntity
 
-@synthesize TagList = _tagList;
+@synthesize TagList     = _tagList;
 @synthesize UserTagList = _userTagList;
-@synthesize Rating = _rating;
-@synthesize UserRating = _userRating;
-
-- (void) setTagList:(NSXMLElement *)node
-{
-  _tagList = [MBList entityWithElement:node];
-}
-
-- (void) setUserTagList:(NSXMLElement *)node
-{
-  _userTagList = [MBList entityWithElement:node];
-}
-
-- (void) setRating:(NSXMLElement *)node
-{
-  _rating = [MBRating entityWithElement:node];
-}
-
-- (void) setUserRating:(NSXMLElement *)node
-{
-  _userRating = [MBUserRating entityWithElement:node];
-}
+@synthesize Rating      = _rating;
+@synthesize UserRating  = _userRating;
 
 - (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request
 {

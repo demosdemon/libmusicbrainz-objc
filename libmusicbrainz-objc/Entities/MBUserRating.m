@@ -15,5 +15,9 @@
 
 @implementation MBUserRating
 
+- (NSNumber *) Value
+{
+  return [self.StringValue number];
+}
 
 @end

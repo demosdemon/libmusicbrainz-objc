@@ -16,5 +16,22 @@
 
 @implementation MBRelease
 
+MB_ATTRIBUTE(Id);
+MB_STRING_ELEMENT(Title);
+MB_STRING_ELEMENT(Status);
+MB_STRING_ELEMENT(Quality);
+MB_STRING_ELEMENT(Disambiguation);
+MB_STRING_ELEMENT(Packaging);
+MB_ELEMENT(TextRepresentation);
+MB_ELEMENT(ArtistCredit);
+MB_ELEMENT(ReleaseGroup);
+MB_STRING_ELEMENT(Date);
+MB_STRING_ELEMENT(Country);
+MB_STRING_ELEMENT(Barcode);
+MB_STRING_ELEMENT(Asin);
+MB_ELEMENT(LabelInfoList);
+MB_ELEMENT(MediumList);
+MB_ELEMENT(RelationList);
+MB_ELEMENT(CollectionList);
 
 @end

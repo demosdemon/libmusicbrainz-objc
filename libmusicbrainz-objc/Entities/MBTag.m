@@ -15,5 +15,13 @@
 
 @implementation MBTag
 
+@synthesize Count = _Count;
+
+- (void) setCount:(NSString *)string
+{
+  _Count = [string number];
+}
+
+MB_STRING_ELEMENT(Name);
 
 @end

@@ -12,15 +12,12 @@
 # warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
 
-#import "MBNameCredit.h"
+#import "MB.h"
 
 @implementation MBNameCredit
 
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
-
+MB_ATTRIBUTE(Joinphrase);
+MB_STRING_ELEMENT(Name);
+MB_ELEMENT(Artist);
 
 @end

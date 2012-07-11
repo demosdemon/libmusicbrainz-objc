@@ -12,8 +12,18 @@
 #endif
 
 #import "MB.h"
+#import "../NSString+MBKeyManipulation.h"
 
 @implementation MBLifeSpan
 
+MB_STRING_ELEMENT(Begin);
+MB_STRING_ELEMENT(End);
+
+@synthesize Ended = _Ended;
+
+- (void) setEnded:(MBEntity *)entity
+{
+  _Ended = (entity && [entity.StringValue equals:@"true"]);
+}
 
 @end

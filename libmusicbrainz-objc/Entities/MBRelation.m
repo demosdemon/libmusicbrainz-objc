@@ -15,5 +15,16 @@
 
 @implementation MBRelation
 
+MB_ATTRIBUTE(Type);
+MB_STRING_ELEMENT(Target);
+MB_STRING_ELEMENT(Direction);
+MB_ELEMENT(AttributeList);
+
+MB_ELEMENT(Artist);
+MB_ELEMENT(Release);
+MB_ELEMENT(ReleaseGroup);
+MB_ELEMENT(Recording);
+MB_ELEMENT(Label);
+MB_ELEMENT(Work);
 
 @end
