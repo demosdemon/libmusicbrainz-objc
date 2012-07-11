@@ -22,17 +22,12 @@ PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
   --docset-package-url "$PUBLISH_URL/%DOCSETPACKAGEFILENAME" \
   --publish-docset \
   --keep-intermediate-files \
-  --ignore "docs" \
-  --ignore "submodules" \
-  --ignore ".git" \
-  --ignore "DerivedData" \
-  --ignore "build" \
   --logformat "xcode" \
   --verbose 2 \
   --no-warn-unknown-directive \
   --no-warn-invalid-crossref\
-  "$DIRECTORY"
+  "$DIRECTORY/libmusicbrainz-objc"
 
-git add docs
+git add -A
 git commit -m "Update docs to commit $VERSION"
 
