@@ -15,8 +15,6 @@
 #import "MB.h"
 #import "NSString+MBKeyManipulation.h"
 
-
-
 @implementation NSString (MBKeyManipulation)
 
 - (NSString *) elementToKey
@@ -82,7 +80,7 @@
   Class type = [elementToClassDict objectForKey:self];
   if (type) return type;
   
-  DLog(@"Entity %@ did not match", self);
+  DLog(@"Entity \"%@\" did not match", self);
   return [MBEntity class];
 }
 

@@ -19,7 +19,7 @@
 
 @synthesize ExtraAttributes = _ExtraAttributes;
 @synthesize ExtraElements   = _ExtraElements;
-@synthesize StringValue     = _StringValue;
+@synthesize Text            = _Text;
 
 - (id) init
 {
@@ -42,13 +42,16 @@
 
 - (void) parseElement:(NSXMLElement *)element
 {
-  for (NSXMLNode * attr in [element attributes])
-    [self setValue:attr.stringValue forKey:[attr.localName elementToKey]];
+  if ([element respondsToSelector:@selector(attributes)])
+    for (NSXMLNode * attr in [element attributes])
+      [self setValue:attr.stringValue forKey:[attr.localName capitalizedElementToKey]];
   
-  for (NSXMLElement * elem in [element children])
-    [self setValue:[MBEntity entityWithElement:elem] forKey:[elem.localName elementToKey]];
+  if ([element respondsToSelector:@selector(children)])
+    for (NSXMLElement * elem in [element children])
+      [self setValue:[MBEntity entityWithElement:elem] forKey:[elem.localName capitalizedElementToKey]];
   
-  _StringValue = element.stringValue;
+  if ([element respondsToSelector:@selector(stringValue)])
+       _Text = element.stringValue;
 }
 
 + (id) entityWithElement:(NSXMLElement *)element

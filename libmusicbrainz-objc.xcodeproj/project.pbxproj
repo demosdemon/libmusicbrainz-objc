@@ -183,7 +183,7 @@
 		5D8277D715AD1E3000B4A8EB /* MBUserTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D036E158058BD00E8A525 /* MBUserTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277D815AD1E3000B4A8EB /* MBWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0370158058BD00E8A525 /* MBWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277D915AD1E3000B4A8EB /* NSString+MBKeyManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D08F35415900B3200E35D2A /* XML.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D08F35415900B3200E35D2A /* XML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DD15AD1EBC00B4A8EB /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -231,12 +231,12 @@
 		5D82781515AD22C200B4A8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D82781415AD22C200B4A8EB /* Foundation.framework */; };
 		5D82781715AD22C200B4A8EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D82781615AD22C200B4A8EB /* CoreGraphics.framework */; };
 		5D82781D15AD22C300B4A8EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D82781B15AD22C300B4A8EB /* InfoPlist.strings */; };
-		5D82784515AD25DC00B4A8EB /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82783F15AD25DC00B4A8EB /* GTMIPhoneUnitTestDelegate.m */; };
-		5D82784615AD25DC00B4A8EB /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784015AD25DC00B4A8EB /* GTMIPhoneUnitTestMain.m */; };
-		5D82784715AD25DC00B4A8EB /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784215AD25DC00B4A8EB /* GTMSenTestCase.m */; };
-		5D82784815AD25DC00B4A8EB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784415AD25DC00B4A8EB /* GTMUnitTestDevLog.m */; };
-		5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784A15AD260C00B4A8EB /* GTMObjC2Runtime.m */; };
-		5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784C15AD260C00B4A8EB /* GTMRegex.m */; };
+		5D82784515AD25DC00B4A8EB /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82783F15AD25DC00B4A8EB /* GTMIPhoneUnitTestDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		5D82784615AD25DC00B4A8EB /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784015AD25DC00B4A8EB /* GTMIPhoneUnitTestMain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		5D82784715AD25DC00B4A8EB /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784215AD25DC00B4A8EB /* GTMSenTestCase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		5D82784815AD25DC00B4A8EB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784415AD25DC00B4A8EB /* GTMUnitTestDevLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784A15AD260C00B4A8EB /* GTMObjC2Runtime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784C15AD260C00B4A8EB /* GTMRegex.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5D82785415AD2EA900B4A8EB /* liblibmusicbrainz-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */; };
 		5DA2CAE0158E6F2200D7FF11 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */; };
 		5DA2CAE2158E6F2B00D7FF11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -300,6 +300,11 @@
 		5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */; };
 		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
+		5DAEEE2315AE0E3F00E6BA6B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAF158E717E00D7FF11 /* libz.dylib */; };
+		5DAEEE2415AE0E4700E6BA6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */; };
+		5DAEEE2515AE0E5200E6BA6B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */; };
+		5DAEEE2615AE0E7A00E6BA6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */; };
+		5DAEEE2715AE0E8800E6BA6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -433,6 +438,7 @@
 		5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBQueryTestCase.m; path = "libmusicbrainz-objc-test/MBQueryTestCase.m"; sourceTree = "<group>"; };
 		5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRequestTestCase.m; path = "libmusicbrainz-objc-test/MBRequestTestCase.m"; sourceTree = "<group>"; };
 		5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_MBKeyManipulationTestCase.m; path = "libmusicbrainz-objc-test/NSString_MBKeyManipulationTestCase.m"; sourceTree = "<group>"; };
+		5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTestUtils.h; path = "libmusicbrainz-objc-test/MBTestUtils.h"; sourceTree = "<group>"; };
 		5D81624315941EDB002E6A65 /* libmusicbrainz-iphoneos.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libmusicbrainz-iphoneos.pch"; path = "libmusicbrainz-iphoneos/libmusicbrainz-iphoneos.pch"; sourceTree = "<group>"; };
 		5D8162491594219F002E6A65 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "libmusicbrainz-macos/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libmusicbrainz-macos.pch"; path = "libmusicbrainz-macos/libmusicbrainz-macos.pch"; sourceTree = SOURCE_ROOT; };
@@ -539,10 +545,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D82781515AD22C200B4A8EB /* Foundation.framework in Frameworks */,
+				5DAEEE2715AE0E8800E6BA6B /* CFNetwork.framework in Frameworks */,
+				5DAEEE2615AE0E7A00E6BA6B /* SystemConfiguration.framework in Frameworks */,
+				5D82781715AD22C200B4A8EB /* CoreGraphics.framework in Frameworks */,
+				5DAEEE2415AE0E4700E6BA6B /* MobileCoreServices.framework in Frameworks */,
+				5DAEEE2515AE0E5200E6BA6B /* libxml2.dylib in Frameworks */,
+				5DAEEE2315AE0E3F00E6BA6B /* libz.dylib in Frameworks */,
 				5D82785415AD2EA900B4A8EB /* liblibmusicbrainz-iphoneos.a in Frameworks */,
 				5D82781315AD22C200B4A8EB /* UIKit.framework in Frameworks */,
-				5D82781515AD22C200B4A8EB /* Foundation.framework in Frameworks */,
-				5D82781715AD22C200B4A8EB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +828,7 @@
 		5D82785615AD2F4A00B4A8EB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */,
 				5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */,
 				5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */,
 				5D6652DD15ADFB4200E0E805 /* Categories */,
@@ -1014,6 +1026,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */,
 				5D82780415AD1EE700B4A8EB /* MBUtils.h in Headers */,
 				5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */,
 				5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */,
@@ -1056,7 +1069,6 @@
 				5D82780115AD1EBC00B4A8EB /* MBUserTag.h in Headers */,
 				5D82780215AD1EBC00B4A8EB /* MBWork.h in Headers */,
 				5D82780315AD1EBC00B4A8EB /* NSString+MBKeyManipulation.h in Headers */,
-				5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */,
 				5DA2CD7A158E70BF00D7FF11 /* ASICacheDelegate.h in Headers */,
 				5DA2CD7C158E70BF00D7FF11 /* ASIDataCompressor.h in Headers */,
 				5DA2CD80158E70BF00D7FF11 /* ASIDataDecompressor.h in Headers */,
@@ -1584,7 +1596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc-iphoneos-test/libmusicbrainz-objc-iphoneos-test-Prefix.pch";
@@ -1592,6 +1604,10 @@
 				INFOPLIST_FILE = "libmusicbrainz-objc-iphoneos-test/libmusicbrainz-objc-iphoneos-test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1601,7 +1617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-objc-iphoneos-test/libmusicbrainz-objc-iphoneos-test-Prefix.pch";
@@ -1610,6 +1626,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACH_O_TYPE = mh_execute;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

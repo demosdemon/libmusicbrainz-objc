@@ -23,7 +23,7 @@ MB_STRING_ELEMENT(End);
 
 - (void) setEnded:(MBEntity *)entity
 {
-  _Ended = (entity && [entity.StringValue equals:@"true"]);
+  _Ended = (entity && [entity.Text equals:@"true"]);
 }
 
 @end

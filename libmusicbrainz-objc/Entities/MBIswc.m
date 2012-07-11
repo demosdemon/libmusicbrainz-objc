@@ -18,7 +18,7 @@
 
 - (NSString *) Value
 {
-  return self.StringValue;
+  return self.Text;
 }
 
 @end
