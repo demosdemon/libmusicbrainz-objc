@@ -11,6 +11,4 @@
 
 @implementation MBMessage
 
-MB_ELEMENT(Text);
-
 @end

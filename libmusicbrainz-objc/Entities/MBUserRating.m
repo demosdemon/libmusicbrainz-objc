@@ -17,7 +17,7 @@
 
 - (NSNumber *) Value
 {
-  return [self.StringValue number];
+  return [self.Text number];
 }
 
 @end

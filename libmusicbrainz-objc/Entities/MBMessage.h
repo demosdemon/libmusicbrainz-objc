@@ -11,6 +11,4 @@
 
 @interface MBMessage : MBEntity
 
-@property (nonatomic, readonly) MBMessage * Text;
-
 @end

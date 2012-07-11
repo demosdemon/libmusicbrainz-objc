@@ -20,7 +20,7 @@
  @private
   NSMutableDictionary *_ExtraAttributes;
   NSMutableDictionary *_ExtraElements;
-  NSString *_StringValue;
+  NSString *_Text;
 }
 
 /// Extra Attributes Dictionary
@@ -39,7 +39,7 @@
 /// The string value enclosed within an element. This is not the XML string
 /// value. Subclasses that explicity have a value will have a property Value
 /// with the correct type: string, number, etc.
-@property (nonatomic, readonly) NSString *StringValue;
+@property (nonatomic, readonly) NSString *Text;
 
 /// Main initializer. 
 ///

@@ -28,14 +28,14 @@
 #define MB_STRING_ELEMENT(Name) @synthesize Name = _##Name; \
   - (void) set##Name :(MBEntity *)entity \
     { \
-      if (entity && entity.StringValue) \
-        _##Name = entity.StringValue; \
+      if (entity && entity.Text) \
+        _##Name = entity.Text; \
     }
 #define MB_NUMBER_ELEMENT(Name) @synthesize Name = _##Name; \
   - (void) set##Name :(MBEntity *)entity \
     { \
-      if (entity && entity.StringValue) \
-        _##Name = [entity.StringValue number]; \
+      if (entity && entity.Text) \
+        _##Name = [entity.Text number]; \
     }
 
 #define kISRC_Regex @"^[A-Z{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}$"
