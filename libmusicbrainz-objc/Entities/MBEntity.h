@@ -18,8 +18,9 @@
 @interface MBEntity : NSObject
 {
  @private
-  NSMutableDictionary *_attributes;
-  NSMutableDictionary *_elements;
+  NSMutableDictionary *_ExtraAttributes;
+  NSMutableDictionary *_ExtraElements;
+  NSString *_StringValue;
 }
 
 /// Extra Attributes Dictionary
@@ -32,6 +33,13 @@
 /// Keys are NSString with the element name.
 /// Values are MBEntity or NSString objects.
 @property (nonatomic, readonly) NSDictionary *ExtraElements;
+
+/// String Value
+///
+/// The string value enclosed within an element. This is not the XML string
+/// value. Subclasses that explicity have a value will have a property Value
+/// with the correct type: string, number, etc.
+@property (nonatomic, readonly) NSString *StringValue;
 
 /// Main initializer. 
 ///
@@ -62,5 +70,9 @@
 /// object
 - (void) parseElement:(NSXMLElement *)element;
 
+/// Element Name
+///
+/// Returnes the element name for this instance.
+- (NSString *) elementName;
 
 @end

@@ -16,5 +16,8 @@
 
 @implementation MBDisc
 
+MB_ATTRIBUTE(Id);
+MB_NUMBER_ELEMENT(Sectors);
+MB_ELEMENT(ReleaseList);
 
 @end

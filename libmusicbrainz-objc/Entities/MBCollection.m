@@ -15,5 +15,9 @@
 
 @implementation MBCollection
 
+MB_ATTRIBUTE(Id);
+MB_STRING_ELEMENT(Name);
+MB_STRING_ELEMENT(Editor);
+MB_ELEMENT(ReleaseList);
 
 @end

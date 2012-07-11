@@ -17,14 +17,15 @@
 
 @implementation MBEntity
 
-@synthesize ExtraAttributes = _attributes;
-@synthesize ExtraElements   = _elements;
+@synthesize ExtraAttributes = _ExtraAttributes;
+@synthesize ExtraElements   = _ExtraElements;
+@synthesize StringValue     = _StringValue;
 
 - (id) init
 {
   if (self = [super init]) {
-    _attributes = [NSMutableDictionary dictionary];
-    _elements   = [NSMutableDictionary dictionary];
+    _ExtraAttributes = [NSMutableDictionary dictionary];
+    _ExtraElements   = [NSMutableDictionary dictionary];
   }
   return self;
 }
@@ -39,47 +40,35 @@
   return self;
 }
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 - (void) parseElement:(NSXMLElement *)element
 {
-  if (!element) return;
+  for (NSXMLNode * attr in [element attributes])
+    [self setValue:attr.stringValue forKey:[attr.localName elementToKey]];
   
-  for (NSXMLNode * attr in [element attributes]) {
-    SEL setter = [[attr localName] setterSelector];
-    if ([self respondsToSelector:setter])
-      [self performSelector:setter withObject:attr];
-    else 
-      [self setValue:attr forUndefinedKey:[attr localName]];
-  }
-  for (NSXMLElement * elem in [element children]) {
-    SEL setter = [[elem localName] setterSelector];
-    if ([self respondsToSelector:setter])
-      [self performSelector:setter withObject:elem];
-    else 
-      [self setValue:elem forUndefinedKey:[elem localName]];
-  }
+  for (NSXMLElement * elem in [element children])
+    [self setValue:[MBEntity entityWithElement:elem] forKey:[elem.localName elementToKey]];
+  
+  _StringValue = element.stringValue;
 }
-#pragma clang diagnostic pop
 
 + (id) entityWithElement:(NSXMLElement *)element
 {
   if (!element) return nil;
-  return [[self alloc] initWithElement:element];
+  return [[[element.localName classForElementName] alloc] initWithElement:element];
 }
 
 - (void) setValue:(id)value forUndefinedKey:(NSString *)key
 {
   if ([value isKindOfClass:[NSString class]])
-    [_attributes setObject:value forKey:key];
+    [_ExtraAttributes setObject:value forKey:key];
   else 
-    [_elements setObject:value forKey:key];
+    [_ExtraElements setObject:value forKey:key];
 }
 
 - (NSString *) elementName
 {
   if ([self isMemberOfClass:[MBEntity class]]) return @"";
-  return [[NSStringFromClass([self class]) substringFromIndex:2] classNameToKey];
+  return [NSStringFromClass([self class]) classNameToKey];
 }
 
 @end

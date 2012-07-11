@@ -15,5 +15,11 @@
 
 @implementation MBCdstub
 
+MB_ATTRIBUTE(Id);
+MB_STRING_ELEMENT(Title);
+MB_STRING_ELEMENT(Artist);
+MB_STRING_ELEMENT(Barcode);
+MB_STRING_ELEMENT(Comment);
+MB_ELEMENT(NonmbTrackList);
 
 @end

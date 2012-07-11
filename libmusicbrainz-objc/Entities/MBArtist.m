@@ -18,5 +18,22 @@
 
 @implementation MBArtist
 
+MB_ATTRIBUTE(Id);
+MB_ATTRIBUTE(Type);
+MB_STRING_ELEMENT(Name);
+MB_STRING_ELEMENT(SortName);
+MB_STRING_ELEMENT(Gender);
+MB_STRING_ELEMENT(Country);
+MB_STRING_ELEMENT(Disambiguation);
+MB_ELEMENT(Ipi);
+MB_ELEMENT(IpiList);
+MB_ELEMENT(Lifespan);
+MB_ELEMENT(AliasList);
+MB_ELEMENT(RecordingList);
+MB_ELEMENT(ReleaseList);
+MB_ELEMENT(ReleaseGroupList);
+MB_ELEMENT(LabelList);
+MB_ELEMENT(WorkList);
+MB_ELEMENT(RelationList);
 
 @end

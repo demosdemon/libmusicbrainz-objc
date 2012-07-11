@@ -16,5 +16,9 @@
 
 @implementation MBIswc
 
+- (NSString *) Value
+{
+  return self.StringValue;
+}
 
 @end

@@ -7,6 +7,8 @@
 //
 // @brief A few utilities
 
+#import "NSString+MBKeyManipulation.h"
+
 #ifdef DEBUG
 #   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
@@ -18,6 +20,21 @@
 #define NOT_IMPLEMENTED() \
 ALog(@"Not Implemented exception thrown"); \
 [NSException raise:@"Not Implemented" format:@"Not Implemented", __FILE__]
+
+#define MB_ATTRIBUTE(Name) @synthesize Name = _ ## Name
+#define MB_ELEMENT(Name) @synthesize Name = _ ## Name
+#define MB_STRING_ELEMENT(Name) @synthesize Name = _ ## Name; \
+  - (void) set ## Name :(MBEntity *)entity \
+    { \
+      if (entity && entity.StringValue) \
+        _ ## Name = entity.StringValue; \
+    }
+#define MB_NUMBER_ELEMENT(Name) @synthesize Name = _ ## Name; \
+  - (void) set ## Name :(MBEntity *)entity \
+    { \
+      if (entity && entity.StringValue) \
+        _ ## Name = [entity.StringValue number]; \
+    }
 
 #define kISRC_Regex @"^[A-Z{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}$"
 #define kUUID_Regex @"^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$"

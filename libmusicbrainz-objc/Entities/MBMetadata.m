@@ -15,6 +15,25 @@
 
 @implementation MBMetadata
 
-
+MB_ELEMENT(Artist);
+MB_ELEMENT(Release);
+MB_ELEMENT(Recording);
+MB_ELEMENT(Label);
+MB_ELEMENT(Work);
+MB_ELEMENT(Puid);
+MB_ELEMENT(Isrc);
+MB_ELEMENT(Disc);
+MB_ELEMENT(Rating);
+MB_ELEMENT(UserRating);
+MB_ELEMENT(Collection);
+MB_ELEMENT(ArtistList);
+MB_ELEMENT(ReleaseList);
+MB_ELEMENT(ReleaseGroupList);
+MB_ELEMENT(RecordingList);
+MB_ELEMENT(LabelList);
+MB_ELEMENT(WorkList);
+MB_ELEMENT(IsrcList);
+MB_ELEMENT(UserTagList);
+MB_ELEMENT(CollectionList);
 
 @end

@@ -15,5 +15,6 @@
 
 @implementation MBUserTag
 
+MB_STRING_ELEMENT(Name);
 
 @end

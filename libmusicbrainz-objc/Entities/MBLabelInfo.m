@@ -15,5 +15,7 @@
 
 @implementation MBLabelInfo
 
+MB_STRING_ELEMENT(CatalogNumber);
+MB_ELEMENT(Label);
 
 @end

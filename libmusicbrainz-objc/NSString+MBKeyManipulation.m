@@ -144,4 +144,9 @@
   return NSSelectorFromString([NSString stringWithFormat:@"set%@:", [self capitalizedElementToKey]]);
 }
 
+- (NSNumber *) number
+{
+  return [[[NSNumberFormatter alloc] init] numberFromString:self]; 
+}
+
 @end

@@ -16,11 +16,7 @@
 
 @implementation MBTextRepresentation
 
-- (void) parseElement:(NSXMLElement *)element
-{
-  // TODO: Implelemt
-  [super parseElement:element];
-}
-
+MB_STRING_ELEMENT(Language);
+MB_STRING_ELEMENT(Script);
 
 @end

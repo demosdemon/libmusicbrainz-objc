@@ -28,4 +28,6 @@
 
 - (SEL) setterSelector;
 
+- (NSNumber *) number;
+
 @end

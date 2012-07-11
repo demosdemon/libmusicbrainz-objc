@@ -15,8 +15,6 @@
 /// Represents a `<metadata/>` element
 @interface MBMetadata : MBEntity
 
-@property (nonatomic, readonly) NSString * Generator;
-@property (nonatomic, readonly) NSDate * Created;
 @property (nonatomic, readonly) MBArtist * Artist;
 @property (nonatomic, readonly) MBRelease * Release;
 @property (nonatomic, readonly) MBRecording * Recording;

@@ -16,5 +16,15 @@
 
 @implementation MBWork
 
+MB_ATTRIBUTE(Id);
+MB_ATTRIBUTE(Type);
+MB_STRING_ELEMENT(Title);
+MB_STRING_ELEMENT(Language);
+MB_ELEMENT(ArtistCredit);
+MB_ELEMENT(Iswc);
+MB_ELEMENT(IswcList);
+MB_STRING_ELEMENT(Disambiguation);
+MB_ELEMENT(AliasList);
+MB_ELEMENT(RelationList);
 
 @end

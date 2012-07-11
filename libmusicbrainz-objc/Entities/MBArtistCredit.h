@@ -7,14 +7,12 @@
 //
 // @brief ArtistCredit Entity
 
-#import "MBEntity.h"
+#import "MBList.h"
 
 @class MBList;
 
 /// Represents an `<artist-credit/>` element
-@interface MBArtistCredit : MBEntity
-
-@property (nonatomic, readonly) MBList * Value;
+@interface MBArtistCredit : MBList
 
 @end
 
