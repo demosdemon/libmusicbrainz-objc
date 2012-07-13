@@ -18,46 +18,25 @@
 			name = Documentation;
 			productName = Documentation;
 		};
+		5DFB065415AE325600CFF95F /* iOS-Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DFB065515AE325600CFF95F /* Build configuration list for PBXAggregateTarget "iOS-Framework" */;
+			buildPhases = (
+				5DFB065A15AE328B00CFF95F /* Build Framework */,
+			);
+			dependencies = (
+				5DFB065915AE326400CFF95F /* PBXTargetDependency */,
+			);
+			name = "iOS-Framework";
+			productName = "iOS-Framework";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
-		5D6652B615ADFABB00E0E805 /* MBAliasTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */; };
-		5D6652B715ADFABB00E0E805 /* MBAnnotationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */; };
-		5D6652B815ADFABB00E0E805 /* MBArtistCreditTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */; };
-		5D6652B915ADFABB00E0E805 /* MBArtistTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */; };
-		5D6652BA15ADFABB00E0E805 /* MBAttributeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */; };
-		5D6652BB15ADFABB00E0E805 /* MBCdstubTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */; };
-		5D6652BC15ADFABB00E0E805 /* MBCollectionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */; };
-		5D6652BD15ADFABB00E0E805 /* MBDiscTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
-		5D6652BF15ADFABB00E0E805 /* MBErrorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */; };
-		5D6652C015ADFABB00E0E805 /* MBFreedbDiscTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */; };
-		5D6652C115ADFABB00E0E805 /* MBIpiTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */; };
-		5D6652C215ADFABB00E0E805 /* MBIsrcTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */; };
-		5D6652C315ADFABB00E0E805 /* MBIswcTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */; };
-		5D6652C415ADFABB00E0E805 /* MBLabelInfoTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */; };
-		5D6652C515ADFABB00E0E805 /* MBLabelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */; };
-		5D6652C615ADFABB00E0E805 /* MBLifeSpanTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
-		5D6652C815ADFABB00E0E805 /* MBMediumTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */; };
-		5D6652C915ADFABB00E0E805 /* MBMessageTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */; };
-		5D6652CA15ADFABB00E0E805 /* MBMetadataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */; };
-		5D6652CB15ADFABB00E0E805 /* MBNameCreditTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */; };
-		5D6652CC15ADFABB00E0E805 /* MBNonmbTrackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */; };
-		5D6652CD15ADFABB00E0E805 /* MBPuidTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */; };
 		5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */; };
-		5D6652CF15ADFABB00E0E805 /* MBRatingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */; };
-		5D6652D015ADFABB00E0E805 /* MBRecordingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */; };
-		5D6652D115ADFABB00E0E805 /* MBRelationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */; };
-		5D6652D215ADFABB00E0E805 /* MBReleaseGroupTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */; };
-		5D6652D315ADFABB00E0E805 /* MBReleaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */; };
-		5D6652D415ADFABB00E0E805 /* MBTagTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */; };
-		5D6652D515ADFABB00E0E805 /* MBTextRepresentationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */; };
-		5D6652D615ADFABB00E0E805 /* MBTrackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */; };
-		5D6652D715ADFABB00E0E805 /* MBUserRatingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */; };
-		5D6652D815ADFABB00E0E805 /* MBUserTagTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */; };
-		5D6652D915ADFABB00E0E805 /* MBWorkTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */; };
 		5D6652DA15ADFABB00E0E805 /* MBQueryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */; };
 		5D6652DB15ADFABB00E0E805 /* MBRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */; };
 		5D6652DC15ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */; };
@@ -237,7 +216,7 @@
 		5D82784815AD25DC00B4A8EB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784415AD25DC00B4A8EB /* GTMUnitTestDevLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784A15AD260C00B4A8EB /* GTMObjC2Runtime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784C15AD260C00B4A8EB /* GTMRegex.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
-		5D82785415AD2EA900B4A8EB /* liblibmusicbrainz-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */; };
+		5D82785415AD2EA900B4A8EB /* libmusicbrainz-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */; };
 		5DA2CAE0158E6F2200D7FF11 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CADF158E6F2200D7FF11 /* CoreServices.framework */; };
 		5DA2CAE2158E6F2B00D7FF11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE1158E6F2B00D7FF11 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5DA2CAE4158E6F4F00D7FF11 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */; };
@@ -309,6 +288,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D61B7CA155F3F9A0003006A;
+			remoteInfo = "libmusicbrainz-iphoneos";
+		};
+		5DFB065815AE326400CFF95F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
 			proxyType = 1;
@@ -391,50 +377,17 @@
 		5D5D0370158058BD00E8A525 /* MBWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWork.h; sourceTree = "<group>"; };
 		5D5D0371158058BD00E8A525 /* MBWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWork.m; sourceTree = "<group>"; };
 		5D5D0372158058BD00E8A525 /* MBRateAndTaggableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRateAndTaggableEntity.h; sourceTree = "<group>"; };
-		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MB.h; sourceTree = "<group>"; };
-		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQuery.h; sourceTree = "<group>"; };
+		5D5D0374158058BD00E8A525 /* MB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MB.h; path = "libmusicbrainz-objc/MB.h"; sourceTree = SOURCE_ROOT; };
+		5D5D0375158058BD00E8A525 /* MBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBQuery.h; path = "libmusicbrainz-objc/MBQuery.h"; sourceTree = SOURCE_ROOT; };
 		5D5D0376158058BD00E8A525 /* MBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBQuery.m; sourceTree = "<group>"; };
 		5D5D03BA158103DD00E8A525 /* libmusicbrainz-macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibmusicbrainz-iphoneos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmusicbrainz-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAliasTestCase.m; sourceTree = "<group>"; };
-		5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAnnotationTestCase.m; sourceTree = "<group>"; };
-		5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtistCreditTestCase.m; sourceTree = "<group>"; };
-		5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtistTestCase.m; sourceTree = "<group>"; };
-		5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAttributeTestCase.m; sourceTree = "<group>"; };
-		5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCdstubTestCase.m; sourceTree = "<group>"; };
-		5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCollectionTestCase.m; sourceTree = "<group>"; };
-		5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDiscTestCase.m; sourceTree = "<group>"; };
-		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntityTestCase.m; sourceTree = "<group>"; };
-		5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBErrorTestCase.m; sourceTree = "<group>"; };
-		5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFreedbDiscTestCase.m; sourceTree = "<group>"; };
-		5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIpiTestCase.m; sourceTree = "<group>"; };
-		5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIsrcTestCase.m; sourceTree = "<group>"; };
-		5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIswcTestCase.m; sourceTree = "<group>"; };
-		5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabelInfoTestCase.m; sourceTree = "<group>"; };
-		5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabelTestCase.m; sourceTree = "<group>"; };
-		5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLifeSpanTestCase.m; sourceTree = "<group>"; };
-		5D6652A015ADFABB00E0E805 /* MBListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBListTestCase.m; sourceTree = "<group>"; };
-		5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMediumTestCase.m; sourceTree = "<group>"; };
-		5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMessageTestCase.m; sourceTree = "<group>"; };
-		5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMetadataTestCase.m; sourceTree = "<group>"; };
-		5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNameCreditTestCase.m; sourceTree = "<group>"; };
-		5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNonmbTrackTestCase.m; sourceTree = "<group>"; };
-		5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPuidTestCase.m; sourceTree = "<group>"; };
-		5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRateAndTaggableEntityTestCase.m; sourceTree = "<group>"; };
-		5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRatingTestCase.m; sourceTree = "<group>"; };
-		5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecordingTestCase.m; sourceTree = "<group>"; };
-		5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRelationTestCase.m; sourceTree = "<group>"; };
-		5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBReleaseGroupTestCase.m; sourceTree = "<group>"; };
-		5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBReleaseTestCase.m; sourceTree = "<group>"; };
-		5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTagTestCase.m; sourceTree = "<group>"; };
-		5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTextRepresentationTestCase.m; sourceTree = "<group>"; };
-		5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTrackTestCase.m; sourceTree = "<group>"; };
-		5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserRatingTestCase.m; sourceTree = "<group>"; };
-		5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserTagTestCase.m; sourceTree = "<group>"; };
-		5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWorkTestCase.m; sourceTree = "<group>"; };
+		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBEntityTestCase.m"; sourceTree = "<group>"; };
+		5D6652A015ADFABB00E0E805 /* MBListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBListTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBListTestCase.m"; sourceTree = "<group>"; };
+		5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRateAndTaggableEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBRateAndTaggableEntityTestCase.m"; sourceTree = "<group>"; };
 		5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBQueryTestCase.m; path = "libmusicbrainz-objc-test/MBQueryTestCase.m"; sourceTree = "<group>"; };
 		5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRequestTestCase.m; path = "libmusicbrainz-objc-test/MBRequestTestCase.m"; sourceTree = "<group>"; };
 		5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_MBKeyManipulationTestCase.m; path = "libmusicbrainz-objc-test/NSString_MBKeyManipulationTestCase.m"; sourceTree = "<group>"; };
@@ -552,7 +505,7 @@
 				5DAEEE2415AE0E4700E6BA6B /* MobileCoreServices.framework in Frameworks */,
 				5DAEEE2515AE0E5200E6BA6B /* libxml2.dylib in Frameworks */,
 				5DAEEE2315AE0E3F00E6BA6B /* libz.dylib in Frameworks */,
-				5D82785415AD2EA900B4A8EB /* liblibmusicbrainz-iphoneos.a in Frameworks */,
+				5D82785415AD2EA900B4A8EB /* libmusicbrainz-ios.a in Frameworks */,
 				5D82781315AD22C200B4A8EB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,7 +627,7 @@
 		5D61B7CC155F3F9A0003006A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */,
+				5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */,
 				5D5D03BA158103DD00E8A525 /* libmusicbrainz-macos.framework */,
 				5D82781015AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test.app */,
 			);
@@ -708,58 +661,6 @@
 			);
 			name = Classes;
 			path = "libmusicbrainz-objc";
-			sourceTree = "<group>";
-		};
-		5D66528E15ADFABB00E0E805 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */,
-				5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */,
-				5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */,
-				5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */,
-				5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */,
-				5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */,
-				5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */,
-				5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */,
-				5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */,
-				5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */,
-				5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */,
-				5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */,
-				5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */,
-				5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */,
-				5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */,
-				5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */,
-				5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */,
-				5D6652A015ADFABB00E0E805 /* MBListTestCase.m */,
-				5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */,
-				5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */,
-				5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */,
-				5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */,
-				5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */,
-				5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */,
-				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
-				5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */,
-				5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */,
-				5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */,
-				5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */,
-				5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */,
-				5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */,
-				5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */,
-				5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */,
-				5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */,
-				5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */,
-				5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */,
-			);
-			name = Entities;
-			path = "libmusicbrainz-objc-test/Entities";
-			sourceTree = "<group>";
-		};
-		5D6652DD15ADFB4200E0E805 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 		5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */ = {
@@ -831,8 +732,10 @@
 				5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */,
 				5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */,
 				5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */,
-				5D6652DD15ADFB4200E0E805 /* Categories */,
-				5D66528E15ADFABB00E0E805 /* Entities */,
+				5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */,
+				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
+				5D6652A015ADFABB00E0E805 /* MBListTestCase.m */,
+				5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -1122,6 +1025,7 @@
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
 				5D61B89E155F561B0003006A /* Resources */,
+				5DFB065315AE31FA00CFF95F /* Prepare Framework */,
 			);
 			buildRules = (
 			);
@@ -1129,7 +1033,7 @@
 			);
 			name = "libmusicbrainz-iphoneos";
 			productName = "libmusicbrainz-objc";
-			productReference = 5D61B7CB155F3F9A0003006A /* liblibmusicbrainz-iphoneos.a */;
+			productReference = 5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5D82780F15AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */ = {
@@ -1192,6 +1096,7 @@
 				5D5D03B9158103DD00E8A525 /* libmusicbrainz-macos */,
 				5DAAFE4B159A62D200450C32 /* Documentation */,
 				5D82780F15AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */,
+				5DFB065415AE325600CFF95F /* iOS-Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -1248,6 +1153,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PROJECT_DIR}/genappledoc.sh\n\nexit 0\n";
+		};
+		5DFB065315AE31FA00CFF95F /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		5DFB065A15AE328B00CFF95F /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=\"libmusicbrainz-iphoneos\"\nSF_EXECUTABLE_PATH=\"libmusicbrainz-ios.a\"\nSF_WRAPPER_NAME=\"MusicBrainz-iOS.framework\"\nBUILT_PRODUCTS_DIR=\"/Users/demosdemon/Projects/libmusicbrainz-objc/DerivedData/libmusicbrainz-objc/Build/Products/Debug-iphoneos\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1375,42 +1308,9 @@
 				5D82784815AD25DC00B4A8EB /* GTMUnitTestDevLog.m in Sources */,
 				5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */,
 				5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */,
-				5D6652B615ADFABB00E0E805 /* MBAliasTestCase.m in Sources */,
-				5D6652B715ADFABB00E0E805 /* MBAnnotationTestCase.m in Sources */,
-				5D6652B815ADFABB00E0E805 /* MBArtistCreditTestCase.m in Sources */,
-				5D6652B915ADFABB00E0E805 /* MBArtistTestCase.m in Sources */,
-				5D6652BA15ADFABB00E0E805 /* MBAttributeTestCase.m in Sources */,
-				5D6652BB15ADFABB00E0E805 /* MBCdstubTestCase.m in Sources */,
-				5D6652BC15ADFABB00E0E805 /* MBCollectionTestCase.m in Sources */,
-				5D6652BD15ADFABB00E0E805 /* MBDiscTestCase.m in Sources */,
 				5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */,
-				5D6652BF15ADFABB00E0E805 /* MBErrorTestCase.m in Sources */,
-				5D6652C015ADFABB00E0E805 /* MBFreedbDiscTestCase.m in Sources */,
-				5D6652C115ADFABB00E0E805 /* MBIpiTestCase.m in Sources */,
-				5D6652C215ADFABB00E0E805 /* MBIsrcTestCase.m in Sources */,
-				5D6652C315ADFABB00E0E805 /* MBIswcTestCase.m in Sources */,
-				5D6652C415ADFABB00E0E805 /* MBLabelInfoTestCase.m in Sources */,
-				5D6652C515ADFABB00E0E805 /* MBLabelTestCase.m in Sources */,
-				5D6652C615ADFABB00E0E805 /* MBLifeSpanTestCase.m in Sources */,
 				5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */,
-				5D6652C815ADFABB00E0E805 /* MBMediumTestCase.m in Sources */,
-				5D6652C915ADFABB00E0E805 /* MBMessageTestCase.m in Sources */,
-				5D6652CA15ADFABB00E0E805 /* MBMetadataTestCase.m in Sources */,
-				5D6652CB15ADFABB00E0E805 /* MBNameCreditTestCase.m in Sources */,
-				5D6652CC15ADFABB00E0E805 /* MBNonmbTrackTestCase.m in Sources */,
-				5D6652CD15ADFABB00E0E805 /* MBPuidTestCase.m in Sources */,
 				5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */,
-				5D6652CF15ADFABB00E0E805 /* MBRatingTestCase.m in Sources */,
-				5D6652D015ADFABB00E0E805 /* MBRecordingTestCase.m in Sources */,
-				5D6652D115ADFABB00E0E805 /* MBRelationTestCase.m in Sources */,
-				5D6652D215ADFABB00E0E805 /* MBReleaseGroupTestCase.m in Sources */,
-				5D6652D315ADFABB00E0E805 /* MBReleaseTestCase.m in Sources */,
-				5D6652D415ADFABB00E0E805 /* MBTagTestCase.m in Sources */,
-				5D6652D515ADFABB00E0E805 /* MBTextRepresentationTestCase.m in Sources */,
-				5D6652D615ADFABB00E0E805 /* MBTrackTestCase.m in Sources */,
-				5D6652D715ADFABB00E0E805 /* MBUserRatingTestCase.m in Sources */,
-				5D6652D815ADFABB00E0E805 /* MBUserTagTestCase.m in Sources */,
-				5D6652D915ADFABB00E0E805 /* MBWorkTestCase.m in Sources */,
 				5D6652DA15ADFABB00E0E805 /* MBQueryTestCase.m in Sources */,
 				5D6652DB15ADFABB00E0E805 /* MBRequestTestCase.m in Sources */,
 				5D6652DC15ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m in Sources */,
@@ -1424,6 +1324,11 @@
 			isa = PBXTargetDependency;
 			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
 			targetProxy = 5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */;
+		};
+		5DFB065915AE326400CFF95F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
+			targetProxy = 5DFB065815AE326400CFF95F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1511,51 +1416,25 @@
 		5D61B7ED155F3F9B0003006A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
 				HEADER_SEARCH_PATHS = "$SDKROOT/usr/include/libxml2/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MACH_O_TYPE = mh_bundle;
-				OTHER_LDFLAGS = "-lxml2";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
 		};
 		5D61B7EE155F3F9B0003006A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = "";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$SDKROOT/usr/include/libxml2/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MACH_O_TYPE = mh_bundle;
-				OTHER_LDFLAGS = "-lxml2";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1563,15 +1442,17 @@
 		5D61B7F0155F3F9B0003006A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/libmusicbrainz_objc.dst;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-iphoneos/libmusicbrainz-iphoneos.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "musicbrainz-ios";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1579,15 +1460,17 @@
 		5D61B7F1155F3F9B0003006A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/libmusicbrainz_objc.dst;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libmusicbrainz-iphoneos/libmusicbrainz-iphoneos.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "musicbrainz-ios";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1609,6 +1492,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1631,6 +1515,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1648,6 +1533,22 @@
 			buildSettings = {
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5DFB065615AE325600CFF95F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDK_NAME = iphoneos5.1;
+			};
+			name = Debug;
+		};
+		5DFB065715AE325600CFF95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDK_NAME = iphoneos5.1;
 			};
 			name = Release;
 		};
@@ -1698,6 +1599,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DFB065515AE325600CFF95F /* Build configuration list for PBXAggregateTarget "iOS-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DFB065615AE325600CFF95F /* Debug */,
+				5DFB065715AE325600CFF95F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
