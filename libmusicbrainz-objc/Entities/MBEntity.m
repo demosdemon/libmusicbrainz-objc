@@ -40,6 +40,17 @@
   return self;
 }
 
+- (NSString *) description
+{
+  NSString * classname = NSStringFromClass([self class]);
+  NSString * Id;
+  if ([self respondsToSelector:@selector(Id)])
+    Id = [self performSelector:@selector(Id)];
+  else
+    Id = self.Text;
+  return [NSString stringWithFormat:@"%@ %@", classname, Id];
+}
+
 - (void) parseElement:(NSXMLElement *)element
 {
   if ([element respondsToSelector:@selector(attributes)])

@@ -34,42 +34,9 @@
 
 /* Begin PBXBuildFile section */
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
-		5D6652B615ADFABB00E0E805 /* MBAliasTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */; };
-		5D6652B715ADFABB00E0E805 /* MBAnnotationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */; };
-		5D6652B815ADFABB00E0E805 /* MBArtistCreditTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */; };
-		5D6652B915ADFABB00E0E805 /* MBArtistTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */; };
-		5D6652BA15ADFABB00E0E805 /* MBAttributeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */; };
-		5D6652BB15ADFABB00E0E805 /* MBCdstubTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */; };
-		5D6652BC15ADFABB00E0E805 /* MBCollectionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */; };
-		5D6652BD15ADFABB00E0E805 /* MBDiscTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
-		5D6652BF15ADFABB00E0E805 /* MBErrorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */; };
-		5D6652C015ADFABB00E0E805 /* MBFreedbDiscTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */; };
-		5D6652C115ADFABB00E0E805 /* MBIpiTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */; };
-		5D6652C215ADFABB00E0E805 /* MBIsrcTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */; };
-		5D6652C315ADFABB00E0E805 /* MBIswcTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */; };
-		5D6652C415ADFABB00E0E805 /* MBLabelInfoTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */; };
-		5D6652C515ADFABB00E0E805 /* MBLabelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */; };
-		5D6652C615ADFABB00E0E805 /* MBLifeSpanTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
-		5D6652C815ADFABB00E0E805 /* MBMediumTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */; };
-		5D6652C915ADFABB00E0E805 /* MBMessageTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */; };
-		5D6652CA15ADFABB00E0E805 /* MBMetadataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */; };
-		5D6652CB15ADFABB00E0E805 /* MBNameCreditTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */; };
-		5D6652CC15ADFABB00E0E805 /* MBNonmbTrackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */; };
-		5D6652CD15ADFABB00E0E805 /* MBPuidTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */; };
 		5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */; };
-		5D6652CF15ADFABB00E0E805 /* MBRatingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */; };
-		5D6652D015ADFABB00E0E805 /* MBRecordingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */; };
-		5D6652D115ADFABB00E0E805 /* MBRelationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */; };
-		5D6652D215ADFABB00E0E805 /* MBReleaseGroupTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */; };
-		5D6652D315ADFABB00E0E805 /* MBReleaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */; };
-		5D6652D415ADFABB00E0E805 /* MBTagTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */; };
-		5D6652D515ADFABB00E0E805 /* MBTextRepresentationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */; };
-		5D6652D615ADFABB00E0E805 /* MBTrackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */; };
-		5D6652D715ADFABB00E0E805 /* MBUserRatingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */; };
-		5D6652D815ADFABB00E0E805 /* MBUserTagTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */; };
-		5D6652D915ADFABB00E0E805 /* MBWorkTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */; };
 		5D6652DA15ADFABB00E0E805 /* MBQueryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */; };
 		5D6652DB15ADFABB00E0E805 /* MBRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */; };
 		5D6652DC15ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */; };
@@ -418,42 +385,9 @@
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAliasTestCase.m; sourceTree = "<group>"; };
-		5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAnnotationTestCase.m; sourceTree = "<group>"; };
-		5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtistCreditTestCase.m; sourceTree = "<group>"; };
-		5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArtistTestCase.m; sourceTree = "<group>"; };
-		5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAttributeTestCase.m; sourceTree = "<group>"; };
-		5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCdstubTestCase.m; sourceTree = "<group>"; };
-		5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCollectionTestCase.m; sourceTree = "<group>"; };
-		5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDiscTestCase.m; sourceTree = "<group>"; };
-		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEntityTestCase.m; sourceTree = "<group>"; };
-		5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBErrorTestCase.m; sourceTree = "<group>"; };
-		5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFreedbDiscTestCase.m; sourceTree = "<group>"; };
-		5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIpiTestCase.m; sourceTree = "<group>"; };
-		5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIsrcTestCase.m; sourceTree = "<group>"; };
-		5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIswcTestCase.m; sourceTree = "<group>"; };
-		5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabelInfoTestCase.m; sourceTree = "<group>"; };
-		5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLabelTestCase.m; sourceTree = "<group>"; };
-		5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLifeSpanTestCase.m; sourceTree = "<group>"; };
-		5D6652A015ADFABB00E0E805 /* MBListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBListTestCase.m; sourceTree = "<group>"; };
-		5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMediumTestCase.m; sourceTree = "<group>"; };
-		5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMessageTestCase.m; sourceTree = "<group>"; };
-		5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMetadataTestCase.m; sourceTree = "<group>"; };
-		5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNameCreditTestCase.m; sourceTree = "<group>"; };
-		5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNonmbTrackTestCase.m; sourceTree = "<group>"; };
-		5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPuidTestCase.m; sourceTree = "<group>"; };
-		5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRateAndTaggableEntityTestCase.m; sourceTree = "<group>"; };
-		5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRatingTestCase.m; sourceTree = "<group>"; };
-		5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRecordingTestCase.m; sourceTree = "<group>"; };
-		5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRelationTestCase.m; sourceTree = "<group>"; };
-		5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBReleaseGroupTestCase.m; sourceTree = "<group>"; };
-		5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBReleaseTestCase.m; sourceTree = "<group>"; };
-		5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTagTestCase.m; sourceTree = "<group>"; };
-		5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTextRepresentationTestCase.m; sourceTree = "<group>"; };
-		5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTrackTestCase.m; sourceTree = "<group>"; };
-		5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserRatingTestCase.m; sourceTree = "<group>"; };
-		5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBUserTagTestCase.m; sourceTree = "<group>"; };
-		5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWorkTestCase.m; sourceTree = "<group>"; };
+		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBEntityTestCase.m"; sourceTree = "<group>"; };
+		5D6652A015ADFABB00E0E805 /* MBListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBListTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBListTestCase.m"; sourceTree = "<group>"; };
+		5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRateAndTaggableEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBRateAndTaggableEntityTestCase.m"; sourceTree = "<group>"; };
 		5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBQueryTestCase.m; path = "libmusicbrainz-objc-test/MBQueryTestCase.m"; sourceTree = "<group>"; };
 		5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRequestTestCase.m; path = "libmusicbrainz-objc-test/MBRequestTestCase.m"; sourceTree = "<group>"; };
 		5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_MBKeyManipulationTestCase.m; path = "libmusicbrainz-objc-test/NSString_MBKeyManipulationTestCase.m"; sourceTree = "<group>"; };
@@ -729,58 +663,6 @@
 			path = "libmusicbrainz-objc";
 			sourceTree = "<group>";
 		};
-		5D66528E15ADFABB00E0E805 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				5D66528F15ADFABB00E0E805 /* MBAliasTestCase.m */,
-				5D66529015ADFABB00E0E805 /* MBAnnotationTestCase.m */,
-				5D66529115ADFABB00E0E805 /* MBArtistCreditTestCase.m */,
-				5D66529215ADFABB00E0E805 /* MBArtistTestCase.m */,
-				5D66529315ADFABB00E0E805 /* MBAttributeTestCase.m */,
-				5D66529415ADFABB00E0E805 /* MBCdstubTestCase.m */,
-				5D66529515ADFABB00E0E805 /* MBCollectionTestCase.m */,
-				5D66529615ADFABB00E0E805 /* MBDiscTestCase.m */,
-				5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */,
-				5D66529815ADFABB00E0E805 /* MBErrorTestCase.m */,
-				5D66529915ADFABB00E0E805 /* MBFreedbDiscTestCase.m */,
-				5D66529A15ADFABB00E0E805 /* MBIpiTestCase.m */,
-				5D66529B15ADFABB00E0E805 /* MBIsrcTestCase.m */,
-				5D66529C15ADFABB00E0E805 /* MBIswcTestCase.m */,
-				5D66529D15ADFABB00E0E805 /* MBLabelInfoTestCase.m */,
-				5D66529E15ADFABB00E0E805 /* MBLabelTestCase.m */,
-				5D66529F15ADFABB00E0E805 /* MBLifeSpanTestCase.m */,
-				5D6652A015ADFABB00E0E805 /* MBListTestCase.m */,
-				5D6652A115ADFABB00E0E805 /* MBMediumTestCase.m */,
-				5D6652A215ADFABB00E0E805 /* MBMessageTestCase.m */,
-				5D6652A315ADFABB00E0E805 /* MBMetadataTestCase.m */,
-				5D6652A415ADFABB00E0E805 /* MBNameCreditTestCase.m */,
-				5D6652A515ADFABB00E0E805 /* MBNonmbTrackTestCase.m */,
-				5D6652A615ADFABB00E0E805 /* MBPuidTestCase.m */,
-				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
-				5D6652A815ADFABB00E0E805 /* MBRatingTestCase.m */,
-				5D6652A915ADFABB00E0E805 /* MBRecordingTestCase.m */,
-				5D6652AA15ADFABB00E0E805 /* MBRelationTestCase.m */,
-				5D6652AB15ADFABB00E0E805 /* MBReleaseGroupTestCase.m */,
-				5D6652AC15ADFABB00E0E805 /* MBReleaseTestCase.m */,
-				5D6652AD15ADFABB00E0E805 /* MBTagTestCase.m */,
-				5D6652AE15ADFABB00E0E805 /* MBTextRepresentationTestCase.m */,
-				5D6652AF15ADFABB00E0E805 /* MBTrackTestCase.m */,
-				5D6652B015ADFABB00E0E805 /* MBUserRatingTestCase.m */,
-				5D6652B115ADFABB00E0E805 /* MBUserTagTestCase.m */,
-				5D6652B215ADFABB00E0E805 /* MBWorkTestCase.m */,
-			);
-			name = Entities;
-			path = "libmusicbrainz-objc-test/Entities";
-			sourceTree = "<group>";
-		};
-		5D6652DD15ADFB4200E0E805 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 		5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,8 +732,10 @@
 				5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */,
 				5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */,
 				5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */,
-				5D6652DD15ADFB4200E0E805 /* Categories */,
-				5D66528E15ADFABB00E0E805 /* Entities */,
+				5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */,
+				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
+				5D6652A015ADFABB00E0E805 /* MBListTestCase.m */,
+				5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -1424,42 +1308,9 @@
 				5D82784815AD25DC00B4A8EB /* GTMUnitTestDevLog.m in Sources */,
 				5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */,
 				5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */,
-				5D6652B615ADFABB00E0E805 /* MBAliasTestCase.m in Sources */,
-				5D6652B715ADFABB00E0E805 /* MBAnnotationTestCase.m in Sources */,
-				5D6652B815ADFABB00E0E805 /* MBArtistCreditTestCase.m in Sources */,
-				5D6652B915ADFABB00E0E805 /* MBArtistTestCase.m in Sources */,
-				5D6652BA15ADFABB00E0E805 /* MBAttributeTestCase.m in Sources */,
-				5D6652BB15ADFABB00E0E805 /* MBCdstubTestCase.m in Sources */,
-				5D6652BC15ADFABB00E0E805 /* MBCollectionTestCase.m in Sources */,
-				5D6652BD15ADFABB00E0E805 /* MBDiscTestCase.m in Sources */,
 				5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */,
-				5D6652BF15ADFABB00E0E805 /* MBErrorTestCase.m in Sources */,
-				5D6652C015ADFABB00E0E805 /* MBFreedbDiscTestCase.m in Sources */,
-				5D6652C115ADFABB00E0E805 /* MBIpiTestCase.m in Sources */,
-				5D6652C215ADFABB00E0E805 /* MBIsrcTestCase.m in Sources */,
-				5D6652C315ADFABB00E0E805 /* MBIswcTestCase.m in Sources */,
-				5D6652C415ADFABB00E0E805 /* MBLabelInfoTestCase.m in Sources */,
-				5D6652C515ADFABB00E0E805 /* MBLabelTestCase.m in Sources */,
-				5D6652C615ADFABB00E0E805 /* MBLifeSpanTestCase.m in Sources */,
 				5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */,
-				5D6652C815ADFABB00E0E805 /* MBMediumTestCase.m in Sources */,
-				5D6652C915ADFABB00E0E805 /* MBMessageTestCase.m in Sources */,
-				5D6652CA15ADFABB00E0E805 /* MBMetadataTestCase.m in Sources */,
-				5D6652CB15ADFABB00E0E805 /* MBNameCreditTestCase.m in Sources */,
-				5D6652CC15ADFABB00E0E805 /* MBNonmbTrackTestCase.m in Sources */,
-				5D6652CD15ADFABB00E0E805 /* MBPuidTestCase.m in Sources */,
 				5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */,
-				5D6652CF15ADFABB00E0E805 /* MBRatingTestCase.m in Sources */,
-				5D6652D015ADFABB00E0E805 /* MBRecordingTestCase.m in Sources */,
-				5D6652D115ADFABB00E0E805 /* MBRelationTestCase.m in Sources */,
-				5D6652D215ADFABB00E0E805 /* MBReleaseGroupTestCase.m in Sources */,
-				5D6652D315ADFABB00E0E805 /* MBReleaseTestCase.m in Sources */,
-				5D6652D415ADFABB00E0E805 /* MBTagTestCase.m in Sources */,
-				5D6652D515ADFABB00E0E805 /* MBTextRepresentationTestCase.m in Sources */,
-				5D6652D615ADFABB00E0E805 /* MBTrackTestCase.m in Sources */,
-				5D6652D715ADFABB00E0E805 /* MBUserRatingTestCase.m in Sources */,
-				5D6652D815ADFABB00E0E805 /* MBUserTagTestCase.m in Sources */,
-				5D6652D915ADFABB00E0E805 /* MBWorkTestCase.m in Sources */,
 				5D6652DA15ADFABB00E0E805 /* MBQueryTestCase.m in Sources */,
 				5D6652DB15ADFABB00E0E805 /* MBRequestTestCase.m in Sources */,
 				5D6652DC15ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m in Sources */,

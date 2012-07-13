@@ -50,7 +50,7 @@
 
 - (Class) classForElementName
 {
-  if ([[self substringFromIndex:self.length-4] equals:kListKey])
+  if ([self length] >= 4 && [[self substringFromIndex:self.length-4] equals:kListKey])
     return [MBList class];
   
   static NSDictionary * elementToClassDict;
