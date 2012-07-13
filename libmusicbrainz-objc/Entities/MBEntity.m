@@ -14,6 +14,7 @@
 
 #import "../MB.h"
 #import "../NSString+MBKeyManipulation.h"
+#import <objc/runtime.h>
 
 @implementation MBEntity
 
@@ -49,6 +50,47 @@
   else
     Id = self.Text;
   return [NSString stringWithFormat:@"%@ %@", classname, Id];
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+  if (self = [self init]) {
+    Class currentClass = [self class];
+    do {
+      uint varCount;
+      Ivar * vars = class_copyIvarList(currentClass, &varCount);
+      for (uint i = 0; i < varCount; i++) {
+        Ivar var = vars[i];
+        NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
+        id obj = [aDecoder decodeObjectForKey:key];
+        if (obj) {
+          DLog(@"Decoding %@ = %@", key, obj);
+          object_setIvar(self, var, obj);
+        }
+      }
+      currentClass = class_getSuperclass(currentClass);
+    } while (currentClass != [MBEntity class]);
+  }
+  return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+  Class currentClass = [self class];
+  do {
+    uint varCount;
+    Ivar * vars = class_copyIvarList(currentClass, &varCount);
+    for (uint i = 0; i < varCount; i++) {
+      Ivar var = vars[i];
+      id obj = object_getIvar(self, var);
+      if (obj) {
+        NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
+        DLog(@"Encoding %@ = %@", key, obj);
+        [aCoder encodeObject:obj forKey:key];
+      }
+    }
+    currentClass = class_getSuperclass(currentClass);
+  } while (currentClass != [MBEntity class]);
 }
 
 - (void) parseElement:(NSXMLElement *)element

@@ -15,7 +15,7 @@
 /// corresponding properties, and if the xml response represents an unknown
 /// yet still valid attribute or element, the extra information will be stored
 /// in ExtraAttributes and ExtraElements, respectively. 
-@interface MBEntity : NSObject
+@interface MBEntity : NSObject <NSCoding>
 {
  @private
   NSMutableDictionary *_ExtraAttributes;
@@ -74,5 +74,6 @@
 ///
 /// Returnes the element name for this instance.
 - (NSString *) elementName;
+
 
 @end
