@@ -21,6 +21,7 @@ PUBLISH_URL="http://demosdemon.github.com/libmusicbrainz-objc/$OUTPUT/publish"
   --docset-feed-url "$PUBLISH_URL/%DOCSETATOMFILENAME" \
   --docset-package-url "$PUBLISH_URL/%DOCSETPACKAGEFILENAME" \
   --publish-docset \
+  --no-install-docset \
   --keep-intermediate-files \
   --logformat "xcode" \
   --verbose 2 \
