@@ -29,6 +29,15 @@
   [super tearDown];
 }
 
+- (void) testError
+{
+  NSString * xmlString = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?><error><text>recording-level-rels is not a valid inc parameter for the artist resource.</text><text>For usage, please see: http://musicbrainz.org/development/mmd</text></error>";
+  NSXMLDocument * doc = [[NSXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
+  id entity = [MBEntity entityWithElement:[doc rootElement]];
+  DLogObject(entity);
+  STAssertTrue([entity isKindOfClass:[NSError class]], @"Error is not an error");
+}
+
 - (void) testInitWithElement
 {
 }

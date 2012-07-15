@@ -18,6 +18,8 @@
 
 #define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 
+#define DLogObject(obj) DLog(#obj " => %@", obj)
+
 #define NOT_IMPLEMENTED() do { \
     ALog(@"Not Implemented exception thrown"); \
     [NSException raise:@"Not Implemented" format:@"Not Implemented"]; \
@@ -40,6 +42,24 @@
 
 #define kISRC_Regex @"^[A-Z{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}$"
 #define kUUID_Regex @"^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$"
+
+#if __has_feature(objc_dictionary_literals)
+# define DICT_LIT 1
+#else
+# define DICT_LIT 0
+#endif
+
+#if __has_feature(objc_array_literals)
+# define ARRAY_LIT 1
+#else
+# define ARRAY_LIT 0
+#endif
+
+#if __has_feature(objc_subscripting)
+# define OBJ_SUB 1
+#else
+# define OBJ_SUB 0
+#endif
 
 #define kErrorKey        @"error"
 #define kListKey         @"list"

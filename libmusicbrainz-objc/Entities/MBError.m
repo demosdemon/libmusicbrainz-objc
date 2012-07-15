@@ -16,9 +16,21 @@
 
 @implementation MBError
 
-+ (NSError *) entityWithElement:(NSXMLElement *)element
+- (NSError *) initWithElement:(NSXMLElement *)element
 {
-  NOT_IMPLEMENTED();
+  NSArray * texts = [element elementsForName:@"text"];
+  NSMutableArray * textsStrings = [NSMutableArray arrayWithCapacity:[texts count]];
+  for (NSXMLElement * elem in texts)
+    [textsStrings addObject:[[elem stringValue] copy]];
+  
+  NSString * error = [textsStrings componentsJoinedByString:@" "];
+#if DICT_LIT
+  NSDictionary * userInfo = @{ NSLocalizedDescriptionKey : error };
+#else
+  NSDictionary * userInfo = [NSDictionary dictionaryWithObjectsAndKeys:error, NSLocalizedDescriptionKey, nil];
+#endif /* dict_lit */
+  
+  return [self initWithDomain:@"org.musicbrainz.webservice" code:1 userInfo:userInfo];
 }
 
 
