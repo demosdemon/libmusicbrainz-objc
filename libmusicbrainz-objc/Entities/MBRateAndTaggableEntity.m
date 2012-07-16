@@ -21,14 +21,10 @@ MB_ELEMENT(Rating);
 MB_ELEMENT(UserRating);
 
 - (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request
-{
-  NOT_IMPLEMENTED();
-}
+{ [request setUserRating:rating forEntity:self]; }
 
 - (void) addUserTag:(NSString *)tag usingRequest:(MBRequest *)request
-{
-  NOT_IMPLEMENTED();
-}
+{ [request addUserTag:tag toEntity:self]; }
 
 
 @end

@@ -19,13 +19,11 @@
 /// for more information about forming webservice queries.
 @interface MBRequest : NSObject {
  @private
-  NSString * _requestMethod;
-  NSString * _entityType;
-  NSString * _entityId;
-  NSMutableDictionary * _parameters;
-  NSMutableSet * _collectionResources;
-  NSMutableSet * _incParameters;
-  BOOL _completeLists;
+  NSMutableDictionary * _Parameters;
+  NSMutableSet * _CollectionResources;
+  NSMutableSet * _IncParameters;
+  NSMutableDictionary * _UserTags;
+  NSMutableDictionary * _UserRatings;
 }
 
 /// Web Service Request Type
@@ -83,7 +81,6 @@
 
 - (void) addCollectionResourceObject:(NSString *)resource;
 - (void) removeCollectionResourceObject:(NSString *)resource;
-- (NSMutableSet *) setCollectionResource;
 
 /// Add `inc` Parameter to Query
 ///
@@ -91,7 +88,6 @@
 ///
 - (void) addIncParameterObject:(NSString *)inc;
 - (void) removeIncParameterObject:(NSString *)inc;
-- (NSMutableSet *) setIncParameter;
 
 /// Result Data
 ///
@@ -108,18 +104,20 @@
 /// Paged Results Limit
 ///
 /// Limit is the number of elements returned in a browse request. The default
-/// is 25 and can be increased to 100. 
-@property (assign, nonatomic) NSUInteger * Limit;
+/// is 25 and can be increased to 100.
+@property (retain, nonatomic) NSNumber * Limit;
 
 /// Paged Results Offset
 ///
 /// Offset the number of elements in a paged request. Page 1 would be offset=0,
 /// Page 2 would be offset=Limit, Page 3 would be offset=2*limit, etc.
-@property (assign, nonatomic) NSUInteger * offset;
+@property (retain, nonatomic) NSNumber * Offset;
 
 - (void) addUserTag:(NSString *)tag toEntity:(MBRateAndTaggableEntity *)entity;
-- (void) remoteUserTag:(NSString *)tag fromEntity:(MBRateAndTaggableEntity *)entity;
+- (void) removeUserTag:(NSString *)tag fromEntity:(MBRateAndTaggableEntity *)entity;
+
 - (void) setUserRating:(NSUInteger)rating forEntity:(MBRateAndTaggableEntity *)entity;
+- (void) removeUserRatingForEntity:(MBRateAndTaggableEntity *)entity;
 
 - (void) submitRequestWithQuery:(MBQuery *)query;
 
