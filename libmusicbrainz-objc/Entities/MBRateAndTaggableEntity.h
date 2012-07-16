@@ -8,7 +8,8 @@
 
 #import "MBEntity.h"
 
-@class MBTag, MBUserTag, MBRating, MBUserRating, MBList, MBRequest;
+@class MBTag, MBUserTag, MBRating, MBUserRating, MBList, MBTagSubmissionRequest;
+@class MBRatingSubmissionRequest;
 
 /// Represents entities in the MusicBrainz database that can be rated and tagged
 /// by users
@@ -22,7 +23,7 @@
 @property (nonatomic, readonly) MBRating * Rating;
 @property (nonatomic, readonly) MBUserRating * UserRating;
 
-- (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request;
-- (void) addUserTag:(NSString *)tag usingRequest:(MBRequest *)request;
+- (void) setUserRating:(NSUInteger)rating usingRequest:(MBRatingSubmissionRequest *)request;
+- (void) addUserTag:(NSString *)tag usingRequest:(MBTagSubmissionRequest *)request;
 
 @end

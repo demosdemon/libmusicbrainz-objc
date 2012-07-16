@@ -20,10 +20,10 @@ MB_ELEMENT(UserTagList);
 MB_ELEMENT(Rating);
 MB_ELEMENT(UserRating);
 
-- (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request
+- (void) setUserRating:(NSUInteger)rating usingRequest:(MBRatingSubmissionRequest *)request
 { [request setUserRating:rating forEntity:self]; }
 
-- (void) addUserTag:(NSString *)tag usingRequest:(MBRequest *)request
+- (void) addUserTag:(NSString *)tag usingRequest:(MBTagSubmissionRequest *)request
 { [request addUserTag:tag toEntity:self]; }
 
 
