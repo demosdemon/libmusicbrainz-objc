@@ -10,6 +10,10 @@
 #import "MB.h"
 #import "MBBarcodeSubmissionRequest.h"
 
+static NSComparisonResult (^CaseInsensitiveStringComparator)(NSString *, NSString *) = ^NSComparisonResult(NSString * obj1, NSString * obj2) {
+  return [obj1 caseInsensitiveCompare:obj2];
+};
+
 @implementation MBBarcodeSubmissionRequest
 
 - (id) init
@@ -18,21 +22,34 @@
     _EntityType = @"release";
     _Barcodes = [NSMutableDictionary dictionary];
   }
+  return self;
 }
 
 - (void) addBarcode:(NSString *)barcode forRelease:(MBRelease *)release
-{
-  NOT_IMPLEMENTED();
-}
+{ [_Barcodes setObject:barcode forKey:release.Id]; }
 
 - (void) removeBarcode:(NSString *)barcode fromRelease:(MBRelease *)release
-{
-  NOT_IMPLEMENTED();
-}
+{ [_Barcodes removeObjectForKey:release.Id]; }
 
 - (NSString *) getBarcodeForRelease:(MBRelease *)release
+{ return [_Barcodes objectForKey:release.Id]; }
+
+- (NSData *) postdata
 {
-  NOT_IMPLEMENTED();
+  NSXMLElement * metadata = [NSXMLElement elementWithName:@"metadata"];
+  NSXMLNode * xmlns = [NSXMLNode attributeWithName:@"xmlns" stringValue:@"http://musicbrainz.org/ns/mmd-2.0#"];
+  [metadata addAttribute:xmlns];
+  
+  __block NSXMLElement * releaseList = [NSXMLElement elementWithName:@"release-list"];
+  [_Barcodes enumerateKeysAndObjectsUsingBlock:^(NSString * releaseId, NSString * barcode, BOOL *stop) {
+    NSXMLElement * release = [NSXMLElement elementWithName:@"release"];
+    [release addAttribute:[NSXMLNode attributeWithName:@"id" stringValue:releaseId]];
+    [release addChild:[NSXMLElement elementWithName:@"barcode" stringValue:barcode]];
+    [releaseList addChild:release];
+  }];
+
+  [metadata addChild:releaseList];
+  return [[metadata XMLString] dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 @end
