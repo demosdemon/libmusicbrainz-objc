@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<isrc/>` element
-@interface MBIsrc : MBEntity
+@interface MBIsrc : MBEntity <MBUniqueIdentifier>
 
 @property (nonatomic, readonly) NSString *Id;
 @property (nonatomic, readonly) MBList *RecordingList;

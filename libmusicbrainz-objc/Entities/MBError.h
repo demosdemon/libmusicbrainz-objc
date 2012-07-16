@@ -9,12 +9,12 @@
 // @brief Base class for all errors
 
 /// Helperclass to create error objects from webservice responses
-@interface MBError : NSObject
+@interface MBError : NSError
 
 /// Creates an NSError from the XMLElement
 ///
 /// @param element XML Element that represents `<error/>` from webservice response
-+ (NSError *) entityWithElement:(NSXMLElement *)element;
+- (NSError *) initWithElement:(NSXMLElement *)element;
 
 
 @end

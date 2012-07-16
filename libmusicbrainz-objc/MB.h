@@ -14,6 +14,7 @@
 #import "MBQueryDelegate.h"
 #import "MBRequest.h"
 #import "MBUtils.h"
+#import "MBUniqueIdentifier.h"
 #import "NSString+MBKeyManipulation.h"
 #import "Entities/MBAlias.h"
 #import "Entities/MBAnnotation.h"

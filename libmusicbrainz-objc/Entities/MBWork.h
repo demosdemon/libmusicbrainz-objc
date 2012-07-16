@@ -15,8 +15,6 @@
 /// Represents a `<work/>` element
 @interface MBWork : MBRateAndTaggableEntity
 
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Type of work
 @property (nonatomic, readonly) NSString *Type;
 /// Title of the work

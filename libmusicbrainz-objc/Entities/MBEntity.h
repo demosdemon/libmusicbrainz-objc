@@ -8,6 +8,10 @@
 //
 // @brief Base class for all entities
 
+#import <Foundation/Foundation.h>
+#import "../MBUtils.h"
+#import "../MBUniqueIdentifier.h"
+
 /// Base class for all elements in the XML Webservice Schema
 ///
 /// MBEntity does all the heavy lifting. MBEntity takes the data from the 
@@ -41,7 +45,13 @@
 /// with the correct type: string, number, etc.
 @property (nonatomic, readonly) NSString *Text;
 
-/// Main initializer. 
+
+/// Element Name
+///
+/// Returnes the element name for this instance.
+@property (nonatomic, readonly) NSString * ElementName;
+
+/// Main initializer.
 ///
 /// Inits the entity with the XML element it represents
 /// @param element XML Element this object represents. If element is nil, nil is
@@ -69,11 +79,5 @@
 /// @param element NSXMLElement (DDXMLElement on iOS) that corresponds to this
 /// object
 - (void) parseElement:(NSXMLElement *)element;
-
-/// Element Name
-///
-/// Returnes the element name for this instance.
-- (NSString *) elementName;
-
 
 @end

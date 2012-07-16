@@ -33,6 +33,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
+		5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
@@ -323,6 +325,7 @@
 		5D19DEA91591841C00FCF572 /* MBIswc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIswc.m; sourceTree = "<group>"; };
 		5D19DEAE159185FD00FCF572 /* MBIpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBIpi.h; sourceTree = "<group>"; };
 		5D19DEAF1591860000FCF572 /* MBIpi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIpi.m; sourceTree = "<group>"; };
+		5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUniqueIdentifier.h; sourceTree = "<group>"; };
 		5D5D033B158058BD00E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
 		5D5D033C158058BD00E8A525 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlias.m; sourceTree = "<group>"; };
 		5D5D033D158058BD00E8A525 /* MBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAnnotation.h; sourceTree = "<group>"; };
@@ -652,6 +655,7 @@
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
 				5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */,
+				5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */,
 				5DB56B9D15AA931F00885759 /* MBUtils.h */,
 				5D08F35415900B3200E35D2A /* XML.h */,
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
@@ -922,6 +926,7 @@
 				5DA2CD95158E70BF00D7FF11 /* ASIInputStream.h in Headers */,
 				5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */,
 				5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
+				5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,6 +998,7 @@
 				5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */,
 				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
 				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
+				5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,7 +1067,7 @@
 		5D61B7C2155F3F9A0003006A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 5D61B7C5155F3F9A0003006A /* Build configuration list for PBXProject "libmusicbrainz-objc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1349,6 +1355,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1383,6 +1390,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1527,6 +1535,7 @@
 		5DAAFE4C159A62D200450C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1535,6 +1544,7 @@
 		5DAAFE4D159A62D200450C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1543,6 +1553,7 @@
 		5DFB065615AE325600CFF95F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDK_NAME = iphoneos5.1;
 			};
@@ -1551,6 +1562,7 @@
 		5DFB065715AE325600CFF95F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDK_NAME = iphoneos5.1;
 			};

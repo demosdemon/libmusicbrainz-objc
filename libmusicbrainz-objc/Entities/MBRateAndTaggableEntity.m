@@ -14,20 +14,17 @@
 
 @implementation MBRateAndTaggableEntity
 
-@synthesize TagList     = _tagList;
-@synthesize UserTagList = _userTagList;
-@synthesize Rating      = _rating;
-@synthesize UserRating  = _userRating;
+MB_ATTRIBUTE(Id);
+MB_ELEMENT(TagList);
+MB_ELEMENT(UserTagList);
+MB_ELEMENT(Rating);
+MB_ELEMENT(UserRating);
 
 - (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request
-{
-  NOT_IMPLEMENTED();
-}
+{ [request setUserRating:rating forEntity:self]; }
 
 - (void) addUserTag:(NSString *)tag usingRequest:(MBRequest *)request
-{
-  NOT_IMPLEMENTED();
-}
+{ [request addUserTag:tag toEntity:self]; }
 
 
 @end

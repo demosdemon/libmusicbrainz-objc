@@ -16,8 +16,6 @@
 /// Represents a `<release/>` element
 @interface MBRelease : MBRateAndTaggableEntity
 
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Title of the release
 @property (nonatomic, readonly) NSString *Title;
 /// Status of the release

@@ -16,8 +16,6 @@
 /// Represents a `<label/>` element
 @interface MBLabel : MBRateAndTaggableEntity
 
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Type of label
 @property (nonatomic, readonly) NSString *Type;
 /// Name of the label

@@ -15,8 +15,6 @@
 /// Represents a `<recording/>` element
 @interface MBRecording : MBRateAndTaggableEntity
 
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Title of this recording
 @property (nonatomic, readonly) NSString *Title;
 /// Length in seconds of this recoding

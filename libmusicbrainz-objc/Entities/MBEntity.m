@@ -63,10 +63,8 @@
         Ivar var = vars[i];
         NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
         id obj = [aDecoder decodeObjectForKey:key];
-        if (obj) {
-          DLog(@"Decoding %@ = %@", key, obj);
+        if (obj)
           object_setIvar(self, var, obj);
-        }
       }
       currentClass = class_getSuperclass(currentClass);
     } while (currentClass != [MBEntity class]);
@@ -83,11 +81,8 @@
     for (uint i = 0; i < varCount; i++) {
       Ivar var = vars[i];
       id obj = object_getIvar(self, var);
-      if (obj) {
-        NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
-        DLog(@"Encoding %@ = %@", key, obj);
-        [aCoder encodeObject:obj forKey:key];
-      }
+      if (obj)
+        [aCoder encodeObject:obj forKey:[NSString stringWithUTF8String:ivar_getName(var)]];
     }
     currentClass = class_getSuperclass(currentClass);
   } while (currentClass != [MBEntity class]);
@@ -121,10 +116,28 @@
     [_ExtraElements setObject:value forKey:key];
 }
 
-- (NSString *) elementName
+- (NSString *) ElementName
 {
   if ([self isMemberOfClass:[MBEntity class]]) return @"";
   return [NSStringFromClass([self class]) classNameToKey];
+}
+
+- (BOOL) isEqual:(id)object
+{
+  if ([self class] != [object class]) return NO;
+  Class currentClass = [self class];
+  do {
+    uint varCount;
+    Ivar * vars = class_copyIvarList(currentClass, &varCount);
+    for (uint i = 0; i < varCount; i++) {
+      Ivar var = vars[i];
+      id myObj = object_getIvar(self, var);
+      id otherObj = object_getIvar(object, var);
+      if (![myObj isEqual:otherObj]) return NO;
+    }
+    currentClass = class_getSuperclass(currentClass);
+  } while (currentClass != [MBEntity class]);
+  return YES;
 }
 
 @end

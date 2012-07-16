@@ -18,11 +18,9 @@
 
 @property (nonatomic, readonly) NSNumber * Count;
 @property (nonatomic, readonly) NSNumber * Offset;
+@property (nonatomic, readonly) NSString * TargetType;
 
 - (NSUInteger) elementCount;
 - (id) elementAtIndex:(NSUInteger)index;
-
-/// Returns the type of elements this List contains
-- (NSString *) elementName;
 
 @end
