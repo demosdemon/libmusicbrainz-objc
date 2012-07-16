@@ -40,6 +40,8 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/ElementName">&nbsp;&nbsp;&nbsp;&nbsp;ElementName</option>
+	
 	<option value="//api/name/ExtraAttributes">&nbsp;&nbsp;&nbsp;&nbsp;ExtraAttributes</option>
 	
 	<option value="//api/name/ExtraElements">&nbsp;&nbsp;&nbsp;&nbsp;ExtraElements</option>
@@ -60,8 +62,6 @@
 	
 	<option value="//api/name/description">&nbsp;&nbsp;&nbsp;&nbsp;- description</option>
 	
-	<option value="//api/name/elementName">&nbsp;&nbsp;&nbsp;&nbsp;- elementName</option>
-	
 	<option value="//api/name/encodeWithCoder:">&nbsp;&nbsp;&nbsp;&nbsp;- encodeWithCoder:</option>
 	
 	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
@@ -69,6 +69,8 @@
 	<option value="//api/name/initWithCoder:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCoder:</option>
 	
 	<option value="//api/name/initWithElement:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithElement:</option>
+	
+	<option value="//api/name/isEqual:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqual:</option>
 	
 	<option value="//api/name/parseElement:">&nbsp;&nbsp;&nbsp;&nbsp;- parseElement:</option>
 	
@@ -98,6 +100,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ElementName">ElementName</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ExtraAttributes">ExtraAttributes</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ExtraElements">ExtraElements</a></span></li>
@@ -120,8 +124,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/description">description</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementName">elementName</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encodeWithCoder:">encodeWithCoder:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
@@ -129,6 +131,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCoder:">initWithCoder:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithElement:">initWithElement:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqual:">isEqual:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseElement:">parseElement:</a></span></li>
 	
@@ -219,6 +223,13 @@ in <a href="#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="#//api
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/ElementName">&nbsp;&nbsp;ElementName</a></code>
+		<span class="tooltip"><p>Element Name</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/initWithElement:">&ndash;&nbsp;initWithElement:</a></code>
 		<span class="tooltip"><p>Main initializer.</p></span>
 	</span>
@@ -235,13 +246,6 @@ in <a href="#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="#//api
 	<span class="tooltip">
 		<code><a href="#//api/name/parseElement:">&ndash;&nbsp;parseElement:</a></code>
 		<span class="tooltip"><p>Parse XML Element that represents this object.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/elementName">&ndash;&nbsp;elementName</a></code>
-		<span class="tooltip"><p>Element Name</p></span>
 	</span>
 	
 	
@@ -288,6 +292,13 @@ in <a href="#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="#//api
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqual:">&ndash;&nbsp;isEqual:</a></code>
+		
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -300,6 +311,49 @@ in <a href="#//api/name/ExtraAttributes">ExtraAttributes</a> and <a href="#//api
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ElementName" title="ElementName"></a>
+	<h3 class="subsubtitle method-title">ElementName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Element Name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *ElementName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Element Name</p>
+
+<p>Returnes the element name for this instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MBEntity.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/ExtraAttributes" title="ExtraAttributes"></a>
@@ -515,49 +569,6 @@ returned</p></dd>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/elementName" title="elementName"></a>
-	<h3 class="subsubtitle method-title">elementName</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Element Name</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (NSString *)elementName</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Element Name</p>
-
-<p>Returnes the element name for this instance.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MBEntity.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/encodeWithCoder:" title="encodeWithCoder:"></a>
 	<h3 class="subsubtitle method-title">encodeWithCoder:</h3>
 	
@@ -645,6 +656,17 @@ returned</p></dd>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/isEqual:" title="isEqual:"></a>
+	<h3 class="subsubtitle method-title">isEqual:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqual:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/parseElement:" title="parseElement:"></a>
 	<h3 class="subsubtitle method-title">parseElement:</h3>
 	
@@ -685,7 +707,7 @@ object</p></dd>
 that corresponds to this object. It will call <code>set&lt;key&gt;:</code> for every attribute
 and element where key is the the the local name of the attribute or element.
 If <code>set&lt;key&gt;:</code> is not defined by the subclass, the attribute or element will
-be added to <a href="#//api/name/ExtraAttributes">ExtraAttributes</a> or <a href="#//api/name/ExtraElements">ExtraElements</a>. Using <code>@synthesize</code> is fine for
+be added to <a href="../Classes/MBEntity.html#//api/name/ExtraAttributes">ExtraAttributes</a> or <a href="../Classes/MBEntity.html#//api/name/ExtraElements">ExtraElements</a>. Using <code>@synthesize</code> is fine for
 attributes as the passed value will always be an NSString or NSNull type but
 is not adequate for elements because the value passed will be the
 NSXMLElement (DDXMLElement on iOS) for that element.</p>
@@ -729,7 +751,7 @@ NSXMLElement (DDXMLElement on iOS) for that element.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-14)</span><br />
+						<p><span class="copyright">&copy; 2012 MetaBrainz. All rights reserved. (Last updated: 2012-07-16)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
