@@ -80,7 +80,6 @@
   Class type = [elementToClassDict objectForKey:self];
   if (type) return type;
   
-  DLog(@"Entity \"%@\" did not match", self);
   return [MBEntity class];
 }
 
