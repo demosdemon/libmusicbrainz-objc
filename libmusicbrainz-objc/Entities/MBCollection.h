@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<collection/>` element
-@interface MBCollection : MBEntity
+@interface MBCollection : MBEntity <MBUniqueIdentifier>
 
 /// Unique MusicBrainz ID for this entity
 @property (nonatomic, readonly) NSString *Id;

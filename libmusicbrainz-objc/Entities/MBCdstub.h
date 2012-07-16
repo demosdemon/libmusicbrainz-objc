@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<cdstub/>` element
-@interface MBCdstub : MBEntity
+@interface MBCdstub : MBEntity <MBUniqueIdentifier>
 
 @property (nonatomic, readonly) NSString * Id;
 @property (nonatomic, readonly) NSString * Title;

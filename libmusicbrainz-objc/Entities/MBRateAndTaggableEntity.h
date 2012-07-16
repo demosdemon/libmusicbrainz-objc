@@ -12,8 +12,11 @@
 
 /// Represents entities in the MusicBrainz database that can be rated and tagged
 /// by users
-@interface MBRateAndTaggableEntity : MBEntity
+@interface MBRateAndTaggableEntity : MBEntity <MBUniqueIdentifier>
 
+// All NSStrings* must be copy, nonatomic
+/// Unique MusicBrainz ID for this entity
+@property (nonatomic, readonly) NSString * Id;
 @property (nonatomic, readonly) MBList * TagList;
 @property (nonatomic, readonly) MBList * UserTagList;
 @property (nonatomic, readonly) MBRating * Rating;

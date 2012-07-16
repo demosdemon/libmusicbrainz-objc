@@ -8,6 +8,10 @@
 //
 // @brief Base class for all entities
 
+#import <Foundation/Foundation.h>
+#import "../MBUtils.h"
+#import "../MBUniqueIdentifier.h"
+
 /// Base class for all elements in the XML Webservice Schema
 ///
 /// MBEntity does all the heavy lifting. MBEntity takes the data from the 

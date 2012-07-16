@@ -14,6 +14,7 @@
 
 @implementation MBRateAndTaggableEntity
 
+MB_ATTRIBUTE(Id);
 MB_ELEMENT(TagList);
 MB_ELEMENT(UserTagList);
 MB_ELEMENT(Rating);

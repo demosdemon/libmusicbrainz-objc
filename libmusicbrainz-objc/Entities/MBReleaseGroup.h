@@ -16,8 +16,6 @@
 /// Represents a `<release-group/>` element
 @interface MBReleaseGroup : MBRateAndTaggableEntity
 
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Type of release group
 @property (nonatomic, readonly) NSString *Type;
 /// Title of the release group

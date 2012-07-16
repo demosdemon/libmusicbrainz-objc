@@ -17,7 +17,6 @@
 
 @implementation MBReleaseGroup
 
-MB_ATTRIBUTE(Id);
 MB_ATTRIBUTE(Type);
 MB_STRING_ELEMENT(Title);
 MB_STRING_ELEMENT(Disambiguation);

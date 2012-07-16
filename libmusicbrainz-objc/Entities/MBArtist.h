@@ -17,9 +17,6 @@
 /// Represents an `<artist/>` element
 @interface MBArtist : MBRateAndTaggableEntity
 
-// All NSStrings* must be copy, nonatomic
-/// Unique MusicBrainz ID for this entity
-@property (nonatomic, readonly) NSString *Id;
 /// Type of artist.
 ///
 /// Either "person" or "group"

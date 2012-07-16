@@ -16,7 +16,6 @@
 
 @implementation MBRelease
 
-MB_ATTRIBUTE(Id);
 MB_STRING_ELEMENT(Title);
 MB_STRING_ELEMENT(Status);
 MB_STRING_ELEMENT(Quality);

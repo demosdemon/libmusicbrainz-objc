@@ -16,7 +16,6 @@
 
 @implementation MBLabel
 
-MB_ATTRIBUTE(Id);
 MB_ATTRIBUTE(Type);
 MB_STRING_ELEMENT(Name);
 MB_STRING_ELEMENT(SortName);

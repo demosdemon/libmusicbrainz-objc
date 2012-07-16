@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<puid/>` element
-@interface MBPuid : MBEntity
+@interface MBPuid : MBEntity <MBUniqueIdentifier>
 
 @property (nonatomic, readonly) NSString *Id;
 @property (nonatomic, readonly) MBList *RecordingList;

@@ -61,6 +61,12 @@
 # define OBJ_SUB 0
 #endif
 
+#if __has_feature(objc_boxed_expressions)
+# define NUM_LIT 1
+#else
+# define NUM_LIT 0
+#endif
+
 #define kErrorKey        @"error"
 #define kListKey         @"list"
 #define kMetadataKey     @"metadata"

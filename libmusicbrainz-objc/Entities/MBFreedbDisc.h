@@ -10,7 +10,7 @@
 #import "MBEntity.h"
 
 /// Represents a `<freedb-disc/>` element
-@interface MBFreedbDisc : MBEntity
+@interface MBFreedbDisc : MBEntity <MBUniqueIdentifier>
 
 @property (nonatomic, readonly) NSString * Id;
 @property (nonatomic, readonly) NSString * Title;

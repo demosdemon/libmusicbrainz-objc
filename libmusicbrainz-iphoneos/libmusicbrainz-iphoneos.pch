@@ -3,5 +3,8 @@
 //
 
 #ifdef __OBJC__
-  #import "MB.h"
+# import <Foundation/Foundation.h>
+# import "XML.h"
+# import "MBUtils.h"
+# import "NSString+MBKeyManipulation.h"
 #endif
