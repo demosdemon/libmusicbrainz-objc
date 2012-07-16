@@ -19,7 +19,7 @@
 /// May be empty.
 @property (nonatomic, readonly) NSString * End;
 /// Boolean value to represent unknown end dates.
-@property (nonatomic, readonly) BOOL Ended;
+@property (nonatomic, readonly) NSNumber * Ended;
 
 @end
 

@@ -12,13 +12,7 @@
 
 /// Represents entities in the MusicBrainz database that can be rated and tagged
 /// by users
-@interface MBRateAndTaggableEntity : MBEntity {
- @private
-  MBList * _tagList;
-  MBList * _userTagList;
-  MBRating * _rating;
-  MBUserRating * _userRating;
-}
+@interface MBRateAndTaggableEntity : MBEntity
 
 @property (nonatomic, readonly) MBList * TagList;
 @property (nonatomic, readonly) MBList * UserTagList;

@@ -14,10 +14,10 @@
 
 @implementation MBRateAndTaggableEntity
 
-@synthesize TagList     = _tagList;
-@synthesize UserTagList = _userTagList;
-@synthesize Rating      = _rating;
-@synthesize UserRating  = _userRating;
+MB_ELEMENT(TagList);
+MB_ELEMENT(UserTagList);
+MB_ELEMENT(Rating);
+MB_ELEMENT(UserRating);
 
 - (void) setUserRating:(NSUInteger)rating usingRequest:(MBRequest *)request
 {

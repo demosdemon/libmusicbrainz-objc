@@ -10,10 +10,10 @@
 #import "GTMSenTestCase.h"
 #import "MB.h"
 
-@interface MBEntityTestCase : GTMTestCase 
+@interface MBEntityTestCase : GTMTestCase
 @end
 
-@implementation MBEntityTestCase 
+@implementation MBEntityTestCase
 
 - (void) setUp
 {
@@ -262,14 +262,14 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"Other", @"%@ != Other", [entity Type]);
-  STAssertEqualStrings([entity Id], @"7f1c3043-e164-464a-9131-10ac49011fab", @"%@ != 7f1c3043-e164-464a-9131-10ac49011fab", [entity Id]);
-  STAssertEqualStrings([entity Title], @"License Placeholder", @"%@ != License Placeholder", [entity Title]);
-  STAssertEqualStrings([entity FirstReleaseDate], @"2011-12-09", @"%@ != 2011-12-09", [entity FirstReleaseDate]);
-  STAssertEqualStrings([entity PrimaryType], @"Other", @"%@ != Other", [entity PrimaryType]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"Other", @"%@ != Other", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7f1c3043-e164-464a-9131-10ac49011fab", @"%@ != 7f1c3043-e164-464a-9131-10ac49011fab", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"License Placeholder", @"%@ != License Placeholder", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity FirstReleaseDate]]), @"2011-12-09", @"%@ != 2011-12-09", [entity FirstReleaseDate]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity PrimaryType]]), @"Other", @"%@ != Other", [entity PrimaryType]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runReleaseGroup:entity];
 }
 
@@ -280,12 +280,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"da7b4220-4c8b-498b-bf78-5a035e445dd3", @"%@ != da7b4220-4c8b-498b-bf78-5a035e445dd3", [entity Id]);
-  STAssertEqualStrings([entity Title], @"TEST", @"%@ != TEST", [entity Title]);
-  STAssertEqualStrings([entity FirstReleaseDate], @"", @"%@ != ", [entity FirstReleaseDate]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"da7b4220-4c8b-498b-bf78-5a035e445dd3", @"%@ != da7b4220-4c8b-498b-bf78-5a035e445dd3", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"TEST", @"%@ != TEST", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity FirstReleaseDate]]), @"", @"%@ != ", [entity FirstReleaseDate]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runReleaseGroup:entity];
 }
 
@@ -296,15 +296,14 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"Other", @"%@ != Other", [entity Type]);
-  STAssertEqualStrings([entity Id], @"e916d4bf-8e8f-3107-ab4a-4c3774e23990", @"%@ != e916d4bf-8e8f-3107-ab4a-4c3774e23990", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Nagios Check Release", @"%@ != Nagios Check Release", [entity Title]);
-  STAssertEqualObjects([entity FirstReleaseDate], @1920, @"%@ != 1920", [entity FirstReleaseDate]);
-  STAssertEqualStrings([entity FirstReleaseDate], @"1920", @"%@ != 1920", [entity FirstReleaseDate]);
-  STAssertEqualStrings([entity PrimaryType], @"Other", @"%@ != Other", [entity PrimaryType]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"Other", @"%@ != Other", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"e916d4bf-8e8f-3107-ab4a-4c3774e23990", @"%@ != e916d4bf-8e8f-3107-ab4a-4c3774e23990", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Nagios Check Release", @"%@ != Nagios Check Release", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity FirstReleaseDate]]), @"1920", @"%@ != 1920", [entity FirstReleaseDate]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity PrimaryType]]), @"Other", @"%@ != Other", [entity PrimaryType]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runReleaseGroup:entity];
 }
 
@@ -315,9 +314,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"testalias", @"%@ != testalias", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"testalias", @"%@ != testalias", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"testalias", @"%@ != testalias", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"testalias", @"%@ != testalias", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -328,9 +327,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Testing Artist", @"%@ != Testing Artist", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Testing Artist", @"%@ != Testing Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Testing Artist", @"%@ != Testing Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Testing Artist", @"%@ != Testing Artist", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -341,9 +340,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Move for Great speed Testing", @"%@ != Move for Great speed Testing", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Move for Great speed Testing", @"%@ != Move for Great speed Testing", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Move for Great speed Testing", @"%@ != Move for Great speed Testing", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Move for Great speed Testing", @"%@ != Move for Great speed Testing", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -354,9 +353,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"MusicBrainz Test Artist Qwlghm", @"%@ != MusicBrainz Test Artist Qwlghm", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"MusicBrainz Test Artist Qwlghm", @"%@ != MusicBrainz Test Artist Qwlghm", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"MusicBrainz Test Artist Qwlghm", @"%@ != MusicBrainz Test Artist Qwlghm", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MusicBrainz Test Artist Qwlghm", @"%@ != MusicBrainz Test Artist Qwlghm", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -367,9 +366,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"\343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", @"%@ != \343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"\343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", @"%@ != \343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"\343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", @"%@ != \343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"\343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", @"%@ != \343\203\206\343\202\271\343\203\210\350\212\270\350\241\223\345\256\266", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -380,9 +379,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Qwlghm", @"%@ != Qwlghm", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Qwlghm", @"%@ != Qwlghm", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Qwlghm", @"%@ != Qwlghm", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Qwlghm", @"%@ != Qwlghm", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -393,9 +392,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"MusicBrainz Test Artist Frobozz", @"%@ != MusicBrainz Test Artist Frobozz", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"MusicBrainz Test Artist Frobozz", @"%@ != MusicBrainz Test Artist Frobozz", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"MusicBrainz Test Artist Frobozz", @"%@ != MusicBrainz Test Artist Frobozz", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MusicBrainz Test Artist Frobozz", @"%@ != MusicBrainz Test Artist Frobozz", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -406,9 +405,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"MB Test Artist", @"%@ != MB Test Artist", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"MB Test Artist", @"%@ != MB Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"MB Test Artist", @"%@ != MB Test Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MB Test Artist", @"%@ != MB Test Artist", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -419,9 +418,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Tedious Test Artist", @"%@ != Tedious Test Artist", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Tedious Test Artist", @"%@ != Tedious Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Tedious Test Artist", @"%@ != Tedious Test Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Tedious Test Artist", @"%@ != Tedious Test Artist", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -432,9 +431,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Testings Artist", @"%@ != Testings Artist", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Testings Artist", @"%@ != Testings Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Testings Artist", @"%@ != Testings Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Testings Artist", @"%@ != Testings Artist", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -445,9 +444,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"Yet another tedious test artist", @"%@ != Yet another tedious test artist", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"Yet another tedious test artist", @"%@ != Yet another tedious test artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"Yet another tedious test artist", @"%@ != Yet another tedious test artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Yet another tedious test artist", @"%@ != Yet another tedious test artist", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -458,9 +457,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity SortName], @"yatta!", @"%@ != yatta!", [entity SortName]);
-  STAssertEqualStrings([entity Text], @"yatta!", @"%@ != yatta!", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"yatta!", @"%@ != yatta!", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"yatta!", @"%@ != yatta!", [entity Text]);
+
   [self runAlias:entity];
 }
 
@@ -471,8 +470,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runArtistCredit:entity];
 }
 
@@ -483,8 +482,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runArtistCredit:entity];
 }
 
@@ -495,9 +494,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @4, @"%@ != 4", [entity Text]);
-  STAssertEqualStrings([entity Text], @"4", @"%@ != 4", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"4", @"%@ != 4", [entity Text]);
+
   [self runUserRating:entity];
 }
 
@@ -508,8 +506,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Text]);
+
   [self runSortName:entity];
 }
 
@@ -520,8 +518,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Text]);
+
   [self runTarget:entity];
 }
 
@@ -532,8 +530,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Text]);
+
   [self runTarget:entity];
 }
 
@@ -544,8 +542,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Text]);
+
   [self runTarget:entity];
 }
 
@@ -556,8 +554,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"vacuum cleaner", @"%@ != vacuum cleaner", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"vacuum cleaner", @"%@ != vacuum cleaner", [entity Text]);
+
   [self runAttribute:entity];
 }
 
@@ -568,8 +566,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"translated", @"%@ != translated", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"translated", @"%@ != translated", [entity Text]);
+
   [self runAttribute:entity];
 }
 
@@ -580,9 +578,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"25", @"%@ != 25", [entity Count]);
-  STAssertEqualObjects([entity Count], @25, @"%@ != 25", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"25", @"%@ != 25", [entity Count]);
+  STAssertEquals([entity elementCount], 25U, @"%@ != 25", [entity elementCount]);
+
   [self runRecordingList:entity];
 }
 
@@ -595,7 +593,7 @@
   STAssertNotNil(entity, @"entity is nil");
   STAssertNotNil([entity Artist], @"Artist is nil");
   [self runArtist:[entity Artist]];
-  
+
   [self runMetadata:entity];
 }
 
@@ -606,8 +604,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @12, @"%@ != 12", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 12U, @"%@ != 12", [entity elementCount]);
+
   [self runTagList:entity];
 }
 
@@ -618,8 +616,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Other", @"%@ != Other", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Other", @"%@ != Other", [entity Text]);
+
   [self runPrimaryType:entity];
 }
 
@@ -632,7 +630,7 @@
   STAssertNotNil(entity, @"entity is nil");
   STAssertNotNil([entity Artist], @"Artist is nil");
   [self runArtist:[entity Artist]];
-  
+
   [self runNameCredit:entity];
 }
 
@@ -643,10 +641,10 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Name], @"MusicBrainzz Test Artist", @"%@ != MusicBrainzz Test Artist", [entity Name]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"MusicBrainzz Test Artist", @"%@ != MusicBrainzz Test Artist", [entity Name]);
   STAssertNotNil([entity Artist], @"Artist is nil");
   [self runArtist:[entity Artist]];
-  
+
   [self runNameCredit:entity];
 }
 
@@ -657,9 +655,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"9", @"%@ != 9", [entity Count]);
-  STAssertEqualObjects([entity Count], @9, @"%@ != 9", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"9", @"%@ != 9", [entity Count]);
+  STAssertEquals([entity elementCount], 9U, @"%@ != 9", [entity elementCount]);
+
   [self runWorkList:entity];
 }
 
@@ -670,9 +668,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"special purpose artist", @"%@ != special purpose artist", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"special purpose artist", @"%@ != special purpose artist", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -683,9 +681,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"test2", @"%@ != test2", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"test2", @"%@ != test2", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -696,9 +694,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"another tag", @"%@ != another tag", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"another tag", @"%@ != another tag", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -709,9 +707,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"\340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", @"%@ != \340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"\340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", @"%@ != \340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -722,9 +720,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"special purpose musicbrainz", @"%@ != special purpose musicbrainz", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"special purpose musicbrainz", @"%@ != special purpose musicbrainz", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -735,9 +733,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"musicbrainz test artist", @"%@ != musicbrainz test artist", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"musicbrainz test artist", @"%@ != musicbrainz test artist", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -748,9 +746,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"test metal", @"%@ != test metal", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"test metal", @"%@ != test metal", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -761,9 +759,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"musicbrainz", @"%@ != musicbrainz", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"musicbrainz", @"%@ != musicbrainz", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -774,9 +772,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualStrings([entity Name], @"for testing", @"%@ != for testing", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"for testing", @"%@ != for testing", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -787,9 +785,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"3", @"%@ != 3", [entity Count]);
-  STAssertEqualStrings([entity Name], @"moose", @"%@ != moose", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"3", @"%@ != 3", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"moose", @"%@ != moose", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -800,9 +798,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"2", @"%@ != 2", [entity Count]);
-  STAssertEqualStrings([entity Name], @"test tag", @"%@ != test tag", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"2", @"%@ != 2", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"test tag", @"%@ != test tag", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -813,9 +811,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"5", @"%@ != 5", [entity Count]);
-  STAssertEqualStrings([entity Name], @"test", @"%@ != test", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"5", @"%@ != 5", [entity Count]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"test", @"%@ != test", [entity Name]);
+
   [self runTag:entity];
 }
 
@@ -826,8 +824,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"1098-12-31", @"%@ != 1098-12-31", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1098-12-31", @"%@ != 1098-12-31", [entity Text]);
+
   [self runEnd:entity];
 }
 
@@ -838,10 +836,10 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Begin], @"1001-01-01", @"%@ != 1001-01-01", [entity Begin]);
-  STAssertEqualStrings([entity End], @"1098-12-31", @"%@ != 1098-12-31", [entity End]);
-  STAssertTrue([entity Ended], @"%@ != true", [NSNumber numberWithBool:[entity Ended]]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Begin]]), @"1001-01-01", @"%@ != 1001-01-01", [entity Begin]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity End]]), @"1098-12-31", @"%@ != 1098-12-31", [entity End]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Ended]]), @"1", @"%@ != 1", [entity Ended]);
+
   [self runLifeSpan:entity];
 }
 
@@ -852,8 +850,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runUserTagList:entity];
 }
 
@@ -864,8 +862,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"13", @"%@ != 13", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"13", @"%@ != 13", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -876,8 +874,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"1457586", @"%@ != 1457586", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1457586", @"%@ != 1457586", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -888,8 +886,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"604666", @"%@ != 604666", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"604666", @"%@ != 604666", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -900,8 +898,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"1346", @"%@ != 1346", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1346", @"%@ != 1346", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -912,8 +910,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"234000", @"%@ != 234000", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"234000", @"%@ != 234000", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -924,8 +922,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"36059000", @"%@ != 36059000", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"36059000", @"%@ != 36059000", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -936,8 +934,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"482933", @"%@ != 482933", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"482933", @"%@ != 482933", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -948,8 +946,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"24306", @"%@ != 24306", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"24306", @"%@ != 24306", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -960,8 +958,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"180000", @"%@ != 180000", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"180000", @"%@ != 180000", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -972,8 +970,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"83000", @"%@ != 83000", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"83000", @"%@ != 83000", [entity Text]);
+
   [self runLength:entity];
 }
 
@@ -984,8 +982,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"1001-01-01", @"%@ != 1001-01-01", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1001-01-01", @"%@ != 1001-01-01", [entity Text]);
+
   [self runBegin:entity];
 }
 
@@ -996,9 +994,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runPuidList:entity];
 }
 
@@ -1009,9 +1007,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runPuidList:entity];
 }
 
@@ -1022,9 +1020,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"1", @"%@ != 1", [entity Count]);
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"1", @"%@ != 1", [entity Count]);
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runPuidList:entity];
 }
 
@@ -1035,9 +1033,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"3", @"%@ != 3", [entity Count]);
-  STAssertEqualObjects([entity Count], @3, @"%@ != 3", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"3", @"%@ != 3", [entity Count]);
+  STAssertEquals([entity elementCount], 3U, @"%@ != 3", [entity elementCount]);
+
   [self runReleaseGroupList:entity];
 }
 
@@ -1048,8 +1046,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"another tag", @"%@ != another tag", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"another tag", @"%@ != another tag", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1060,8 +1058,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test2", @"%@ != test2", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test2", @"%@ != test2", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1072,8 +1070,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"\340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", @"%@ != \340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"\340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", @"%@ != \340\274\200 \343\204\226 \346\260\206 \346\261\207 \351\275\252 test stuff", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1084,8 +1082,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"MusicBrainzz Test Artist", @"%@ != MusicBrainzz Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MusicBrainzz Test Artist", @"%@ != MusicBrainzz Test Artist", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1096,8 +1094,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test metal", @"%@ != test metal", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test metal", @"%@ != test metal", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1108,8 +1106,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"special purpose musicbrainz", @"%@ != special purpose musicbrainz", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"special purpose musicbrainz", @"%@ != special purpose musicbrainz", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1120,8 +1118,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"moose", @"%@ != moose", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"moose", @"%@ != moose", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1132,8 +1130,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1144,8 +1142,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"musicbrainz test artist", @"%@ != musicbrainz test artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"musicbrainz test artist", @"%@ != musicbrainz test artist", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1156,8 +1154,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"special purpose artist", @"%@ != special purpose artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"special purpose artist", @"%@ != special purpose artist", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1168,8 +1166,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"musicbrainz", @"%@ != musicbrainz", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"musicbrainz", @"%@ != musicbrainz", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1180,8 +1178,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test tag", @"%@ != test tag", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test tag", @"%@ != test tag", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1192,8 +1190,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"for testing", @"%@ != for testing", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"for testing", @"%@ != for testing", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1204,8 +1202,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test", @"%@ != test", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test", @"%@ != test", [entity Text]);
+
   [self runName:entity];
 }
 
@@ -1216,8 +1214,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"1e59d775-faec-6b4e-854e-0f739841e346", @"%@ != 1e59d775-faec-6b4e-854e-0f739841e346", [entity Id]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"1e59d775-faec-6b4e-854e-0f739841e346", @"%@ != 1e59d775-faec-6b4e-854e-0f739841e346", [entity Id]);
+
   [self runPuid:entity];
 }
 
@@ -1228,8 +1226,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"ae1975d3-75db-a704-d0de-a3bbd27614fc", @"%@ != ae1975d3-75db-a704-d0de-a3bbd27614fc", [entity Id]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"ae1975d3-75db-a704-d0de-a3bbd27614fc", @"%@ != ae1975d3-75db-a704-d0de-a3bbd27614fc", [entity Id]);
+
   [self runPuid:entity];
 }
 
@@ -1240,8 +1238,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"c5a96ab3-7b85-795c-ad07-3c819111aeea", @"%@ != c5a96ab3-7b85-795c-ad07-3c819111aeea", [entity Id]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"c5a96ab3-7b85-795c-ad07-3c819111aeea", @"%@ != c5a96ab3-7b85-795c-ad07-3c819111aeea", [entity Id]);
+
   [self runPuid:entity];
 }
 
@@ -1252,8 +1250,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runAttributeList:entity];
 }
 
@@ -1264,8 +1262,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runAttributeList:entity];
 }
 
@@ -1276,9 +1274,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Count], @"0", @"%@ != 0", [entity Count]);
-  STAssertEqualObjects([entity Count], @0, @"%@ != 0", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"0", @"%@ != 0", [entity Count]);
+  STAssertEquals([entity elementCount], 0U, @"%@ != 0", [entity elementCount]);
+
   [self runReleaseList:entity];
 }
 
@@ -1289,8 +1287,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"1920", @"%@ != 1920", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1920", @"%@ != 1920", [entity Text]);
+
   [self runFirstReleaseDate:entity];
 }
 
@@ -1301,8 +1299,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"2011-12-09", @"%@ != 2011-12-09", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"2011-12-09", @"%@ != 2011-12-09", [entity Text]);
+
   [self runFirstReleaseDate:entity];
 }
 
@@ -1313,7 +1311,7 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  
+
   [self runFirstReleaseDate:entity];
 }
 
@@ -1324,13 +1322,13 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"6238b8f4-7d04-4ff7-a4ed-86e4b85860bd", @"%@ != 6238b8f4-7d04-4ff7-a4ed-86e4b85860bd", [entity Id]);
-  STAssertEqualStrings([entity Title], @"track #2", @"%@ != track #2", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"6238b8f4-7d04-4ff7-a4ed-86e4b85860bd", @"%@ != 6238b8f4-7d04-4ff7-a4ed-86e4b85860bd", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"track #2", @"%@ != track #2", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
   STAssertNotNil([entity PuidList], @"PuidList is nil");
   [self runPuidList:[entity PuidList]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1341,13 +1339,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Id]);
-  STAssertEqualStrings([entity Title], @"his floor", @"%@ != his floor", [entity Title]);
-  STAssertEqualObjects([entity Length], @83000, @"%@ != 83000", [entity Length]);
-  STAssertEqualStrings([entity Length], @"83000", @"%@ != 83000", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"his floor", @"%@ != his floor", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"83000", @"%@ != 83000", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1358,12 +1355,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"2f55fc9a-378a-4a3b-bf06-9defeee6834f", @"%@ != 2f55fc9a-378a-4a3b-bf06-9defeee6834f", [entity Id]);
-  STAssertEqualObjects([entity Title], @4, @"%@ != 4", [entity Title]);
-  STAssertEqualStrings([entity Title], @"4", @"%@ != 4", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"2f55fc9a-378a-4a3b-bf06-9defeee6834f", @"%@ != 2f55fc9a-378a-4a3b-bf06-9defeee6834f", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"4", @"%@ != 4", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1374,11 +1370,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"7cd3e324-1be9-4026-a9cb-b783c474c132", @"%@ != 7cd3e324-1be9-4026-a9cb-b783c474c132", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test", @"%@ != test", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7cd3e324-1be9-4026-a9cb-b783c474c132", @"%@ != 7cd3e324-1be9-4026-a9cb-b783c474c132", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test", @"%@ != test", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1389,15 +1385,14 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"7362b9e3-e12d-4bbe-bb6e-c94be47950eb", @"%@ != 7362b9e3-e12d-4bbe-bb6e-c94be47950eb", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Track 1", @"%@ != Track 1", [entity Title]);
-  STAssertEqualObjects([entity Length], @1457586, @"%@ != 1457586", [entity Length]);
-  STAssertEqualStrings([entity Length], @"1457586", @"%@ != 1457586", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7362b9e3-e12d-4bbe-bb6e-c94be47950eb", @"%@ != 7362b9e3-e12d-4bbe-bb6e-c94be47950eb", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Track 1", @"%@ != Track 1", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"1457586", @"%@ != 1457586", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
   STAssertNotNil([entity PuidList], @"PuidList is nil");
   [self runPuidList:[entity PuidList]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1408,12 +1403,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"6b4331f3-4e80-4d55-8df0-29083ca062a3", @"%@ != 6b4331f3-4e80-4d55-8df0-29083ca062a3", [entity Id]);
-  STAssertEqualObjects([entity Title], @3, @"%@ != 3", [entity Title]);
-  STAssertEqualStrings([entity Title], @"3", @"%@ != 3", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"6b4331f3-4e80-4d55-8df0-29083ca062a3", @"%@ != 6b4331f3-4e80-4d55-8df0-29083ca062a3", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"3", @"%@ != 3", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1424,14 +1418,13 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"74df6277-36ea-4077-8a34-a3328760d0cb", @"%@ != 74df6277-36ea-4077-8a34-a3328760d0cb", [entity Id]);
-  STAssertEqualStrings([entity Title], @"%track", @"%@ != %track", [entity Title]);
-  STAssertEqualObjects([entity Length], @36059000, @"%@ != 36059000", [entity Length]);
-  STAssertEqualStrings([entity Length], @"36059000", @"%@ != 36059000", [entity Length]);
-  STAssertEqualStrings([entity Disambiguation], @"test", @"%@ != test", [entity Disambiguation]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"74df6277-36ea-4077-8a34-a3328760d0cb", @"%@ != 74df6277-36ea-4077-8a34-a3328760d0cb", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"%track", @"%@ != %track", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"36059000", @"%@ != 36059000", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Disambiguation]]), @"test", @"%@ != test", [entity Disambiguation]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1442,13 +1435,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"59a408a8-802d-41ee-a228-5e52a86a28b8", @"%@ != 59a408a8-802d-41ee-a228-5e52a86a28b8", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Title]);
-  STAssertEqualObjects([entity Length], @604666, @"%@ != 604666", [entity Length]);
-  STAssertEqualStrings([entity Length], @"604666", @"%@ != 604666", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"59a408a8-802d-41ee-a228-5e52a86a28b8", @"%@ != 59a408a8-802d-41ee-a228-5e52a86a28b8", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"604666", @"%@ != 604666", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1459,13 +1451,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"fd4d253f-ea0f-4ba3-8e18-d861e49b06ac", @"%@ != fd4d253f-ea0f-4ba3-8e18-d861e49b06ac", [entity Id]);
-  STAssertEqualStrings([entity Title], @"\330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", @"%@ != \330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", [entity Title]);
-  STAssertEqualObjects([entity Length], @234000, @"%@ != 234000", [entity Length]);
-  STAssertEqualStrings([entity Length], @"234000", @"%@ != 234000", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"fd4d253f-ea0f-4ba3-8e18-d861e49b06ac", @"%@ != fd4d253f-ea0f-4ba3-8e18-d861e49b06ac", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"\330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", @"%@ != \330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"234000", @"%@ != 234000", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1476,14 +1467,13 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"01f88fa8-7bd5-402f-8d6f-65b62480ef3f", @"%@ != 01f88fa8-7bd5-402f-8d6f-65b62480ef3f", [entity Id]);
-  STAssertEqualStrings([entity Title], @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Title]);
-  STAssertEqualObjects([entity Length], @180000, @"%@ != 180000", [entity Length]);
-  STAssertEqualStrings([entity Length], @"180000", @"%@ != 180000", [entity Length]);
-  STAssertEqualStrings([entity Disambiguation], @"test_", @"%@ != test_", [entity Disambiguation]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"01f88fa8-7bd5-402f-8d6f-65b62480ef3f", @"%@ != 01f88fa8-7bd5-402f-8d6f-65b62480ef3f", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"180000", @"%@ != 180000", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Disambiguation]]), @"test_", @"%@ != test_", [entity Disambiguation]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1494,11 +1484,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"5aed82a7-1da6-4e57-a3be-3e84da727d73", @"%@ != 5aed82a7-1da6-4e57-a3be-3e84da727d73", [entity Id]);
-  STAssertEqualStrings([entity Title], @"taesting blah-blah ss aa \303\266", @"%@ != taesting blah-blah ss aa \303\266", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"5aed82a7-1da6-4e57-a3be-3e84da727d73", @"%@ != 5aed82a7-1da6-4e57-a3be-3e84da727d73", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"taesting blah-blah ss aa \303\266", @"%@ != taesting blah-blah ss aa \303\266", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1509,11 +1499,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"c34260fc-8b4c-4ce6-a0dd-9001c05ee029", @"%@ != c34260fc-8b4c-4ce6-a0dd-9001c05ee029", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test11", @"%@ != test11", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"c34260fc-8b4c-4ce6-a0dd-9001c05ee029", @"%@ != c34260fc-8b4c-4ce6-a0dd-9001c05ee029", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test11", @"%@ != test11", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1524,12 +1514,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"3e90ce1f-87f0-4abf-a3a6-1dd84e581006", @"%@ != 3e90ce1f-87f0-4abf-a3a6-1dd84e581006", [entity Id]);
-  STAssertEqualObjects([entity Title], @1, @"%@ != 1", [entity Title]);
-  STAssertEqualStrings([entity Title], @"1", @"%@ != 1", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"3e90ce1f-87f0-4abf-a3a6-1dd84e581006", @"%@ != 3e90ce1f-87f0-4abf-a3a6-1dd84e581006", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"1", @"%@ != 1", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1540,12 +1529,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"54366bd0-1772-4c8c-b4ed-c8fcaadfee56", @"%@ != 54366bd0-1772-4c8c-b4ed-c8fcaadfee56", [entity Id]);
-  STAssertEqualObjects([entity Title], @2, @"%@ != 2", [entity Title]);
-  STAssertEqualStrings([entity Title], @"2", @"%@ != 2", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"54366bd0-1772-4c8c-b4ed-c8fcaadfee56", @"%@ != 54366bd0-1772-4c8c-b4ed-c8fcaadfee56", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"2", @"%@ != 2", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1556,13 +1544,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"8a80f386-c321-43d0-b289-368d8df83127", @"%@ != 8a80f386-c321-43d0-b289-368d8df83127", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test2", @"%@ != test2", [entity Title]);
-  STAssertEqualObjects([entity Length], @1346, @"%@ != 1346", [entity Length]);
-  STAssertEqualStrings([entity Length], @"1346", @"%@ != 1346", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"8a80f386-c321-43d0-b289-368d8df83127", @"%@ != 8a80f386-c321-43d0-b289-368d8df83127", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test2", @"%@ != test2", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"1346", @"%@ != 1346", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1573,13 +1560,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"41de7ed6-2f97-4a01-90f8-28f721e37cb2", @"%@ != 41de7ed6-2f97-4a01-90f8-28f721e37cb2", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test3", @"%@ != test3", [entity Title]);
-  STAssertEqualObjects([entity Length], @1346, @"%@ != 1346", [entity Length]);
-  STAssertEqualStrings([entity Length], @"1346", @"%@ != 1346", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"41de7ed6-2f97-4a01-90f8-28f721e37cb2", @"%@ != 41de7ed6-2f97-4a01-90f8-28f721e37cb2", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test3", @"%@ != test3", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"1346", @"%@ != 1346", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1590,11 +1576,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"5b2d7a8c-da27-460d-b491-34f66e3b7ba5", @"%@ != 5b2d7a8c-da27-460d-b491-34f66e3b7ba5", [entity Id]);
-  STAssertEqualStrings([entity Title], @"License Placeholder", @"%@ != License Placeholder", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"5b2d7a8c-da27-460d-b491-34f66e3b7ba5", @"%@ != 5b2d7a8c-da27-460d-b491-34f66e3b7ba5", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"License Placeholder", @"%@ != License Placeholder", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1605,13 +1591,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"2cfac6a6-cd1d-415a-97d2-71c881169235", @"%@ != 2cfac6a6-cd1d-415a-97d2-71c881169235", [entity Id]);
-  STAssertEqualStrings([entity Title], @"One", @"%@ != One", [entity Title]);
-  STAssertEqualObjects([entity Length], @24306, @"%@ != 24306", [entity Length]);
-  STAssertEqualStrings([entity Length], @"24306", @"%@ != 24306", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"2cfac6a6-cd1d-415a-97d2-71c881169235", @"%@ != 2cfac6a6-cd1d-415a-97d2-71c881169235", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"One", @"%@ != One", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"24306", @"%@ != 24306", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1622,15 +1607,14 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"0fe39742-f4ca-49ef-8281-80946564cf44", @"%@ != 0fe39742-f4ca-49ef-8281-80946564cf44", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Title]);
-  STAssertEqualObjects([entity Length], @482933, @"%@ != 482933", [entity Length]);
-  STAssertEqualStrings([entity Length], @"482933", @"%@ != 482933", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"0fe39742-f4ca-49ef-8281-80946564cf44", @"%@ != 0fe39742-f4ca-49ef-8281-80946564cf44", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"482933", @"%@ != 482933", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
   STAssertNotNil([entity PuidList], @"PuidList is nil");
   [self runPuidList:[entity PuidList]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1641,13 +1625,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"6bccbe96-2801-410d-949d-b101bb393d59", @"%@ != 6bccbe96-2801-410d-949d-b101bb393d59", [entity Id]);
-  STAssertEqualStrings([entity Title], @"te.. aw forget it", @"%@ != te.. aw forget it", [entity Title]);
-  STAssertEqualObjects([entity Length], @13, @"%@ != 13", [entity Length]);
-  STAssertEqualStrings([entity Length], @"13", @"%@ != 13", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"6bccbe96-2801-410d-949d-b101bb393d59", @"%@ != 6bccbe96-2801-410d-949d-b101bb393d59", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"te.. aw forget it", @"%@ != te.. aw forget it", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"13", @"%@ != 13", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1658,12 +1641,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"4ee3df46-dac2-4cc8-b196-5ff9a83b0ada", @"%@ != 4ee3df46-dac2-4cc8-b196-5ff9a83b0ada", [entity Id]);
-  STAssertEqualObjects([entity Title], @5, @"%@ != 5", [entity Title]);
-  STAssertEqualStrings([entity Title], @"5", @"%@ != 5", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"4ee3df46-dac2-4cc8-b196-5ff9a83b0ada", @"%@ != 4ee3df46-dac2-4cc8-b196-5ff9a83b0ada", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"5", @"%@ != 5", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1674,11 +1656,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"a2af846a-93a1-4ea8-ab36-0ef005209bd1", @"%@ != a2af846a-93a1-4ea8-ab36-0ef005209bd1", [entity Id]);
-  STAssertEqualStrings([entity Title], @"asdfdsf", @"%@ != asdfdsf", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"a2af846a-93a1-4ea8-ab36-0ef005209bd1", @"%@ != a2af846a-93a1-4ea8-ab36-0ef005209bd1", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"asdfdsf", @"%@ != asdfdsf", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1689,11 +1671,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"fbae3d07-69c3-4f00-a1ef-c99f0da54127", @"%@ != fbae3d07-69c3-4f00-a1ef-c99f0da54127", [entity Id]);
-  STAssertEqualStrings([entity Title], @"track #1", @"%@ != track #1", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"fbae3d07-69c3-4f00-a1ef-c99f0da54127", @"%@ != fbae3d07-69c3-4f00-a1ef-c99f0da54127", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"track #1", @"%@ != track #1", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1704,11 +1686,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"9a8168c1-7475-42ea-89e5-ec306b660b6c", @"%@ != 9a8168c1-7475-42ea-89e5-ec306b660b6c", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Please Mister Nagios", @"%@ != Please Mister Nagios", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"9a8168c1-7475-42ea-89e5-ec306b660b6c", @"%@ != 9a8168c1-7475-42ea-89e5-ec306b660b6c", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Please Mister Nagios", @"%@ != Please Mister Nagios", [entity Title]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1719,13 +1701,12 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"e7e0cb25-ee2d-4cb9-85fe-a2a9d213f20c", @"%@ != e7e0cb25-ee2d-4cb9-85fe-a2a9d213f20c", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test1", @"%@ != test1", [entity Title]);
-  STAssertEqualObjects([entity Length], @1346, @"%@ != 1346", [entity Length]);
-  STAssertEqualStrings([entity Length], @"1346", @"%@ != 1346", [entity Length]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"e7e0cb25-ee2d-4cb9-85fe-a2a9d213f20c", @"%@ != e7e0cb25-ee2d-4cb9-85fe-a2a9d213f20c", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test1", @"%@ != test1", [entity Title]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Length]]), @"1346", @"%@ != 1346", [entity Length]);
   STAssertNotNil([entity ArtistCredit], @"ArtistCredit is nil");
   [self runArtistCredit:[entity ArtistCredit]];
-  
+
   [self runRecording:entity];
 }
 
@@ -1736,13 +1717,13 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"instrument", @"%@ != instrument", [entity Type]);
-  STAssertEqualStrings([entity Target], @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Target]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"instrument", @"%@ != instrument", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Target]]), @"7be53912-f01d-4422-97d1-16ad63c24816", @"%@ != 7be53912-f01d-4422-97d1-16ad63c24816", [entity Target]);
   STAssertNotNil([entity AttributeList], @"AttributeList is nil");
   [self runAttributeList:[entity AttributeList]];
   STAssertNotNil([entity Recording], @"Recording is nil");
   [self runRecording:[entity Recording]];
-  
+
   [self runRelation:entity];
 }
 
@@ -1753,13 +1734,13 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"librettist", @"%@ != librettist", [entity Type]);
-  STAssertEqualStrings([entity Target], @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Target]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"librettist", @"%@ != librettist", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Target]]), @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Target]);
   STAssertNotNil([entity AttributeList], @"AttributeList is nil");
   [self runAttributeList:[entity AttributeList]];
   STAssertNotNil([entity Work], @"Work is nil");
   [self runWork:[entity Work]];
-  
+
   [self runRelation:entity];
 }
 
@@ -1770,11 +1751,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"writer", @"%@ != writer", [entity Type]);
-  STAssertEqualStrings([entity Target], @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Target]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"writer", @"%@ != writer", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Target]]), @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Target]);
   STAssertNotNil([entity Work], @"Work is nil");
   [self runWork:[entity Work]];
-  
+
   [self runRelation:entity];
 }
 
@@ -1785,9 +1766,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"cb9dc791-0c74-3c57-868b-341b074973f4", @"%@ != cb9dc791-0c74-3c57-868b-341b074973f4", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Track 1", @"%@ != Track 1", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"cb9dc791-0c74-3c57-868b-341b074973f4", @"%@ != cb9dc791-0c74-3c57-868b-341b074973f4", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Track 1", @"%@ != Track 1", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1798,9 +1779,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"3adefdb4-d787-3d09-a288-14eaee8d637d", @"%@ != 3adefdb4-d787-3d09-a288-14eaee8d637d", [entity Id]);
-  STAssertEqualStrings([entity Title], @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"3adefdb4-d787-3d09-a288-14eaee8d637d", @"%@ != 3adefdb4-d787-3d09-a288-14eaee8d637d", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1811,9 +1792,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Id]);
-  STAssertEqualStrings([entity Title], @"One", @"%@ != One", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"339ed331-2bdf-3208-850e-c86095ba9c23", @"%@ != 339ed331-2bdf-3208-850e-c86095ba9c23", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"One", @"%@ != One", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1824,9 +1805,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"a653cd7a-787f-425f-9b54-c254733e3ebb", @"%@ != a653cd7a-787f-425f-9b54-c254733e3ebb", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test\342\200\246", @"%@ != test\342\200\246", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"a653cd7a-787f-425f-9b54-c254733e3ebb", @"%@ != a653cd7a-787f-425f-9b54-c254733e3ebb", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test\342\200\246", @"%@ != test\342\200\246", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1837,9 +1818,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"6e83781f-a84c-3674-9948-c7951bea0dc0", @"%@ != 6e83781f-a84c-3674-9948-c7951bea0dc0", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test1", @"%@ != test1", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"6e83781f-a84c-3674-9948-c7951bea0dc0", @"%@ != 6e83781f-a84c-3674-9948-c7951bea0dc0", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test1", @"%@ != test1", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1850,9 +1831,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"c18dc2be-0312-3dad-a1ca-7c7989e887e8", @"%@ != c18dc2be-0312-3dad-a1ca-7c7989e887e8", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"c18dc2be-0312-3dad-a1ca-7c7989e887e8", @"%@ != c18dc2be-0312-3dad-a1ca-7c7989e887e8", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1863,9 +1844,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Track 1", @"%@ != Track 1", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"895704ca-b6d3-374f-aa98-56fbea9643a2", @"%@ != 895704ca-b6d3-374f-aa98-56fbea9643a2", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Track 1", @"%@ != Track 1", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1876,9 +1857,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"493c57fd-b85c-3a90-9129-b2a99c48095c", @"%@ != 493c57fd-b85c-3a90-9129-b2a99c48095c", [entity Id]);
-  STAssertEqualStrings([entity Title], @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"493c57fd-b85c-3a90-9129-b2a99c48095c", @"%@ != 493c57fd-b85c-3a90-9129-b2a99c48095c", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1889,9 +1870,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"580b213e-3537-30da-ba5d-78228aeb66ba", @"%@ != 580b213e-3537-30da-ba5d-78228aeb66ba", [entity Id]);
-  STAssertEqualStrings([entity Title], @"test11", @"%@ != test11", [entity Title]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"580b213e-3537-30da-ba5d-78228aeb66ba", @"%@ != 580b213e-3537-30da-ba5d-78228aeb66ba", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Title]]), @"test11", @"%@ != test11", [entity Title]);
+
   [self runWork:entity];
 }
 
@@ -1902,9 +1883,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  //STAssertEqualStrings([entity Count], @"12", @"%@ != 12", [entity Count]);
-  STAssertEqualObjects([entity Count], @12, @"%@ != 12", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Count]]), @"12", @"%@ != 12", [entity Count]);
+  STAssertEquals([entity elementCount], 12U, @"%@ != 12", [entity elementCount]);
+
   [self runAliasList:entity];
 }
 
@@ -1915,8 +1896,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Name], @"test", @"%@ != test", [entity Name]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"test", @"%@ != test", [entity Name]);
+
   [self runUserTag:entity];
 }
 
@@ -1927,11 +1908,11 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Type], @"Other", @"%@ != Other", [entity Type]);
-  STAssertEqualStrings([entity Id], @"7e84f845-ac16-41fe-9ff8-df12eb32af55", @"%@ != 7e84f845-ac16-41fe-9ff8-df12eb32af55", [entity Id]);
-  STAssertEqualStrings([entity Name], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Name]);
-  STAssertEqualStrings([entity SortName], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity SortName]);
-  STAssertEqualStrings([entity Disambiguation], @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Disambiguation]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Type]]), @"Other", @"%@ != Other", [entity Type]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7e84f845-ac16-41fe-9ff8-df12eb32af55", @"%@ != 7e84f845-ac16-41fe-9ff8-df12eb32af55", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Name]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Disambiguation]]), @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Disambiguation]);
   STAssertNotNil([entity LifeSpan], @"LifeSpan is nil");
   [self runLifeSpan:[entity LifeSpan]];
   STAssertNotNil([entity AliasList], @"AliasList is nil");
@@ -1956,7 +1937,7 @@
   [self runRating:[entity Rating]];
   STAssertNotNil([entity UserRating], @"UserRating is nil");
   [self runUserRating:[entity UserRating]];
-  
+
   [self runArtist:entity];
 }
 
@@ -1967,10 +1948,10 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Id], @"7e84f845-ac16-41fe-9ff8-df12eb32af55", @"%@ != 7e84f845-ac16-41fe-9ff8-df12eb32af55", [entity Id]);
-  STAssertEqualStrings([entity Name], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Name]);
-  STAssertEqualStrings([entity SortName], @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity SortName]);
-  STAssertEqualStrings([entity Disambiguation], @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Disambiguation]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Id]]), @"7e84f845-ac16-41fe-9ff8-df12eb32af55", @"%@ != 7e84f845-ac16-41fe-9ff8-df12eb32af55", [entity Id]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Name]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity Name]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity SortName]]), @"MusicBrainz Test Artist", @"%@ != MusicBrainz Test Artist", [entity SortName]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Disambiguation]]), @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Disambiguation]);
   STAssertNotNil([entity AliasList], @"AliasList is nil");
   [self runAliasList:[entity AliasList]];
   STAssertNotNil([entity TagList], @"TagList is nil");
@@ -1981,7 +1962,7 @@
   [self runRating:[entity Rating]];
   STAssertNotNil([entity UserRating], @"UserRating is nil");
   [self runUserRating:[entity UserRating]];
-  
+
   [self runArtist:entity];
 }
 
@@ -1992,8 +1973,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"One", @"%@ != One", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"One", @"%@ != One", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2004,9 +1985,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @1, @"%@ != 1", [entity Text]);
-  STAssertEqualStrings([entity Text], @"1", @"%@ != 1", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"1", @"%@ != 1", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2017,8 +1997,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test2", @"%@ != test2", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test2", @"%@ != test2", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2029,8 +2009,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Please Mister Nagios", @"%@ != Please Mister Nagios", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Please Mister Nagios", @"%@ != Please Mister Nagios", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2041,8 +2021,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"track #1", @"%@ != track #1", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"track #1", @"%@ != track #1", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2053,8 +2033,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Signature Test (Johan speaking)", @"%@ != Signature Test (Johan speaking)", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2065,8 +2045,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"\330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", @"%@ != \330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"\330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", @"%@ != \330\250\330\247\331\204\330\263\331\203\331\210\330\252 (\330\261\331\212\331\205\331\203\330\263)", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2077,8 +2057,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test\342\200\246", @"%@ != test\342\200\246", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test\342\200\246", @"%@ != test\342\200\246", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2089,8 +2069,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"te.. aw forget it", @"%@ != te.. aw forget it", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"te.. aw forget it", @"%@ != te.. aw forget it", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2101,9 +2081,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @4, @"%@ != 4", [entity Text]);
-  STAssertEqualStrings([entity Text], @"4", @"%@ != 4", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"4", @"%@ != 4", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2114,8 +2093,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"asdfdsf", @"%@ != asdfdsf", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"asdfdsf", @"%@ != asdfdsf", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2126,8 +2105,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"his floor", @"%@ != his floor", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"his floor", @"%@ != his floor", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2138,8 +2117,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test", @"%@ != test", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test", @"%@ != test", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2150,8 +2129,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Track 1", @"%@ != Track 1", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Track 1", @"%@ != Track 1", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2162,9 +2141,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @2, @"%@ != 2", [entity Text]);
-  STAssertEqualStrings([entity Text], @"2", @"%@ != 2", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"2", @"%@ != 2", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2175,8 +2153,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"TEST", @"%@ != TEST", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"TEST", @"%@ != TEST", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2187,8 +2165,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Nagios Check Release", @"%@ != Nagios Check Release", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Nagios Check Release", @"%@ != Nagios Check Release", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2199,8 +2177,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test11", @"%@ != test11", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test11", @"%@ != test11", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2211,8 +2189,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"%track", @"%@ != %track", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"%track", @"%@ != %track", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2223,9 +2201,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @5, @"%@ != 5", [entity Text]);
-  STAssertEqualStrings([entity Text], @"5", @"%@ != 5", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"5", @"%@ != 5", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2236,8 +2213,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Oh, I\'m sorry! Did I break your concentration? (Jules)", @"%@ != Oh, I\'m sorry! Did I break your concentration? (Jules)", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2248,8 +2225,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"track #2", @"%@ != track #2", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"track #2", @"%@ != track #2", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2260,9 +2237,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualObjects([entity Text], @3, @"%@ != 3", [entity Text]);
-  STAssertEqualStrings([entity Text], @"3", @"%@ != 3", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"3", @"%@ != 3", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2273,8 +2249,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test1", @"%@ != test1", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test1", @"%@ != test1", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2285,8 +2261,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"taesting blah-blah ss aa \303\266", @"%@ != taesting blah-blah ss aa \303\266", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"taesting blah-blah ss aa \303\266", @"%@ != taesting blah-blah ss aa \303\266", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2297,8 +2273,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"License Placeholder", @"%@ != License Placeholder", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"License Placeholder", @"%@ != License Placeholder", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2309,8 +2285,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test3", @"%@ != test3", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test3", @"%@ != test3", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2321,8 +2297,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"3 on Duplicate", @"%@ != 3 on Duplicate", [entity Text]);
+
   [self runTitle:entity];
 }
 
@@ -2333,9 +2309,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity TargetType], @"recording", @"%@ != recording", [entity TargetType]);
-  STAssertEqualObjects([entity Count], @1, @"%@ != 1", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity TargetType]]), @"recording", @"%@ != recording", [entity TargetType]);
+  STAssertEquals([entity elementCount], 1U, @"%@ != 1", [entity elementCount]);
+
   [self runRelationList:entity];
 }
 
@@ -2346,9 +2322,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity TargetType], @"work", @"%@ != work", [entity TargetType]);
-  STAssertEqualObjects([entity Count], @2, @"%@ != 2", [entity Count]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity TargetType]]), @"work", @"%@ != work", [entity TargetType]);
+  STAssertEquals([entity elementCount], 2U, @"%@ != 2", [entity elementCount]);
+
   [self runRelationList:entity];
 }
 
@@ -2359,8 +2335,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test", @"%@ != test", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test", @"%@ != test", [entity Text]);
+
   [self runDisambiguation:entity];
 }
 
@@ -2371,8 +2347,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"Special Purpose Artist - MusicBrainz Test Artist", @"%@ != Special Purpose Artist - MusicBrainz Test Artist", [entity Text]);
+
   [self runDisambiguation:entity];
 }
 
@@ -2383,8 +2359,8 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"test_", @"%@ != test_", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"test_", @"%@ != test_", [entity Text]);
+
   [self runDisambiguation:entity];
 }
 
@@ -2395,10 +2371,9 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity VotesCount], @"6", @"%@ != 6", [entity VotesCount]);
-  STAssertEqualObjects([entity Text], @4, @"%@ != 4", [entity Text]);
-  STAssertEqualStrings([entity Text], @"4", @"%@ != 4", [entity Text]);
-  
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity VotesCount]]), @"6", @"%@ != 6", [entity VotesCount]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"4", @"%@ != 4", [entity Text]);
+
   [self runRating:entity];
 }
 
@@ -2409,7 +2384,7 @@
   STAssertNil(error, @"error => %@", error);
   id entity = [MBEntity entityWithElement:element];
   STAssertNotNil(entity, @"entity is nil");
-  STAssertEqualStrings([entity Text], @"true", @"%@ != true", [entity Text]);
+  STAssertEqualStrings(([NSString stringWithFormat:@"%@", [entity Text]]), @"true", @"%@ != true", [entity Text]);
   
   [self runEnded:entity];
 }
