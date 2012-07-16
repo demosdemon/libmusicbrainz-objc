@@ -35,42 +35,46 @@
 /* Begin PBXBuildFile section */
 		5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
 		5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
-		5D3BF82715B47D730031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81F15B47D730031A014 /* MBDeleteRequest.h */; };
-		5D3BF82815B47D730031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81F15B47D730031A014 /* MBDeleteRequest.h */; };
-		5D3BF82915B47D730031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82015B47D730031A014 /* MBDeleteRequest.m */; };
-		5D3BF82A15B47D730031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82015B47D730031A014 /* MBDeleteRequest.m */; };
-		5D3BF82B15B47D730031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82115B47D730031A014 /* MBGetRequest.h */; };
-		5D3BF82C15B47D730031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82115B47D730031A014 /* MBGetRequest.h */; };
-		5D3BF82D15B47D730031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82215B47D730031A014 /* MBGetRequest.m */; };
-		5D3BF82E15B47D730031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82215B47D730031A014 /* MBGetRequest.m */; };
-		5D3BF82F15B47D730031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82315B47D730031A014 /* MBPostRequest.h */; };
-		5D3BF83015B47D730031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82315B47D730031A014 /* MBPostRequest.h */; };
-		5D3BF83115B47D730031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82415B47D730031A014 /* MBPostRequest.m */; };
-		5D3BF83215B47D730031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82415B47D730031A014 /* MBPostRequest.m */; };
-		5D3BF83315B47D730031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82515B47D730031A014 /* MBPutRequest.h */; };
-		5D3BF83415B47D730031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF82515B47D730031A014 /* MBPutRequest.h */; };
-		5D3BF83515B47D730031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82615B47D730031A014 /* MBPutRequest.m */; };
-		5D3BF83615B47D730031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF82615B47D730031A014 /* MBPutRequest.m */; };
-		5D3BF84115B49F830031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83715B49F7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
-		5D3BF84215B49F830031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83715B49F7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
-		5D3BF84315B49F830031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83815B49F7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
-		5D3BF84415B49F830031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83815B49F7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
-		5D3BF84515B49F830031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83915B49F800031A014 /* MBIsrcSubmissionRequest.h */; };
-		5D3BF84615B49F830031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83915B49F800031A014 /* MBIsrcSubmissionRequest.h */; };
-		5D3BF84715B49F830031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83A15B49F800031A014 /* MBIsrcSubmissionRequest.m */; };
-		5D3BF84815B49F830031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83A15B49F800031A014 /* MBIsrcSubmissionRequest.m */; };
-		5D3BF84915B49F830031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83B15B49F800031A014 /* MBPuidSubmissionRequest.h */; };
-		5D3BF84A15B49F830031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83B15B49F800031A014 /* MBPuidSubmissionRequest.h */; };
-		5D3BF84B15B49F830031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83C15B49F810031A014 /* MBPuidSubmissionRequest.m */; };
-		5D3BF84C15B49F830031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83C15B49F810031A014 /* MBPuidSubmissionRequest.m */; };
-		5D3BF84D15B49F830031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83D15B49F810031A014 /* MBRatingSubmissionRequest.h */; };
-		5D3BF84E15B49F830031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83D15B49F810031A014 /* MBRatingSubmissionRequest.h */; };
-		5D3BF84F15B49F830031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83E15B49F810031A014 /* MBRatingSubmissionRequest.m */; };
-		5D3BF85015B49F830031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF83E15B49F810031A014 /* MBRatingSubmissionRequest.m */; };
-		5D3BF85115B49F830031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83F15B49F830031A014 /* MBTagSubmissionRequest.h */; };
-		5D3BF85215B49F830031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF83F15B49F830031A014 /* MBTagSubmissionRequest.h */; };
-		5D3BF85315B49F830031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF84015B49F830031A014 /* MBTagSubmissionRequest.m */; };
-		5D3BF85415B49F830031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF84015B49F830031A014 /* MBTagSubmissionRequest.m */; };
+		5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
+		5D3BF86A15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
+		5D3BF86B15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
+		5D3BF86C15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
+		5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */; };
+		5D3BF86E15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */; };
+		5D3BF86F15B4AB7F0031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */; };
+		5D3BF87015B4AB7F0031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */; };
+		5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */; };
+		5D3BF87215B4AB7F0031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */; };
+		5D3BF87315B4AB7F0031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */; };
+		5D3BF87415B4AB7F0031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */; };
+		5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */; };
+		5D3BF87615B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */; };
+		5D3BF87715B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */; };
+		5D3BF87815B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */; };
+		5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */; };
+		5D3BF87A15B4AB7F0031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */; };
+		5D3BF87B15B4AB7F0031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */; };
+		5D3BF87C15B4AB7F0031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */; };
+		5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */; };
+		5D3BF87E15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */; };
+		5D3BF87F15B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */; };
+		5D3BF88015B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */; };
+		5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */; };
+		5D3BF88215B4AB7F0031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */; };
+		5D3BF88315B4AB7F0031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */; };
+		5D3BF88415B4AB7F0031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */; };
+		5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */; };
+		5D3BF88615B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */; };
+		5D3BF88715B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */; };
+		5D3BF88815B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */; };
+		5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86515B4AB7F0031A014 /* MBRequest.h */; };
+		5D3BF88A15B4AB7F0031A014 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86515B4AB7F0031A014 /* MBRequest.h */; };
+		5D3BF88B15B4AB7F0031A014 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86615B4AB7F0031A014 /* MBRequest.m */; };
+		5D3BF88C15B4AB7F0031A014 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86615B4AB7F0031A014 /* MBRequest.m */; };
+		5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */; };
+		5D3BF88E15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */; };
+		5D3BF88F15B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
+		5D3BF89015B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
@@ -82,7 +86,6 @@
 		5D81624C1594219F002E6A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8162491594219F002E6A65 /* InfoPlist.strings */; };
 		5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */; };
 		5D82776315AD1D9500B4A8EB /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
-		5D82776415AD1D9500B4A8EB /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */; };
 		5D82776515AD1D9500B4A8EB /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
 		5D82776615AD1D9500B4A8EB /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033E158058BD00E8A525 /* MBAnnotation.m */; };
 		5D82776715AD1D9500B4A8EB /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0340158058BD00E8A525 /* MBArtist.m */; };
@@ -121,7 +124,6 @@
 		5D82778815AD1D9500B4A8EB /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; };
 		5D82778915AD1D9500B4A8EB /* NSString+MBKeyManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */; };
 		5D82778A15AD1DF100B4A8EB /* MBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0376158058BD00E8A525 /* MBQuery.m */; };
-		5D82778B15AD1DF100B4A8EB /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */; };
 		5D82778C15AD1DF100B4A8EB /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
 		5D82778D15AD1DF100B4A8EB /* MBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033E158058BD00E8A525 /* MBAnnotation.m */; };
 		5D82778E15AD1DF100B4A8EB /* MBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0340158058BD00E8A525 /* MBArtist.m */; };
@@ -162,7 +164,6 @@
 		5D8277B115AD1E3000B4A8EB /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B215AD1E3000B4A8EB /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B315AD1E3000B4A8EB /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8277B415AD1E3000B4A8EB /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B515AD1E3000B4A8EB /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B615AD1E3000B4A8EB /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B715AD1E3000B4A8EB /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -204,7 +205,6 @@
 		5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DD15AD1EBC00B4A8EB /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8277DE15AD1EBC00B4A8EB /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DF15AD1EBC00B4A8EB /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277E015AD1EBC00B4A8EB /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277E115AD1EBC00B4A8EB /* MBArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033F158058BD00E8A525 /* MBArtist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -362,24 +362,26 @@
 		5D19DEAE159185FD00FCF572 /* MBIpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBIpi.h; sourceTree = "<group>"; };
 		5D19DEAF1591860000FCF572 /* MBIpi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIpi.m; sourceTree = "<group>"; };
 		5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUniqueIdentifier.h; sourceTree = "<group>"; };
-		5D3BF81F15B47D730031A014 /* MBDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDeleteRequest.h; sourceTree = "<group>"; };
-		5D3BF82015B47D730031A014 /* MBDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDeleteRequest.m; sourceTree = "<group>"; };
-		5D3BF82115B47D730031A014 /* MBGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGetRequest.h; sourceTree = "<group>"; };
-		5D3BF82215B47D730031A014 /* MBGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGetRequest.m; sourceTree = "<group>"; };
-		5D3BF82315B47D730031A014 /* MBPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPostRequest.h; sourceTree = "<group>"; };
-		5D3BF82415B47D730031A014 /* MBPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPostRequest.m; sourceTree = "<group>"; };
-		5D3BF82515B47D730031A014 /* MBPutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPutRequest.h; sourceTree = "<group>"; };
-		5D3BF82615B47D730031A014 /* MBPutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPutRequest.m; sourceTree = "<group>"; };
-		5D3BF83715B49F7F0031A014 /* MBBarcodeSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBBarcodeSubmissionRequest.h; sourceTree = "<group>"; };
-		5D3BF83815B49F7F0031A014 /* MBBarcodeSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBBarcodeSubmissionRequest.m; sourceTree = "<group>"; };
-		5D3BF83915B49F800031A014 /* MBIsrcSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBIsrcSubmissionRequest.h; sourceTree = "<group>"; };
-		5D3BF83A15B49F800031A014 /* MBIsrcSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIsrcSubmissionRequest.m; sourceTree = "<group>"; };
-		5D3BF83B15B49F800031A014 /* MBPuidSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPuidSubmissionRequest.h; sourceTree = "<group>"; };
-		5D3BF83C15B49F810031A014 /* MBPuidSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPuidSubmissionRequest.m; sourceTree = "<group>"; };
-		5D3BF83D15B49F810031A014 /* MBRatingSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRatingSubmissionRequest.h; sourceTree = "<group>"; };
-		5D3BF83E15B49F810031A014 /* MBRatingSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRatingSubmissionRequest.m; sourceTree = "<group>"; };
-		5D3BF83F15B49F830031A014 /* MBTagSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTagSubmissionRequest.h; sourceTree = "<group>"; };
-		5D3BF84015B49F830031A014 /* MBTagSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTagSubmissionRequest.m; sourceTree = "<group>"; };
+		5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBBarcodeSubmissionRequest.h; path = Requests/MBBarcodeSubmissionRequest.h; sourceTree = "<group>"; };
+		5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBBarcodeSubmissionRequest.m; path = Requests/MBBarcodeSubmissionRequest.m; sourceTree = "<group>"; };
+		5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDeleteRequest.h; path = Requests/MBDeleteRequest.h; sourceTree = "<group>"; };
+		5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDeleteRequest.m; path = Requests/MBDeleteRequest.m; sourceTree = "<group>"; };
+		5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBGetRequest.h; path = Requests/MBGetRequest.h; sourceTree = "<group>"; };
+		5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBGetRequest.m; path = Requests/MBGetRequest.m; sourceTree = "<group>"; };
+		5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBIsrcSubmissionRequest.h; path = Requests/MBIsrcSubmissionRequest.h; sourceTree = "<group>"; };
+		5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBIsrcSubmissionRequest.m; path = Requests/MBIsrcSubmissionRequest.m; sourceTree = "<group>"; };
+		5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBPostRequest.h; path = Requests/MBPostRequest.h; sourceTree = "<group>"; };
+		5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBPostRequest.m; path = Requests/MBPostRequest.m; sourceTree = "<group>"; };
+		5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBPuidSubmissionRequest.h; path = Requests/MBPuidSubmissionRequest.h; sourceTree = "<group>"; };
+		5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBPuidSubmissionRequest.m; path = Requests/MBPuidSubmissionRequest.m; sourceTree = "<group>"; };
+		5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBPutRequest.h; path = Requests/MBPutRequest.h; sourceTree = "<group>"; };
+		5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBPutRequest.m; path = Requests/MBPutRequest.m; sourceTree = "<group>"; };
+		5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRatingSubmissionRequest.h; path = Requests/MBRatingSubmissionRequest.h; sourceTree = "<group>"; };
+		5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRatingSubmissionRequest.m; path = Requests/MBRatingSubmissionRequest.m; sourceTree = "<group>"; };
+		5D3BF86515B4AB7F0031A014 /* MBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRequest.h; path = Requests/MBRequest.h; sourceTree = "<group>"; };
+		5D3BF86615B4AB7F0031A014 /* MBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRequest.m; path = Requests/MBRequest.m; sourceTree = "<group>"; };
+		5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTagSubmissionRequest.h; path = Requests/MBTagSubmissionRequest.h; sourceTree = "<group>"; };
+		5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTagSubmissionRequest.m; path = Requests/MBTagSubmissionRequest.m; sourceTree = "<group>"; };
 		5D5D033B158058BD00E8A525 /* MBAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlias.h; sourceTree = "<group>"; };
 		5D5D033C158058BD00E8A525 /* MBAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlias.m; sourceTree = "<group>"; };
 		5D5D033D158058BD00E8A525 /* MBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAnnotation.h; sourceTree = "<group>"; };
@@ -519,8 +521,6 @@
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
-		5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRequest.h; sourceTree = "<group>"; };
-		5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRequest.m; sourceTree = "<group>"; };
 		5DB56B9D15AA931F00885759 /* MBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUtils.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -582,26 +582,26 @@
 		5D3BF81D15B47CA30031A014 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				5D3BF83715B49F7F0031A014 /* MBBarcodeSubmissionRequest.h */,
-				5D3BF81F15B47D730031A014 /* MBDeleteRequest.h */,
-				5D3BF82115B47D730031A014 /* MBGetRequest.h */,
-				5D3BF83915B49F800031A014 /* MBIsrcSubmissionRequest.h */,
-				5D3BF82315B47D730031A014 /* MBPostRequest.h */,
-				5D3BF83B15B49F800031A014 /* MBPuidSubmissionRequest.h */,
-				5D3BF82515B47D730031A014 /* MBPutRequest.h */,
-				5D3BF83D15B49F810031A014 /* MBRatingSubmissionRequest.h */,
-				5DB4E8C615A1F7CA00AB3A74 /* MBRequest.h */,
-				5D3BF83F15B49F830031A014 /* MBTagSubmissionRequest.h */,
-				5D3BF83815B49F7F0031A014 /* MBBarcodeSubmissionRequest.m */,
-				5D3BF82015B47D730031A014 /* MBDeleteRequest.m */,
-				5D3BF82215B47D730031A014 /* MBGetRequest.m */,
-				5D3BF83A15B49F800031A014 /* MBIsrcSubmissionRequest.m */,
-				5D3BF82415B47D730031A014 /* MBPostRequest.m */,
-				5D3BF83C15B49F810031A014 /* MBPuidSubmissionRequest.m */,
-				5D3BF82615B47D730031A014 /* MBPutRequest.m */,
-				5D3BF83E15B49F810031A014 /* MBRatingSubmissionRequest.m */,
-				5DB4E8C715A1F7CA00AB3A74 /* MBRequest.m */,
-				5D3BF84015B49F830031A014 /* MBTagSubmissionRequest.m */,
+				5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */,
+				5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */,
+				5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */,
+				5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */,
+				5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */,
+				5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */,
+				5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */,
+				5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */,
+				5D3BF86515B4AB7F0031A014 /* MBRequest.h */,
+				5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */,
+				5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */,
+				5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */,
+				5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */,
+				5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */,
+				5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */,
+				5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */,
+				5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */,
+				5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */,
+				5D3BF86615B4AB7F0031A014 /* MBRequest.m */,
+				5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -956,7 +956,6 @@
 				5D8277B115AD1E3000B4A8EB /* MB.h in Headers */,
 				5D8277B215AD1E3000B4A8EB /* MBQueryDelegate.h in Headers */,
 				5D8277B315AD1E3000B4A8EB /* MBQuery.h in Headers */,
-				5D8277B415AD1E3000B4A8EB /* MBRequest.h in Headers */,
 				5D8277B515AD1E3000B4A8EB /* MBAlias.h in Headers */,
 				5D8277B615AD1E3000B4A8EB /* MBAnnotation.h in Headers */,
 				5D8277B715AD1E3000B4A8EB /* MBArtist.h in Headers */,
@@ -1007,15 +1006,16 @@
 				5DA2CD99158E70BF00D7FF11 /* ASINetworkQueue.h in Headers */,
 				5DA2CD9D158E70BF00D7FF11 /* ASIProgressDelegate.h in Headers */,
 				5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
-				5D3BF82815B47D730031A014 /* MBDeleteRequest.h in Headers */,
-				5D3BF82C15B47D730031A014 /* MBGetRequest.h in Headers */,
-				5D3BF83015B47D730031A014 /* MBPostRequest.h in Headers */,
-				5D3BF83415B47D730031A014 /* MBPutRequest.h in Headers */,
-				5D3BF84215B49F830031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
-				5D3BF84615B49F830031A014 /* MBIsrcSubmissionRequest.h in Headers */,
-				5D3BF84A15B49F830031A014 /* MBPuidSubmissionRequest.h in Headers */,
-				5D3BF84E15B49F830031A014 /* MBRatingSubmissionRequest.h in Headers */,
-				5D3BF85215B49F830031A014 /* MBTagSubmissionRequest.h in Headers */,
+				5D3BF86A15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
+				5D3BF86E15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */,
+				5D3BF87215B4AB7F0031A014 /* MBGetRequest.h in Headers */,
+				5D3BF87615B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */,
+				5D3BF87A15B4AB7F0031A014 /* MBPostRequest.h in Headers */,
+				5D3BF87E15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */,
+				5D3BF88215B4AB7F0031A014 /* MBPutRequest.h in Headers */,
+				5D3BF88615B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
+				5D3BF88A15B4AB7F0031A014 /* MBRequest.h in Headers */,
+				5D3BF88E15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,7 +1028,6 @@
 				5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */,
 				5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */,
 				5D8277DD15AD1EBC00B4A8EB /* MBQuery.h in Headers */,
-				5D8277DE15AD1EBC00B4A8EB /* MBRequest.h in Headers */,
 				5D8277DF15AD1EBC00B4A8EB /* MBAlias.h in Headers */,
 				5D8277E015AD1EBC00B4A8EB /* MBAnnotation.h in Headers */,
 				5D8277E115AD1EBC00B4A8EB /* MBArtist.h in Headers */,
@@ -1088,15 +1087,16 @@
 				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
 				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
 				5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
-				5D3BF82715B47D730031A014 /* MBDeleteRequest.h in Headers */,
-				5D3BF82B15B47D730031A014 /* MBGetRequest.h in Headers */,
-				5D3BF82F15B47D730031A014 /* MBPostRequest.h in Headers */,
-				5D3BF83315B47D730031A014 /* MBPutRequest.h in Headers */,
-				5D3BF84115B49F830031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
-				5D3BF84515B49F830031A014 /* MBIsrcSubmissionRequest.h in Headers */,
-				5D3BF84915B49F830031A014 /* MBPuidSubmissionRequest.h in Headers */,
-				5D3BF84D15B49F830031A014 /* MBRatingSubmissionRequest.h in Headers */,
-				5D3BF85115B49F830031A014 /* MBTagSubmissionRequest.h in Headers */,
+				5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
+				5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */,
+				5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */,
+				5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */,
+				5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */,
+				5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */,
+				5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */,
+				5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
+				5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */,
+				5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1294,7 +1294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D82778A15AD1DF100B4A8EB /* MBQuery.m in Sources */,
-				5D82778B15AD1DF100B4A8EB /* MBRequest.m in Sources */,
 				5D82778C15AD1DF100B4A8EB /* MBAlias.m in Sources */,
 				5D82778D15AD1DF100B4A8EB /* MBAnnotation.m in Sources */,
 				5D82778E15AD1DF100B4A8EB /* MBArtist.m in Sources */,
@@ -1339,15 +1338,16 @@
 				5DA2CD8F158E70BF00D7FF11 /* ASIHTTPRequest.m in Sources */,
 				5DA2CD97158E70BF00D7FF11 /* ASIInputStream.m in Sources */,
 				5DA2CD9B158E70BF00D7FF11 /* ASINetworkQueue.m in Sources */,
-				5D3BF82A15B47D730031A014 /* MBDeleteRequest.m in Sources */,
-				5D3BF82E15B47D730031A014 /* MBGetRequest.m in Sources */,
-				5D3BF83215B47D730031A014 /* MBPostRequest.m in Sources */,
-				5D3BF83615B47D730031A014 /* MBPutRequest.m in Sources */,
-				5D3BF84415B49F830031A014 /* MBBarcodeSubmissionRequest.m in Sources */,
-				5D3BF84815B49F830031A014 /* MBIsrcSubmissionRequest.m in Sources */,
-				5D3BF84C15B49F830031A014 /* MBPuidSubmissionRequest.m in Sources */,
-				5D3BF85015B49F830031A014 /* MBRatingSubmissionRequest.m in Sources */,
-				5D3BF85415B49F830031A014 /* MBTagSubmissionRequest.m in Sources */,
+				5D3BF86C15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */,
+				5D3BF87015B4AB7F0031A014 /* MBDeleteRequest.m in Sources */,
+				5D3BF87415B4AB7F0031A014 /* MBGetRequest.m in Sources */,
+				5D3BF87815B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */,
+				5D3BF87C15B4AB7F0031A014 /* MBPostRequest.m in Sources */,
+				5D3BF88015B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */,
+				5D3BF88415B4AB7F0031A014 /* MBPutRequest.m in Sources */,
+				5D3BF88815B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */,
+				5D3BF88C15B4AB7F0031A014 /* MBRequest.m in Sources */,
+				5D3BF89015B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1356,7 +1356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D82776315AD1D9500B4A8EB /* MBQuery.m in Sources */,
-				5D82776415AD1D9500B4A8EB /* MBRequest.m in Sources */,
 				5D82776515AD1D9500B4A8EB /* MBAlias.m in Sources */,
 				5D82776615AD1D9500B4A8EB /* MBAnnotation.m in Sources */,
 				5D82776715AD1D9500B4A8EB /* MBArtist.m in Sources */,
@@ -1408,15 +1407,16 @@
 				5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */,
 				5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */,
 				5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */,
-				5D3BF82915B47D730031A014 /* MBDeleteRequest.m in Sources */,
-				5D3BF82D15B47D730031A014 /* MBGetRequest.m in Sources */,
-				5D3BF83115B47D730031A014 /* MBPostRequest.m in Sources */,
-				5D3BF83515B47D730031A014 /* MBPutRequest.m in Sources */,
-				5D3BF84315B49F830031A014 /* MBBarcodeSubmissionRequest.m in Sources */,
-				5D3BF84715B49F830031A014 /* MBIsrcSubmissionRequest.m in Sources */,
-				5D3BF84B15B49F830031A014 /* MBPuidSubmissionRequest.m in Sources */,
-				5D3BF84F15B49F830031A014 /* MBRatingSubmissionRequest.m in Sources */,
-				5D3BF85315B49F830031A014 /* MBTagSubmissionRequest.m in Sources */,
+				5D3BF86B15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */,
+				5D3BF86F15B4AB7F0031A014 /* MBDeleteRequest.m in Sources */,
+				5D3BF87315B4AB7F0031A014 /* MBGetRequest.m in Sources */,
+				5D3BF87715B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */,
+				5D3BF87B15B4AB7F0031A014 /* MBPostRequest.m in Sources */,
+				5D3BF87F15B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */,
+				5D3BF88315B4AB7F0031A014 /* MBPutRequest.m in Sources */,
+				5D3BF88715B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */,
+				5D3BF88B15B4AB7F0031A014 /* MBRequest.m in Sources */,
+				5D3BF88F15B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
