@@ -127,4 +127,22 @@
   return [NSStringFromClass([self class]) classNameToKey];
 }
 
+- (BOOL) isEqual:(id)object
+{
+  if ([self class] != [object class]) return NO;
+  Class currentClass = [self class];
+  do {
+    uint varCount;
+    Ivar * vars = class_copyIvarList(currentClass, &varCount);
+    for (uint i = 0; i < varCount; i++) {
+      Ivar var = vars[i];
+      id myObj = object_getIvar(self, var);
+      id otherObj = object_getIvar(object, var);
+      if (![myObj isEqual:otherObj]) return NO;
+    }
+    currentClass = class_getSuperclass(currentClass);
+  } while (currentClass != [MBEntity class]);
+  return YES;
+}
+
 @end

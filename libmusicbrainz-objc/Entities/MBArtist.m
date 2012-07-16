@@ -27,7 +27,7 @@ MB_STRING_ELEMENT(Country);
 MB_STRING_ELEMENT(Disambiguation);
 MB_ELEMENT(Ipi);
 MB_ELEMENT(IpiList);
-MB_ELEMENT(Lifespan);
+MB_ELEMENT(LifeSpan);
 MB_ELEMENT(AliasList);
 MB_ELEMENT(RecordingList);
 MB_ELEMENT(ReleaseList);

@@ -18,6 +18,7 @@
 
 @synthesize Offset = _Offset;
 @synthesize Count = _Count;
+MB_STRING_ELEMENT(TargetType);
 
 - (void) setOffset:(NSXMLNode *)attribute
 {

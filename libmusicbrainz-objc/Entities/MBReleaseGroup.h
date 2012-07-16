@@ -26,6 +26,8 @@
 @property (nonatomic, readonly) NSString *Disambiguation;
 /// Earliest date from MBRelease in ReleaseList
 @property (nonatomic, readonly) NSString *FirstReleaseDate;
+/// Primary Release Type
+@property (nonatomic, readonly) NSString *PrimaryType;
 /// MBList with NSString objects
 @property (nonatomic, readonly) MBList *SecondaryTypeList;
 /// Artist credit for this release

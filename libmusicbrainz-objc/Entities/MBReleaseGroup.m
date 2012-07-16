@@ -22,6 +22,7 @@ MB_ATTRIBUTE(Type);
 MB_STRING_ELEMENT(Title);
 MB_STRING_ELEMENT(Disambiguation);
 MB_STRING_ELEMENT(FirstReleaseDate);
+MB_STRING_ELEMENT(PrimaryType);
 MB_ELEMENT(SecondaryTypeList);
 MB_ELEMENT(ArtistCredit);
 MB_ELEMENT(ReleaseList);
