@@ -38,18 +38,6 @@
 /// Default is `"GET"`
 @property (copy, nonatomic, readonly) NSString * RequestType;
 
-/// Complete Paged Lists
-///
-/// The web service attaches a count and offset attribute to `*-list` elements
-/// that are larger than the requested limit (default is 25). If CompleteLists
-/// is set to `YES`, the library will request the extra information. This 
-/// will take longer to get a response because of the web service's rate limit.
-/// If CompleteLists is `NO` (the default), you are responsible for the offset
-/// requests.
-///
-/// TODO: READONLY for now
-@property (assign, nonatomic, readonly) BOOL CompleteLists;
-
 /// Request Entity Id
 ///
 /// When requesting metadata for a specific entity, set EntityId to the MBID for

@@ -26,7 +26,6 @@
 }
 
 @synthesize RequestType = _RequestType;
-@synthesize CompleteLists = _CompleteLists;
 @synthesize EntityType = _EntityType;
 
 - (id) init
