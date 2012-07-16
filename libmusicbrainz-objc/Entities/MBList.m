@@ -62,10 +62,10 @@
   return [_elements count];
 }
 
-- (NSString *) elementName
+- (NSString *) ElementName
 {
   if (!_elementName && _elements.count > 0)
-    _elementName = [[_elements objectAtIndex:0] elementName];
+    _elementName = [[_elements objectAtIndex:0] ElementName];
   return _elementName;
 }
 

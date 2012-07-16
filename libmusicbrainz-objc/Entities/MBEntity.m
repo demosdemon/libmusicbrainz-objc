@@ -121,7 +121,7 @@
     [_ExtraElements setObject:value forKey:key];
 }
 
-- (NSString *) elementName
+- (NSString *) ElementName
 {
   if ([self isMemberOfClass:[MBEntity class]]) return @"";
   return [NSStringFromClass([self class]) classNameToKey];

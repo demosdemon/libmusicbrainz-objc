@@ -23,7 +23,4 @@
 - (NSUInteger) elementCount;
 - (id) elementAtIndex:(NSUInteger)index;
 
-/// Returns the type of elements this List contains
-- (NSString *) elementName;
-
 @end
