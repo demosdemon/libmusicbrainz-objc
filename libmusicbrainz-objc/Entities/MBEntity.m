@@ -63,10 +63,8 @@
         Ivar var = vars[i];
         NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
         id obj = [aDecoder decodeObjectForKey:key];
-        if (obj) {
-          DLog(@"Decoding %@ = %@", key, obj);
+        if (obj)
           object_setIvar(self, var, obj);
-        }
       }
       currentClass = class_getSuperclass(currentClass);
     } while (currentClass != [MBEntity class]);
@@ -83,11 +81,8 @@
     for (uint i = 0; i < varCount; i++) {
       Ivar var = vars[i];
       id obj = object_getIvar(self, var);
-      if (obj) {
-        NSString * key = [NSString stringWithUTF8String:ivar_getName(var)];
-        DLog(@"Encoding %@ = %@", key, obj);
-        [aCoder encodeObject:obj forKey:key];
-      }
+      if (obj)
+        [aCoder encodeObject:obj forKey:[NSString stringWithUTF8String:ivar_getName(var)]];
     }
     currentClass = class_getSuperclass(currentClass);
   } while (currentClass != [MBEntity class]);
