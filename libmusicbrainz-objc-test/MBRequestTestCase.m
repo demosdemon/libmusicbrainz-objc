@@ -51,5 +51,17 @@
   STAssertEqualObjects(testData, postData, @"%@ != %@", [testData string], [postData string]);
 }
 
+- (void) testIsrcRequest
+{
+  NSData * testData = [@"<metadata xmlns=\"http://musicbrainz.org/ns/mmd-2.0#\"><recording-list><recording id=\"b9991644-7275-44db-bc43-fff6c6b4ce69\"><isrc-list count=\"1\"><isrc id=\"JPB600601201\"></isrc></isrc-list></recording><recording id=\"75c961c9-6e00-4861-9c9d-e6ca90d57342\"><isrc-list count=\"1\"><isrc id=\"JPB600523201\"></isrc></isrc-list></recording></recording-list></metadata>" dataUsingEncoding:NSUTF8StringEncoding];
+  MBRecording * recording1 = [MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<recording id=\"b9991644-7275-44db-bc43-fff6c6b4ce69\"/>" error:nil]];
+  MBRecording * recording2 = [MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<recording id=\"75c961c9-6e00-4861-9c9d-e6ca90d57342\"/>" error:nil]];
+  MBIsrcSubmissionRequest * request = [[MBIsrcSubmissionRequest alloc] init];
+  [request addIsrc:@"JPB600601201" toRecording:recording1];
+  [request addIsrc:@"JPB600523201" toRecording:recording2];
+  NSData * postData = [request postdata];
+  STAssertEqualObjects(testData, postData, @"%@ != %@", [testData string], [postData string]);
+}
+
 @end
 
