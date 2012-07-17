@@ -20,9 +20,21 @@
   NOT_IMPLEMENTED();
 }
 
+- (NSString *) parameterString
+{
+  __block NSMutableArray * parameters = [NSMutableArray array];
+  [_Parameters enumerateKeysAndObjectsUsingBlock:^(NSString * key, NSString * value, BOOL *stop) {
+    [parameters addObject:[NSString stringWithFormat:@"%@=%@",
+                           [key stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                           [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+  }];
+  return [parameters componentsJoinedByString:@"&"];
+}
+
 - (NSString *) url
 {
-  NOT_IMPLEMENTED();
+  if (!_EntityId) _EntityId = @"";
+  return [NSString stringWithFormat:@"%@/%@?%@", _EntityType, _EntityId, [self parameterString]];
 }
 
 @synthesize RequestType = _RequestType;

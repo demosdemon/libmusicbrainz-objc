@@ -55,5 +55,6 @@
 - (void) submitRequestWithQuery:(MBQuery *)query;
 
 - (NSString *) url;
+- (NSString *) parameterString;
 
 @end

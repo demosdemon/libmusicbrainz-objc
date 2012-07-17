@@ -49,6 +49,7 @@
   [request addBarcode:@"9780262560933" forRelease:release];
   NSData * postData = [request postdata];
   STAssertEqualObjects(testData, postData, @"%@ != %@", [testData string], [postData string]);
+  STAssertEqualStrings([request url], @"release/?", @"%@ != %@", [request url], @"release/?");
 }
 
 - (void) testIsrcRequest
@@ -61,6 +62,7 @@
   [request addIsrc:@"JPB600523201" toRecording:recording2];
   NSData * postData = [request postdata];
   STAssertEqualObjects(testData, postData, @"%@ != %@", [testData string], [postData string]);
+  STAssertEqualStrings([request url], @"recording/?", @"%@ != %@", [request url], @"recording/?");
 }
 
 @end
