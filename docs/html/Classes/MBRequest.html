@@ -40,8 +40,6 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/CompleteLists">&nbsp;&nbsp;&nbsp;&nbsp;CompleteLists</option>
-	
 	<option value="//api/name/EntityId">&nbsp;&nbsp;&nbsp;&nbsp;EntityId</option>
 	
 	<option value="//api/name/EntityType">&nbsp;&nbsp;&nbsp;&nbsp;EntityType</option>
@@ -58,6 +56,8 @@
 	<option value="//api/name/getParameterForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- getParameterForKey:</option>
 	
 	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/parameterString">&nbsp;&nbsp;&nbsp;&nbsp;- parameterString</option>
 	
 	<option value="//api/name/removeParameterForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeParameterForKey:</option>
 	
@@ -91,8 +91,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/CompleteLists">CompleteLists</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/EntityId">EntityId</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/EntityType">EntityType</a></span></li>
@@ -110,6 +108,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getParameterForKey:">getParameterForKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parameterString">parameterString</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeParameterForKey:">removeParameterForKey:</a></span></li>
 	
@@ -195,13 +195,6 @@ for more information about forming webservice queries.</p>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/CompleteLists">&nbsp;&nbsp;CompleteLists</a></code>
-		<span class="tooltip"><p>Complete Paged Lists</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/EntityId">&nbsp;&nbsp;EntityId</a></code>
 		<span class="tooltip"><p>Request Entity Id</p></span>
 	</span>
@@ -242,6 +235,13 @@ for more information about forming webservice queries.</p>
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parameterString">&ndash;&nbsp;parameterString</a></code>
+		
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -269,56 +269,6 @@ for more information about forming webservice queries.</p>
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/CompleteLists" title="CompleteLists"></a>
-	<h3 class="subsubtitle method-title">CompleteLists</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Complete Paged Lists</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic, readonly) BOOL CompleteLists</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Complete Paged Lists</p>
-
-<p>The web service attaches a count and offset attribute to <code>*-list</code> elements
-that are larger than the requested limit (default is 25). If CompleteLists
-is set to <code>YES</code>, the library will request the extra information. This
-will take longer to get a response because of the web service&rsquo;s rate limit.
-If CompleteLists is <code>NO</code> (the default), you are responsible for the offset
-requests.</p>
-
-<p>TODO: READONLY for now</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MBRequest.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/EntityId" title="EntityId"></a>
@@ -458,6 +408,17 @@ Default is <code>"GET"</code></li>
 	
 
 	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parameterString" title="parameterString"></a>
+	<h3 class="subsubtitle method-title">parameterString</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)parameterString</code></div>
 
     
 </div>
