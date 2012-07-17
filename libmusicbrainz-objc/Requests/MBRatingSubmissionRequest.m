@@ -34,6 +34,7 @@
 
   [_UserRatings setObject:typeDict forKey:ElementName];
 }
+
 - (void) removeUserRatingForEntity:(MBRateAndTaggableEntity *)entity
 {
   NSString * ElementName = entity.ElementName;
@@ -49,11 +50,6 @@
     [_UserRatings setObject:typeDict forKey:ElementName];
   else
     [_UserRatings removeObjectForKey:ElementName];
-}
-
-- (NSUInteger) getUserRatingForEntity:(MBRateAndTaggableEntity *)entity
-{
-  NOT_IMPLEMENTED();
 }
 
 @end

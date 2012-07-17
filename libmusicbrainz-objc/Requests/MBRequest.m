@@ -20,13 +20,24 @@
   NOT_IMPLEMENTED();
 }
 
+- (NSString *) parameterString
+{
+  __block NSMutableArray * parameters = [NSMutableArray array];
+  [_Parameters enumerateKeysAndObjectsUsingBlock:^(NSString * key, NSString * value, BOOL *stop) {
+    [parameters addObject:[NSString stringWithFormat:@"%@=%@",
+                           [key stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                           [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+  }];
+  return [parameters componentsJoinedByString:@"&"];
+}
+
 - (NSString *) url
 {
-  NOT_IMPLEMENTED();
+  if (!_EntityId) _EntityId = @"";
+  return [NSString stringWithFormat:@"%@/%@?%@", _EntityType, _EntityId, [self parameterString]];
 }
 
 @synthesize RequestType = _RequestType;
-@synthesize CompleteLists = _CompleteLists;
 @synthesize EntityType = _EntityType;
 
 - (id) init
@@ -38,10 +49,10 @@
 }
 
 - (void) setParameter:(NSString *)value forKey:(NSString *)key
-{ [_Parameters setObject:value forKey:key]; }
+{ [_Parameters setObject:[value copy] forKey:key]; }
 - (void) removeParameterForKey:(NSString *)key
 { [_Parameters removeObjectForKey:key]; }
 - (NSString *) getParameterForKey:(NSString *)key
-{ [_Parameters objectForKey:key]; }
+{ [[_Parameters objectForKey:key] copy]; }
 
 @end

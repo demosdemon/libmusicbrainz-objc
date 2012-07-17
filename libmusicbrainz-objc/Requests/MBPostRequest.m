@@ -21,8 +21,6 @@
 }
 
 - (NSData *) postdata
-{
-  NOT_IMPLEMENTED();
-}
+{ return [NSData data]; }
 
 @end

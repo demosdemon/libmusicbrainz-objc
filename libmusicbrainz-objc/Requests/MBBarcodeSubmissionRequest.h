@@ -17,9 +17,7 @@
 }
 
 - (void) addBarcode:(NSString *)barcode forRelease:(MBRelease *)release;
-
 - (void) removeBarcode:(NSString *)barcode fromRelease:(MBRelease *)release;
-
 - (NSString *) getBarcodeForRelease:(MBRelease *)release;
 
 @end
