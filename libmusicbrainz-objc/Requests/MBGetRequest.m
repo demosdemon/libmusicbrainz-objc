@@ -37,7 +37,7 @@
 
 - (void) addIncParameterObject:(NSString *)inc
 {
-  [_IncParameters addObject:inc];
+  [_IncParameters addObject:[inc copy]];
   [self setParameter:[[_IncParameters allObjects] componentsJoinedByString:@"+"]
               forKey:@"inc"];
 }
