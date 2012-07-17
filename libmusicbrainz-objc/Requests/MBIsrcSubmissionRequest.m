@@ -27,7 +27,7 @@
   NSMutableSet * isrcList = [_Isrcs objectForKey:Id];
   if (!isrcList) isrcList = [NSMutableSet set];
 
-  [isrcList addObject:isrc];
+  [isrcList addObject:[isrc copy]];
   
   [_Isrcs setObject:isrcList forKey:Id];
 }

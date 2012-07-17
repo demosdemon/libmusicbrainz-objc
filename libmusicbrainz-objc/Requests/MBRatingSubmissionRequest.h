@@ -16,6 +16,5 @@
 
 - (void) setUserRating:(NSUInteger)rating forEntity:(MBRateAndTaggableEntity *)entity;
 - (void) removeUserRatingForEntity:(MBRateAndTaggableEntity *)entity;
-- (NSUInteger) getUserRatingForEntity:(MBRateAndTaggableEntity *)entity;
 
 @end

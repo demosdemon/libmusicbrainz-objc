@@ -26,7 +26,7 @@ static NSComparisonResult (^CaseInsensitiveStringComparator)(NSString *, NSStrin
 }
 
 - (void) addBarcode:(NSString *)barcode forRelease:(MBRelease *)release
-{ [_Barcodes setObject:barcode forKey:release.Id]; }
+{ [_Barcodes setObject:[barcode copy] forKey:release.Id]; }
 
 - (void) removeBarcode:(NSString *)barcode fromRelease:(MBRelease *)release
 { [_Barcodes removeObjectForKey:release.Id]; }

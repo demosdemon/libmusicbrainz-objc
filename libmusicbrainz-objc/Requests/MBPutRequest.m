@@ -7,6 +7,7 @@
 // This program is made available under the terms of the MIT License.
 //
 
+#import "MB.h"
 #import "MBPutRequest.h"
 
 @implementation MBPutRequest
@@ -22,13 +23,17 @@
 }
 
 - (void) setCollection:(MBCollection *)collection
-{
-  NOT_IMPLEMENTED();
-}
+{ _Resource = [collection.Id copy]; }
 
 - (void) addRelease:(MBRelease *)release
-{ [_Releases addObject:release]; }
+{ [_Releases addObject:[release.Id copy]]; }
 - (void) removeRelease:(MBRelease *)release
-{ [_Releases removeObject:release]; }
+{ [_Releases removeObject:[release.Id copy]]; }
+
+- (NSString *) url
+{
+  NSString * releases = [[_Releases allObjects] componentsJoinedByString:@";"];
+  return [NSString stringWithFormat:@"%@/%@/releases/%@?%@", _EntityType, _Resource, releases, [self parameterString]];
+}
 
 @end

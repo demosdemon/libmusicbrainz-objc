@@ -65,5 +65,24 @@
   STAssertEqualStrings([request url], @"recording/?", @"%@ != %@", [request url], @"recording/?");
 }
 
+- (void) testDeleteRequest
+{
+  MBCollection * collection = [MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<collection id=\"f4784850-3844-11e0-9e42-0800200c9a66\" />" error:nil]];
+  MBDeleteRequest * request = [[MBDeleteRequest alloc] init];
+  [request setCollection:collection];
+  [request addRelease:[MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<release id=\"455641ea-fff4-49f6-8fb4-49f961d8f1ad\" />" error:nil]]];
+  STAssertEqualStrings([request url], @"collection/f4784850-3844-11e0-9e42-0800200c9a66/releases/455641ea-fff4-49f6-8fb4-49f961d8f1ad?", @"%@ != %@", [request url], @"collection/f4784850-3844-11e0-9e42-0800200c9a66/releases/455641ea-fff4-49f6-8fb4-49f961d8f1ad;c410a773-c6eb-4bc0-9df8-042fe6645c63?");
+}
+
+- (void) testPutRequest
+{
+  MBCollection * collection = [MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<collection id=\"f4784850-3844-11e0-9e42-0800200c9a66\" />" error:nil]];
+  MBPutRequest * request = [[MBPutRequest alloc] init];
+  [request setCollection:collection];
+  [request addRelease:[MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<release id=\"c410a773-c6eb-4bc0-9df8-042fe6645c63\" />" error:nil]]];
+  [request addRelease:[MBEntity entityWithElement:[[NSXMLElement alloc] initWithXMLString:@"<release id=\"455641ea-fff4-49f6-8fb4-49f961d8f1ad\" />" error:nil]]];
+  STAssertEqualStrings([request url], @"collection/f4784850-3844-11e0-9e42-0800200c9a66/releases/c410a773-c6eb-4bc0-9df8-042fe6645c63;455641ea-fff4-49f6-8fb4-49f961d8f1ad?", @"%@ != %@", [request url], @"collection/f4784850-3844-11e0-9e42-0800200c9a66/releases/455641ea-fff4-49f6-8fb4-49f961d8f1ad;c410a773-c6eb-4bc0-9df8-042fe6645c63?");
+}
+
 @end
 

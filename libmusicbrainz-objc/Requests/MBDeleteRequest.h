@@ -13,12 +13,11 @@
 @interface MBDeleteRequest : MBRequest {
  @private
   NSMutableSet * _Releases;
+  NSString * _Resource;
 }
 
 - (void) setCollection:(MBCollection *)collection;
-
 - (void) addRelease:(MBRelease *)release;
-
 - (void) removeRelease:(MBRelease *)release;
 
 @end

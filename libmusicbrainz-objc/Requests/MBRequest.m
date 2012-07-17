@@ -49,10 +49,10 @@
 }
 
 - (void) setParameter:(NSString *)value forKey:(NSString *)key
-{ [_Parameters setObject:value forKey:key]; }
+{ [_Parameters setObject:[value copy] forKey:key]; }
 - (void) removeParameterForKey:(NSString *)key
 { [_Parameters removeObjectForKey:key]; }
 - (NSString *) getParameterForKey:(NSString *)key
-{ [_Parameters objectForKey:key]; }
+{ [[_Parameters objectForKey:key] copy]; }
 
 @end
