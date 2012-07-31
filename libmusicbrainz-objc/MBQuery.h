@@ -27,7 +27,7 @@
   __unsafe_unretained id<MBQueryDelegate> _delegate;
   NSString *_useragent;
   NSString *_server;
-  NSInteger _port;
+  int _port;
   
   NSURLCredential *_credentials;
   
@@ -65,7 +65,7 @@
 - (id) initWithUserAgent:(NSString *)ua
                Delegate:(id<MBQueryDelegate>)delegate
                  Server:(NSString *)server
-                   Port:(NSInteger)port;
+                   Port:(int)port;
 
 #pragma mark - Properties
 
@@ -85,7 +85,7 @@
 /// Port to use when connecting.
 ///
 /// Default is 80
-@property (assign, nonatomic) NSInteger Port;
+@property (assign, nonatomic) int Port;
 
 /// MBQueryDelegate that recieves callbaks for recieved data
 @property (assign, atomic) id<MBQueryDelegate> Delegate;
@@ -100,7 +100,7 @@
 /// @param username username to authenticate with
 /// @param password password to authenticate with
 -(void) setUsername:(NSString *)username
-        Password:(NSString *)password;
+           Password:(NSString *)password;
 
 #pragma mark - Instance Methods
 /// Submits all queued posts or puts.

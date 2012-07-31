@@ -326,6 +326,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5D2A32D715C79B9300198C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA35D2915C7417F0080B09F;
+			remoteInfo = clean;
+		};
 		5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
@@ -1139,6 +1146,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D5D03CB158103DE00E8A525 /* Build configuration list for PBXNativeTarget "libmusicbrainz-macos" */;
 			buildPhases = (
+				5D2A32DA15C79BA200198C0D /* MBGeneratedDefines.h */,
 				5D5D03B5158103DD00E8A525 /* Sources */,
 				5D5D03B6158103DD00E8A525 /* Frameworks */,
 				5D5D03B7158103DD00E8A525 /* Headers */,
@@ -1147,6 +1155,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5D2A32D815C79B9300198C0D /* PBXTargetDependency */,
 			);
 			name = "libmusicbrainz-macos";
 			productName = "libmusicbrainz-objc-cocoa";
@@ -1278,7 +1287,21 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env python $PROJECT_FILE_PATH/MBGeneratedDefines.py";
+		};
+		5D2A32DA15C79BA200198C0D /* MBGeneratedDefines.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = MBGeneratedDefines.h;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
 			shellScript = "/usr/bin/env python $PROJECT_FILE_PATH/MBGeneratedDefines.py";
 		};
 		5D82784F15AD28EE00B4A8EB /* ShellScript */ = {
@@ -1491,6 +1514,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5D2A32D815C79B9300198C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA35D2915C7417F0080B09F /* clean */;
+			targetProxy = 5D2A32D715C79B9300198C0D /* PBXContainerItemProxy */;
+		};
 		5D82785315AD2E9700B4A8EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
@@ -1833,6 +1861,7 @@
 				5DA35D2C15C7417F0080B09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DAAFE4E159A62D200450C32 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;

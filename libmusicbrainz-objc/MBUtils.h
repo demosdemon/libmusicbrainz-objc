@@ -8,6 +8,7 @@
 //
 // @brief A few utilities
 
+#import <Foundation/Foundation.h>
 #import "NSString+MBKeyManipulation.h"
 
 #ifdef DEBUG
@@ -101,3 +102,19 @@
 #define kNonMBTrackKey   @"nonmb-track"
 #define kCollectionKey   @"collection"
 #define kMessageKey      @"message"
+
+NS_INLINE NSString * urlEscapeStringWithEncoding(NSString * unencodedString, NSStringEncoding encoding)
+{
+  return CFBridgingRelease
+  (CFURLCreateStringByAddingPercentEscapes
+   (NULL,
+    (__bridge CFStringRef)unencodedString, NULL,
+    (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ",
+    CFStringConvertNSStringEncodingToEncoding(encoding)
+    )
+   );
+}
+
+NS_INLINE NSString * urlEscapeString(NSString * unencodedString)
+{ return urlEscapeStringWithEncoding(unencodedString, NSUTF8StringEncoding); }
+

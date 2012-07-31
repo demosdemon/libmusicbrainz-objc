@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "../MBUtils.h"
 #import "../MBUniqueIdentifier.h"
+#import "../XML.h"
 
 /// Base class for all elements in the XML Webservice Schema
 ///
