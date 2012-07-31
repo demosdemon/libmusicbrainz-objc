@@ -88,7 +88,7 @@
 @property (assign, nonatomic) int Port;
 
 /// MBQueryDelegate that recieves callbaks for recieved data
-@property (assign, atomic) id<MBQueryDelegate> Delegate;
+@property (assign, nonatomic) id<MBQueryDelegate> Delegate;
 
 /// Set the username and password to authenticate with when making mutable
 /// requests or getting user specific information, like collections,
