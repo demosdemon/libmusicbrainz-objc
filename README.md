@@ -35,3 +35,10 @@ You can access the documentation documentation in several ways:
     1. Add the docset feed: `feed://demosdemon.github.com/libmusicbrainz-objc/docs/publish/org.metabrainz.libmusicbrainz-objc.atom`
 1. Generate the documentation from the project repository with the `genappledoc.sh` script ([appledoc](http://gentlebytes.com/appledoc/) must be installed for this to work)
 1. Generate the documentation within xcode using the Documentation target ([appledoc](http://gentlebytes.com/appledoc/) must be installed for this to work)
+
+## License
+libmusicbrainz-objc is licensed under the [MIT 'Expat' License](http://opensource.org/licenses/MIT). libmusicbrainz-objc uses software from:
+
+* [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest/) with [BSD License](https://github.com/pokeb/asi-http-request/blob/master/LICENSE)
+* [Google Toolbox for Mac](http://code.google.com/p/google-toolbox-for-mac/) with [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0)
+* [KissXML](https://github.com/robbiehanson/KissXML) with [BSD License](https://github.com/robbiehanson/KissXML/blob/master/LICENSE.txt)

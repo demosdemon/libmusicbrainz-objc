@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+## @file genappledoc.sh
+## @date Jul 30 2012
+## @copyright
+##   2012 Brandon LeBlanc <demosdemon@gmail.com>
+##   This program is made avaliable under the terms of the MIT License.
+##
+## @brief Generated MBGeneratedDefines at build time.
+
 DIRECTORY=`dirname $0`
 OUTPUT="docs"
 VERSION=`git rev-parse --verify master`
