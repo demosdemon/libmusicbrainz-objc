@@ -76,6 +76,7 @@
 		5D3BF88F15B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D3BF89015B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
+		5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
 		5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */; };
@@ -332,6 +333,13 @@
 			remoteGlobalIDString = 5D61B7CA155F3F9A0003006A;
 			remoteInfo = "libmusicbrainz-iphoneos";
 		};
+		5DA35D2D15C7439F0080B09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA35D2915C7417F0080B09F;
+			remoteInfo = clean;
+		};
 		5DFB065815AE326400CFF95F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
@@ -442,6 +450,7 @@
 		5D5D03BA158103DD00E8A525 /* libmusicbrainz-macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmusicbrainz-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeneratedDefines.h; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBEntityTestCase.m"; sourceTree = "<group>"; };
@@ -520,6 +529,8 @@
 		5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		5DA35D2F15C7570C0080B09F /* clean.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = clean.sh; path = "libmusicbrainz-objc.xcodeproj/clean.sh"; sourceTree = "<group>"; };
+		5DA35D3015C7570C0080B09F /* MBGeneratedDefines.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MBGeneratedDefines.py; path = "libmusicbrainz-objc.xcodeproj/MBGeneratedDefines.py"; sourceTree = "<group>"; };
 		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
 		5DB56B9D15AA931F00885759 /* MBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUtils.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
@@ -733,6 +744,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5D0374158058BD00E8A525 /* MB.h */,
+				5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */,
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
 				5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */,
@@ -827,10 +839,12 @@
 		5D82785715AD2FF500B4A8EB /* Targets */ = {
 			isa = PBXGroup;
 			children = (
+				5DA35D3015C7570C0080B09F /* MBGeneratedDefines.py */,
+				5DA35D2F15C7570C0080B09F /* clean.sh */,
+				5D82785815AD302100B4A8EB /* Documentation */,
 				5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */,
 				5D5D03D51581052A00E8A525 /* libmusicbrainz-macos */,
 				5D82781815AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */,
-				5D82785815AD302100B4A8EB /* Documentation */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -1097,10 +1111,28 @@
 				5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
 				5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */,
 				5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
+				5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		5DA35D2915C7417F0080B09F /* clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(PROJECT_FILE_PATH)/clean.sh";
+			buildConfigurationList = 5DA35D2A15C7417F0080B09F /* Build configuration list for PBXLegacyTarget "clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = clean;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		5D5D03B9158103DD00E8A525 /* libmusicbrainz-macos */ = {
@@ -1125,6 +1157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D61B7EF155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-iphoneos" */;
 			buildPhases = (
+				5D24625315C72099004FC801 /* MBGeneratedDefines.h */,
 				5D61B7C7155F3F9A0003006A /* Sources */,
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
@@ -1134,6 +1167,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5DA35D2E15C7439F0080B09F /* PBXTargetDependency */,
 			);
 			name = "libmusicbrainz-iphoneos";
 			productName = "libmusicbrainz-objc";
@@ -1201,6 +1235,7 @@
 				5DAAFE4B159A62D200450C32 /* Documentation */,
 				5D82780F15AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */,
 				5DFB065415AE325600CFF95F /* iOS-Framework */,
+				5DA35D2915C7417F0080B09F /* clean */,
 			);
 		};
 /* End PBXProject section */
@@ -1232,6 +1267,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D24625315C72099004FC801 /* MBGeneratedDefines.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = MBGeneratedDefines.h;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/usr/bin/env python $PROJECT_FILE_PATH/MBGeneratedDefines.py";
+		};
 		5D82784F15AD28EE00B4A8EB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1447,6 +1496,11 @@
 			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
 			targetProxy = 5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */;
 		};
+		5DA35D2E15C7439F0080B09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA35D2915C7417F0080B09F /* clean */;
+			targetProxy = 5DA35D2D15C7439F0080B09F /* PBXContainerItemProxy */;
+		};
 		5DFB065915AE326400CFF95F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
@@ -1648,6 +1702,55 @@
 			};
 			name = Release;
 		};
+		5DA35D2B15C7417F0080B09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5DA35D2C15C7417F0080B09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		5DAAFE4C159A62D200450C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1722,6 +1825,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DA35D2A15C7417F0080B09F /* Build configuration list for PBXLegacyTarget "clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA35D2B15C7417F0080B09F /* Debug */,
+				5DA35D2C15C7417F0080B09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		5DAAFE4E159A62D200450C32 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;

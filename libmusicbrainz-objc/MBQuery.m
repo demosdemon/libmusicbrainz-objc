@@ -14,9 +14,9 @@
 
 #import "MB.h"
 #import "ASIHTTPRequest.h"
+#import "MBGeneratedDefines.h"
 
-#define VERSION @"0.1"
-#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" VERSION
+#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" MB_VERSION
 #define DEFAULT_SERVER         @"musicbrainz.org"
 #define DEFAULT_PORT           80
 #define MAX_REQUESTS           2
