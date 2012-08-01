@@ -14,9 +14,9 @@
 
 #import "MB.h"
 #import "ASIHTTPRequest.h"
+#import "MBGeneratedDefines.h"
 
-#define VERSION @"0.1"
-#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" VERSION
+#define LIBRARY_USER_AGENT     @"libmusicbrainz-objc-" MB_VERSION
 #define DEFAULT_SERVER         @"musicbrainz.org"
 #define DEFAULT_PORT           80
 #define MAX_REQUESTS           2
@@ -64,7 +64,7 @@
 - (id) initWithUserAgent:(NSString *)ua
                 Delegate:(id<MBQueryDelegate>)delegate
                   Server:(NSString *)server
-                    Port:(NSInteger)port 
+                    Port:(int)port
 {
   if (!ua || [ua isEqualToString:@""] || !delegate) return (self = nil);
   NSAssert(server && ![server isEqualToString:@""], @"server is empty or nil");
@@ -144,11 +144,6 @@
 }
 
 #pragma mark - Private methods
-+ (NSString *) urlEscape:(NSString *)unencodedString
-{
-	return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)unencodedString, NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8));
-}
-
 // Put a query string onto the end of a url
 + (NSString *) addQueryStringToUrl:(NSString *)url
                             params:(NSDictionary *)params
@@ -160,11 +155,10 @@
 			NSString *sKey = [key description];
       NSString * sVal = [[params objectForKey:key] description];
 			// Do we need to add ?k=v or &k=v ?
-			if ([urlWithQuerystring rangeOfString:@"?"].location==NSNotFound) {
-				[urlWithQuerystring appendFormat:@"?%@=%@", [MBQuery urlEscape:sKey], [MBQuery urlEscape:sVal]];
-			} else {
-				[urlWithQuerystring appendFormat:@"&%@=%@", [MBQuery urlEscape:sKey], [MBQuery urlEscape:sVal]];
-			}
+			if ([urlWithQuerystring rangeOfString:@"?"].location==NSNotFound)
+				[urlWithQuerystring appendFormat:@"?%@=%@", urlEscapeString(sKey), urlEscapeString(sVal)];
+			else
+				[urlWithQuerystring appendFormat:@"&%@=%@", urlEscapeString(sKey), urlEscapeString(sVal)];
 		}
 	}
 	return urlWithQuerystring;

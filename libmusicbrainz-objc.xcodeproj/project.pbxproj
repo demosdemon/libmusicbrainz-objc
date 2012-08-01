@@ -33,6 +33,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5D2A32E115C79DC800198C0D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2A32E015C79DC800198C0D /* MobileCoreServices.framework */; };
+		5D2A32E315C79DE100198C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2A32E215C79DE100198C0D /* UIKit.framework */; };
 		5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
 		5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
 		5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
@@ -76,6 +78,7 @@
 		5D3BF88F15B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D3BF89015B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D61B7CF155F3F9B0003006A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CE155F3F9A0003006A /* Foundation.framework */; };
+		5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
 		5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */; };
@@ -244,7 +247,6 @@
 		5D82780315AD1EBC00B4A8EB /* NSString+MBKeyManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D82780415AD1EE700B4A8EB /* MBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB56B9D15AA931F00885759 /* MBUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D82780515AD1F0200B4A8EB /* MBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB56B9D15AA931F00885759 /* MBUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D82781315AD22C200B4A8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D82781215AD22C200B4A8EB /* UIKit.framework */; };
 		5D82781515AD22C200B4A8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D82781415AD22C200B4A8EB /* Foundation.framework */; };
 		5D82781715AD22C200B4A8EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D82781615AD22C200B4A8EB /* CoreGraphics.framework */; };
 		5D82781D15AD22C300B4A8EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D82781B15AD22C300B4A8EB /* InfoPlist.strings */; };
@@ -318,19 +320,32 @@
 		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
 		5DAEEE2315AE0E3F00E6BA6B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAF158E717E00D7FF11 /* libz.dylib */; };
-		5DAEEE2415AE0E4700E6BA6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDAB158E715F00D7FF11 /* MobileCoreServices.framework */; };
 		5DAEEE2515AE0E5200E6BA6B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CAE3158E6F4F00D7FF11 /* libxml2.dylib */; };
 		5DAEEE2615AE0E7A00E6BA6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA9158E715500D7FF11 /* SystemConfiguration.framework */; };
 		5DAEEE2715AE0E8800E6BA6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2CDA7158E714300D7FF11 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5D2A32D715C79B9300198C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA35D2915C7417F0080B09F;
+			remoteInfo = clean;
+		};
 		5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5D61B7CA155F3F9A0003006A;
 			remoteInfo = "libmusicbrainz-iphoneos";
+		};
+		5DA35D2D15C7439F0080B09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D61B7C2155F3F9A0003006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA35D2915C7417F0080B09F;
+			remoteInfo = clean;
 		};
 		5DFB065815AE326400CFF95F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -361,6 +376,8 @@
 		5D19DEA91591841C00FCF572 /* MBIswc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIswc.m; sourceTree = "<group>"; };
 		5D19DEAE159185FD00FCF572 /* MBIpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBIpi.h; sourceTree = "<group>"; };
 		5D19DEAF1591860000FCF572 /* MBIpi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBIpi.m; sourceTree = "<group>"; };
+		5D2A32E015C79DC800198C0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		5D2A32E215C79DE100198C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUniqueIdentifier.h; sourceTree = "<group>"; };
 		5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBBarcodeSubmissionRequest.h; path = Requests/MBBarcodeSubmissionRequest.h; sourceTree = "<group>"; };
 		5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBBarcodeSubmissionRequest.m; path = Requests/MBBarcodeSubmissionRequest.m; sourceTree = "<group>"; };
@@ -442,6 +459,7 @@
 		5D5D03BA158103DD00E8A525 /* libmusicbrainz-macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libmusicbrainz-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmusicbrainz-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61B7CE155F3F9A0003006A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGeneratedDefines.h; sourceTree = "<group>"; };
 		5D64F527155F671E00F47DBF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D64F54A155F6DC500F47DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBEntityTestCase.m; path = "libmusicbrainz-objc-test/Entities/MBEntityTestCase.m"; sourceTree = "<group>"; };
@@ -458,7 +476,6 @@
 		5D82775C15AD114300B4A8EB /* MBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMessage.h; sourceTree = "<group>"; };
 		5D82775D15AD114400B4A8EB /* MBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMessage.m; sourceTree = "<group>"; };
 		5D82781015AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "libmusicbrainz-objc-iphoneos-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D82781215AD22C200B4A8EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5D82781415AD22C200B4A8EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D82781615AD22C200B4A8EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5D82781A15AD22C300B4A8EB /* libmusicbrainz-objc-iphoneos-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libmusicbrainz-objc-iphoneos-test-Info.plist"; sourceTree = "<group>"; };
@@ -520,6 +537,8 @@
 		5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		5DA35D2F15C7570C0080B09F /* clean.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = clean.sh; path = "libmusicbrainz-objc.xcodeproj/clean.sh"; sourceTree = "<group>"; };
+		5DA35D3015C7570C0080B09F /* MBGeneratedDefines.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MBGeneratedDefines.py; path = "libmusicbrainz-objc.xcodeproj/MBGeneratedDefines.py"; sourceTree = "<group>"; };
 		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
 		5DB56B9D15AA931F00885759 /* MBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUtils.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
@@ -559,11 +578,11 @@
 				5DAEEE2715AE0E8800E6BA6B /* CFNetwork.framework in Frameworks */,
 				5DAEEE2615AE0E7A00E6BA6B /* SystemConfiguration.framework in Frameworks */,
 				5D82781715AD22C200B4A8EB /* CoreGraphics.framework in Frameworks */,
-				5DAEEE2415AE0E4700E6BA6B /* MobileCoreServices.framework in Frameworks */,
+				5D2A32E115C79DC800198C0D /* MobileCoreServices.framework in Frameworks */,
 				5DAEEE2515AE0E5200E6BA6B /* libxml2.dylib in Frameworks */,
 				5DAEEE2315AE0E3F00E6BA6B /* libz.dylib in Frameworks */,
 				5D82785415AD2EA900B4A8EB /* libmusicbrainz-ios.a in Frameworks */,
-				5D82781315AD22C200B4A8EB /* UIKit.framework in Frameworks */,
+				5D2A32E315C79DE100198C0D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,24 +602,22 @@
 			isa = PBXGroup;
 			children = (
 				5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */,
-				5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */,
-				5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */,
-				5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */,
-				5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */,
-				5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */,
-				5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */,
-				5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */,
-				5D3BF86515B4AB7F0031A014 /* MBRequest.h */,
-				5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */,
 				5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */,
+				5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */,
 				5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */,
+				5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */,
 				5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */,
+				5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */,
 				5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */,
+				5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */,
 				5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */,
+				5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */,
 				5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */,
+				5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */,
 				5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */,
+				5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */,
 				5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */,
-				5D3BF86615B4AB7F0031A014 /* MBRequest.m */,
+				5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */,
 				5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */,
 			);
 			name = Requests;
@@ -610,76 +627,76 @@
 			isa = PBXGroup;
 			children = (
 				5D5D033B158058BD00E8A525 /* MBAlias.h */,
-				5D5D033D158058BD00E8A525 /* MBAnnotation.h */,
-				5D5D033F158058BD00E8A525 /* MBArtist.h */,
-				5D5D0341158058BD00E8A525 /* MBArtistCredit.h */,
-				5D19DEA2159183F700FCF572 /* MBAttribute.h */,
-				5D5D0343158058BD00E8A525 /* MBCdstub.h */,
-				5D5D0345158058BD00E8A525 /* MBCollection.h */,
-				5D5D0347158058BD00E8A525 /* MBDisc.h */,
-				5D5D034A158058BD00E8A525 /* MBEntity.h */,
-				5D19DE9015917E9000FCF572 /* MBError.h */,
-				5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */,
-				5D19DEAE159185FD00FCF572 /* MBIpi.h */,
-				5D5D034E158058BD00E8A525 /* MBIsrc.h */,
-				5D19DEA81591841000FCF572 /* MBIswc.h */,
-				5D5D0350158058BD00E8A525 /* MBLabel.h */,
-				5D5D0352158058BD00E8A525 /* MBLabelInfo.h */,
-				5D5D0354158058BD00E8A525 /* MBLifeSpan.h */,
-				5D19DE8715916E9300FCF572 /* MBList.h */,
-				5D5D0356158058BD00E8A525 /* MBMedium.h */,
-				5D82775C15AD114300B4A8EB /* MBMessage.h */,
-				5D5D0358158058BD00E8A525 /* MBMetadata.h */,
-				5D19DE9C159183D900FCF572 /* MBNameCredit.h */,
-				5D5D035A158058BD00E8A525 /* MBNonmbTrack.h */,
-				5D5D035C158058BD00E8A525 /* MBPuid.h */,
-				5D5D0372158058BD00E8A525 /* MBRateAndTaggableEntity.h */,
-				5D5D035E158058BD00E8A525 /* MBRating.h */,
-				5D5D0360158058BD00E8A525 /* MBRecording.h */,
-				5D5D0362158058BD00E8A525 /* MBRelation.h */,
-				5D5D0364158058BD00E8A525 /* MBRelease.h */,
-				5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */,
-				5D5D0368158058BD00E8A525 /* MBTag.h */,
-				5D19DE96159183B700FCF572 /* MBTextRepresentation.h */,
-				5D5D036A158058BD00E8A525 /* MBTrack.h */,
-				5D5D036C158058BD00E8A525 /* MBUserRating.h */,
-				5D5D036E158058BD00E8A525 /* MBUserTag.h */,
-				5D5D0370158058BD00E8A525 /* MBWork.h */,
 				5D5D033C158058BD00E8A525 /* MBAlias.m */,
+				5D5D033D158058BD00E8A525 /* MBAnnotation.h */,
 				5D5D033E158058BD00E8A525 /* MBAnnotation.m */,
+				5D5D033F158058BD00E8A525 /* MBArtist.h */,
 				5D5D0340158058BD00E8A525 /* MBArtist.m */,
+				5D5D0341158058BD00E8A525 /* MBArtistCredit.h */,
 				5D5D0342158058BD00E8A525 /* MBArtistCredit.m */,
+				5D19DEA2159183F700FCF572 /* MBAttribute.h */,
 				5D19DEA3159183FA00FCF572 /* MBAttribute.m */,
+				5D5D0343158058BD00E8A525 /* MBCdstub.h */,
 				5D5D0344158058BD00E8A525 /* MBCdstub.m */,
+				5D5D0345158058BD00E8A525 /* MBCollection.h */,
 				5D5D0346158058BD00E8A525 /* MBCollection.m */,
+				5D5D0347158058BD00E8A525 /* MBDisc.h */,
 				5D5D0348158058BD00E8A525 /* MBDisc.m */,
+				5D5D034A158058BD00E8A525 /* MBEntity.h */,
 				5D19DE83159105C200FCF572 /* MBEntity.m */,
+				5D19DE9015917E9000FCF572 /* MBError.h */,
 				5D19DE9115917E9100FCF572 /* MBError.m */,
+				5D5D034C158058BD00E8A525 /* MBFreedbDisc.h */,
 				5D5D034D158058BD00E8A525 /* MBFreedbDisc.m */,
+				5D19DEAE159185FD00FCF572 /* MBIpi.h */,
 				5D19DEAF1591860000FCF572 /* MBIpi.m */,
+				5D5D034E158058BD00E8A525 /* MBIsrc.h */,
 				5D5D034F158058BD00E8A525 /* MBIsrc.m */,
+				5D19DEA81591841000FCF572 /* MBIswc.h */,
 				5D19DEA91591841C00FCF572 /* MBIswc.m */,
+				5D5D0350158058BD00E8A525 /* MBLabel.h */,
 				5D5D0351158058BD00E8A525 /* MBLabel.m */,
+				5D5D0352158058BD00E8A525 /* MBLabelInfo.h */,
 				5D5D0353158058BD00E8A525 /* MBLabelInfo.m */,
+				5D5D0354158058BD00E8A525 /* MBLifeSpan.h */,
 				5D5D0355158058BD00E8A525 /* MBLifeSpan.m */,
+				5D19DE8715916E9300FCF572 /* MBList.h */,
 				5D19DE8815916E9300FCF572 /* MBList.m */,
+				5D5D0356158058BD00E8A525 /* MBMedium.h */,
 				5D5D0357158058BD00E8A525 /* MBMedium.m */,
+				5D82775C15AD114300B4A8EB /* MBMessage.h */,
 				5D82775D15AD114400B4A8EB /* MBMessage.m */,
+				5D5D0358158058BD00E8A525 /* MBMetadata.h */,
 				5D5D0359158058BD00E8A525 /* MBMetadata.m */,
+				5D19DE9C159183D900FCF572 /* MBNameCredit.h */,
 				5D19DE9D159183DC00FCF572 /* MBNameCredit.m */,
+				5D5D035A158058BD00E8A525 /* MBNonmbTrack.h */,
 				5D5D035B158058BD00E8A525 /* MBNonmbTrack.m */,
+				5D5D035C158058BD00E8A525 /* MBPuid.h */,
 				5D5D035D158058BD00E8A525 /* MBPuid.m */,
+				5D5D0372158058BD00E8A525 /* MBRateAndTaggableEntity.h */,
 				5D19DE8D15917DD000FCF572 /* MBRateAndTaggableEntity.m */,
+				5D5D035E158058BD00E8A525 /* MBRating.h */,
 				5D5D035F158058BD00E8A525 /* MBRating.m */,
+				5D5D0360158058BD00E8A525 /* MBRecording.h */,
 				5D5D0361158058BD00E8A525 /* MBRecording.m */,
+				5D5D0362158058BD00E8A525 /* MBRelation.h */,
 				5D5D0363158058BD00E8A525 /* MBRelation.m */,
+				5D5D0364158058BD00E8A525 /* MBRelease.h */,
 				5D5D0365158058BD00E8A525 /* MBRelease.m */,
+				5D5D0366158058BD00E8A525 /* MBReleaseGroup.h */,
 				5D5D0367158058BD00E8A525 /* MBReleaseGroup.m */,
+				5D5D0368158058BD00E8A525 /* MBTag.h */,
 				5D5D0369158058BD00E8A525 /* MBTag.m */,
+				5D19DE96159183B700FCF572 /* MBTextRepresentation.h */,
 				5D19DE97159183BA00FCF572 /* MBTextRepresentation.m */,
+				5D5D036A158058BD00E8A525 /* MBTrack.h */,
 				5D5D036B158058BD00E8A525 /* MBTrack.m */,
+				5D5D036C158058BD00E8A525 /* MBUserRating.h */,
 				5D5D036D158058BD00E8A525 /* MBUserRating.m */,
+				5D5D036E158058BD00E8A525 /* MBUserTag.h */,
 				5D5D036F158058BD00E8A525 /* MBUserTag.m */,
+				5D5D0370158058BD00E8A525 /* MBWork.h */,
 				5D5D0371158058BD00E8A525 /* MBWork.m */,
 			);
 			path = Entities;
@@ -722,9 +739,10 @@
 			isa = PBXGroup;
 			children = (
 				5DA2CD67158E708800D7FF11 /* asi-http-request */,
-				5D82781215AD22C200B4A8EB /* UIKit.framework */,
-				5D82781415AD22C200B4A8EB /* Foundation.framework */,
 				5D82781615AD22C200B4A8EB /* CoreGraphics.framework */,
+				5D82781415AD22C200B4A8EB /* Foundation.framework */,
+				5D2A32E015C79DC800198C0D /* MobileCoreServices.framework */,
+				5D2A32E215C79DE100198C0D /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -732,16 +750,19 @@
 		5D61B7D0155F3F9B0003006A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5D5D0374158058BD00E8A525 /* MB.h */,
-				5D5D0375158058BD00E8A525 /* MBQuery.h */,
-				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
-				5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */,
-				5DB56B9D15AA931F00885759 /* MBUtils.h */,
-				5D08F35415900B3200E35D2A /* XML.h */,
-				5D5D0376158058BD00E8A525 /* MBQuery.m */,
 				5D01A02815AC966D00784C76 /* Categories */,
 				5D5D033A158058BD00E8A525 /* Entities */,
 				5D3BF81D15B47CA30031A014 /* Requests */,
+				5D5D0374158058BD00E8A525 /* MB.h */,
+				5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */,
+				5D5D0375158058BD00E8A525 /* MBQuery.h */,
+				5D5D0376158058BD00E8A525 /* MBQuery.m */,
+				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
+				5D3BF86515B4AB7F0031A014 /* MBRequest.h */,
+				5D3BF86615B4AB7F0031A014 /* MBRequest.m */,
+				5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */,
+				5DB56B9D15AA931F00885759 /* MBUtils.h */,
+				5D08F35415900B3200E35D2A /* XML.h */,
 			);
 			name = Classes;
 			path = "libmusicbrainz-objc";
@@ -813,12 +834,12 @@
 		5D82785615AD2F4A00B4A8EB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */,
-				5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */,
-				5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */,
 				5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */,
-				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
 				5D6652A015ADFABB00E0E805 /* MBListTestCase.m */,
+				5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */,
+				5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */,
+				5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */,
+				5D6652DE15ADFC8300E0E805 /* MBTestUtils.h */,
 				5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */,
 			);
 			name = Tests;
@@ -827,10 +848,12 @@
 		5D82785715AD2FF500B4A8EB /* Targets */ = {
 			isa = PBXGroup;
 			children = (
+				5D82785815AD302100B4A8EB /* Documentation */,
 				5D81624215941E88002E6A65 /* libmusicbrainz-iphoneos */,
 				5D5D03D51581052A00E8A525 /* libmusicbrainz-macos */,
 				5D82781815AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */,
-				5D82785815AD302100B4A8EB /* Documentation */,
+				5DA35D2F15C7570C0080B09F /* clean.sh */,
+				5DA35D3015C7570C0080B09F /* MBGeneratedDefines.py */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -1097,16 +1120,35 @@
 				5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
 				5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */,
 				5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
+				5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		5DA35D2915C7417F0080B09F /* clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(PROJECT_FILE_PATH)/clean.sh";
+			buildConfigurationList = 5DA35D2A15C7417F0080B09F /* Build configuration list for PBXLegacyTarget "clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = clean;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		5D5D03B9158103DD00E8A525 /* libmusicbrainz-macos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D5D03CB158103DE00E8A525 /* Build configuration list for PBXNativeTarget "libmusicbrainz-macos" */;
 			buildPhases = (
+				5D2A32DA15C79BA200198C0D /* MBGeneratedDefines.h */,
 				5D5D03B5158103DD00E8A525 /* Sources */,
 				5D5D03B6158103DD00E8A525 /* Frameworks */,
 				5D5D03B7158103DD00E8A525 /* Headers */,
@@ -1115,6 +1157,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5D2A32D815C79B9300198C0D /* PBXTargetDependency */,
 			);
 			name = "libmusicbrainz-macos";
 			productName = "libmusicbrainz-objc-cocoa";
@@ -1125,6 +1168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D61B7EF155F3F9B0003006A /* Build configuration list for PBXNativeTarget "libmusicbrainz-iphoneos" */;
 			buildPhases = (
+				5D24625315C72099004FC801 /* MBGeneratedDefines.h */,
 				5D61B7C7155F3F9A0003006A /* Sources */,
 				5D61B7C8155F3F9A0003006A /* Frameworks */,
 				5D61B7C9155F3F9A0003006A /* Headers */,
@@ -1134,6 +1178,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5DA35D2E15C7439F0080B09F /* PBXTargetDependency */,
 			);
 			name = "libmusicbrainz-iphoneos";
 			productName = "libmusicbrainz-objc";
@@ -1201,6 +1246,7 @@
 				5DAAFE4B159A62D200450C32 /* Documentation */,
 				5D82780F15AD22C200B4A8EB /* libmusicbrainz-objc-iphoneos-test */,
 				5DFB065415AE325600CFF95F /* iOS-Framework */,
+				5DA35D2915C7417F0080B09F /* clean */,
 			);
 		};
 /* End PBXProject section */
@@ -1232,6 +1278,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D24625315C72099004FC801 /* MBGeneratedDefines.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = MBGeneratedDefines.h;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env python $PROJECT_FILE_PATH/MBGeneratedDefines.py";
+		};
+		5D2A32DA15C79BA200198C0D /* MBGeneratedDefines.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = MBGeneratedDefines.h;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env python $PROJECT_FILE_PATH/MBGeneratedDefines.py";
+		};
 		5D82784F15AD28EE00B4A8EB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1442,10 +1516,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5D2A32D815C79B9300198C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA35D2915C7417F0080B09F /* clean */;
+			targetProxy = 5D2A32D715C79B9300198C0D /* PBXContainerItemProxy */;
+		};
 		5D82785315AD2E9700B4A8EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5D61B7CA155F3F9A0003006A /* libmusicbrainz-iphoneos */;
 			targetProxy = 5D82785215AD2E9700B4A8EB /* PBXContainerItemProxy */;
+		};
+		5DA35D2E15C7439F0080B09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA35D2915C7417F0080B09F /* clean */;
+			targetProxy = 5DA35D2D15C7439F0080B09F /* PBXContainerItemProxy */;
 		};
 		5DFB065915AE326400CFF95F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1648,6 +1732,55 @@
 			};
 			name = Release;
 		};
+		5DA35D2B15C7417F0080B09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5DA35D2C15C7417F0080B09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		5DAAFE4C159A62D200450C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1719,6 +1852,15 @@
 			buildConfigurations = (
 				5D82782515AD22C400B4A8EB /* Debug */,
 				5D82782615AD22C400B4A8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA35D2A15C7417F0080B09F /* Build configuration list for PBXLegacyTarget "clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA35D2B15C7417F0080B09F /* Debug */,
+				5DA35D2C15C7417F0080B09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
