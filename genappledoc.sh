@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+git merge -s recursive -X theirs master
 ## @file genappledoc.sh
 ## @date Jul 30 2012
 ## @copyright
