@@ -21,7 +21,7 @@ def git_sha():
 def def_header():
   maxlen = max([len(key) for key in os.environ])
   DEFINE = u'#define %%-%ds @%%s' % maxlen
-  env = [DEFINE % (key, json.dumps(val)) for (key, val) in sorted(os.environ.iteritems()) if key != '_']
+  env = [DEFINE % (key.replace('/','_'), json.dumps(val)) for (key, val) in sorted(os.environ.iteritems()) if key != '_']
   
   HEADER = u"""//
 // @file MBGeneratedDefines.h

@@ -9,6 +9,7 @@
 //   webservice.
 
 #import "ASIHTTPRequestDelegate.h"
+#import "MBUtils.h"
 
 @protocol MBQueryDelegate;
 
