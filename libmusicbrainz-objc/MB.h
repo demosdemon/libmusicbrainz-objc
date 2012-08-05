@@ -11,7 +11,6 @@
 #import <Foundation/Foundation.h>
 #import "XML.h"
 #import "MBQuery.h"
-#import "MBQueryDelegate.h"
 #import "MBRequest.h"
 #import "MBGetRequest.h"
 #import "MBPostRequest.h"

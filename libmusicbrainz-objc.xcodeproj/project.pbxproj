@@ -165,7 +165,6 @@
 		5D8277AF15AD1DF100B4A8EB /* MBWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D0371158058BD00E8A525 /* MBWork.m */; };
 		5D8277B015AD1DF100B4A8EB /* NSString+MBKeyManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A02B15AC96A100784C76 /* NSString+MBKeyManipulation.m */; };
 		5D8277B115AD1E3000B4A8EB /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8277B215AD1E3000B4A8EB /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B315AD1E3000B4A8EB /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B515AD1E3000B4A8EB /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277B615AD1E3000B4A8EB /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -206,7 +205,6 @@
 		5D8277D915AD1E3000B4A8EB /* NSString+MBKeyManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D01A02A15AC96A100784C76 /* NSString+MBKeyManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D08F35415900B3200E35D2A /* XML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0374158058BD00E8A525 /* MB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAFE53159A641000450C32 /* MBQueryDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DD15AD1EBC00B4A8EB /* MBQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D0375158058BD00E8A525 /* MBQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277DF15AD1EBC00B4A8EB /* MBAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033B158058BD00E8A525 /* MBAlias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8277E015AD1EBC00B4A8EB /* MBAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5D033D158058BD00E8A525 /* MBAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -539,7 +537,6 @@
 		5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		5DA35D2F15C7570C0080B09F /* clean.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = clean.sh; path = "libmusicbrainz-objc.xcodeproj/clean.sh"; sourceTree = "<group>"; };
 		5DA35D3015C7570C0080B09F /* MBGeneratedDefines.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MBGeneratedDefines.py; path = "libmusicbrainz-objc.xcodeproj/MBGeneratedDefines.py"; sourceTree = "<group>"; };
-		5DAAFE53159A641000450C32 /* MBQueryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBQueryDelegate.h; sourceTree = "<group>"; };
 		5DB56B9D15AA931F00885759 /* MBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUtils.h; sourceTree = "<group>"; };
 		5DF08A86159A534A00B594B0 /* genappledoc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genappledoc.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -757,7 +754,6 @@
 				5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */,
 				5D5D0375158058BD00E8A525 /* MBQuery.h */,
 				5D5D0376158058BD00E8A525 /* MBQuery.m */,
-				5DAAFE53159A641000450C32 /* MBQueryDelegate.h */,
 				5D3BF86515B4AB7F0031A014 /* MBRequest.h */,
 				5D3BF86615B4AB7F0031A014 /* MBRequest.m */,
 				5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */,
@@ -977,7 +973,6 @@
 			files = (
 				5D82780515AD1F0200B4A8EB /* MBUtils.h in Headers */,
 				5D8277B115AD1E3000B4A8EB /* MB.h in Headers */,
-				5D8277B215AD1E3000B4A8EB /* MBQueryDelegate.h in Headers */,
 				5D8277B315AD1E3000B4A8EB /* MBQuery.h in Headers */,
 				5D8277B515AD1E3000B4A8EB /* MBAlias.h in Headers */,
 				5D8277B615AD1E3000B4A8EB /* MBAnnotation.h in Headers */,
@@ -1049,7 +1044,6 @@
 				5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */,
 				5D82780415AD1EE700B4A8EB /* MBUtils.h in Headers */,
 				5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */,
-				5D8277DC15AD1EBC00B4A8EB /* MBQueryDelegate.h in Headers */,
 				5D8277DD15AD1EBC00B4A8EB /* MBQuery.h in Headers */,
 				5D8277DF15AD1EBC00B4A8EB /* MBAlias.h in Headers */,
 				5D8277E015AD1EBC00B4A8EB /* MBAnnotation.h in Headers */,
