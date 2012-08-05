@@ -17,7 +17,7 @@
 
 - (NSString *) url
 {
-  return [NSString stringWithFormat:@"%@?%@", _endpoint, [self parameterString]];
+  return [NSString stringWithFormat:@"%@/?%@", _endpoint, [self parameterString]];
 }
 
 @end

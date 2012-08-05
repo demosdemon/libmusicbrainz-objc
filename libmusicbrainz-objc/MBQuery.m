@@ -34,7 +34,8 @@
 
 #define kClientParameter @"client"
 
-#define kBaseUrl(server, port) [NSString stringWithFormat:@"http://%@:%d/ws/2/", server, port] 
+#define kBaseUrl(server, port) [NSString stringWithFormat:@"http://%@:%d/ws/2", server, port]
+#define kUrl(server, port, endpoint) [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:%d/ws/2/%@", server, port, endpoint]]
 #define kLength(string)        [string lengthOfBytesUsingEncoding:NSUTF8StringEncoding]
 
 NSDictionary * ASIHTTPRequestToNSDictionary(ASIHTTPRequest * request)
@@ -162,7 +163,7 @@ NSDictionary * ASIHTTPRequestToNSDictionary(ASIHTTPRequest * request)
 
 - (void) sendGet:(NSString *)endpoint
 {
-  NSURL * url = [NSURL URLWithString:endpoint relativeToURL:kBaseUrl(_Server, _Port)];
+  NSURL * url = kUrl(_Server, _Port, endpoint);
   ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
   [request setDelegate:self];
   [request setRequestMethod:@"GET"];
@@ -172,7 +173,7 @@ NSDictionary * ASIHTTPRequestToNSDictionary(ASIHTTPRequest * request)
 - (void) sendPost:(NSString *)endpoint
          withData:(NSData *)data
 {
-  NSURL * url = [NSURL URLWithString:endpoint relativeToURL:kBaseUrl(_Server, _Port)];
+  NSURL * url = kUrl(_Server, _Port, endpoint);
   ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
   [request setDelegate:self];
   [request setRequestMethod:@"POST"];
@@ -186,7 +187,7 @@ NSDictionary * ASIHTTPRequestToNSDictionary(ASIHTTPRequest * request)
 - (void) sendPut:(NSString *)endpoint
         withData:(NSData *)data
 {
-  NSURL * url = [NSURL URLWithString:endpoint relativeToURL:kBaseUrl(_Server, _Port)];
+  NSURL * url = kUrl(_Server, _Port, endpoint);
   ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
   [request setDelegate:self];
   [request setRequestMethod:@"PUT"];
@@ -197,7 +198,7 @@ NSDictionary * ASIHTTPRequestToNSDictionary(ASIHTTPRequest * request)
 
 - (void) sendDelete:(NSString *)endpoint
 {
-  NSURL * url = [NSURL URLWithString:endpoint relativeToURL:kBaseUrl(_Server, _Port)];
+  NSURL * url = kUrl(_Server, _Port, endpoint);
   ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
   [request setDelegate:self];
   [request setRequestMethod:@"DELETE"];
