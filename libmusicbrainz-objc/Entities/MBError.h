@@ -11,6 +11,8 @@
 /// Helperclass to create error objects from webservice responses
 @interface MBError : NSError
 
++ (NSError *) errorWithString:(NSString *)string;
+
 /// Creates an NSError from the XMLElement
 ///
 /// @param element XML Element that represents `<error/>` from webservice response

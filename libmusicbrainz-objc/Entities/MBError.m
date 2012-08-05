@@ -16,6 +16,16 @@
 
 @implementation MBError
 
++ (NSError *) errorWithString:(NSString *)string
+{
+#if DICT_LIT
+  NSDictionary * userInfo = @{ NSLocalizedDescriptionKey : string };
+#else
+  NSDictionary * userInfo = [NSDictionary dictionaryWithObjectsAndKeys:error, NSLocalizedDescriptionKey, nil];
+#endif /* dict_lit */
+  return [[NSError alloc] initWithDomain:@"org.musicbrainz.webservice" code:1 userInfo:userInfo];
+}
+
 - (NSError *) initWithElement:(NSXMLElement *)element
 {
   NSArray * texts = [element elementsForName:@"text"];
