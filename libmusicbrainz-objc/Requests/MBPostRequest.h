@@ -9,7 +9,10 @@
 
 #import "MBRequest.h"
 
-@interface MBPostRequest : MBRequest
+@interface MBPostRequest : MBRequest {
+ @protected
+  NSString * _endpoint;
+}
 
 - (NSData *) postdata;
 

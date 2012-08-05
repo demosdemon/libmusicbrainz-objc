@@ -14,7 +14,11 @@
 @protocol MBQueryDelegate;
 
 @class MBQuery, MBMetadata, MBRateAndTaggableEntity, MBRelease, MBCollection;
-@class MBIsrc, MBRecording;
+@class MBIsrc, MBRecording, MBRequest, MBPostRequest, MBPutRequest;
+@class MBDeleteRequest, MBGetRequest;
+
+typedef void(^MBQuerySuccessHandler)(MBQuery * query, NSDictionary * request, MBMetadata * result);
+typedef void(^MBQueryErrorHandler)(MBQuery * query, NSDictionary * request, NSError * error);
 
 /// Main interface with the webservice.
 ///
@@ -25,14 +29,14 @@
 @interface MBQuery : NSObject <ASIHTTPRequestDelegate>
 {
  @private
-  __cpt_weak id<MBQueryDelegate> _delegate;
-  NSString *_useragent;
-  NSString *_server;
-  int _port;
+  NSString *_UserAgent;
+  NSString *_Server;
+  int _Port;
   
-  NSURLCredential *_credentials;
-  
-  NSMutableDictionary *_submissionQueue;
+  NSURLCredential *_Credentials;
+
+  __cpt_weak MBQueryErrorHandler _ErrorHandler;
+  __cpt_weak MBQuerySuccessHandler _SuccessHandler;
 }
 
 #pragma mark - Initializers
@@ -47,8 +51,7 @@
 /// contain a - character. @warning ua must not be empty or nil.
 ///
 /// @param delegate MBQueryDelegate that recieves callbacks for recieved data
-- (id) initWithUserAgent:(NSString *)ua
-                Delegate:(id<MBQueryDelegate>)delegate;
+- (id) initWithUserAgent:(NSString *)ua;
 
 /// Main initializer.
 ///
@@ -63,9 +66,8 @@
 /// @param server Server to connect to.
 /// @param port Port to use.
 - (id) initWithUserAgent:(NSString *)ua
-               Delegate:(id<MBQueryDelegate>)delegate
-                 Server:(NSString *)server
-                   Port:(int)port;
+                  Server:(NSString *)server
+                    Port:(int)port;
 
 #pragma mark - Properties
 
@@ -87,8 +89,8 @@
 /// Default is 80
 @property (assign, nonatomic) int Port;
 
-/// MBQueryDelegate that recieves callbaks for recieved data
-@property (cpt_weak_property, nonatomic) id<MBQueryDelegate> Delegate;
+@property (cpt_weak_property, nonatomic) MBQuerySuccessHandler SuccessHandler;
+@property (cpt_weak_property, nonatomic) MBQueryErrorHandler ErrorHandler;
 
 /// Set the username and password to authenticate with when making mutable
 /// requests or getting user specific information, like collections,
@@ -103,22 +105,9 @@
            Password:(NSString *)password;
 
 #pragma mark - Instance Methods
-/// Submits all queued posts or puts.
-///
-/// Must call setUsername:Password: before calling or else requests will fail
-- (void) submitQueue;
 
-/// Query the webservice. Will call [MBQueryDelegate query:didReceiveResult:]
-/// on success else else [MBQueryDelegate query:didFailWithError:] on failure
-///
-/// @param entity type of entity to lookup (artist, release, etc)
-/// @param idstr MBID for the entity
-/// @param resource Currently only used for Collections
-/// @param parameters paramters to use (e.g. inc). If parameters contains the
-/// key "inc", the value must be a type of NSArray
-- (void) queryWithEntity:(NSString *)entity 
-                     uid:(NSString *)idstr 
-                resource:(NSString *)resource 
-              parameters:(NSDictionary *)parameters;
-
+- (void) submitGetRequest:(MBGetRequest*)request;
+- (void) submitPostRequest:(MBPostRequest*)request;
+- (void) submitPutRequest:(MBPutRequest*)request;
+- (void) submitDeleteRequest:(MBDeleteRequest*)request;
 @end

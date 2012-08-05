@@ -15,9 +15,7 @@
 - (id) init
 {
   if (self = [super init]) {
-    _RequestType = @"DELETE";
     _Releases = [NSMutableSet set];
-    _EntityType = @"collection";
   }
   return self;
 }
@@ -33,7 +31,7 @@
 - (NSString *) url
 {
   NSString * releases = [[_Releases allObjects] componentsJoinedByString:@";"];
-  return [NSString stringWithFormat:@"%@/%@/releases/%@?%@", _EntityType, _Resource, releases, [self parameterString]];
+  return [NSString stringWithFormat:@"collection/%@/releases/%@?%@", _Resource, releases, [self parameterString]];
 }
 
 

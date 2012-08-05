@@ -12,15 +12,12 @@
 
 @implementation MBPostRequest
 
-- (id) init
-{
-  if (self = [super init]) {
-    _RequestType = @"POST";
-  }
-  return self;
-}
-
 - (NSData *) postdata
 { return [NSData data]; }
+
+- (NSString *) url
+{
+  return [NSString stringWithFormat:@"%@?%@", _endpoint, [self parameterString]];
+}
 
 @end

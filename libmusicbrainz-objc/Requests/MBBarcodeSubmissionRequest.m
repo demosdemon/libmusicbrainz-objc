@@ -10,20 +10,17 @@
 #import "MB.h"
 #import "MBBarcodeSubmissionRequest.h"
 
-static NSComparisonResult (^CaseInsensitiveStringComparator)(NSString *, NSString *) = ^NSComparisonResult(NSString * obj1, NSString * obj2) {
-  return [obj1 caseInsensitiveCompare:obj2];
-};
-
 @implementation MBBarcodeSubmissionRequest
 
 - (id) init
 {
   if (self = [super init]) {
-    _EntityType = @"release";
+    _endpoint = @"release";
     _Barcodes = [NSMutableDictionary dictionary];
   }
   return self;
 }
+
 
 - (void) addBarcode:(NSString *)barcode forRelease:(MBRelease *)release
 { [_Barcodes setObject:[barcode copy] forKey:release.Id]; }

@@ -15,7 +15,7 @@
 - (id) init
 {
   if (self = [super init]) {
-    _EntityType = @"tag";
+    _endpoint = @"tag";
     _UserTags = [NSMutableDictionary dictionary];
   }
   return self;
@@ -62,6 +62,11 @@
 }
 
 - (NSArray *) getUserTagsForEntity:(MBRateAndTaggableEntity *)entity
+{
+  NOT_IMPLEMENTED();
+}
+
+- (NSData *) postdata
 {
   NOT_IMPLEMENTED();
 }

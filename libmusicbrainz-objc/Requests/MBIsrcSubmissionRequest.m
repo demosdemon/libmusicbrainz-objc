@@ -15,7 +15,7 @@
 - (id) init
 {
   if (self = [super init]) {
-    _EntityType = @"recording";
+    _endpoint = @"recording";
     _Isrcs = [NSMutableDictionary dictionary];
   }
   return self;

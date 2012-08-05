@@ -12,28 +12,37 @@
 
 @implementation MBGetRequest
 
+@synthesize RequestType = _RequestType;
 @synthesize EntityType = _Entity;
 @synthesize EntityId = _EntityId;
-@synthesize Result = _Result;
-@synthesize Error = _Error;
-@synthesize Limit = _Limit;
-@synthesize Offset = _Offset;
 
 - (id) init
 {
   if (self = [super init]) {
-    _RequestType = @"GET";
     _IncParameters = [NSMutableSet set];
-#if NUM_LIT
-    _Limit = @25;
-    _Offset = @0;
-#else
-    _Limit = [NSNumber numberWithInt:25];
-    _Offset = [NSNumber numberWithInt:0];
-#endif
+    self.Offset = [NSNumber numberWithInt:25];
+    self.Limit = [NSNumber numberWithInt:0];
   }
   return self;
 }
+
+- (NSNumber *) Offset
+{ return [[self getParameterForKey:@"offset"] number]; }
+
+- (void) setOffset:(NSNumber *)Offset
+{ [self setParameter:[Offset stringValue] forKey:@"offset"]; }
+
+- (NSNumber *) Limit
+{ return [[self getParameterForKey:@"limit"] number]; }
+
+- (void) setLimit:(NSNumber *)Limit
+{ [self setParameter:[Limit stringValue] forKey:@"limit"]; }
+
+- (NSString *) Query
+{ return [[self getParameterForKey:@"query"] copy]; }
+
+- (void) setQuery:(NSString *)Query
+{ [self setParameter:[Query copy] forKey:@"query"]; }
 
 - (void) addIncParameterObject:(NSString *)inc
 {
@@ -49,6 +58,19 @@
                 forKey:@"inc"];
   else
     [self removeParameterForKey:@"inc"];
+}
+
+- (NSString *) url
+{
+  switch (self.RequestType) {
+    case MBRequestLookup:
+      return [NSString stringWithFormat:@"%@/%@?%@", _Entity, _EntityId, self.parameterString];
+    case MBRequestBrowse:
+    case MBRequestSearch:
+      return [NSString stringWithFormat:@"%@?%@", _Entity, self.parameterString];
+    default:
+      return nil;
+  }
 }
 
 @end

@@ -14,7 +14,7 @@
 - (id) init
 {
   if (self = [super init]) {
-    _EntityType = @"rating";
+    _endpoint = @"rating";
     _UserRatings = [NSMutableDictionary dictionary];
   }
   return self;
@@ -50,6 +50,11 @@
     [_UserRatings setObject:typeDict forKey:ElementName];
   else
     [_UserRatings removeObjectForKey:ElementName];
+}
+
+- (NSData *) postdata
+{
+  NOT_IMPLEMENTED();
 }
 
 @end
