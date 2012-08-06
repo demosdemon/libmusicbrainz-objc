@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XML.h"
-#import "MBQuery.h"
+#import "MBConnection.h"
 #import "MBRequest.h"
 #import "MBGetRequest.h"
 #import "MBPostRequest.h"

@@ -22,6 +22,7 @@
     _IncParameters = [NSMutableSet set];
     self.Offset = [NSNumber numberWithInt:25];
     self.Limit = [NSNumber numberWithInt:0];
+    _RequestMethod = @"GET";
   }
   return self;
 }

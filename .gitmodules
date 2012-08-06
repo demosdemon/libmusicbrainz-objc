@@ -1,9 +1,12 @@
-[submodule "submodules/asi-http-request"]
-	path = submodules/asi-http-request
-url=git://github.com/pokeb/asi-http-request.git
 [submodule "submodules/KissXML"]
 	path = submodules/KissXML
-url=git://github.com/robbiehanson/KissXML.git
+	url=git://github.com/robbiehanson/KissXML.git
 [submodule "submodules/gtm"]
 	path = submodules/gtm
-url=git://github.com/innerfence/google-toolbox-for-mac.git
+	url=git://github.com/innerfence/google-toolbox-for-mac.git
+[submodule "submodules/MKNetworkKit"]
+	path = submodules/MKNetworkKit
+	url = git://github.com/MugunthKumar/MKNetworkKit.git
+[submodule "submodules/sskeychain"]
+	path = submodules/sskeychain
+	url = git://github.com/samsoffes/sskeychain.git

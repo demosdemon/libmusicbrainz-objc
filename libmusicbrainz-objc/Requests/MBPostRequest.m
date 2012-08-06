@@ -12,6 +12,13 @@
 
 @implementation MBPostRequest
 
+- (id) init {
+  if (self = [super init]) {
+    _RequestMethod = @"POST";
+  }
+  return self;
+}
+
 - (NSData *) postdata
 { return [NSData data]; }
 

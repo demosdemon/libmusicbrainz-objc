@@ -16,6 +16,7 @@
 {
   if (self = [super init]) {
     _Releases = [NSMutableSet set];
+    _RequestMethod = @"DELETE";
   }
   return self;
 }

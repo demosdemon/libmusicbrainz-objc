@@ -114,6 +114,8 @@ extern NSArray * MBIncParameterToNSStringArray(MBIncParameterType type)
   return self;
 }
 
+@synthesize RequestMethod = _RequestMethod;
+
 - (void) setParameter:(NSString *)value forKey:(NSString *)key
 { [_Parameters setObject:[value copy] forKey:key]; }
 - (void) removeParameterForKey:(NSString *)key

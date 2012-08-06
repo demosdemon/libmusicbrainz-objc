@@ -67,7 +67,7 @@ extern NSArray * MBIncParameterToNSStringArray(MBIncParameterType type);
 
 @class MBBarcodeSubmissionRequest, MBDeleteRequest, MBIsrcSubmissionRequest;
 @class MBPuidSubmissionRequest, MBRatingSubmissionRequest, MBTagSubmissionRequest;
-
+@class MBPutRequest, MBGetRequest;
 @class MBRelease, MBRecording, MBCollection;
 
 /// Request interface for webservice queries.
@@ -81,7 +81,11 @@ extern NSArray * MBIncParameterToNSStringArray(MBIncParameterType type);
 @interface MBRequest : NSObject {
  @private
   NSMutableDictionary * _Parameters;
+ @protected
+  NSString * _RequestMethod;
 }
+
+@property (nonatomic, readonly) NSString * RequestMethod;
 
 /// URL Parameters
 ///
