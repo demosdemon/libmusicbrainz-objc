@@ -33,47 +33,47 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5D134D6F15CF5EC200DCA605 /* MBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134D6D15CF5EC200DCA605 /* MBConnection.h */; };
+		5D134D6F15CF5EC200DCA605 /* MBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134D6D15CF5EC200DCA605 /* MBConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134D7015CF5EC200DCA605 /* MBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134D6D15CF5EC200DCA605 /* MBConnection.h */; };
 		5D134D7115CF5EC200DCA605 /* MBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134D6E15CF5EC200DCA605 /* MBConnection.m */; };
 		5D134D7215CF5EC200DCA605 /* MBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134D6E15CF5EC200DCA605 /* MBConnection.m */; };
-		5D134DC915CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB515CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h */; };
+		5D134DC915CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB515CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DCA15CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB515CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h */; };
 		5D134DCC15CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DB615CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DCD15CF6C5600DCA605 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB715CF6C5600DCA605 /* NSData+Base64.h */; };
+		5D134DCD15CF6C5600DCA605 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB715CF6C5600DCA605 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DCE15CF6C5600DCA605 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB715CF6C5600DCA605 /* NSData+Base64.h */; };
 		5D134DCF15CF6C5600DCA605 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DB815CF6C5600DCA605 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DD015CF6C5600DCA605 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DB815CF6C5600DCA605 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DD115CF6C5600DCA605 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB915CF6C5600DCA605 /* NSDate+RFC1123.h */; };
+		5D134DD115CF6C5600DCA605 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB915CF6C5600DCA605 /* NSDate+RFC1123.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DD215CF6C5600DCA605 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DB915CF6C5600DCA605 /* NSDate+RFC1123.h */; };
 		5D134DD315CF6C5600DCA605 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBA15CF6C5600DCA605 /* NSDate+RFC1123.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DD415CF6C5600DCA605 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBA15CF6C5600DCA605 /* NSDate+RFC1123.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DD515CF6C5600DCA605 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBB15CF6C5600DCA605 /* NSDictionary+RequestEncoding.h */; };
+		5D134DD515CF6C5600DCA605 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBB15CF6C5600DCA605 /* NSDictionary+RequestEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DD615CF6C5600DCA605 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBB15CF6C5600DCA605 /* NSDictionary+RequestEncoding.h */; };
 		5D134DD715CF6C5600DCA605 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBC15CF6C5600DCA605 /* NSDictionary+RequestEncoding.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DD815CF6C5600DCA605 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBC15CF6C5600DCA605 /* NSDictionary+RequestEncoding.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DD915CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBD15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h */; };
+		5D134DD915CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBD15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DDA15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBD15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h */; };
 		5D134DDB15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBE15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DDC15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DBE15CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DDD15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBF15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h */; };
+		5D134DDD15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBF15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DDE15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DBF15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h */; };
 		5D134DDF15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC015CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DE115CF6C5600DCA605 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC115CF6C5600DCA605 /* MKNetworkEngine.h */; };
+		5D134DE115CF6C5600DCA605 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC115CF6C5600DCA605 /* MKNetworkEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DE215CF6C5600DCA605 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC115CF6C5600DCA605 /* MKNetworkEngine.h */; };
 		5D134DE315CF6C5600DCA605 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC215CF6C5600DCA605 /* MKNetworkEngine.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DE415CF6C5600DCA605 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC215CF6C5600DCA605 /* MKNetworkEngine.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DE515CF6C5600DCA605 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC315CF6C5600DCA605 /* MKNetworkKit.h */; };
+		5D134DE515CF6C5600DCA605 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC315CF6C5600DCA605 /* MKNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DE615CF6C5600DCA605 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC315CF6C5600DCA605 /* MKNetworkKit.h */; };
-		5D134DE715CF6C5600DCA605 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC415CF6C5600DCA605 /* MKNetworkOperation.h */; };
+		5D134DE715CF6C5600DCA605 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC415CF6C5600DCA605 /* MKNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DE815CF6C5600DCA605 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC415CF6C5600DCA605 /* MKNetworkOperation.h */; };
 		5D134DE915CF6C5600DCA605 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC515CF6C5600DCA605 /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DEA15CF6C5600DCA605 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC515CF6C5600DCA605 /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DEB15CF6C5600DCA605 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC715CF6C5600DCA605 /* Reachability.h */; };
+		5D134DEB15CF6C5600DCA605 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC715CF6C5600DCA605 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DEC15CF6C5600DCA605 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DC715CF6C5600DCA605 /* Reachability.h */; };
 		5D134DED15CF6C5600DCA605 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC815CF6C5600DCA605 /* Reachability.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5D134DEE15CF6C5600DCA605 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DC815CF6C5600DCA605 /* Reachability.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5D134DFC15CF771900DCA605 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DFA15CF771900DCA605 /* SSKeychain.h */; };
+		5D134DFC15CF771900DCA605 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DFA15CF771900DCA605 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D134DFD15CF771900DCA605 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D134DFA15CF771900DCA605 /* SSKeychain.h */; };
 		5D134DFE15CF771900DCA605 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DFB15CF771900DCA605 /* SSKeychain.m */; };
 		5D134DFF15CF771900DCA605 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D134DFB15CF771900DCA605 /* SSKeychain.m */; };
@@ -84,56 +84,56 @@
 		5D134E0915D02C4800DCA605 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D134E0815D02C4800DCA605 /* MobileCoreServices.framework */; };
 		5D134E0B15D02C5C00DCA605 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D134E0A15D02C5C00DCA605 /* libxml2.dylib */; };
 		5D134E0D15D02C8A00DCA605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D134E0C15D02C8A00DCA605 /* UIKit.framework */; };
-		5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
+		5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF81415B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF81215B3DDCB0031A014 /* MBUniqueIdentifier.h */; };
-		5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
+		5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF86A15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85515B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h */; };
 		5D3BF86B15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
 		5D3BF86C15B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85615B4AB7F0031A014 /* MBBarcodeSubmissionRequest.m */; };
-		5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */; };
+		5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF86E15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85715B4AB7F0031A014 /* MBDeleteRequest.h */; };
 		5D3BF86F15B4AB7F0031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */; };
 		5D3BF87015B4AB7F0031A014 /* MBDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85815B4AB7F0031A014 /* MBDeleteRequest.m */; };
-		5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */; };
+		5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF87215B4AB7F0031A014 /* MBGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85915B4AB7F0031A014 /* MBGetRequest.h */; };
 		5D3BF87315B4AB7F0031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */; };
 		5D3BF87415B4AB7F0031A014 /* MBGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85A15B4AB7F0031A014 /* MBGetRequest.m */; };
-		5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */; };
+		5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF87615B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85B15B4AB7F0031A014 /* MBIsrcSubmissionRequest.h */; };
 		5D3BF87715B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */; };
 		5D3BF87815B4AB7F0031A014 /* MBIsrcSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85C15B4AB7F0031A014 /* MBIsrcSubmissionRequest.m */; };
-		5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */; };
+		5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF87A15B4AB7F0031A014 /* MBPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85D15B4AB7F0031A014 /* MBPostRequest.h */; };
 		5D3BF87B15B4AB7F0031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */; };
 		5D3BF87C15B4AB7F0031A014 /* MBPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF85E15B4AB7F0031A014 /* MBPostRequest.m */; };
-		5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */; };
+		5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF87E15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF85F15B4AB7F0031A014 /* MBPuidSubmissionRequest.h */; };
 		5D3BF87F15B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */; };
 		5D3BF88015B4AB7F0031A014 /* MBPuidSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86015B4AB7F0031A014 /* MBPuidSubmissionRequest.m */; };
-		5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */; };
+		5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF88215B4AB7F0031A014 /* MBPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86115B4AB7F0031A014 /* MBPutRequest.h */; };
 		5D3BF88315B4AB7F0031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */; };
 		5D3BF88415B4AB7F0031A014 /* MBPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86215B4AB7F0031A014 /* MBPutRequest.m */; };
-		5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */; };
+		5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF88615B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86315B4AB7F0031A014 /* MBRatingSubmissionRequest.h */; };
 		5D3BF88715B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */; };
 		5D3BF88815B4AB7F0031A014 /* MBRatingSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86415B4AB7F0031A014 /* MBRatingSubmissionRequest.m */; };
-		5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86515B4AB7F0031A014 /* MBRequest.h */; };
+		5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86515B4AB7F0031A014 /* MBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF88A15B4AB7F0031A014 /* MBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86515B4AB7F0031A014 /* MBRequest.h */; };
 		5D3BF88B15B4AB7F0031A014 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86615B4AB7F0031A014 /* MBRequest.m */; };
 		5D3BF88C15B4AB7F0031A014 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86615B4AB7F0031A014 /* MBRequest.m */; };
-		5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */; };
+		5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D3BF88E15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3BF86715B4AB7F0031A014 /* MBTagSubmissionRequest.h */; };
 		5D3BF88F15B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
 		5D3BF89015B4AB7F0031A014 /* MBTagSubmissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BF86815B4AB7F0031A014 /* MBTagSubmissionRequest.m */; };
-		5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */; };
+		5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D63EB5815C72330003E6865 /* MBGeneratedDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D6652BE15ADFABB00E0E805 /* MBEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66529715ADFABB00E0E805 /* MBEntityTestCase.m */; };
 		5D6652C715ADFABB00E0E805 /* MBListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A015ADFABB00E0E805 /* MBListTestCase.m */; };
 		5D6652CE15ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652A715ADFABB00E0E805 /* MBRateAndTaggableEntityTestCase.m */; };
 		5D6652DA15ADFABB00E0E805 /* MBQueryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B315ADFABB00E0E805 /* MBQueryTestCase.m */; };
 		5D6652DB15ADFABB00E0E805 /* MBRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B415ADFABB00E0E805 /* MBRequestTestCase.m */; };
 		5D6652DC15ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6652B515ADFABB00E0E805 /* NSString_MBKeyManipulationTestCase.m */; };
-		5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624315941EDB002E6A65 /* libmusicbrainz-iphoneos.pch */; };
+		5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624315941EDB002E6A65 /* libmusicbrainz-iphoneos.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D81624C1594219F002E6A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8162491594219F002E6A65 /* InfoPlist.strings */; };
 		5D81624D1594219F002E6A65 /* libmusicbrainz-macos.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5D81624A1594219F002E6A65 /* libmusicbrainz-macos.pch */; };
 		5D82776515AD1D9500B4A8EB /* MBAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D033C158058BD00E8A525 /* MBAlias.m */; };
@@ -297,18 +297,18 @@
 		5D82784D15AD260C00B4A8EB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784A15AD260C00B4A8EB /* GTMObjC2Runtime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5D82784E15AD260C00B4A8EB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82784C15AD260C00B4A8EB /* GTMRegex.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		5D82785415AD2EA900B4A8EB /* libmusicbrainz-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D61B7CB155F3F9A0003006A /* libmusicbrainz-ios.a */; };
-		5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */; };
+		5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDB9158E77C900D7FF11 /* DDXMLElementAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA2CDC8158E77C900D7FF11 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBA158E77C900D7FF11 /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */; };
+		5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBC158E77C900D7FF11 /* NSString+DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA2CDCA158E77C900D7FF11 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDBD158E77C900D7FF11 /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBE158E77C900D7FF11 /* DDXML.h */; };
-		5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */; };
+		5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBE158E77C900D7FF11 /* DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDBF158E77C900D7FF11 /* DDXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA2CDCD158E77C900D7FF11 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC0158E77C900D7FF11 /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */; };
+		5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC1158E77C900D7FF11 /* DDXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA2CDCF158E77C900D7FF11 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC2158E77C900D7FF11 /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */; };
+		5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC3158E77C900D7FF11 /* DDXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DA2CDD1158E77C900D7FF11 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2CDC4158E77C900D7FF11 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; };
+		5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA2CDC6158E77C900D7FF11 /* DDXMLPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1016,6 +1016,38 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */,
+				5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */,
+				5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */,
+				5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */,
+				5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */,
+				5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */,
+				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
+				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
+				5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
+				5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
+				5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */,
+				5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */,
+				5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */,
+				5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */,
+				5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */,
+				5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */,
+				5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
+				5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */,
+				5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
+				5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */,
+				5D134D6F15CF5EC200DCA605 /* MBConnection.h in Headers */,
+				5D134DC915CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h in Headers */,
+				5D134DCD15CF6C5600DCA605 /* NSData+Base64.h in Headers */,
+				5D134DD115CF6C5600DCA605 /* NSDate+RFC1123.h in Headers */,
+				5D134DD515CF6C5600DCA605 /* NSDictionary+RequestEncoding.h in Headers */,
+				5D134DD915CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h in Headers */,
+				5D134DDD15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h in Headers */,
+				5D134DE115CF6C5600DCA605 /* MKNetworkEngine.h in Headers */,
+				5D134DE515CF6C5600DCA605 /* MKNetworkKit.h in Headers */,
+				5D134DE715CF6C5600DCA605 /* MKNetworkOperation.h in Headers */,
+				5D134DEB15CF6C5600DCA605 /* Reachability.h in Headers */,
+				5D134DFC15CF771900DCA605 /* SSKeychain.h in Headers */,
 				5D8277DA15AD1EBC00B4A8EB /* XML.h in Headers */,
 				5D82780415AD1EE700B4A8EB /* MBUtils.h in Headers */,
 				5D8277DB15AD1EBC00B4A8EB /* MB.h in Headers */,
@@ -1056,38 +1088,6 @@
 				5D82780115AD1EBC00B4A8EB /* MBUserTag.h in Headers */,
 				5D82780215AD1EBC00B4A8EB /* MBWork.h in Headers */,
 				5D82780315AD1EBC00B4A8EB /* NSString+MBKeyManipulation.h in Headers */,
-				5DA2CDC7158E77C900D7FF11 /* DDXMLElementAdditions.h in Headers */,
-				5DA2CDC9158E77C900D7FF11 /* NSString+DDXML.h in Headers */,
-				5DA2CDCB158E77C900D7FF11 /* DDXML.h in Headers */,
-				5DA2CDCC158E77C900D7FF11 /* DDXMLDocument.h in Headers */,
-				5DA2CDCE158E77C900D7FF11 /* DDXMLElement.h in Headers */,
-				5DA2CDD0158E77C900D7FF11 /* DDXMLNode.h in Headers */,
-				5DA2CDD2158E77C900D7FF11 /* DDXMLPrivate.h in Headers */,
-				5D81624415941EDB002E6A65 /* libmusicbrainz-iphoneos.pch in Headers */,
-				5D3BF81315B3DDCB0031A014 /* MBUniqueIdentifier.h in Headers */,
-				5D3BF86915B4AB7F0031A014 /* MBBarcodeSubmissionRequest.h in Headers */,
-				5D3BF86D15B4AB7F0031A014 /* MBDeleteRequest.h in Headers */,
-				5D3BF87115B4AB7F0031A014 /* MBGetRequest.h in Headers */,
-				5D3BF87515B4AB7F0031A014 /* MBIsrcSubmissionRequest.h in Headers */,
-				5D3BF87915B4AB7F0031A014 /* MBPostRequest.h in Headers */,
-				5D3BF87D15B4AB7F0031A014 /* MBPuidSubmissionRequest.h in Headers */,
-				5D3BF88115B4AB7F0031A014 /* MBPutRequest.h in Headers */,
-				5D3BF88515B4AB7F0031A014 /* MBRatingSubmissionRequest.h in Headers */,
-				5D3BF88915B4AB7F0031A014 /* MBRequest.h in Headers */,
-				5D3BF88D15B4AB7F0031A014 /* MBTagSubmissionRequest.h in Headers */,
-				5D63EB5915C72330003E6865 /* MBGeneratedDefines.h in Headers */,
-				5D134D6F15CF5EC200DCA605 /* MBConnection.h in Headers */,
-				5D134DC915CF6C5600DCA605 /* NSAlert+MKNetworkKitAdditions.h in Headers */,
-				5D134DCD15CF6C5600DCA605 /* NSData+Base64.h in Headers */,
-				5D134DD115CF6C5600DCA605 /* NSDate+RFC1123.h in Headers */,
-				5D134DD515CF6C5600DCA605 /* NSDictionary+RequestEncoding.h in Headers */,
-				5D134DD915CF6C5600DCA605 /* NSString+MKNetworkKitAdditions.h in Headers */,
-				5D134DDD15CF6C5600DCA605 /* UIAlertView+MKNetworkKitAdditions.h in Headers */,
-				5D134DE115CF6C5600DCA605 /* MKNetworkEngine.h in Headers */,
-				5D134DE515CF6C5600DCA605 /* MKNetworkKit.h in Headers */,
-				5D134DE715CF6C5600DCA605 /* MKNetworkOperation.h in Headers */,
-				5D134DEB15CF6C5600DCA605 /* Reachability.h in Headers */,
-				5D134DFC15CF771900DCA605 /* SSKeychain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

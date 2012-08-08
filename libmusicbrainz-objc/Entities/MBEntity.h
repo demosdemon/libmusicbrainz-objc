@@ -9,9 +9,9 @@
 // @brief Base class for all entities
 
 #import <Foundation/Foundation.h>
-#import "../MBUtils.h"
-#import "../MBUniqueIdentifier.h"
-#import "../XML.h"
+#import "MBUtils.h"
+#import "MBUniqueIdentifier.h"
+#import "XML.h"
 
 /// Base class for all elements in the XML Webservice Schema
 ///
