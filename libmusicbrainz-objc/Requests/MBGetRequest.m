@@ -20,8 +20,8 @@
 {
   if (self = [super init]) {
     _IncParameters = [NSMutableSet set];
-    self.Offset = [NSNumber numberWithInt:25];
-    self.Limit = [NSNumber numberWithInt:0];
+    self.Offset = [NSNumber numberWithInt:0];
+    self.Limit = [NSNumber numberWithInt:25];
     _RequestMethod = @"GET";
   }
   return self;
@@ -65,10 +65,10 @@
 {
   switch (self.RequestType) {
     case MBRequestLookup:
-      return [NSString stringWithFormat:@"%@/%@?%@", _Entity, _EntityId, self.parameterString];
+      return [NSString stringWithFormat:@"%@/%@/?%@", _Entity, _EntityId, self.parameterString];
     case MBRequestBrowse:
     case MBRequestSearch:
-      return [NSString stringWithFormat:@"%@?%@", _Entity, self.parameterString];
+      return [NSString stringWithFormat:@"%@/?%@", _Entity, self.parameterString];
     default:
       return nil;
   }

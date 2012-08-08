@@ -12,6 +12,7 @@
 #endif
 
 #import "MB.h"
+#import "NSDictionary+RequestEncoding.h"
 
 extern NSString * MBEntityToNSString(MBEntityType type)
 {
@@ -128,13 +129,7 @@ extern NSArray * MBIncParameterToNSStringArray(MBIncParameterType type)
 
 - (NSString *) parameterString
 {
-  __block NSMutableArray * parameters = [NSMutableArray array];
-  [_Parameters enumerateKeysAndObjectsUsingBlock:^(NSString * key, NSString * value, BOOL *stop) {
-    [parameters addObject:[NSString stringWithFormat:@"%@=%@",
-                           [key stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                           [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
-  }];
-  return [parameters componentsJoinedByString:@"&"];
+  return [_Parameters urlEncodedKeyValueString];
 }
 
 + (MBBarcodeSubmissionRequest *) addBarcode:(NSString *)barcode
@@ -360,6 +355,8 @@ extern NSArray * MBIncParameterToNSStringArray(MBIncParameterType type)
   MBGetRequest * retval = [[MBGetRequest alloc] init];
   retval.RequestType = MBRequestSearch;
   retval.EntityType = MBEntityToNSString(entity);
+	retval.Limit = limit;
+	retval.Offset = offset;
   [retval setParameter:query forKey:@"query"];
   return retval;
 }
